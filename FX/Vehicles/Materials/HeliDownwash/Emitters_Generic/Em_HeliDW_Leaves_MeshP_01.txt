@@ -1,0 +1,1662 @@
+AirResistanceData 218FC11B-DC94-4585-82CE-98A6983B8539
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre AA5B4E19-88EF-449D-ABA9-6109BDE3E6F0
+        NextProcessor 522DA75F-B65B-404C-A534-21041367D69C
+        Enable True
+        EvaluatorInput EfNormTime
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+    DragFactor 3.0
+EmitterDocument 543B23AB-CDA2-4939-B918-D5613C5D0499
+    $::EmitterAsset
+        $::Asset
+            $::DataContainer
+            Name FX/Vehicles/Materials/HeliDownwash/Emitters_Generic/Em_HeliDW_Leaves_MeshP_01
+    RootProcessor 966A6FCE-8BFF-411D-B163-CD22C7B82D7D
+    TemplateData 428AC74C-6C16-44BA-8396-CE5AB1338489
+EmitterTemplateData 428AC74C-6C16-44BA-8396-CE5AB1338489 #primary instance
+    $::DataContainer
+    RootProcessor 966A6FCE-8BFF-411D-B163-CD22C7B82D7D
+    MaxCount 100
+    Name FX/Vehicles/Materials/HeliDownwash/Emitters_Generic/Em_HeliDW_Leaves_MeshP_01
+    Lifetime 30.0
+    TimeScale 1.0
+    RepeatParticleSpawning True
+    LifetimeFrameCount 0
+    FollowSpawnSource False
+    KillParticlesWithEmitter False
+    VisibleAfterDistance 0.0
+    ExclusionVolumeCullEnable False
+    EmittableType ParticleMesh
+    Mesh fx/dlc/xp3/meshparticles/generic/meshp_leaves_valley_01_mesh/A2B6E1D1-776E-01D8-5288-F575FF01C839
+    Emissive False
+    Opaque False
+    VertexPixelLightingBlendFactor 0.0
+    GlobalLocalNormalBlendFactor 1.0
+    SoftParticlesFadeDistanceMultiplier 0.0
+    LightWrapAroundFactor 0.5
+    LightMultiplier 1.0
+    ForceNiceSorting False
+    LocalSpace False
+    TransparencySunShadowEnable False
+    ForceFullRes False
+    ActAsPointLight False
+    PointLightColor::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    PointLightRadius 20.0
+    PointLightPivot::Vec3
+        x 0.0
+        y 0.0
+        z 0.0
+    PointLightRandomIntensityMin 1.0
+    PointLightRandomIntensityMax 1.0
+    PointLightIntensity::Vec4
+        x 0.0
+        y 0.0
+        z 0.0
+        w 1.0
+    PointLightMinClamp 0.0
+    PointLightMaxClamp 1.0
+    ParticleCullingFactor 1.0
+    MaxSpawnDistance 0.0
+    MinScreenArea 1.0
+    MeshCullingDistance 100.0
+    DistanceScaleLength 100.0
+    DistanceScaleNearValue 1.0
+    DistanceScaleFarValue 1.5
+    ZOcclusionLookup *nullArray*
+GravityData 522DA75F-B65B-404C-A534-21041367D69C
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre 5238E426-CBBC-4284-8FBE-58C96E464DE6
+        NextProcessor FDF2B527-876C-4BDE-B185-E97174A1DEA2
+        Enable True
+        EvaluatorInput EfNormTime
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+    Gravity -3.0
+LocalForceData FDF2B527-876C-4BDE-B185-E97174A1DEA2
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre DC1F1B02-E490-4B2C-9C05-B6AF21BC5657
+        NextProcessor BD399940-BDF9-7844-EC77-89F231F1BE5B
+        Enable True
+        EvaluatorInput EfEmitterNormTime
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+    LocalForce::Vec3
+        x 2.0
+        y 0.0
+        z 0.0
+PolynomialData AB2C97DB-1CC4-46F2-9AAB-D624C66E766B
+    $::EvaluatorData
+        $::EmitterComponentData
+            $::DataContainer
+        EmitterParameter EmitterParameterNone
+    Coefficients::Vec4
+        x 0.0
+        y 0.9040076
+        z -1.885067
+        w 0.9810589
+    ScaleValue 1.0
+    MinClamp 0.1
+    MaxClamp 1.0
+PolynomialData AB4F73C1-B439-4892-8A5B-6D34755523A2
+    $::EvaluatorData
+        $::EmitterComponentData
+            $::DataContainer
+        EmitterParameter EmitterParameterNone
+    Coefficients::Vec4
+        x 13.654661
+        y -29.397184
+        z 17.487185
+        w -1.7432362
+    ScaleValue 1.0
+    MinClamp 0.0
+    MaxClamp 1.0
+PolynomialData AA5B4E19-88EF-449D-ABA9-6109BDE3E6F0
+    $::EvaluatorData
+        $::EmitterComponentData
+            $::DataContainer
+        EmitterParameter EmitterParameterNone
+    Coefficients::Vec4
+        x 0.0
+        y 0.0
+        z -3.8399992
+        w 1.0133998
+    ScaleValue 1.0
+    MinClamp 0.05
+    MaxClamp 1.0
+PolynomialData 5238E426-CBBC-4284-8FBE-58C96E464DE6
+    $::EvaluatorData
+        $::EmitterComponentData
+            $::DataContainer
+        EmitterParameter EmitterParameterNone
+    Coefficients::Vec4
+        x 0.0
+        y 0.0
+        z 0.5194176
+        w 0.49538824
+    ScaleValue 1.0
+    MinClamp 0.0
+    MaxClamp 1.0
+PolynomialData DC1F1B02-E490-4B2C-9C05-B6AF21BC5657
+    $::EvaluatorData
+        $::EmitterComponentData
+            $::DataContainer
+        EmitterParameter EmitterParameterNone
+    Coefficients::Vec4
+        x 0.0
+        y -3.7675986
+        z 3.7864368
+        w 0.03824109
+    ScaleValue 1.0
+    MinClamp 0.1
+    MaxClamp 1.0
+RandomEvaluatorData E6F81F7B-CDE4-48CB-A29D-2458540ED424
+    $::EvaluatorData
+        $::EmitterComponentData
+            $::DataContainer
+        EmitterParameter EmitterParameterNone
+    Max 1.25
+    Min 0.75
+RandomEvaluatorData 534BA7BC-936C-4783-805F-99206788E45E
+    $::EvaluatorData
+        $::EmitterComponentData
+            $::DataContainer
+        EmitterParameter EmitterParameterNone
+    Max 1.0
+    Min -1.0
+RandomEvaluatorData 6AD5CAF4-DB87-4169-BDC1-53C1E5415BBE
+    $::EvaluatorData
+        $::EmitterComponentData
+            $::DataContainer
+        EmitterParameter EmitterParameterNone
+    Max 1.0
+    Min 0.5
+RandomEvaluatorData E484D554-FB67-4553-AA0B-F87A4B34D439
+    $::EvaluatorData
+        $::EmitterComponentData
+            $::DataContainer
+        EmitterParameter EmitterParameterDistance
+    Max 1.0
+    Min 0.2
+RotateVectorData DA99896D-F9CD-4734-AA55-EEDAE4183CD3
+    $::EvaluatorData
+        $::EmitterComponentData
+            $::DataContainer
+        EmitterParameter EmitterParameterNone
+    Angle 360.0
+    InputAffectsPhi True
+    RotateWithinPlane True
+SampleTextureData 2B80541F-F05C-46FF-92FA-84C173772BE4
+    $::EvaluatorData
+        $::EmitterComponentData
+            $::DataContainer
+        EmitterParameter EmitterParameterNone
+    GradientData::array
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.5019608
+            y 0.5019608
+            z 0.5019608
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.5019608
+            y 0.5019608
+            z 0.5019608
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.5019608
+            y 0.5019608
+            z 0.5019608
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.5019608
+            y 0.5019608
+            z 0.5019608
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.5019608
+            y 0.5019608
+            z 0.5019608
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.5019608
+            y 0.5019608
+            z 0.5019608
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+        member::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+    ColorIntensityMax::Vec3
+        x 1.0
+        y 1.0
+        z 1.0
+    ColorIntensityMin::Vec3
+        x 0.0
+        y 0.0
+        z 0.0
+    TextureDimensions::Vec2
+        x 256.0
+        y 4.0
+    TextureOriginU 0.0
+    TextureOriginV 0.0
+SpawnDirectionData 5E95CC5B-23E9-4FF3-865A-19B15384C30C
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre DA99896D-F9CD-4734-AA55-EEDAE4183CD3
+        NextProcessor 6B16204F-4D95-4C4F-9AE4-F38C7D9DECD6
+        Enable True
+        EvaluatorInput EfOne
+        DefaultValues::Vec4
+            x 0.0
+            y 1.0
+            z 0.0
+            w 0.0
+    InheritSpeedAndDirectionFromEmitter False
+    DirectionFromEmitterOrigin 0.0
+SpawnPositionData 6B16204F-4D95-4C4F-9AE4-F38C7D9DECD6
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre *nullGuid*
+        NextProcessor E145EE84-FCC6-4436-9271-400A7D2E3B86
+        Enable True
+        EvaluatorInput EfOne
+        DefaultValues::Vec4
+            x 0.0
+            y 0.0
+            z 0.0
+            w 1.0
+SpawnRateData 2CC61317-E13A-4A43-B0EF-979FFB7D06AC
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre 2B80541F-F05C-46FF-92FA-84C173772BE4
+        NextProcessor 5E95CC5B-23E9-4FF3-865A-19B15384C30C
+        Enable True
+        EvaluatorInput EfEmitterNormTime
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+    SpawnRate 100.0
+    TrailSegmentLength 5.0
+    DistributeOverTime True
+    DistributeOverDistance False
+SpawnRotationData 2738F68A-727E-4333-8FCE-6ED8B893B7FA
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre 534BA7BC-936C-4783-805F-99206788E45E
+        NextProcessor 27BBDE7B-A531-4FCD-B80F-5DC9AA09815B
+        Enable True
+        EvaluatorInput EfOne
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+    Rotation 1.0
+SpawnRotationSpeedData 27BBDE7B-A531-4FCD-B80F-5DC9AA09815B
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre 6AD5CAF4-DB87-4169-BDC1-53C1E5415BBE
+        NextProcessor 6E745EE1-CC54-4FE9-B487-89AEA96FF6A6
+        Enable True
+        EvaluatorInput EfOne
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+    RotationSpeed 10.0
+SpawnSizeData 3FAAAB8F-A744-414F-80A0-D653F0188397
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre E484D554-FB67-4553-AA0B-F87A4B34D439
+        NextProcessor 218FC11B-DC94-4585-82CE-98A6983B8539
+        Enable True
+        EvaluatorInput EfOne
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+    Size 2.0
+SpawnSpeedData E145EE84-FCC6-4436-9271-400A7D2E3B86
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre E6F81F7B-CDE4-48CB-A29D-2458540ED424
+        NextProcessor 00EC3A34-FF78-49AF-9727-2723C03D004F
+        Enable True
+        EvaluatorInput EfOne
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+    Speed 60.0
+UpdateAgeData 966A6FCE-8BFF-411D-B163-CD22C7B82D7D
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre *nullGuid*
+        NextProcessor 2CC61317-E13A-4A43-B0EF-979FFB7D06AC
+        Enable True
+        EvaluatorInput EfNormTime
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+    Lifetime 4.0
+UpdateLinearVelocityData BD399940-BDF9-7844-EC77-89F231F1BE5B
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre *nullGuid*
+        NextProcessor *nullGuid*
+        Enable True
+        EvaluatorInput EfNormTime
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+UpdateRotationData 00EC3A34-FF78-49AF-9727-2723C03D004F
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre AB2C97DB-1CC4-46F2-9AAB-D624C66E766B
+        NextProcessor 2738F68A-727E-4333-8FCE-6ED8B893B7FA
+        Enable True
+        EvaluatorInput EfNormTime
+        DefaultValues::Vec4
+            x 1.0
+            y 0.0
+            z 0.0
+            w 0.0
+UpdateSizeData 6E745EE1-CC54-4FE9-B487-89AEA96FF6A6
+    $::ProcessorData
+        $::EmitterComponentData
+            $::DataContainer
+        Pre AB4F73C1-B439-4892-8A5B-6D34755523A2
+        NextProcessor 3FAAAB8F-A744-414F-80A0-D653F0188397
+        Enable True
+        EvaluatorInput EfNormTime
+        DefaultValues::Vec4
+            x 1.0
+            y 1.0
+            z 1.0
+            w 1.0
+    Pivot::Vec2
+        x 0.0
+        y 0.0
