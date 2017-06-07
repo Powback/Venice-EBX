@@ -1,0 +1,148 @@
+InterfaceDescriptorData 0174CB4C-873F-4683-93FD-57F9DEFE69E6
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents *nullArray*
+    OutputEvents *nullArray*
+    InputLinks::array
+        member::DynamicLink
+            Id 124880329
+    OutputLinks *nullArray*
+IrReverbEntityData 58BD3E77-5DDD-439D-916F-3EE9D0E443B6
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 2
+    ImpulseResponse sound/impulse_responses/ir_indoor_big_room/93BDA147-83FF-24F5-BD28-9B07C65B541A
+    Gain -15.0
+    Volume 0.0
+    FadeCurve FadeCurveType_LinearAmplitude
+MixerEntityData 5947B60A-90D7-4D80-A173-A727EFD08E0B
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 3
+    ActivateOnCreation True
+    Mixer sound/mixers/ambienttype_mixer/63BE4D2A-6830-45EE-BE47-4C5D662E508C
+MixerEntityData E515B9C1-62D2-4F6C-8042-97DC114BBC53
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 4
+    ActivateOnCreation True
+    Mixer sound/mixers/areatype_mixer/E02AEB28-4FAD-4746-AA5B-882F6A2BC4EE
+PrefabBlueprint 1982230E-1F28-2B7C-6FE1-80283CA41F64 #primary instance
+    $::Blueprint
+        $::EntityBusData
+            $::DataBusData
+                $::Asset
+                    $::DataContainer
+                    Name props/streetprops/securitybooth_01/securitybooth_01_prefab_nongroupable_autogen
+                PropertyConnections::array
+                    member::PropertyConnection
+                        Source B679A592-2BC5-4F90-8D5D-D14D535C57A9
+                        Target 58BD3E77-5DDD-439D-916F-3EE9D0E443B6
+                        SourceFieldId 258157264
+                        TargetFieldId -1136955571
+                    member::PropertyConnection
+                        Source B679A592-2BC5-4F90-8D5D-D14D535C57A9
+                        Target 5947B60A-90D7-4D80-A173-A727EFD08E0B
+                        SourceFieldId 258157264
+                        TargetFieldId 1579081631
+                    member::PropertyConnection
+                        Source B679A592-2BC5-4F90-8D5D-D14D535C57A9
+                        Target E515B9C1-62D2-4F6C-8042-97DC114BBC53
+                        SourceFieldId 258157264
+                        TargetFieldId -2120426542
+                LinkConnections::array
+                    member::LinkConnection
+                        Source 0174CB4C-873F-4683-93FD-57F9DEFE69E6
+                        Target 7AC9E954-4524-48EE-9B33-37593F4452BC
+                        SourceFieldId 124880329
+                        TargetFieldId 0
+                    member::LinkConnection
+                        Source B679A592-2BC5-4F90-8D5D-D14D535C57A9
+                        Target 7AC9E954-4524-48EE-9B33-37593F4452BC
+                        SourceFieldId 838548383
+                        TargetFieldId 0
+            EventConnections *nullArray*
+            Descriptor 0174CB4C-873F-4683-93FD-57F9DEFE69E6
+            NeedNetworkId False
+            InterfaceHasConnections True
+            AlwaysCreateEntityBusClient False
+            AlwaysCreateEntityBusServer False
+    Objects::array
+        member 7AC9E954-4524-48EE-9B33-37593F4452BC
+        member B679A592-2BC5-4F90-8D5D-D14D535C57A9
+        member 58BD3E77-5DDD-439D-916F-3EE9D0E443B6
+        member 5947B60A-90D7-4D80-A173-A727EFD08E0B
+        member E515B9C1-62D2-4F6C-8042-97DC114BBC53
+SoundAreaEntityData B679A592-2BC5-4F90-8D5D-D14D535C57A9
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    Sound sound/levels/shared/object_interiors/shared_ambients_object_int_securitybooth_01/F64F6F9D-989F-489D-A0C3-A4BAB0D557C7
+    BigWorld *nullGuid*
+    FadeWidth 1.0
+    ProximityMultiplier 1.0
+    FadeCurve FadeCurveType_SineAmplitude
+VolumeVectorShapeData 7AC9E954-4524-48EE-9B33-37593F4452BC
+    $::VectorShapeData
+        $::BaseShapeData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 2
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 0
+        Points::array
+            member::Vec3
+                x 1.8398438
+                y 0.11999514
+                z 1.2001953
+            member::Vec3
+                x -1.8447266
+                y 0.11999514
+                z 1.2001953
+            member::Vec3
+                x -1.8398438
+                y 0.11999514
+                z -1.8398436
+            member::Vec3
+                x 1.8398439
+                y 0.11999514
+                z -1.8398438
+        Normals::array
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            member::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+        Tension 0.0
+        IsClosed True
+        AllowRoll False
+    Height 2.7

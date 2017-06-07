@@ -1,0 +1,158 @@
+FloatEntityData 30AB2B44-E199-44F7-A020-27D132371796
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 2
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Realm Realm_ClientAndServer
+    DefaultValue 20.0
+    IncDecValue 10.0
+InterfaceDescriptorData B7FFCEA0-8CE9-4883-BD1F-4C1A86EC4180
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id -117303631
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+PointLightEntityData 61B4F1F7-0324-4A2D-9AC6-A9EA72F4652F
+    $::LocalLightEntityData
+        $::SpatialEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 0
+                    IsPropertyConnectionTarget 2
+                    IndexInBlueprint 0
+            Transform::LinearTransform
+                right::Vec3
+                    x -0.9999999
+                    y 7.5497894e-08
+                    z 5.9604638e-08
+                up::Vec3
+                    x 1.2646598e-22
+                    y 5.9604634e-08
+                    z 0.99999994
+                forward::Vec3
+                    x 1.5893255e-08
+                    y 0.9999999
+                    z 3.552715e-15
+                trans::Vec3
+                    x 0.010333877
+                    y -1.1876527
+                    z -0.04519653
+        Color::Vec3
+            x 0.382
+            y 0.589
+            z 0.73
+        Radius 5.0
+        Intensity 6.0
+        AttenuationOffset 1.0
+        Visible True
+        SpecularEnable False
+        EnlightenColorMode EnlightenColorMode_Multiply
+        EnlightenEnable False
+        EnlightenColorScale::Vec3
+            x 4.0
+            y 4.0
+            z 4.0
+        ParticleColorScale::Vec3
+            x 1.0
+            y 1.0
+            z 1.0
+    Width 3.0
+    TranslucencyAmbient 0.0
+    TranslucencyScale 0.0
+    TranslucencyPower 8
+    TranslucencyDistortion 0.1
+ReferenceObjectData 18D64EDD-B083-4BFF-AF18-D2FAE7A6689C
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x -1.0
+            y 1.5910456e-07
+            z 8.742278e-08
+        up::Vec3
+            x 1.5910456e-07
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x -8.742278e-08
+            y 1.3909363e-14
+            z -1.0
+        trans::Vec3
+            x 0.014909126
+            y 0.006893613
+            z -9.1563146e-05
+    Blueprint props/streetprops/lightceiling_01/lightceiling_01/A0DF1D19-7616-8129-83DD-24FBF7F9C14B
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 103044F9-A49C-47A8-9087-CB7A0F8C6181 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name XP_Raw/Props/TubeLights/TubeLight_Destructible_Blue
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 30AB2B44-E199-44F7-A020-27D132371796
+                            Target 61B4F1F7-0324-4A2D-9AC6-A9EA72F4652F
+                            SourceFieldId 225375086
+                            TargetFieldId -458572566
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source 18D64EDD-B083-4BFF-AF18-D2FAE7A6689C
+                        Target 30AB2B44-E199-44F7-A020-27D132371796
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 18D64EDD-B083-4BFF-AF18-D2FAE7A6689C
+                        Target 61B4F1F7-0324-4A2D-9AC6-A9EA72F4652F
+                        SourceEvent::EventSpec
+                            Id 1630515206
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 18D64EDD-B083-4BFF-AF18-D2FAE7A6689C
+                        Target 61B4F1F7-0324-4A2D-9AC6-A9EA72F4652F
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source B7FFCEA0-8CE9-4883-BD1F-4C1A86EC4180
+                        Target 18D64EDD-B083-4BFF-AF18-D2FAE7A6689C
+                        SourceEvent::EventSpec
+                            Id -117303631
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor B7FFCEA0-8CE9-4883-BD1F-4C1A86EC4180
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 61B4F1F7-0324-4A2D-9AC6-A9EA72F4652F
+            member 18D64EDD-B083-4BFF-AF18-D2FAE7A6689C
+            member 30AB2B44-E199-44F7-A020-27D132371796

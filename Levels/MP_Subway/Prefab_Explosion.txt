@@ -1,0 +1,301 @@
+DelayEntityData 5BC2F3A3-44DE-4BBD-A73F-97178E740E9B
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 4
+    Delay 0.0
+    Realm Realm_Server
+    AutoStart False
+    RunOnce False
+    RemoveDuplicateEvents True
+DelayEntityData 88D1AD7E-D508-4C66-96E5-8FF51F40262C
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 2
+            IndexInBlueprint 5
+    Delay 5.0
+    Realm Realm_Server
+    AutoStart False
+    RunOnce False
+    RemoveDuplicateEvents True
+EffectReferenceObjectData 2D1640BF-F548-4D8D-A547-150A735736E0
+    $::ReferenceObjectData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 0
+        BlueprintTransform::LinearTransform
+            right::Vec3
+                x 0.99993116
+                y 0.0
+                z 0.011737153
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x -0.011737153
+                y 0.0
+                z 0.99993116
+            trans::Vec3
+                x -0.0024795532
+                y 0.0
+                z -0.0062561035
+        Blueprint fx/destruction/generic/building/facadecollapse/fx_facadecollapse_01_l/2CA69108-F6B8-11DD-9E04-81C602CF355C
+        ObjectVariation *nullGuid*
+        StreamRealm StreamRealm_None
+        CastSunShadowEnable True
+        Excluded False
+    AutoStart False
+EffectReferenceObjectData 9740AE2F-7D36-443A-B7CE-6BE6F7924C34
+    $::ReferenceObjectData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 6
+        BlueprintTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x -0.36943996
+                y 0.0
+                z 0.07979965
+        Blueprint fx/ambient/generic/falling/fx_falling_rocks_dust_01_m/60B82C4C-18C7-10A6-A7E0-0B2C6BCC4E32
+        ObjectVariation *nullGuid*
+        StreamRealm StreamRealm_None
+        CastSunShadowEnable True
+        Excluded False
+    AutoStart False
+InterfaceDescriptorData ECD3CC41-5676-40DF-A3CC-978B48CAFE0E
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member::DataField
+                Value Float32 5
+                ValueRef *nullGuid*
+                Id 126617269
+                AccessType FieldAccessType_Target
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id -1563051376
+                AccessType FieldAccessType_Target
+    InputEvents::array
+        member::DynamicEvent
+            Id 2047357776
+        member::DynamicEvent
+            Id -1006135416
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+LocatorEntityData FE33AF2E-7AAC-496A-B457-054C7FA2E5E0
+    $::SpatialEntityData
+        $::EntityData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 3
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 1
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 41.088913
+                z 0.0
+    Realm Realm_Client
+SoundEntityData 921D856E-2803-44C0-A4C1-41325C4FC51B
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 0
+            IndexInBlueprint 2
+    Transform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Sound sound/explosions/modularmodel/explosion_maverick_bomb/5B55C09C-CE19-410B-BAFA-1C2C503ED597
+    PlayOnCreation False
+    ObstructionHandle -1
+SpatialPrefabBlueprint D2E03368-EF8A-E8E2-8128-93B938BF892B #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/MP_Subway/Prefab_Explosion
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source FE33AF2E-7AAC-496A-B457-054C7FA2E5E0
+                            Target 921D856E-2803-44C0-A4C1-41325C4FC51B
+                            SourceFieldId 1925266716
+                            TargetFieldId -2024647575
+                        member::PropertyConnection
+                            Source ECD3CC41-5676-40DF-A3CC-978B48CAFE0E
+                            Target 88D1AD7E-D508-4C66-96E5-8FF51F40262C
+                            SourceFieldId 126617269
+                            TargetFieldId 208768368
+                        member::PropertyConnection
+                            Source ECD3CC41-5676-40DF-A3CC-978B48CAFE0E
+                            Target 5BC2F3A3-44DE-4BBD-A73F-97178E740E9B
+                            SourceFieldId -1563051376
+                            TargetFieldId 208768368
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source ECD3CC41-5676-40DF-A3CC-978B48CAFE0E
+                        Target C865CE13-0604-4ACD-9433-548BC03382A8
+                        SourceEvent::EventSpec
+                            Id 2047357776
+                        TargetEvent::EventSpec
+                            Id -1541066415
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source ECD3CC41-5676-40DF-A3CC-978B48CAFE0E
+                        Target C865CE13-0604-4ACD-9433-548BC03382A8
+                        SourceEvent::EventSpec
+                            Id -1006135416
+                        TargetEvent::EventSpec
+                            Id 668205626
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source C865CE13-0604-4ACD-9433-548BC03382A8
+                        Target 2D1640BF-F548-4D8D-A547-150A735736E0
+                        SourceEvent::EventSpec
+                            Id -81881639
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source C865CE13-0604-4ACD-9433-548BC03382A8
+                        Target 5BC2F3A3-44DE-4BBD-A73F-97178E740E9B
+                        SourceEvent::EventSpec
+                            Id -1433512622
+                        TargetEvent::EventSpec
+                            Id 5862146
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 5BC2F3A3-44DE-4BBD-A73F-97178E740E9B
+                        Target 2D1640BF-F548-4D8D-A547-150A735736E0
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_NetworkedClient
+                    member::EventConnection
+                        Source 5BC2F3A3-44DE-4BBD-A73F-97178E740E9B
+                        Target 921D856E-2803-44C0-A4C1-41325C4FC51B
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_NetworkedClient
+                    member::EventConnection
+                        Source 5BC2F3A3-44DE-4BBD-A73F-97178E740E9B
+                        Target 88D1AD7E-D508-4C66-96E5-8FF51F40262C
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 5862146
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 88D1AD7E-D508-4C66-96E5-8FF51F40262C
+                        Target C865CE13-0604-4ACD-9433-548BC03382A8
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 668205626
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 88D1AD7E-D508-4C66-96E5-8FF51F40262C
+                        Target C865CE13-0604-4ACD-9433-548BC03382A8
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id -1541066415
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source 5BC2F3A3-44DE-4BBD-A73F-97178E740E9B
+                        Target 9740AE2F-7D36-443A-B7CE-6BE6F7924C34
+                        SourceEvent::EventSpec
+                            Id 193453899
+                        TargetEvent::EventSpec
+                            Id 230748069
+                        TargetType EventConnectionTargetType_NetworkedClient
+                    member::EventConnection
+                        Source C865CE13-0604-4ACD-9433-548BC03382A8
+                        Target 9740AE2F-7D36-443A-B7CE-6BE6F7924C34
+                        SourceEvent::EventSpec
+                            Id -81881639
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_Client
+                Descriptor ECD3CC41-5676-40DF-A3CC-978B48CAFE0E
+                NeedNetworkId True
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient True
+                AlwaysCreateEntityBusServer True
+        Objects::array
+            member 2D1640BF-F548-4D8D-A547-150A735736E0
+            member FE33AF2E-7AAC-496A-B457-054C7FA2E5E0
+            member 921D856E-2803-44C0-A4C1-41325C4FC51B
+            member C865CE13-0604-4ACD-9433-548BC03382A8
+            member 5BC2F3A3-44DE-4BBD-A73F-97178E740E9B
+            member 88D1AD7E-D508-4C66-96E5-8FF51F40262C
+            member 9740AE2F-7D36-443A-B7CE-6BE6F7924C34
+SyncedBoolEntityData C865CE13-0604-4ACD-9433-548BC03382A8
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 3
+    In False

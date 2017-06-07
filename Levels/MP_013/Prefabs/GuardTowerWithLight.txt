@@ -1,0 +1,145 @@
+PointLightEntityData 41D0C54C-ABF9-4BD5-8557-6AD4529F927A
+    $::LocalLightEntityData
+        $::SpatialEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 0
+                    IsPropertyConnectionTarget 3
+                    IndexInBlueprint 2
+            Transform::LinearTransform
+                right::Vec3
+                    x 1.0
+                    y 0.0
+                    z 0.0
+                up::Vec3
+                    x 0.0
+                    y 1.0
+                    z 0.0
+                forward::Vec3
+                    x 0.0
+                    y 0.0
+                    z 1.0
+                trans::Vec3
+                    x 0.019518614
+                    y 5.879632
+                    z -0.0050815344
+        Color::Vec3
+            x 0.949
+            y 1.0
+            z 0.573
+        Radius 5.0
+        Intensity 10.0
+        AttenuationOffset 0.01
+        Visible True
+        SpecularEnable True
+        EnlightenColorMode EnlightenColorMode_Multiply
+        EnlightenEnable False
+        EnlightenColorScale::Vec3
+            x 1.0
+            y 1.0
+            z 1.0
+        ParticleColorScale::Vec3
+            x 1.0
+            y 1.0
+            z 1.0
+    Width 0.0
+    TranslucencyAmbient 0.0
+    TranslucencyScale 0.0
+    TranslucencyPower 8
+    TranslucencyDistortion 0.1
+ReferenceObjectData 8BCDB343-E215-4742-9CA5-D09ECFB6925C
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y -1.5552992e-09
+            z -1.863749e-25
+        up::Vec3
+            x 1.5552992e-09
+            y 1.0
+            z 1.2101902e-08
+        forward::Vec3
+            x -1.8822078e-17
+            y -1.2101902e-08
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint props/streetprops/guardtower_01/guardtower_01_prefab/545A7167-3AAB-DE14-0E18-751916378301
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData 49A056AE-E82F-4446-B95C-E91A44BD1067
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x -0.7
+            y 6.119594e-08
+            z 8.967488e-22
+        up::Vec3
+            x -6.119594e-08
+            y -0.7
+            z -5.0379165e-15
+        forward::Vec3
+            x 8.361141e-23
+            y -5.0379165e-15
+            z 0.7
+        trans::Vec3
+            x -0.03152466
+            y 6.4075775
+            z 0.021492004
+    Blueprint objects/ceilinglight_02/ceilinglight_02/ACA1EFFA-A751-D3EC-C1C0-4609356A37C7
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 72CCAEFE-DD3E-4C8C-AB9B-2D1F02BC28D5 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/MP_013/Prefabs/GuardTowerWithLight
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source 8BCDB343-E215-4742-9CA5-D09ECFB6925C
+                        Target 49A056AE-E82F-4446-B95C-E91A44BD1067
+                        SourceEvent::EventSpec
+                            Id -576679640
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 8BCDB343-E215-4742-9CA5-D09ECFB6925C
+                        Target 41D0C54C-ABF9-4BD5-8557-6AD4529F927A
+                        SourceEvent::EventSpec
+                            Id -576679640
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_Client
+                Descriptor *nullGuid*
+                NeedNetworkId True
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 8BCDB343-E215-4742-9CA5-D09ECFB6925C
+            member 49A056AE-E82F-4446-B95C-E91A44BD1067
+            member 41D0C54C-ABF9-4BD5-8557-6AD4529F927A

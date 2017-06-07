@@ -1,0 +1,166 @@
+FloatEntityData 3333AD8A-855D-4E61-8BF1-CD3D09AC8DAD
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 2
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+    Realm Realm_ClientAndServer
+    DefaultValue 20.0
+    IncDecValue 10.0
+InterfaceDescriptorData 93683F2B-D87B-4462-85E2-FDE6EDE5DDAD
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents::array
+        member::DynamicEvent
+            Id -117303631
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+PointLightEntityData 20C0296D-8CA9-4FC5-904C-196BD69C76F9
+    $::LocalLightEntityData
+        $::SpatialEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 0
+                    IsPropertyConnectionTarget 2
+                    IndexInBlueprint 0
+            Transform::LinearTransform
+                right::Vec3
+                    x -0.9999999
+                    y 7.5497894e-08
+                    z 5.9604638e-08
+                up::Vec3
+                    x 1.2646598e-22
+                    y 5.9604634e-08
+                    z 0.99999994
+                forward::Vec3
+                    x 1.5893255e-08
+                    y 0.9999999
+                    z 3.552715e-15
+                trans::Vec3
+                    x 0.010333877
+                    y -1.1876527
+                    z -0.04519653
+        Color::Vec3
+            x 0.382
+            y 0.589
+            z 0.73
+        Radius 3.0
+        Intensity 8.0
+        AttenuationOffset 1.0
+        Visible True
+        SpecularEnable False
+        EnlightenColorMode EnlightenColorMode_Multiply
+        EnlightenEnable True
+        EnlightenColorScale::Vec3
+            x 1.5
+            y 1.5
+            z 1.5
+        ParticleColorScale::Vec3
+            x 1.0
+            y 1.0
+            z 1.0
+    Width 3.0
+    TranslucencyAmbient 0.0
+    TranslucencyScale 0.0
+    TranslucencyPower 8
+    TranslucencyDistortion 0.1
+ReferenceObjectData CC112110-7A08-45AE-9084-EA7F03AA68E2
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x -1.0
+            y 1.5910456e-07
+            z 8.742278e-08
+        up::Vec3
+            x 1.5910456e-07
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x -8.742278e-08
+            y 1.3909363e-14
+            z -1.0
+        trans::Vec3
+            x 0.014909126
+            y 0.006893613
+            z -9.1563146e-05
+    Blueprint props/streetprops/lightceiling_01/lightceiling_01/A0DF1D19-7616-8129-83DD-24FBF7F9C14B
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 67197001-7D0A-4F5C-A85A-16EE9869F245 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name XP_Raw/Props/TubeLights/TubeLight_Destructible_Blue_Sml
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 3333AD8A-855D-4E61-8BF1-CD3D09AC8DAD
+                            Target 20C0296D-8CA9-4FC5-904C-196BD69C76F9
+                            SourceFieldId 225375086
+                            TargetFieldId -458572566
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source CC112110-7A08-45AE-9084-EA7F03AA68E2
+                        Target 3333AD8A-855D-4E61-8BF1-CD3D09AC8DAD
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -395651742
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source CC112110-7A08-45AE-9084-EA7F03AA68E2
+                        Target 20C0296D-8CA9-4FC5-904C-196BD69C76F9
+                        SourceEvent::EventSpec
+                            Id 1630515206
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source CC112110-7A08-45AE-9084-EA7F03AA68E2
+                        Target 20C0296D-8CA9-4FC5-904C-196BD69C76F9
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 93683F2B-D87B-4462-85E2-FDE6EDE5DDAD
+                        Target CC112110-7A08-45AE-9084-EA7F03AA68E2
+                        SourceEvent::EventSpec
+                            Id -117303631
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_ClientAndServer
+                    member::EventConnection
+                        Source 93683F2B-D87B-4462-85E2-FDE6EDE5DDAD
+                        Target 20C0296D-8CA9-4FC5-904C-196BD69C76F9
+                        SourceEvent::EventSpec
+                            Id -117303631
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_Client
+                Descriptor 93683F2B-D87B-4462-85E2-FDE6EDE5DDAD
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 20C0296D-8CA9-4FC5-904C-196BD69C76F9
+            member CC112110-7A08-45AE-9084-EA7F03AA68E2
+            member 3333AD8A-855D-4E61-8BF1-CD3D09AC8DAD

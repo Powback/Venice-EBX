@@ -1,0 +1,242 @@
+EffectReferenceObjectData FAFEEDC9-5D62-412B-90C0-1BFC3BC3D78F
+    $::ReferenceObjectData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 3
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 3
+        BlueprintTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y -0.9524961
+                z 0.0
+        Blueprint fx/ambient/levelspecific/sp_bank/fx_amb_spbank_mistsmoke_01_m/3B1D05A4-BD7F-475A-B7C6-54C15BA831EC
+        ObjectVariation *nullGuid*
+        StreamRealm StreamRealm_None
+        CastSunShadowEnable True
+        Excluded False
+    AutoStart True
+InterfaceDescriptorData DB215469-3FA5-4BE8-A3AE-38C51758E087
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields *nullArray*
+    InputEvents *nullArray*
+    OutputEvents::array
+        member::DynamicEvent
+            Id 331135192
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+LensFlareEntityData E71D8B3C-5CB1-4BD6-A214-62B8B9E63074
+    $::SpatialEntityData
+        $::EntityData
+            $::GameObjectData
+                $::GameDataContainer
+                    $::DataContainer
+                IsEventConnectionTarget 3
+                IsPropertyConnectionTarget 3
+                IndexInBlueprint 2
+        Transform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.0
+                y 0.005877182
+                z 0.0
+    Visible True
+    DebugDrawOccluder False
+    HalfRes True
+    OccluderSize 1.0
+    Elements::array
+        member::LensFlareElement
+            Shader fx/lensflares/shaders/lamp_03_blue_bokehdirt_eq1/73BB5143-826F-4C84-A53E-F4D7FC3D7712
+            RayDistance 0.0
+            Size::Vec2
+                x 0.7
+                y 0.7
+            SizeOccluderCurve::Vec4
+                x 0.0
+                y 0.0
+                z 0.0
+                w 1.0
+            SizeScreenPosCurve::Vec4
+                x 0.0
+                y 0.0
+                z 0.0
+                w 1.0
+            SizeAngleCurve::Vec4
+                x 0.0
+                y 0.0
+                z 0.0
+                w 1.0
+            SizeCamDistCurve::Vec4
+                x 0.0
+                y 0.0
+                z 0.0
+                w 1.0
+            SizeCamDistMax 100.0
+            AlphaOccluderCurve::Vec4
+                x 0.0
+                y 0.0
+                z -1.0
+                w 1.0
+            AlphaScreenPosCurve::Vec4
+                x 0.0
+                y 0.0
+                z 0.0
+                w 1.0
+            AlphaAngleCurve::Vec4
+                x 0.0
+                y 0.0
+                z 0.0
+                w 0.33500004
+            AlphaCamDistCurve::Vec4
+                x 0.0
+                y 0.0
+                z 0.0
+                w 1.0
+            AlphaCamDistMax 100.0
+ReferenceObjectData 72983E73-12B0-46FF-AD7B-C7E4CB2A7768
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x -0.031860296
+            y 0.0039017512
+            z 0.5991408
+        up::Vec3
+            x -0.0001796697
+            y -0.5999873
+            z 0.0038977098
+        forward::Vec3
+            x 0.5991535
+            y 2.7567077e-05
+            z 0.031860773
+        trans::Vec3
+            x -0.1227417
+            y 0.15411758
+            z -0.0127773285
+    Blueprint objects/servicelamp_01/servicelamp_01/F10F6567-7E82-3E9C-08CA-E3E93F1E4E43
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint E7DC7663-2F97-499D-B428-F271C6FA8515 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/COOP_003/Props/ServiceLamp_Destroyable/ServiceLamp_Destroyable_Cold_01
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source 72983E73-12B0-46FF-AD7B-C7E4CB2A7768
+                        Target 1A9C4843-C191-43E1-8E57-DF87DA57BAC5
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 72983E73-12B0-46FF-AD7B-C7E4CB2A7768
+                        Target DB215469-3FA5-4BE8-A3AE-38C51758E087
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id 331135192
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor DB215469-3FA5-4BE8-A3AE-38C51758E087
+                NeedNetworkId False
+                InterfaceHasConnections True
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 1A9C4843-C191-43E1-8E57-DF87DA57BAC5
+            member 72983E73-12B0-46FF-AD7B-C7E4CB2A7768
+            member E71D8B3C-5CB1-4BD6-A214-62B8B9E63074
+            member FAFEEDC9-5D62-412B-90C0-1BFC3BC3D78F
+SpotLightEntityData 1A9C4843-C191-43E1-8E57-DF87DA57BAC5
+    $::LocalLightEntityData
+        $::SpatialEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 0
+                    IsPropertyConnectionTarget 3
+                    IndexInBlueprint 0
+            Transform::LinearTransform
+                right::Vec3
+                    x 1.0
+                    y 0.0
+                    z 0.0
+                up::Vec3
+                    x -2.620239e-15
+                    y -0.00077871874
+                    z -0.9999997
+                forward::Vec3
+                    x 2.030109e-19
+                    y 0.9999997
+                    z -0.00077871874
+                trans::Vec3
+                    x -0.10997172
+                    y 0.075802684
+                    z 0.0
+        Color::Vec3
+            x 0.053
+            y 0.403
+            z 1.0
+        Radius 7.0
+        Intensity 5.0
+        AttenuationOffset 0.01
+        Visible True
+        SpecularEnable True
+        EnlightenColorMode EnlightenColorMode_Multiply
+        EnlightenEnable True
+        EnlightenColorScale::Vec3
+            x 4.0
+            y 4.0
+            z 4.0
+        ParticleColorScale::Vec3
+            x 0.1
+            y 0.1
+            z 0.1
+    Shape SpotLightShape_Cone
+    ConeInnerAngle 0.0
+    ConeOuterAngle 155.178
+    FrustumFov 40.0
+    FrustumAspect 1.0
+    OrthoWidth 5.0
+    OrthoHeight 5.0
+    Texture *nullGuid*
+    CastShadowsEnable False
+    CastShadowsMinLevel QualityLevel_Low

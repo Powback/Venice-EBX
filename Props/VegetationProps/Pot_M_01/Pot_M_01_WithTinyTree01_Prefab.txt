@@ -1,0 +1,176 @@
+ExplosionEntityData 75A0DF99-98C3-49DF-B85B-D2DE4A088B61
+    $::GameEntityData
+        $::SpatialEntityData
+            $::EntityData
+                $::GameObjectData
+                    $::GameDataContainer
+                        $::DataContainer
+                    IsEventConnectionTarget 2
+                    IsPropertyConnectionTarget 3
+                    IndexInBlueprint 3
+            Transform::LinearTransform
+                right::Vec3
+                    x 1.0
+                    y 0.0
+                    z 0.0
+                up::Vec3
+                    x 0.0
+                    y 1.0
+                    z 0.0
+                forward::Vec3
+                    x 0.0
+                    y 0.0
+                    z 1.0
+                trans::Vec3
+                    x -0.10286335
+                    y -0.7137315
+                    z 0.080885574
+        Enabled False
+        Components *nullArray*
+        RuntimeComponentCount 0
+    DetonationEffect *nullGuid*
+    UseEntityTransformForDetonationEffect False
+    MaskVolume *nullGuid*
+    DestructionMaskVolume *nullGuid*
+    MaterialPair *nullGuid*
+    DamageIndicationType DamageIndicationType_GiverPlayer
+    EmpTime 0.0
+    MaxOcclusionRaycastRadius 0.25
+    InnerBlastRadius 0.4
+    BlastDamage 110.0
+    BlastRadius 0.5
+    BlastImpulse 2000.0
+    HasStunEffect False
+    ShockwaveDamage 0.1
+    ShockwaveRadius 0.55
+    ShockwaveImpulse 100.0
+    ShockwaveTime 0.1
+    DisableOcclusion True
+    DisableStaticEntityOcclusion False
+    CameraShockwaveRadius 0.6
+    SpawnDelay 0.0
+    TriggerImpairedHearing True
+    DetonateOnce True
+    ShowOnMinimap False
+InterfaceDescriptorData 022DB232-2F53-4A14-ADF9-B06809455449
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id -696735161
+                AccessType FieldAccessType_Target
+    InputEvents *nullArray*
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData 01DE4807-9C2B-487D-9382-561EA9C59BBE
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 3.9072297e-08
+            z 2.1811285e-23
+        up::Vec3
+            x -3.9072297e-08
+            y 1.0
+            z 3.746426e-08
+        forward::Vec3
+            x 1.4638147e-15
+            y -3.746426e-08
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint props/vegetationprops/pot_m_01/pot_m_01/AD3F71A8-1DF2-32D6-4282-3CD660630223
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData 987E0760-B8AD-4308-AAED-11D903940CA2
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 2
+        IndexInBlueprint 2
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 0.7965676
+            y -0.04061761
+            z -0.061888732
+        up::Vec3
+            x 0.037021603
+            y 0.79775584
+            z -0.04706395
+        forward::Vec3
+            x 0.06410468
+            y 0.043998003
+            z 0.7962128
+        trans::Vec3
+            x -0.10286335
+            y -0.9440232
+            z 0.080885574
+    Blueprint objects/vegetation/treeparisavenue_s_01/treeparisavenue_s_01/24491D47-2371-2046-0AF8-B724C8795EB8
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 45696919-FEAF-8970-1051-264E78E74803 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Props/VegetationProps/Pot_M_01/Pot_M_01_WithTinyTree01_Prefab
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 022DB232-2F53-4A14-ADF9-B06809455449
+                            Target 987E0760-B8AD-4308-AAED-11D903940CA2
+                            SourceFieldId -696735161
+                            TargetFieldId -409930682
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source 01DE4807-9C2B-487D-9382-561EA9C59BBE
+                        Target DA7BD565-26D4-4531-9AD7-C343388D5525
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -1541066415
+                        TargetType EventConnectionTargetType_Server
+                    member::EventConnection
+                        Source DA7BD565-26D4-4531-9AD7-C343388D5525
+                        Target 75A0DF99-98C3-49DF-B85B-D2DE4A088B61
+                        SourceEvent::EventSpec
+                            Id -1433512622
+                        TargetEvent::EventSpec
+                            Id -1952177180
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor 022DB232-2F53-4A14-ADF9-B06809455449
+                NeedNetworkId True
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 01DE4807-9C2B-487D-9382-561EA9C59BBE
+            member DA7BD565-26D4-4531-9AD7-C343388D5525
+            member 987E0760-B8AD-4308-AAED-11D903940CA2
+            member 75A0DF99-98C3-49DF-B85B-D2DE4A088B61
+SyncedBoolEntityData DA7BD565-26D4-4531-9AD7-C343388D5525
+    $::EntityData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 1
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 1
+    In False

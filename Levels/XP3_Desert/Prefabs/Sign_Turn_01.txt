@@ -1,0 +1,103 @@
+InterfaceDescriptorData 51124DC1-CCA3-4C87-97F1-D5DF796A11B3
+    $::DynamicDataContainer
+        $::DataContainer
+        Fields::array
+            member::DataField
+                Value *nullString*
+                ValueRef *nullGuid*
+                Id 159552479
+                AccessType FieldAccessType_Target
+    InputEvents *nullArray*
+    OutputEvents *nullArray*
+    InputLinks *nullArray*
+    OutputLinks *nullArray*
+ReferenceObjectData 0D7479D2-63AE-4727-8FA5-DE43076F1EE1
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x 0.0
+            y 0.0
+            z 0.0
+    Blueprint objects/signsborder_01/sign_pipe3m_01/DCAB2905-C498-7375-76FF-B0B88600B89D
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+ReferenceObjectData 9361D335-60B2-48F7-9B05-421DF68EA5EC
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 1
+        IsPropertyConnectionTarget 2
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x -1.0
+            y -6.2783295e-07
+            z 6.311734e-21
+        up::Vec3
+            x 6.2783295e-07
+            y -1.0
+            z -7.096101e-07
+        forward::Vec3
+            x 4.4551662e-13
+            y -7.096101e-07
+            z 1.0
+        trans::Vec3
+            x -0.011428833
+            y 2.5073166
+            z 0.0
+    Blueprint objects/signsborder_01/sign_followdirection_01/88045F0B-2C15-4186-EC57-FB02875AD763
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable True
+    Excluded False
+SpatialPrefabBlueprint 7185E7F4-8FB6-5CD5-BB8C-EEB370B1AA29 #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name Levels/XP3_Desert/Prefabs/Sign_Turn_01
+                    PropertyConnections::array
+                        member::PropertyConnection
+                            Source 51124DC1-CCA3-4C87-97F1-D5DF796A11B3
+                            Target 9361D335-60B2-48F7-9B05-421DF68EA5EC
+                            SourceFieldId 159552479
+                            TargetFieldId -409930682
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source 0D7479D2-63AE-4727-8FA5-DE43076F1EE1
+                        Target 9361D335-60B2-48F7-9B05-421DF68EA5EC
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -274579609
+                        TargetType EventConnectionTargetType_Server
+                Descriptor 51124DC1-CCA3-4C87-97F1-D5DF796A11B3
+                NeedNetworkId False
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 0D7479D2-63AE-4727-8FA5-DE43076F1EE1
+            member 9361D335-60B2-48F7-9B05-421DF68EA5EC
