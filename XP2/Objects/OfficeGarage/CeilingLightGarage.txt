@@ -1,0 +1,125 @@
+EffectReferenceObjectData DC6B4D90-3628-4273-AB2C-84F12CBBCAA1
+    $::ReferenceObjectData
+        $::GameObjectData
+            $::GameDataContainer
+                $::DataContainer
+            IsEventConnectionTarget 0
+            IsPropertyConnectionTarget 3
+            IndexInBlueprint 2
+        BlueprintTransform::LinearTransform
+            right::Vec3
+                x 1.0
+                y 0.0
+                z 0.0
+            up::Vec3
+                x 0.0
+                y 1.0
+                z 0.0
+            forward::Vec3
+                x 0.0
+                y 0.0
+                z 1.0
+            trans::Vec3
+                x 0.017382354
+                y -0.18135306
+                z 0.090843976
+        Blueprint fx/dlc/xp2/ambient/levelspecific/mp_office/fx_dlc2_mp_office_ceilinglight_dust/13EF9377-6F0E-4FA9-A53D-194FFD4B22A9
+        ObjectVariation *nullGuid*
+        StreamRealm StreamRealm_None
+        CastSunShadowEnable False
+        Excluded False
+    AutoStart True
+ReferenceObjectData 75CD6BF1-8494-4E5E-9D85-C734330F452E
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 3
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 0
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 1.0
+            y 0.0
+            z 0.0
+        up::Vec3
+            x 0.0
+            y 1.0
+            z 0.0
+        forward::Vec3
+            x 0.0
+            y 0.0
+            z 1.0
+        trans::Vec3
+            x -0.0010981909
+            y -0.03927353
+            z 0.00096225
+    Blueprint xp2/objects/office/props/lightceiling_01_garage/AFDE029C-FA49-466A-B675-A336DEAF98CF
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable False
+    Excluded False
+ReferenceObjectData 76AD5299-AE46-473C-A215-D3B06C1D7A5B
+    $::GameObjectData
+        $::GameDataContainer
+            $::DataContainer
+        IsEventConnectionTarget 2
+        IsPropertyConnectionTarget 3
+        IndexInBlueprint 1
+    BlueprintTransform::LinearTransform
+        right::Vec3
+            x 0.21447816
+            y 7.502109e-11
+            z 1.9307278
+        up::Vec3
+            x 1.4984674
+            y -0.008160966
+            z -0.16645975
+        forward::Vec3
+            x 0.004120007
+            y 0.7658266
+            z -0.00045767782
+        trans::Vec3
+            x -0.049173832
+            y -0.17424025
+            z 0.006814007
+    Blueprint levels/xp2_office/lighting/lightconegarage/9ACD320B-E61F-77CD-EE97-CADB60F5CED0
+    ObjectVariation *nullGuid*
+    StreamRealm StreamRealm_None
+    CastSunShadowEnable False
+    Excluded False
+SpatialPrefabBlueprint CB1977E4-9928-5405-19F3-F190C9CBD10E #primary instance
+    $::PrefabBlueprint
+        $::Blueprint
+            $::EntityBusData
+                $::DataBusData
+                    $::Asset
+                        $::DataContainer
+                        Name XP2/Objects/OfficeGarage/CeilingLightGarage
+                    PropertyConnections *nullArray*
+                    LinkConnections *nullArray*
+                EventConnections::array
+                    member::EventConnection
+                        Source 75CD6BF1-8494-4E5E-9D85-C734330F452E
+                        Target DC6B4D90-3628-4273-AB2C-84F12CBBCAA1
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id 2089401213
+                        TargetType EventConnectionTargetType_Client
+                    member::EventConnection
+                        Source 75CD6BF1-8494-4E5E-9D85-C734330F452E
+                        Target 76AD5299-AE46-473C-A215-D3B06C1D7A5B
+                        SourceEvent::EventSpec
+                            Id -1452333337
+                        TargetEvent::EventSpec
+                            Id -117303631
+                        TargetType EventConnectionTargetType_ClientAndServer
+                Descriptor *nullGuid*
+                NeedNetworkId False
+                InterfaceHasConnections False
+                AlwaysCreateEntityBusClient False
+                AlwaysCreateEntityBusServer False
+        Objects::array
+            member 75CD6BF1-8494-4E5E-9D85-C734330F452E
+            member 76AD5299-AE46-473C-A215-D3B06C1D7A5B
+            member DC6B4D90-3628-4273-AB2C-84F12CBBCAA1
