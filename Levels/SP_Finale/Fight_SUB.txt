@@ -97,7 +97,7 @@ InterfaceDescriptorData 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
         member::DynamicEvent
             Id 1758395631
         member::DynamicEvent
-            Id 1223765815
+            Id EventID.Finished
     InputLinks *nullArray*
     OutputLinks::array
         member::DynamicLink
@@ -1598,7 +1598,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             member::PropertyConnection
                                 Source levels/sp_finale/fight_sub/layer4_fight_bossfight/CC9B0F82-D156-4D48-AA60-C223FB73DDB0
                                 Target levels/sp_finale/fight_sub/layer4_fight_bossfight/6981BD30-AF0A-4DB1-9DC2-A29ABCB6B3F3
-                                SourceFieldId 193453899
+                                SourceFieldId EventID.Out
                                 TargetFieldId 2089448296
                             member::PropertyConnection
                                 Source levels/sp_finale/fight_sub/layer4_fight_bossfight/62A54E78-35DE-4376-B425-054F7E1E1958
@@ -1766,55 +1766,55 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/285AF1D9-CA14-4901-AE79-5A63CCF3DADA
                             Target levels/sp_finale/fight_sub/layer1_fight_log/5846E434-9842-4493-B5F8-D8547923898E
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/285AF1D9-CA14-4901-AE79-5A63CCF3DADA
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/E5E2A642-7035-4361-B6C0-85672AB57698
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -782826483
+                                Id EventID.MoveCharacter
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/285AF1D9-CA14-4901-AE79-5A63CCF3DADA
                             Target levels/sp_finale/fight_sub/layer1_fight_log/8DD4EE4D-EDCF-4391-B57F-802EF5B18AC7
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/E4D192C4-F57B-43A7-A4C3-5C0C990FA685
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/285AF1D9-CA14-4901-AE79-5A63CCF3DADA
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/035BF0DF-DCB6-4F9D-824F-A70FD5211FAC
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/E4D192C4-F57B-43A7-A4C3-5C0C990FA685
                             SourceEvent::EventSpec
-                                Id -213362971
+                                Id EventID.OnSaveDone
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/035BF0DF-DCB6-4F9D-824F-A70FD5211FAC
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/E4D192C4-F57B-43A7-A4C3-5C0C990FA685
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/483975EB-2378-483A-B979-E7692C921A28
                             Target 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
                             SourceEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetEvent::EventSpec
                                 Id 107784942
                             TargetType EventConnectionTargetType_Client
@@ -1870,7 +1870,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/483975EB-2378-483A-B979-E7692C921A28
                             Target 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
                             SourceEvent::EventSpec
-                                Id 1928776733
+                                Id EventID.Deactivate
                             TargetEvent::EventSpec
                                 Id 1080858463
                             TargetType EventConnectionTargetType_Client
@@ -1934,7 +1934,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/483975EB-2378-483A-B979-E7692C921A28
                             Target 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
                             SourceEvent::EventSpec
-                                Id 2134798598
+                                Id EventID.Success
                             TargetEvent::EventSpec
                                 Id 890570080
                             TargetType EventConnectionTargetType_Client
@@ -1944,21 +1944,21 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1778890842
                             TargetEvent::EventSpec
-                                Id 212633683
+                                Id EventID.Close
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/E091F0F7-0D34-44BC-A41B-B423E54D81D9
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/83A3F1E3-A16C-4FFC-8261-A69AB8F539FE
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/83A3F1E3-A16C-4FFC-8261-A69AB8F539FE
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/D12B4511-1E45-4FC7-90B3-34F246F045BB
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 134524629
                             TargetType EventConnectionTargetType_Server
@@ -1966,9 +1966,9 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/AB8B9952-AA44-4BB6-830B-BD0AFD083CB1
                             Target 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -1998,15 +1998,15 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/483975EB-2378-483A-B979-E7692C921A28
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
                             Target levels/sp_finale/fight_sub/layer1_fight_log/53DBF278-77C3-417D-875B-CBFFAE06E79D
                             SourceEvent::EventSpec
-                                Id -721579565
+                                Id EventID.TriggerProps
                             TargetEvent::EventSpec
                                 Id -1714679111
                             TargetType EventConnectionTargetType_Client
@@ -2014,15 +2014,15 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer1_fight_log/8DD4EE4D-EDCF-4391-B57F-802EF5B18AC7
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/E5E32592-9456-4CB7-83FA-1CA59F85FD78
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id 206074481
+                                Id EventID.Apply
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/E4D192C4-F57B-43A7-A4C3-5C0C990FA685
                             Target 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id -1353213205
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -2030,7 +2030,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/E4D192C4-F57B-43A7-A4C3-5C0C990FA685
                             Target 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 1724293362
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -2038,17 +2038,17 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/AB8B9952-AA44-4BB6-830B-BD0AFD083CB1
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/4AA4030B-41AC-49B7-AC90-7B4CC17AAC00
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/6A3DB470-4FD0-4A92-9090-AC3A35F4835B
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2056,7 +2056,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258556
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2064,7 +2064,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258555
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2072,7 +2072,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258554
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2080,7 +2080,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258553
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2088,7 +2088,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1480170086
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2096,7 +2096,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1480170083
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2104,7 +2104,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1480170084
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2112,7 +2112,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1480170085
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2120,7 +2120,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258553
                             TargetEvent::EventSpec
-                                Id 1736970756
+                                Id EventID.Increment
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2142,17 +2142,17 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/6A3DB470-4FD0-4A92-9090-AC3A35F4835B
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/E4A95003-C6AF-415A-8B40-C48B0B9B9F0E
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1736970756
+                                Id EventID.Increment
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/9C5A89DC-4B3A-41B9-98AD-88F030EFDDCF
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/6E9D6941-5D63-4D1D-926C-3BB46F95DF65
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2174,9 +2174,9 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/6E9D6941-5D63-4D1D-926C-3BB46F95DF65
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/BCD31053-9DA9-4D88-B8B5-495EC4E73D3B
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1736970756
+                                Id EventID.Increment
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2184,7 +2184,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258556
                             TargetEvent::EventSpec
-                                Id 1736970756
+                                Id EventID.Increment
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2192,7 +2192,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258555
                             TargetEvent::EventSpec
-                                Id 1736970756
+                                Id EventID.Increment
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2200,7 +2200,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258553
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2208,7 +2208,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258554
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2216,7 +2216,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258555
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2224,7 +2224,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258556
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
@@ -2232,7 +2232,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 978273428
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2240,15 +2240,15 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258556
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/6981BD30-AF0A-4DB1-9DC2-A29ABCB6B3F3
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/CF99D8EF-BF5C-4DA8-9B79-89FA910392B1
                             SourceEvent::EventSpec
-                                Id 1194874936
+                                Id EventID.OnDeactivated
                             TargetEvent::EventSpec
-                                Id 1928776733
+                                Id EventID.Deactivate
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2256,7 +2256,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 2061676408
                             TargetEvent::EventSpec
-                                Id 1736970756
+                                Id EventID.Increment
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
@@ -2264,7 +2264,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258554
                             TargetEvent::EventSpec
-                                Id 1736970756
+                                Id EventID.Increment
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -2272,7 +2272,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1684952950
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
@@ -2280,7 +2280,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1565139151
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -2288,15 +2288,15 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1684952950
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/F81DC806-0653-4002-B15D-747D808AB1FE
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id 1928776733
+                                Id EventID.Deactivate
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
@@ -2304,7 +2304,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 978273428
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -2312,23 +2312,23 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1684952950
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/E4D192C4-F57B-43A7-A4C3-5C0C990FA685
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/78BC1014-EF65-40D4-97DE-A3D66D52D954
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/78BC1014-EF65-40D4-97DE-A3D66D52D954
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/95A470A0-4E22-4D9C-B0E3-FCFD190FEF42
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/78BC1014-EF65-40D4-97DE-A3D66D52D954
@@ -2336,7 +2336,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 836314927
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/78BC1014-EF65-40D4-97DE-A3D66D52D954
@@ -2344,77 +2344,77 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -869833435
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/95A470A0-4E22-4D9C-B0E3-FCFD190FEF42
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/38730F1C-35C7-4BCA-A6B4-FD417025E29E
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/258E35F6-EB29-4120-BCDA-59556017907A
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/BE9930EE-D973-479D-AC72-E087237326A6
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/8B2F555E-E362-4515-BDE4-836B4B488F02
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/10DFB4CC-A545-400B-AED7-6BE5EDAB19BA
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/38730F1C-35C7-4BCA-A6B4-FD417025E29E
                             Target levels/sp_finale/fight_sub/layer1_fight_log/F54C4A13-D2FC-49C8-B09C-E7119E258A64
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/38730F1C-35C7-4BCA-A6B4-FD417025E29E
                             Target levels/sp_finale/fight_sub/layer1_fight_log/38FE2060-14E0-4168-980F-FF168E564FDF
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/38730F1C-35C7-4BCA-A6B4-FD417025E29E
                             Target levels/sp_finale/fight_sub/layer1_fight_log/A89561AE-70C7-423D-A0BE-E997795642C8
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/38730F1C-35C7-4BCA-A6B4-FD417025E29E
                             Target levels/sp_finale/fight_sub/layer1_fight_log/947AED31-7905-43F8-B3FC-45985F6D637F
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/38730F1C-35C7-4BCA-A6B4-FD417025E29E
                             Target levels/sp_finale/fight_sub/layer1_fight_log/C35F5272-4B90-4B4B-B11E-DA595E9A8068
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/BE9930EE-D973-479D-AC72-E087237326A6
                             Target levels/sp_finale/fight_sub/layer1_fight_log/F54C4A13-D2FC-49C8-B09C-E7119E258A64
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 800876559
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -2422,7 +2422,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/BE9930EE-D973-479D-AC72-E087237326A6
                             Target levels/sp_finale/fight_sub/layer1_fight_log/38FE2060-14E0-4168-980F-FF168E564FDF
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 800876559
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -2430,7 +2430,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/BE9930EE-D973-479D-AC72-E087237326A6
                             Target levels/sp_finale/fight_sub/layer1_fight_log/A89561AE-70C7-423D-A0BE-E997795642C8
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 800876559
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -2438,7 +2438,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/BE9930EE-D973-479D-AC72-E087237326A6
                             Target levels/sp_finale/fight_sub/layer1_fight_log/947AED31-7905-43F8-B3FC-45985F6D637F
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 800876559
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -2446,7 +2446,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/BE9930EE-D973-479D-AC72-E087237326A6
                             Target levels/sp_finale/fight_sub/layer1_fight_log/C35F5272-4B90-4B4B-B11E-DA595E9A8068
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 800876559
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -2454,7 +2454,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/10DFB4CC-A545-400B-AED7-6BE5EDAB19BA
                             Target levels/sp_finale/fight_sub/layer1_fight_log/F54C4A13-D2FC-49C8-B09C-E7119E258A64
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id -869833435
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -2462,7 +2462,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/10DFB4CC-A545-400B-AED7-6BE5EDAB19BA
                             Target levels/sp_finale/fight_sub/layer1_fight_log/38FE2060-14E0-4168-980F-FF168E564FDF
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id -869833435
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -2470,7 +2470,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/10DFB4CC-A545-400B-AED7-6BE5EDAB19BA
                             Target levels/sp_finale/fight_sub/layer1_fight_log/A89561AE-70C7-423D-A0BE-E997795642C8
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id -869833435
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -2478,7 +2478,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/10DFB4CC-A545-400B-AED7-6BE5EDAB19BA
                             Target levels/sp_finale/fight_sub/layer1_fight_log/947AED31-7905-43F8-B3FC-45985F6D637F
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id -869833435
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -2486,7 +2486,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/10DFB4CC-A545-400B-AED7-6BE5EDAB19BA
                             Target levels/sp_finale/fight_sub/layer1_fight_log/C35F5272-4B90-4B4B-B11E-DA595E9A8068
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id -869833435
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -2494,17 +2494,17 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/6981BD30-AF0A-4DB1-9DC2-A29ABCB6B3F3
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/AFF5D686-CBF2-4D1F-A2BB-FC82FA1D0720
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/F528100A-6C85-4888-AE09-227B9256F39E
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/DA994D71-D658-4CE8-A1D0-BA378F958406
                             SourceEvent::EventSpec
-                                Id -1434059356
+                                Id EventID.OnDone
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -2512,29 +2512,29 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -26108300
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/C95A3630-7A1C-403C-BEDD-67BECF923DBF
                             Target levels/sp_finale/fight_sub/layer1_fight_log/5846E434-9842-4493-B5F8-D8547923898E
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 777187609
+                                Id EventID.TakeControl
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/C95A3630-7A1C-403C-BEDD-67BECF923DBF
                             Target levels/sp_finale/fight_sub/layer1_fight_log/5846E434-9842-4493-B5F8-D8547923898E
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1999497757
+                                Id EventID.FireShot
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/DA994D71-D658-4CE8-A1D0-BA378F958406
                             Target 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 1758395631
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -2544,7 +2544,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 425708964
                             TargetEvent::EventSpec
-                                Id 1422740397
+                                Id EventID.FadeOut
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -2552,7 +2552,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1624789736
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -2560,23 +2560,23 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 425708964
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/31D2EFF1-BA73-4A79-9B6C-8701BFDC92EE
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/8BBCFF5C-E239-4F67-85C7-4CA4ACD9CC28
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1778993948
+                                Id EventID.FadeIn
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/E4D192C4-F57B-43A7-A4C3-5C0C990FA685
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/31D2EFF1-BA73-4A79-9B6C-8701BFDC92EE
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -2584,39 +2584,39 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1150497142
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/94A8A8DA-4158-4031-86BE-00740CF5D8F8
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/F7FA18E8-BE0C-4729-B8E1-B55E4848D1DD
                             SourceEvent::EventSpec
-                                Id -1193365339
+                                Id EventID.OnStarted
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/94A8A8DA-4158-4031-86BE-00740CF5D8F8
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/F7FA18E8-BE0C-4729-B8E1-B55E4848D1DD
                             SourceEvent::EventSpec
-                                Id 650265526
+                                Id EventID.OnFinished
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/3493C2B5-7F5E-4A71-B378-C6B796443166
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/D8ADEC03-9813-4632-AA7D-D64C6168B32F
                             SourceEvent::EventSpec
-                                Id -1193365339
+                                Id EventID.OnStarted
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/3493C2B5-7F5E-4A71-B378-C6B796443166
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/D8ADEC03-9813-4632-AA7D-D64C6168B32F
                             SourceEvent::EventSpec
-                                Id 650265526
+                                Id EventID.OnFinished
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -2624,15 +2624,15 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 766360394
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/A27916C6-DC53-4C52-BD5C-8D0936F4C94D
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/17B00DB4-575B-4D20-81CD-A76588CE23B5
                             SourceEvent::EventSpec
-                                Id -1193365339
+                                Id EventID.OnStarted
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -2640,7 +2640,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1317416889
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -2648,7 +2648,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1820071096
                             TargetEvent::EventSpec
-                                Id 229946160
+                                Id EventID.Reset
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -2656,7 +2656,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1820071096
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -2664,15 +2664,15 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 687878848
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/0A42F510-E392-44A2-9063-D8D9851AA2B3
                             Target levels/sp_finale/fight_sub/layer0_fight_art/D141BADA-9E31-4642-8CAE-BE212885B7D7
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
@@ -2680,15 +2680,15 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1565139151
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/587352CC-D6F6-4CF2-92CB-4967F24E3C80
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/035BF0DF-DCB6-4F9D-824F-A70FD5211FAC
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 2089420676
+                                Id EventID.Save
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
@@ -2704,7 +2704,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1565139151
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
@@ -2712,7 +2712,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1565139151
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
@@ -2720,7 +2720,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1565139151
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
@@ -2728,7 +2728,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1565139151
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
@@ -2736,7 +2736,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1565139151
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
@@ -2744,7 +2744,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1565139151
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
@@ -2752,13 +2752,13 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1565139151
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer0_fight_art/12B33E02-0EA8-49D5-AEB0-0E2E3F1C286B
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/587352CC-D6F6-4CF2-92CB-4967F24E3C80
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -2766,7 +2766,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer0_fight_art/8EA3C7C8-A872-4AA0-BC99-34B792E93C89
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/587352CC-D6F6-4CF2-92CB-4967F24E3C80
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
                                 Id 193450865
                             TargetType EventConnectionTargetType_Server
@@ -2774,7 +2774,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer0_fight_art/5E2B539A-6F41-4415-BDC7-2CCEC7E00810
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/587352CC-D6F6-4CF2-92CB-4967F24E3C80
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
                                 Id 193450870
                             TargetType EventConnectionTargetType_Server
@@ -2782,7 +2782,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer0_fight_art/AA6442CD-970C-492F-9E66-8D22CFFD49C1
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/587352CC-D6F6-4CF2-92CB-4967F24E3C80
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
                                 Id 193450871
                             TargetType EventConnectionTargetType_Server
@@ -2790,7 +2790,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer0_fight_art/9FF3C5D9-C8DC-4920-96FC-3B87246ADE8A
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/587352CC-D6F6-4CF2-92CB-4967F24E3C80
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
                                 Id 193450868
                             TargetType EventConnectionTargetType_Server
@@ -2798,7 +2798,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer0_fight_art/54F0C013-6539-480B-BD99-CED2A24256EF
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/587352CC-D6F6-4CF2-92CB-4967F24E3C80
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
                                 Id 193450869
                             TargetType EventConnectionTargetType_Server
@@ -2806,7 +2806,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer1_fight_log/4B276E61-9C3F-4C6B-8A0F-76129457B308
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/587352CC-D6F6-4CF2-92CB-4967F24E3C80
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
                                 Id 193450874
                             TargetType EventConnectionTargetType_Server
@@ -2814,7 +2814,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer1_fight_log/53DBF278-77C3-417D-875B-CBFFAE06E79D
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/587352CC-D6F6-4CF2-92CB-4967F24E3C80
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
                                 Id 193450875
                             TargetType EventConnectionTargetType_Server
@@ -2822,15 +2822,15 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/72A2CEA2-9D49-4E95-9021-23E6562EB742
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/483975EB-2378-483A-B979-E7692C921A28
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/72A2CEA2-9D49-4E95-9021-23E6562EB742
                             Target levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -450966878
                             TargetType EventConnectionTargetType_Client
@@ -2838,23 +2838,23 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/72A2CEA2-9D49-4E95-9021-23E6562EB742
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/E3F6FCAF-D3FD-424B-859F-59B00E139100
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 206074481
+                                Id EventID.Apply
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/72A2CEA2-9D49-4E95-9021-23E6562EB742
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/C1B77A08-498A-439C-B230-99F38F2F1547
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/8DD4EE4D-EDCF-4391-B57F-802EF5B18AC7
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/E10DEABA-83D4-4E7A-8047-C4730D7EB071
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -2862,7 +2862,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer1_fight_log/5846E434-9842-4493-B5F8-D8547923898E
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/E10DEABA-83D4-4E7A-8047-C4730D7EB071
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -2870,17 +2870,17 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/E10DEABA-83D4-4E7A-8047-C4730D7EB071
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/72A2CEA2-9D49-4E95-9021-23E6562EB742
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/AB8B9952-AA44-4BB6-830B-BD0AFD083CB1
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/E091F0F7-0D34-44BC-A41B-B423E54D81D9
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -2888,39 +2888,39 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1624789736
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/2B52BF7F-BA9C-41F7-84FC-4AB676BE6AA1
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/AB8B9952-AA44-4BB6-830B-BD0AFD083CB1
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/035BF0DF-DCB6-4F9D-824F-A70FD5211FAC
                             Target levels/sp_finale/fight_sub/layer1_fight_log/4B276E61-9C3F-4C6B-8A0F-76129457B308
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/1FC7C38A-7CDF-43D5-ADD9-829D4E1F112D
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/E9BD3DEB-9F36-4152-9158-40429A9E110B
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/1FC7C38A-7CDF-43D5-ADD9-829D4E1F112D
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/6981BD30-AF0A-4DB1-9DC2-A29ABCB6B3F3
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
@@ -2928,15 +2928,15 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1565139151
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/035BF0DF-DCB6-4F9D-824F-A70FD5211FAC
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/1FC7C38A-7CDF-43D5-ADD9-829D4E1F112D
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -2944,23 +2944,23 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1624789736
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/58252798-FF90-4EC1-AAE1-B69A35D2A2A8
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/5DA96A47-8F7A-47C4-A3B7-BE84D050B27B
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1422740397
+                                Id EventID.FadeOut
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer4_fight_bossfight/72A2CEA2-9D49-4E95-9021-23E6562EB742
                             Target levels/sp_finale/fight_sub/layer4_fight_bossfight/E5E2A642-7035-4361-B6C0-85672AB57698
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1560956492
+                                Id EventID.SetCurrentWeapon
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -2968,7 +2968,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1317416889
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -2976,7 +2976,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id -1317416889
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -2984,7 +2984,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1624789736
                             TargetEvent::EventSpec
-                                Id 193438506
+                                Id EventID.End
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_finale/fight_sub/layer1_fight_log/7D11930C-432A-414C-8632-41F5BC0DD8D7
@@ -2992,7 +2992,7 @@ SubWorldData FF354B68-6D21-45B2-AB6F-8EB98099865B #primary instance
                             SourceEvent::EventSpec
                                 Id 1624789736
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_Client
                     Descriptor 3E64B568-59AF-7ECF-DBD5-6F37A69E9F31
                     NeedNetworkId True

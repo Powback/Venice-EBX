@@ -4605,7 +4605,7 @@ InterfaceDescriptorData AF123E5C-C44C-95A7-A945-509EF6233272
         member::DynamicEvent
             Id -943241787
         member::DynamicEvent
-            Id 230748069
+            Id EventID.Start
         member::DynamicEvent
             Id -1385225928
         member::DynamicEvent
@@ -18384,7 +18384,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             member::PropertyConnection
                                 Source levels/sp_earthquake/meatmarket/layer4_meatmarketflow/31A4846F-1E0D-4D32-9C86-9DBA23573C20
                                 Target levels/sp_earthquake/meatmarket/layer1_meatmarketprops/AC7E9CC4-FED2-4A64-B2BB-BCFA33331829
-                                SourceFieldId 193453899
+                                SourceFieldId EventID.Out
                                 TargetFieldId -409930682
                             member::PropertyConnection
                                 Source levels/sp_earthquake/meatmarket/layer4_meatmarketflow/3A5DAE8B-C157-4AF1-BDEC-60B8C339CFEF
@@ -18409,7 +18409,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             member::PropertyConnection
                                 Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/7D83E819-2DE1-4ED5-8D80-713D0B1B1776
                                 Target levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/AF79539B-1CA9-491B-BF1E-257319B6A27D
-                                SourceFieldId 193453899
+                                SourceFieldId EventID.Out
                                 TargetFieldId 193450867
                             member::PropertyConnection
                                 Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/80E5D0C5-70B8-4D15-AA7C-8FC63EE4239B
@@ -18419,7 +18419,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             member::PropertyConnection
                                 Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/AF79539B-1CA9-491B-BF1E-257319B6A27D
                                 Target levels/sp_earthquake/meatmarket/layer7_meatmarketlogic/544E6996-A2F8-4980-AC5B-8BADAC94B060
-                                SourceFieldId 193453899
+                                SourceFieldId EventID.Out
                                 TargetFieldId 2085022312
                             member::PropertyConnection
                                 Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/004537A2-2184-47AF-A55D-9D987E6C47AE
@@ -18687,17 +18687,17 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/353F2BD4-1E7B-4886-8CD3-6CC3DEAC08AD
                             Target levels/sp_earthquake/meatmarket/layer7_meatmarketlogic/D9059B58-7F00-41B8-81FD-3D8DBD934516
                             SourceEvent::EventSpec
-                                Id -2018650136
+                                Id EventID.OnShowObjective
                             TargetEvent::EventSpec
-                                Id 2002318980
+                                Id EventID.ShowMarker
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/353F2BD4-1E7B-4886-8CD3-6CC3DEAC08AD
                             Target levels/sp_earthquake/meatmarket/layer7_meatmarketlogic/D9059B58-7F00-41B8-81FD-3D8DBD934516
                             SourceEvent::EventSpec
-                                Id -1157191321
+                                Id EventID.OnSuccess
                             TargetEvent::EventSpec
-                                Id -1643756729
+                                Id EventID.HideMarker
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -18705,7 +18705,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 404238510
                             TargetEvent::EventSpec
-                                Id 2134798598
+                                Id EventID.Success
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source AF123E5C-C44C-95A7-A945-509EF6233272
@@ -18713,23 +18713,23 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -1139715239
                             TargetEvent::EventSpec
-                                Id -800551927
+                                Id EventID.ShowObjective
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/07CF2861-5C73-46EA-A2F9-A5EDFE0466D6
                             Target levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/04C76B54-D585-4948-9499-A4A0133BC496
                             SourceEvent::EventSpec
-                                Id -1157191321
+                                Id EventID.OnSuccess
                             TargetEvent::EventSpec
-                                Id -800551927
+                                Id EventID.ShowObjective
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/04C76B54-D585-4948-9499-A4A0133BC496
                             Target levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/E63FFB4D-5CF2-4192-BB15-CA86825B3E30
                             SourceEvent::EventSpec
-                                Id -1157191321
+                                Id EventID.OnSuccess
                             TargetEvent::EventSpec
-                                Id -800551927
+                                Id EventID.ShowObjective
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source CDDC070C-6B36-4605-9C14-CA263A76E855
@@ -18737,7 +18737,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 211036638
                             TargetEvent::EventSpec
-                                Id 2134798598
+                                Id EventID.Success
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source CDDC070C-6B36-4605-9C14-CA263A76E855
@@ -18745,13 +18745,13 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -1680648339
                             TargetEvent::EventSpec
-                                Id 2134798598
+                                Id EventID.Success
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/E63FFB4D-5CF2-4192-BB15-CA86825B3E30
                             Target AF123E5C-C44C-95A7-A945-509EF6233272
                             SourceEvent::EventSpec
-                                Id -2018650136
+                                Id EventID.OnShowObjective
                             TargetEvent::EventSpec
                                 Id 568106793
                             TargetType EventConnectionTargetType_Server
@@ -18759,7 +18759,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/E63FFB4D-5CF2-4192-BB15-CA86825B3E30
                             Target AF123E5C-C44C-95A7-A945-509EF6233272
                             SourceEvent::EventSpec
-                                Id -1157191321
+                                Id EventID.OnSuccess
                             TargetEvent::EventSpec
                                 Id 1596763047
                             TargetType EventConnectionTargetType_Server
@@ -18769,29 +18769,29 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 787236752
                             TargetEvent::EventSpec
-                                Id 2134798598
+                                Id EventID.Success
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/606C50D7-2A9D-4561-933F-B3B11BF9A90D
                             Target levels/sp_earthquake/meatmarket/layer7_meatmarketlogic/7848F81B-DDDA-4CFE-A97C-2DE56E83164D
                             SourceEvent::EventSpec
-                                Id -2018650136
+                                Id EventID.OnShowObjective
                             TargetEvent::EventSpec
-                                Id 2002318980
+                                Id EventID.ShowMarker
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/606C50D7-2A9D-4561-933F-B3B11BF9A90D
                             Target levels/sp_earthquake/meatmarket/layer7_meatmarketlogic/7848F81B-DDDA-4CFE-A97C-2DE56E83164D
                             SourceEvent::EventSpec
-                                Id -1157191321
+                                Id EventID.OnSuccess
                             TargetEvent::EventSpec
-                                Id -1643756729
+                                Id EventID.HideMarker
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/30F85834-7314-4BDB-B313-156F2ED91433
                             Target AF123E5C-C44C-95A7-A945-509EF6233272
                             SourceEvent::EventSpec
-                                Id -2018650136
+                                Id EventID.OnShowObjective
                             TargetEvent::EventSpec
                                 Id -1287950365
                             TargetType EventConnectionTargetType_Server
@@ -18801,13 +18801,13 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -379154283
                             TargetEvent::EventSpec
-                                Id -800551927
+                                Id EventID.ShowObjective
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/30F85834-7314-4BDB-B313-156F2ED91433
                             Target AF123E5C-C44C-95A7-A945-509EF6233272
                             SourceEvent::EventSpec
-                                Id -1157191321
+                                Id EventID.OnSuccess
                             TargetEvent::EventSpec
                                 Id -692444243
                             TargetType EventConnectionTargetType_Server
@@ -18815,23 +18815,23 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/A0D283E3-76E3-453C-8884-843CA70BBC6D
                             Target levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/07CF2861-5C73-46EA-A2F9-A5EDFE0466D6
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -800551927
+                                Id EventID.ShowObjective
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/30F85834-7314-4BDB-B313-156F2ED91433
                             Target levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/A0D283E3-76E3-453C-8884-843CA70BBC6D
                             SourceEvent::EventSpec
-                                Id -1157191321
+                                Id EventID.OnSuccess
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/30F85834-7314-4BDB-B313-156F2ED91433
                             Target AF123E5C-C44C-95A7-A945-509EF6233272
                             SourceEvent::EventSpec
-                                Id -1157191321
+                                Id EventID.OnSuccess
                             TargetEvent::EventSpec
                                 Id 568106793
                             TargetType EventConnectionTargetType_Server
@@ -18839,63 +18839,63 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/E63FFB4D-5CF2-4192-BB15-CA86825B3E30
                             Target levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/D0FB346D-4A27-4C49-BA73-C7FCA63161CB
                             SourceEvent::EventSpec
-                                Id -1157191321
+                                Id EventID.OnSuccess
                             TargetEvent::EventSpec
-                                Id 2134798598
+                                Id EventID.Success
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/30F85834-7314-4BDB-B313-156F2ED91433
                             Target levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/92C6B7B8-54F6-49F1-93BA-29E0FCCDADDD
                             SourceEvent::EventSpec
-                                Id -1157191321
+                                Id EventID.OnSuccess
                             TargetEvent::EventSpec
-                                Id 2134798598
+                                Id EventID.Success
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/E63FFB4D-5CF2-4192-BB15-CA86825B3E30
                             Target levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/5B5554DE-6D7E-4597-89D5-3241ED244C24
                             SourceEvent::EventSpec
-                                Id -1157191321
+                                Id EventID.OnSuccess
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/D76FCE44-2F3A-4248-9813-040E21DFA605
                             Target levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/1C6D8D1E-0A0D-43D1-BFB9-4882D28C6DE0
                             SourceEvent::EventSpec
-                                Id -1157191321
+                                Id EventID.OnSuccess
                             TargetEvent::EventSpec
-                                Id 2134798598
+                                Id EventID.Success
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/B37362D3-91A2-4AEA-A612-88E6E9EF2402
                             Target levels/sp_earthquake/meatmarket/layer7_meatmarketlogic/105CC402-4003-4AF1-925D-1C2DF49F652D
                             SourceEvent::EventSpec
-                                Id -2018650136
+                                Id EventID.OnShowObjective
                             TargetEvent::EventSpec
-                                Id 2002318980
+                                Id EventID.ShowMarker
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/B37362D3-91A2-4AEA-A612-88E6E9EF2402
                             Target levels/sp_earthquake/meatmarket/layer7_meatmarketlogic/105CC402-4003-4AF1-925D-1C2DF49F652D
                             SourceEvent::EventSpec
-                                Id -1157191321
+                                Id EventID.OnSuccess
                             TargetEvent::EventSpec
-                                Id -1643756729
+                                Id EventID.HideMarker
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/5B5554DE-6D7E-4597-89D5-3241ED244C24
                             Target levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/B37362D3-91A2-4AEA-A612-88E6E9EF2402
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -800551927
+                                Id EventID.ShowObjective
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/30F85834-7314-4BDB-B313-156F2ED91433
                             Target levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/7A766745-18C3-407F-BACF-D8496E26899F
                             SourceEvent::EventSpec
-                                Id -2018650136
+                                Id EventID.OnShowObjective
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -18911,9 +18911,9 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/7A766745-18C3-407F-BACF-D8496E26899F
                             Target levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/30F85834-7314-4BDB-B313-156F2ED91433
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 2134798598
+                                Id EventID.Success
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source CDDC070C-6B36-4605-9C14-CA263A76E855
@@ -19089,7 +19089,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -1249688659
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19097,7 +19097,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 1753377112
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19105,7 +19105,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 496792155
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19113,7 +19113,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -183044827
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19121,7 +19121,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -695169175
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19129,7 +19129,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -2140047821
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19137,7 +19137,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 1145287162
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19145,7 +19145,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 920453359
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19153,7 +19153,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -1467860984
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19161,7 +19161,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 1792088762
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19169,13 +19169,13 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -1970263489
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer7_meatmarketlogic/EB4B7D4C-7755-47EE-B572-FD2E38785669
                             Target 8BBD6243-92E0-440E-A0CC-3823AA33B04D
                             SourceEvent::EventSpec
-                                Id 1577401599
+                                Id EventID.OnPlayerEnter
                             TargetEvent::EventSpec
                                 Id -758561512
                             TargetType EventConnectionTargetType_Server
@@ -19193,7 +19193,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 96937015
                             TargetEvent::EventSpec
-                                Id -834116283
+                                Id EventID.Unspawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19201,7 +19201,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 1413327472
                             TargetEvent::EventSpec
-                                Id -834116283
+                                Id EventID.Unspawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19209,7 +19209,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 273342714
                             TargetEvent::EventSpec
-                                Id -834116283
+                                Id EventID.Unspawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19217,7 +19217,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -77804560
                             TargetEvent::EventSpec
-                                Id -834116283
+                                Id EventID.Unspawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19225,7 +19225,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 829513362
                             TargetEvent::EventSpec
-                                Id -834116283
+                                Id EventID.Unspawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19233,7 +19233,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -38268399
                             TargetEvent::EventSpec
-                                Id -834116283
+                                Id EventID.Unspawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19289,7 +19289,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 1072305516
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19303,7 +19303,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source levels/sp_earthquake/meatmarket/layer7_meatmarketlogic/EB4B7D4C-7755-47EE-B572-FD2E38785669
                             Target 8BBD6243-92E0-440E-A0CC-3823AA33B04D
                             SourceEvent::EventSpec
-                                Id 1585750060
+                                Id EventID.OnPlayerLeave
                             TargetEvent::EventSpec
                                 Id -988179503
                             TargetType EventConnectionTargetType_Server
@@ -19399,9 +19399,9 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/9FC9F337-F07F-4624-9F9A-50EB9DFDF0F8
                             Target levels/sp_earthquake/meatmarket/layer7_meatmarketlogic/544E6996-A2F8-4980-AC5B-8BADAC94B060
                             SourceEvent::EventSpec
-                                Id -1193365339
+                                Id EventID.OnStarted
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/9FC9F337-F07F-4624-9F9A-50EB9DFDF0F8
@@ -19409,7 +19409,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -420296989
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/9FC9F337-F07F-4624-9F9A-50EB9DFDF0F8
@@ -19417,7 +19417,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -956591272
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/9FC9F337-F07F-4624-9F9A-50EB9DFDF0F8
@@ -19425,7 +19425,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -978304931
                             TargetEvent::EventSpec
-                                Id 1559635997
+                                Id EventID.FireStart
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/9FC9F337-F07F-4624-9F9A-50EB9DFDF0F8
@@ -19433,7 +19433,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -1439274331
                             TargetEvent::EventSpec
-                                Id 1999519237
+                                Id EventID.FireStop
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/9FC9F337-F07F-4624-9F9A-50EB9DFDF0F8
@@ -19441,7 +19441,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 644999118
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/9FC9F337-F07F-4624-9F9A-50EB9DFDF0F8
@@ -19449,7 +19449,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 644999118
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/9FC9F337-F07F-4624-9F9A-50EB9DFDF0F8
@@ -19457,15 +19457,15 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -1671794401
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/72AB9DFC-77A3-4DBA-BF71-B461EDCA35FA
                             Target levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/9FC9F337-F07F-4624-9F9A-50EB9DFDF0F8
                             SourceEvent::EventSpec
-                                Id -1193365339
+                                Id EventID.OnStarted
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/80E5D0C5-70B8-4D15-AA7C-8FC63EE4239B
@@ -19473,7 +19473,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -1671794401
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/361FBB48-973B-42B8-A684-647548712C13
@@ -19481,7 +19481,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -639611231
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/361FBB48-973B-42B8-A684-647548712C13
@@ -19489,7 +19489,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -291725310
                             TargetEvent::EventSpec
-                                Id 1559635997
+                                Id EventID.FireStart
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/361FBB48-973B-42B8-A684-647548712C13
@@ -19497,15 +19497,15 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -659592454
                             TargetEvent::EventSpec
-                                Id 1999519237
+                                Id EventID.FireStop
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/361FBB48-973B-42B8-A684-647548712C13
                             Target levels/sp_earthquake/meatmarket/layer3_meatmarketlighting/EF6ADBC6-835B-4AEA-A9C4-1FDA81F8CD25
                             SourceEvent::EventSpec
-                                Id -1193365339
+                                Id EventID.OnStarted
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/9FC9F337-F07F-4624-9F9A-50EB9DFDF0F8
@@ -19513,7 +19513,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -420296989
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/9FC9F337-F07F-4624-9F9A-50EB9DFDF0F8
@@ -19521,7 +19521,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -956591272
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/9FC9F337-F07F-4624-9F9A-50EB9DFDF0F8
@@ -19529,7 +19529,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 1892388418
                             TargetEvent::EventSpec
-                                Id 1559635997
+                                Id EventID.FireStart
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/9FC9F337-F07F-4624-9F9A-50EB9DFDF0F8
@@ -19537,23 +19537,23 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 1932710861
                             TargetEvent::EventSpec
-                                Id 1999519237
+                                Id EventID.FireStop
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/9FC9F337-F07F-4624-9F9A-50EB9DFDF0F8
                             Target levels/sp_earthquake/meatmarket/layer7_meatmarketlogic/BD6A7B02-5900-4520-9D76-3E9F74E6377E
                             SourceEvent::EventSpec
-                                Id -1193365339
+                                Id EventID.OnStarted
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer8_meatmarketvenom/9FC9F337-F07F-4624-9F9A-50EB9DFDF0F8
                             Target levels/sp_earthquake/meatmarket/layer7_meatmarketlogic/BD6A7B02-5900-4520-9D76-3E9F74E6377E
                             SourceEvent::EventSpec
-                                Id 650265526
+                                Id EventID.OnFinished
                             TargetEvent::EventSpec
-                                Id -834116283
+                                Id EventID.Unspawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source AF123E5C-C44C-95A7-A945-509EF6233272
@@ -19561,13 +19561,13 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -370934947
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 1F575873-1E63-46D6-83A4-CB42AE3E8CEC
                             Target levels/sp_earthquake/meatmarket/layer4_meatmarketflow/BEFEFB8C-EC25-4947-816D-042B8723F745
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -19575,7 +19575,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source AF123E5C-C44C-95A7-A945-509EF6233272
                             Target levels/sp_earthquake/meatmarket/layer4_meatmarketflow/BEFEFB8C-EC25-4947-816D-042B8723F745
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -19583,23 +19583,23 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source levels/sp_earthquake/meatmarket/layer4_meatmarketflow/BEFEFB8C-EC25-4947-816D-042B8723F745
                             Target 1F575873-1E63-46D6-83A4-CB42AE3E8CEC
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 1F575873-1E63-46D6-83A4-CB42AE3E8CEC
                             Target CDDC070C-6B36-4605-9C14-CA263A76E855
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source CDDC070C-6B36-4605-9C14-CA263A76E855
                             Target levels/sp_earthquake/meatmarket/layer4_meatmarketflow/8C280B78-DE96-43E1-937F-1A5F7C9B457E
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -19615,41 +19615,41 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source levels/sp_earthquake/meatmarket/layer4_meatmarketflow/8C280B78-DE96-43E1-937F-1A5F7C9B457E
                             Target CDDC070C-6B36-4605-9C14-CA263A76E855
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 1F575873-1E63-46D6-83A4-CB42AE3E8CEC
                             Target A8967D13-3C44-4569-95FE-DC60CC64F4B1
                             SourceEvent::EventSpec
-                                Id -304910761
+                                Id EventID.OnStreamedOut
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer4_meatmarketflow/9B447AE7-59FB-4457-AD8E-B296EE502AFD
                             Target A8967D13-3C44-4569-95FE-DC60CC64F4B1
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source CDDC070C-6B36-4605-9C14-CA263A76E855
                             Target 8BBD6243-92E0-440E-A0CC-3823AA33B04D
                             SourceEvent::EventSpec
-                                Id -304910761
+                                Id EventID.OnStreamedOut
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer4_meatmarketflow/0D93ADA0-8347-46BC-85CB-D6EF2FFFA61E
                             Target 8BBD6243-92E0-440E-A0CC-3823AA33B04D
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19663,7 +19663,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source A8967D13-3C44-4569-95FE-DC60CC64F4B1
                             Target levels/sp_earthquake/meatmarket/layer4_meatmarketflow/9B447AE7-59FB-4457-AD8E-B296EE502AFD
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -19679,7 +19679,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
                             Target levels/sp_earthquake/meatmarket/layer4_meatmarketflow/0D93ADA0-8347-46BC-85CB-D6EF2FFFA61E
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -19697,7 +19697,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -421663098
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source AF123E5C-C44C-95A7-A945-509EF6233272
@@ -19705,13 +19705,13 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -421663098
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 1F575873-1E63-46D6-83A4-CB42AE3E8CEC
                             Target levels/sp_earthquake/meatmarket/layer4_meatmarketflow/1FF33BDC-70AD-4776-88A4-B1EB0942DAA2
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -19719,7 +19719,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source CDDC070C-6B36-4605-9C14-CA263A76E855
                             Target levels/sp_earthquake/meatmarket/layer4_meatmarketflow/1FF33BDC-70AD-4776-88A4-B1EB0942DAA2
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
                                 Id 193450865
                             TargetType EventConnectionTargetType_Server
@@ -19727,7 +19727,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source levels/sp_earthquake/meatmarket/layer4_meatmarketflow/1FF33BDC-70AD-4776-88A4-B1EB0942DAA2
                             Target 1F575873-1E63-46D6-83A4-CB42AE3E8CEC
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -421663098
                             TargetType EventConnectionTargetType_Server
@@ -19745,7 +19745,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -1385225928
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source AF123E5C-C44C-95A7-A945-509EF6233272
@@ -19753,13 +19753,13 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -1385225928
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source CDDC070C-6B36-4605-9C14-CA263A76E855
                             Target levels/sp_earthquake/meatmarket/layer4_meatmarketflow/AAEE0DFD-B2E8-4130-96CF-09B1E0947F43
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -19767,7 +19767,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source A8967D13-3C44-4569-95FE-DC60CC64F4B1
                             Target levels/sp_earthquake/meatmarket/layer4_meatmarketflow/AAEE0DFD-B2E8-4130-96CF-09B1E0947F43
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
                                 Id 193450865
                             TargetType EventConnectionTargetType_Server
@@ -19775,7 +19775,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source levels/sp_earthquake/meatmarket/layer4_meatmarketflow/AAEE0DFD-B2E8-4130-96CF-09B1E0947F43
                             Target CDDC070C-6B36-4605-9C14-CA263A76E855
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -315848429
                             TargetType EventConnectionTargetType_Server
@@ -19791,7 +19791,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source A8967D13-3C44-4569-95FE-DC60CC64F4B1
                             Target levels/sp_earthquake/meatmarket/layer4_meatmarketflow/436B4CD8-AC73-41BE-901A-9F1D8A106564
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -19799,7 +19799,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
                             Target levels/sp_earthquake/meatmarket/layer4_meatmarketflow/436B4CD8-AC73-41BE-901A-9F1D8A106564
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
                                 Id 193450865
                             TargetType EventConnectionTargetType_Server
@@ -19809,7 +19809,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -1780463502
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source AF123E5C-C44C-95A7-A945-509EF6233272
@@ -19817,15 +19817,15 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -1780463502
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer4_meatmarketflow/436B4CD8-AC73-41BE-901A-9F1D8A106564
                             Target 8BBD6243-92E0-440E-A0CC-3823AA33B04D
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19833,13 +19833,13 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 673366900
                             TargetEvent::EventSpec
-                                Id 569636471
+                                Id EventID.StreamOut
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source A8967D13-3C44-4569-95FE-DC60CC64F4B1
                             Target AF123E5C-C44C-95A7-A945-509EF6233272
                             SourceEvent::EventSpec
-                                Id -304910761
+                                Id EventID.OnStreamedOut
                             TargetEvent::EventSpec
                                 Id -286519957
                             TargetType EventConnectionTargetType_Server
@@ -19849,7 +19849,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -1592907383
                             TargetEvent::EventSpec
-                                Id 2134798598
+                                Id EventID.Success
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source A8967D13-3C44-4569-95FE-DC60CC64F4B1
@@ -19857,7 +19857,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -1592907383
                             TargetEvent::EventSpec
-                                Id -800551927
+                                Id EventID.ShowObjective
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19865,7 +19865,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 673366900
                             TargetEvent::EventSpec
-                                Id 2134798598
+                                Id EventID.Success
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -19873,23 +19873,23 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 673366900
                             TargetEvent::EventSpec
-                                Id -800551927
+                                Id EventID.ShowObjective
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer4_meatmarketflow/0D93ADA0-8347-46BC-85CB-D6EF2FFFA61E
                             Target levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/606C50D7-2A9D-4561-933F-B3B11BF9A90D
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 2134798598
+                                Id EventID.Success
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer4_meatmarketflow/0D93ADA0-8347-46BC-85CB-D6EF2FFFA61E
                             Target levels/sp_earthquake/meatmarket/layer11_meatmarketobjectives/353F2BD4-1E7B-4886-8CD3-6CC3DEAC08AD
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -800551927
+                                Id EventID.ShowObjective
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source CDDC070C-6B36-4605-9C14-CA263A76E855
@@ -19897,7 +19897,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 1144306064
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source CDDC070C-6B36-4605-9C14-CA263A76E855
@@ -19905,7 +19905,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 1144306064
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source CDDC070C-6B36-4605-9C14-CA263A76E855
@@ -19919,15 +19919,15 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source levels/sp_earthquake/meatmarket/layer4_meatmarketflow/C76A208D-62ED-4A63-98D5-312C38E68F46
                             Target CDDC070C-6B36-4605-9C14-CA263A76E855
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 569636471
+                                Id EventID.StreamOut
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer4_meatmarketflow/9B447AE7-59FB-4457-AD8E-B296EE502AFD
                             Target levels/sp_earthquake/meatmarket/layer4_meatmarketflow/C76A208D-62ED-4A63-98D5-312C38E68F46
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -19937,13 +19937,13 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -1642233231
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source CDDC070C-6B36-4605-9C14-CA263A76E855
                             Target AF123E5C-C44C-95A7-A945-509EF6233272
                             SourceEvent::EventSpec
-                                Id 641512606
+                                Id EventID.OnStreamedIn
                             TargetEvent::EventSpec
                                 Id 234019115
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -19959,97 +19959,97 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source AF123E5C-C44C-95A7-A945-509EF6233272
                             Target levels/sp_earthquake/meatmarket/layer9_meatmarketeffects/7851214F-C54B-42EE-94C2-4090085CF318
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source AF123E5C-C44C-95A7-A945-509EF6233272
                             Target levels/sp_earthquake/meatmarket/layer9_meatmarketeffects/ECCED241-BB85-4254-A0B1-28942363FE0D
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source AF123E5C-C44C-95A7-A945-509EF6233272
                             Target levels/sp_earthquake/meatmarket/layer9_meatmarketeffects/4B9B41C0-4E76-4DB0-B29E-D7431D4EEFC0
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source AF123E5C-C44C-95A7-A945-509EF6233272
                             Target levels/sp_earthquake/meatmarket/layer9_meatmarketeffects/5F854371-645E-4F38-BCD8-4AE5EEEC0C45
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source AF123E5C-C44C-95A7-A945-509EF6233272
                             Target levels/sp_earthquake/meatmarket/layer9_meatmarketeffects/83B54C39-9500-4899-868A-716705CF1FAE
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source AF123E5C-C44C-95A7-A945-509EF6233272
                             Target levels/sp_earthquake/meatmarket/layer9_meatmarketeffects/8C7F3CE1-0F2F-48F8-AD3B-7783C63AB10B
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source AF123E5C-C44C-95A7-A945-509EF6233272
                             Target levels/sp_earthquake/meatmarket/layer9_meatmarketeffects/F4A0EE5E-3D58-4453-BFE6-8D54826AB79E
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source AF123E5C-C44C-95A7-A945-509EF6233272
                             Target levels/sp_earthquake/meatmarket/layer9_meatmarketeffects/1D845E26-FD58-43CA-A9B3-D723FD06D01B
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source AF123E5C-C44C-95A7-A945-509EF6233272
                             Target levels/sp_earthquake/meatmarket/layer9_meatmarketeffects/F8022AF4-0155-4304-A3DC-F2DE181484BC
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source AF123E5C-C44C-95A7-A945-509EF6233272
                             Target levels/sp_earthquake/meatmarket/layer9_meatmarketeffects/6B8D1674-1248-4ACB-99C6-2289E6BC1421
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source AF123E5C-C44C-95A7-A945-509EF6233272
                             Target levels/sp_earthquake/meatmarket/layer9_meatmarketeffects/299E1BCD-BCF7-46B1-86C6-D1E50EDA6F76
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source AF123E5C-C44C-95A7-A945-509EF6233272
                             Target levels/sp_earthquake/meatmarket/layer9_meatmarketeffects/BF07D074-5EC4-4C7C-956C-7F46BA69420D
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source CDDC070C-6B36-4605-9C14-CA263A76E855
@@ -20079,17 +20079,17 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source levels/sp_earthquake/meatmarket/layer4_meatmarketflow/C76A208D-62ED-4A63-98D5-312C38E68F46
                             Target levels/sp_earthquake/meatmarket/layer4_meatmarketflow/3A5DAE8B-C157-4AF1-BDEC-60B8C339CFEF
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer7_meatmarketlogic/D8FB3860-E945-4875-A6D4-61030CB464CB
                             Target levels/sp_earthquake/meatmarket/layer4_meatmarketflow/27FF962C-02E1-475A-AE7F-C610C925DA48
                             SourceEvent::EventSpec
-                                Id -1447021378
+                                Id EventID.OnInteraction
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source 1F575873-1E63-46D6-83A4-CB42AE3E8CEC
@@ -20097,13 +20097,13 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -1384968632
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer7_meatmarketlogic/D8FB3860-E945-4875-A6D4-61030CB464CB
                             Target 1F575873-1E63-46D6-83A4-CB42AE3E8CEC
                             SourceEvent::EventSpec
-                                Id -1447021378
+                                Id EventID.OnInteraction
                             TargetEvent::EventSpec
                                 Id -430906855
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -20111,7 +20111,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source levels/sp_earthquake/meatmarket/layer7_meatmarketlogic/D8FB3860-E945-4875-A6D4-61030CB464CB
                             Target AF123E5C-C44C-95A7-A945-509EF6233272
                             SourceEvent::EventSpec
-                                Id -1447021378
+                                Id EventID.OnInteraction
                             TargetEvent::EventSpec
                                 Id 1596763047
                             TargetType EventConnectionTargetType_Server
@@ -20119,9 +20119,9 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             Source levels/sp_earthquake/meatmarket/layer4_meatmarketflow/AAEE0DFD-B2E8-4130-96CF-09B1E0947F43
                             Target levels/sp_earthquake/meatmarket/layer4_meatmarketflow/27FF962C-02E1-475A-AE7F-C610C925DA48
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source CDDC070C-6B36-4605-9C14-CA263A76E855
@@ -20129,7 +20129,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 669919434
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source A8967D13-3C44-4569-95FE-DC60CC64F4B1
@@ -20137,7 +20137,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -2137689625
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source 1F575873-1E63-46D6-83A4-CB42AE3E8CEC
@@ -20177,7 +20177,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id 669919434
                             TargetEvent::EventSpec
-                                Id 569636471
+                                Id EventID.StreamOut
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source CDDC070C-6B36-4605-9C14-CA263A76E855
@@ -20193,7 +20193,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -1662768591
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source A8967D13-3C44-4569-95FE-DC60CC64F4B1
@@ -20201,7 +20201,7 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -1546306854
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BBD6243-92E0-440E-A0CC-3823AA33B04D
@@ -20209,21 +20209,21 @@ SubWorldData B9DC311E-5356-4DDC-B0E1-F12B67C1F2FF #primary instance
                             SourceEvent::EventSpec
                                 Id -177949913
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer10_meatmarketsound/13AAADCA-8CDA-406B-8F95-A56C89BE7281
                             Target levels/sp_earthquake/meatmarket/layer10_meatmarketsound/BE253F05-BCB5-4C6D-98BC-CA72AAB0072B
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/meatmarket/layer10_meatmarketsound/0A32E7D1-834D-431A-A4AD-09987C149284
                             Target levels/sp_earthquake/meatmarket/layer10_meatmarketsound/BE253F05-BCB5-4C6D-98BC-CA72AAB0072B
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id -1402066835
                             TargetType EventConnectionTargetType_NetworkedClient

@@ -172,16 +172,16 @@ InterfaceDescriptorData 0F990949-B103-43F4-9E45-C5FE0CD207BA
         member::DynamicEvent
             Id 1963306779
         member::DynamicEvent
-            Id 230891742
+            Id EventID.Spawn
         member::DynamicEvent
-            Id 2089125447
+            Id EventID.Kill
     OutputEvents::array
         member::DynamicEvent
-            Id 2008897511
+            Id EventID.OnKilled
         member::DynamicEvent
-            Id -1036968738
+            Id EventID.OnSpawned
         member::DynamicEvent
-            Id -1586944329
+            Id EventID.OnBulletHit
     InputLinks::array
         member::DynamicLink
             Id -1450328209
@@ -238,7 +238,7 @@ SpatialPrefabBlueprint 11813ACC-CEA5-4A98-B34D-80222CAF9097 #primary instance
                         Source FA220369-F367-4BC1-A481-3C159028ED64
                         Target FA220369-F367-4BC1-A481-3C159028ED64
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id EventID.OnSpawned
                         TargetEvent::EventSpec
                             Id 851843788
                         TargetType EventConnectionTargetType_Server
@@ -262,17 +262,17 @@ SpatialPrefabBlueprint 11813ACC-CEA5-4A98-B34D-80222CAF9097 #primary instance
                         Source FA220369-F367-4BC1-A481-3C159028ED64
                         Target 0F990949-B103-43F4-9E45-C5FE0CD207BA
                         SourceEvent::EventSpec
-                            Id 2008897511
+                            Id EventID.OnKilled
                         TargetEvent::EventSpec
-                            Id 2008897511
+                            Id EventID.OnKilled
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source FA220369-F367-4BC1-A481-3C159028ED64
                         Target 0F990949-B103-43F4-9E45-C5FE0CD207BA
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id EventID.OnSpawned
                         TargetEvent::EventSpec
-                            Id -1036968738
+                            Id EventID.OnSpawned
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source 0F990949-B103-43F4-9E45-C5FE0CD207BA
@@ -286,23 +286,23 @@ SpatialPrefabBlueprint 11813ACC-CEA5-4A98-B34D-80222CAF9097 #primary instance
                         Source FA220369-F367-4BC1-A481-3C159028ED64
                         Target 0F990949-B103-43F4-9E45-C5FE0CD207BA
                         SourceEvent::EventSpec
-                            Id -1586944329
+                            Id EventID.OnBulletHit
                         TargetEvent::EventSpec
-                            Id -1586944329
+                            Id EventID.OnBulletHit
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source 0F990949-B103-43F4-9E45-C5FE0CD207BA
                         Target FA220369-F367-4BC1-A481-3C159028ED64
                         SourceEvent::EventSpec
-                            Id 230891742
+                            Id EventID.Spawn
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id EventID.Spawn
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source FA220369-F367-4BC1-A481-3C159028ED64
                         Target FA220369-F367-4BC1-A481-3C159028ED64
                         SourceEvent::EventSpec
-                            Id 2008897511
+                            Id EventID.OnKilled
                         TargetEvent::EventSpec
                             Id 1360982724
                         TargetType EventConnectionTargetType_Server
@@ -326,9 +326,9 @@ SpatialPrefabBlueprint 11813ACC-CEA5-4A98-B34D-80222CAF9097 #primary instance
                         Source 0F990949-B103-43F4-9E45-C5FE0CD207BA
                         Target FA220369-F367-4BC1-A481-3C159028ED64
                         SourceEvent::EventSpec
-                            Id 2089125447
+                            Id EventID.Kill
                         TargetEvent::EventSpec
-                            Id 2089125447
+                            Id EventID.Kill
                         TargetType EventConnectionTargetType_Server
                 Descriptor 0F990949-B103-43F4-9E45-C5FE0CD207BA
                 NeedNetworkId True

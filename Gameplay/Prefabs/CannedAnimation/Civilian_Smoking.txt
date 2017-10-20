@@ -157,9 +157,9 @@ InterfaceDescriptorData BBEAD26E-45BD-445B-85D0-33FA0731CD71
         Fields *nullArray*
     InputEvents::array
         member::DynamicEvent
-            Id 230748069
+            Id EventID.Start
         member::DynamicEvent
-            Id 2089401213
+            Id EventID.Stop
     OutputEvents *nullArray*
     InputLinks *nullArray*
     OutputLinks *nullArray*
@@ -305,7 +305,7 @@ SpatialPrefabBlueprint FB65C152-A0B3-4416-A5B5-F5CC47A6D29A #primary instance
                         Source 20AA7BA4-8AD7-498C-BAC6-D65B71D35141
                         Target 3903444C-91FE-43A3-B1D2-CA45FAF444F1
                         SourceEvent::EventSpec
-                            Id -1694482841
+                            Id EventID.TriggerActor1
                         TargetEvent::EventSpec
                             Id 1883421003
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -313,33 +313,33 @@ SpatialPrefabBlueprint FB65C152-A0B3-4416-A5B5-F5CC47A6D29A #primary instance
                         Source 3903444C-91FE-43A3-B1D2-CA45FAF444F1
                         Target 20AA7BA4-8AD7-498C-BAC6-D65B71D35141
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id EventID.OnSpawned
                         TargetEvent::EventSpec
-                            Id 1037701496
+                            Id EventID.ForceStart
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source BBEAD26E-45BD-445B-85D0-33FA0731CD71
                         Target 25C4511D-4607-4EC9-90D5-0EDF06EDADDE
                         SourceEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id EventID.In
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 25C4511D-4607-4EC9-90D5-0EDF06EDADDE
                         Target 3903444C-91FE-43A3-B1D2-CA45FAF444F1
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id EventID.Spawn
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 25C4511D-4607-4EC9-90D5-0EDF06EDADDE
                         Target F1009B25-93E1-494B-9EC6-2DDA843CB964
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source F1009B25-93E1-494B-9EC6-2DDA843CB964
@@ -347,15 +347,15 @@ SpatialPrefabBlueprint FB65C152-A0B3-4416-A5B5-F5CC47A6D29A #primary instance
                         SourceEvent::EventSpec
                             Id 195850970
                         TargetEvent::EventSpec
-                            Id 1037701496
+                            Id EventID.ForceStart
                         TargetType EventConnectionTargetType_NetworkedClient
                     member::EventConnection
                         Source BBEAD26E-45BD-445B-85D0-33FA0731CD71
                         Target 3903444C-91FE-43A3-B1D2-CA45FAF444F1
                         SourceEvent::EventSpec
-                            Id 2089401213
+                            Id EventID.Stop
                         TargetEvent::EventSpec
-                            Id -834116283
+                            Id EventID.Unspawn
                         TargetType EventConnectionTargetType_Server
                 Descriptor BBEAD26E-45BD-445B-85D0-33FA0731CD71
                 NeedNetworkId True

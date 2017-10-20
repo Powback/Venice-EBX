@@ -1330,9 +1330,9 @@ InterfaceDescriptorData 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
         member::DynamicEvent
             Id -1473846145
         member::DynamicEvent
-            Id 1559635997
+            Id EventID.FireStart
         member::DynamicEvent
-            Id 1999519237
+            Id EventID.FireStop
         member::DynamicEvent
             Id -1631662360
         member::DynamicEvent
@@ -4969,7 +4969,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             member::PropertyConnection
                                 Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/C81AF560-4B33-4050-8ADB-D22ADB7378C1
                                 Target levels/sp_villa/gatehouse/layer0_gatehouse_logic/7B694FB2-E7BE-4B8C-A60A-06206199097D
-                                SourceFieldId 193453899
+                                SourceFieldId EventID.Out
                                 TargetFieldId -409930682
                             member::PropertyConnection
                                 Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/0A6E1E66-6522-47F4-82E9-12F8FB9C2980
@@ -4994,12 +4994,12 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             member::PropertyConnection
                                 Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/485498C7-CA6D-4CDA-A3E1-41FA35A782AB
                                 Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/BE208B14-B016-4A18-9A02-1D4661253FBC
-                                SourceFieldId 193453899
-                                TargetFieldId 5862146
+                                SourceFieldId EventID.Out
+                                TargetFieldId EventID.In
                             member::PropertyConnection
                                 Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/BE208B14-B016-4A18-9A02-1D4661253FBC
                                 Target levels/sp_villa/gatehouse/layer1_gatehouse_art/B53A0D78-76F0-4381-852B-8F9F0DB7DBB4
-                                SourceFieldId 193453899
+                                SourceFieldId EventID.Out
                                 TargetFieldId -409930682
                             member::PropertyConnection
                                 Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/F68BDD09-73E0-4D39-90C1-980CA41F1D24
@@ -5050,7 +5050,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             member::LinkConnection
                                 Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/C04DDA34-D1E8-4BB4-A9A8-04EC756B2EB7
                                 Target 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
-                                SourceFieldId 230891742
+                                SourceFieldId EventID.Spawn
                                 TargetFieldId -1679512550
                             member::LinkConnection
                                 Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/C04DDA34-D1E8-4BB4-A9A8-04EC756B2EB7
@@ -5060,7 +5060,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             member::LinkConnection
                                 Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/15B1DF08-6C6E-4A7A-9DC2-59977DC751F2
                                 Target 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
-                                SourceFieldId 230891742
+                                SourceFieldId EventID.Spawn
                                 TargetFieldId -1591431611
                             member::LinkConnection
                                 Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/15B1DF08-6C6E-4A7A-9DC2-59977DC751F2
@@ -5142,7 +5142,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer0_gatehouse_logic/4E9F46CF-C7EC-4E4D-AC54-F2AB027F01E2
                             Target 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
                             SourceEvent::EventSpec
-                                Id -1694482841
+                                Id EventID.TriggerActor1
                             TargetEvent::EventSpec
                                 Id -216887084
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -5150,15 +5150,15 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/C9E2C424-74C2-4686-B631-B49DE6B9B2E7
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/695A6429-C54E-41D1-900D-B7021676627B
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/55EECF35-692C-4639-AEAF-1C8359C81CF4
                             Target levels/sp_villa/gatehouse/layer0_gatehouse_logic/8E82717A-96E2-4806-B1DA-75FD93C8ED69
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id -2137728346
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -5166,15 +5166,15 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/55EECF35-692C-4639-AEAF-1C8359C81CF4
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/0A6E1E66-6522-47F4-82E9-12F8FB9C2980
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/55EECF35-692C-4639-AEAF-1C8359C81CF4
                             Target 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 1496727163
                             TargetType EventConnectionTargetType_Server
@@ -5182,47 +5182,47 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/55EECF35-692C-4639-AEAF-1C8359C81CF4
                             Target levels/sp_villa/gatehouse/layer4_gatehouse_squad_schematic/BF8516F7-83F8-494D-87C5-D9E89290ED96
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/55EECF35-692C-4639-AEAF-1C8359C81CF4
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/88AD6E57-AC25-484C-8EF9-A720186AE724
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/C9E2C424-74C2-4686-B631-B49DE6B9B2E7
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/88AD6E57-AC25-484C-8EF9-A720186AE724
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/8DC67C70-4C0A-4E55-A3CD-458D0F8F00B5
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/8A50889C-3DC3-42DD-86F3-732615409A2E
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/07744EFB-07CA-4C30-B7CE-2F0BA854F8F9
                             Target levels/sp_villa/gatehouse/layer5_gatehouse_vo/B653355A-D95E-4E3D-A048-6CBE9766F430
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/07744EFB-07CA-4C30-B7CE-2F0BA854F8F9
                             Target 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 1051348387
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -5230,7 +5230,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/07744EFB-07CA-4C30-B7CE-2F0BA854F8F9
                             Target levels/sp_villa/gatehouse/layer4_gatehouse_squad_schematic/1D50E887-5CA5-4021-8BE9-535537CC9D64
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id -1218397818
                             TargetType EventConnectionTargetType_Server
@@ -5238,47 +5238,47 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/07744EFB-07CA-4C30-B7CE-2F0BA854F8F9
                             Target levels/sp_villa/gatehouse/layer4_gatehouse_squad_schematic/BC747636-A3DF-4425-B9C7-E82442498A2F
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/07744EFB-07CA-4C30-B7CE-2F0BA854F8F9
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/8A50889C-3DC3-42DD-86F3-732615409A2E
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer0_gatehouse_logic/E69E7EF8-800C-490D-95BD-99B020709383
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/01350F8C-3D7D-40F3-8F6E-CB2D4891E62A
                             SourceEvent::EventSpec
-                                Id -1447021378
+                                Id EventID.OnInteraction
                             TargetEvent::EventSpec
-                                Id 2089420676
+                                Id EventID.Save
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/53B84C25-BB27-4374-804A-F431A89059BA
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/55EECF35-692C-4639-AEAF-1C8359C81CF4
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/01350F8C-3D7D-40F3-8F6E-CB2D4891E62A
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/8A50889C-3DC3-42DD-86F3-732615409A2E
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/01350F8C-3D7D-40F3-8F6E-CB2D4891E62A
                             Target levels/sp_villa/gatehouse/layer4_gatehouse_squad_schematic/1D50E887-5CA5-4021-8BE9-535537CC9D64
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
                                 Id -486672842
                             TargetType EventConnectionTargetType_Server
@@ -5286,7 +5286,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/C9E2C424-74C2-4686-B631-B49DE6B9B2E7
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/D9DE9EE2-269C-47A8-92E4-4AA4D8A23EA2
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -5294,7 +5294,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/C04DDA34-D1E8-4BB4-A9A8-04EC756B2EB7
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/D9DE9EE2-269C-47A8-92E4-4AA4D8A23EA2
                             SourceEvent::EventSpec
-                                Id 914475960
+                                Id EventID.OnReached
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -5302,7 +5302,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/15B1DF08-6C6E-4A7A-9DC2-59977DC751F2
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/D9DE9EE2-269C-47A8-92E4-4AA4D8A23EA2
                             SourceEvent::EventSpec
-                                Id 914475960
+                                Id EventID.OnReached
                             TargetEvent::EventSpec
                                 Id 193450865
                             TargetType EventConnectionTargetType_Server
@@ -5310,7 +5310,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/D9DE9EE2-269C-47A8-92E4-4AA4D8A23EA2
                             Target levels/sp_villa/gatehouse/layer0_gatehouse_logic/8E82717A-96E2-4806-B1DA-75FD93C8ED69
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 632327044
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -5318,41 +5318,41 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/37D2D1FC-4DAB-42B8-965B-C358DC82EB91
                             Target levels/sp_villa/gatehouse/layer0_gatehouse_logic/4E9F46CF-C7EC-4E4D-AC54-F2AB027F01E2
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1037701496
+                                Id EventID.ForceStart
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/37D2D1FC-4DAB-42B8-965B-C358DC82EB91
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/8DC67C70-4C0A-4E55-A3CD-458D0F8F00B5
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/01350F8C-3D7D-40F3-8F6E-CB2D4891E62A
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/37D2D1FC-4DAB-42B8-965B-C358DC82EB91
                             SourceEvent::EventSpec
-                                Id -213362971
+                                Id EventID.OnSaveDone
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/37D2D1FC-4DAB-42B8-965B-C358DC82EB91
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/88AD6E57-AC25-484C-8EF9-A720186AE724
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/37D2D1FC-4DAB-42B8-965B-C358DC82EB91
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/53B84C25-BB27-4374-804A-F431A89059BA
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
@@ -5374,7 +5374,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/FF24C4E6-3C32-4834-A843-3C03E9648F82
                             Target levels/sp_villa/gatehouse/layer1_gatehouse_art/C78EB676-EF2F-43E1-9A3E-D4CB596A1B25
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 218180838
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -5382,7 +5382,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/FF24C4E6-3C32-4834-A843-3C03E9648F82
                             Target levels/sp_villa/gatehouse/layer1_gatehouse_art/2D8EB0A9-6E98-421E-AFAA-F97F81EECC63
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 218180838
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -5390,7 +5390,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/FF24C4E6-3C32-4834-A843-3C03E9648F82
                             Target levels/sp_villa/gatehouse/layer1_gatehouse_art/2FB5CFD7-25B1-4AF0-B839-EC65960C229B
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 218180838
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -5398,7 +5398,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/FF24C4E6-3C32-4834-A843-3C03E9648F82
                             Target levels/sp_villa/gatehouse/layer1_gatehouse_art/1775BBBD-52D6-4F0C-8496-278088D452A1
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 218180838
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -5406,9 +5406,9 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/D1D0F73A-25E9-4C37-8A16-E9C9A6CCCE1B
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/07744EFB-07CA-4C30-B7CE-2F0BA854F8F9
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
@@ -5416,15 +5416,15 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             SourceEvent::EventSpec
                                 Id -619444919
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/D1D0F73A-25E9-4C37-8A16-E9C9A6CCCE1B
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/F68BDD09-73E0-4D39-90C1-980CA41F1D24
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
@@ -5432,7 +5432,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             SourceEvent::EventSpec
                                 Id -1448194845
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
@@ -5440,7 +5440,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             SourceEvent::EventSpec
                                 Id -1283802495
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer0_gatehouse_logic/2D5798F1-D195-45B3-BBB6-30A4998CA0FA
@@ -5486,17 +5486,17 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
                             Target levels/sp_villa/gatehouse/layer0_gatehouse_logic/6592EB0E-1747-439D-BCD4-70045EE11DF9
                             SourceEvent::EventSpec
-                                Id 1559635997
+                                Id EventID.FireStart
                             TargetEvent::EventSpec
-                                Id 1559635997
+                                Id EventID.FireStart
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
                             Target levels/sp_villa/gatehouse/layer0_gatehouse_logic/6592EB0E-1747-439D-BCD4-70045EE11DF9
                             SourceEvent::EventSpec
-                                Id 1999519237
+                                Id EventID.FireStop
                             TargetEvent::EventSpec
-                                Id 1999519237
+                                Id EventID.FireStop
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
@@ -5518,7 +5518,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/8F31DB00-B72F-4B82-8BD6-8CE4410A6DE0
                             Target levels/sp_villa/gatehouse/layer1_gatehouse_art/1775BBBD-52D6-4F0C-8496-278088D452A1
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 230113385
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -5526,7 +5526,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/8F31DB00-B72F-4B82-8BD6-8CE4410A6DE0
                             Target levels/sp_villa/gatehouse/layer1_gatehouse_art/2FB5CFD7-25B1-4AF0-B839-EC65960C229B
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 230113385
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -5534,7 +5534,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/8F31DB00-B72F-4B82-8BD6-8CE4410A6DE0
                             Target levels/sp_villa/gatehouse/layer1_gatehouse_art/2D8EB0A9-6E98-421E-AFAA-F97F81EECC63
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 230113385
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -5542,7 +5542,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/8F31DB00-B72F-4B82-8BD6-8CE4410A6DE0
                             Target levels/sp_villa/gatehouse/layer1_gatehouse_art/C78EB676-EF2F-43E1-9A3E-D4CB596A1B25
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 230113385
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -5552,7 +5552,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             SourceEvent::EventSpec
                                 Id 788592166
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
@@ -5560,7 +5560,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             SourceEvent::EventSpec
                                 Id -619444919
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer0_gatehouse_logic/8E82717A-96E2-4806-B1DA-75FD93C8ED69
@@ -5574,49 +5574,49 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/144E1986-9EA4-4FA1-B561-3E638539773F
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/F68BDD09-73E0-4D39-90C1-980CA41F1D24
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1772326426
+                                Id EventID.PlayFirstFrame
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/01350F8C-3D7D-40F3-8F6E-CB2D4891E62A
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/F68BDD09-73E0-4D39-90C1-980CA41F1D24
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id -1772326426
+                                Id EventID.PlayFirstFrame
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/41C98D77-6C1E-45A4-A359-F4BEC5825C15
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/B229DBFE-BEC2-40FF-A939-A218F886876D
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1778993948
+                                Id EventID.FadeIn
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/01350F8C-3D7D-40F3-8F6E-CB2D4891E62A
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/41C98D77-6C1E-45A4-A359-F4BEC5825C15
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/41C98D77-6C1E-45A4-A359-F4BEC5825C15
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/F6063E8B-073D-41AD-ACBC-9F22DA9640E4
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/F6063E8B-073D-41AD-ACBC-9F22DA9640E4
                             Target levels/sp_villa/gatehouse/layer2_gatehouse_logic_s/37D2D1FC-4DAB-42B8-965B-C358DC82EB91
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
@@ -5638,7 +5638,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer4_gatehouse_squad_schematic/BC747636-A3DF-4425-B9C7-E82442498A2F
                             Target 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 899353758
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -5646,7 +5646,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer4_gatehouse_squad_schematic/BC747636-A3DF-4425-B9C7-E82442498A2F
                             Target 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 1030388929
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -5654,7 +5654,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer4_gatehouse_squad_schematic/1664528B-DD01-4237-AE50-29E21CC370F4
                             Target 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 1370173147
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -5662,7 +5662,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer4_gatehouse_squad_schematic/1664528B-DD01-4237-AE50-29E21CC370F4
                             Target 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id -1539573244
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -5672,7 +5672,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             SourceEvent::EventSpec
                                 Id 1051348387
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer4_gatehouse_squad_schematic/0BC677EE-1223-40A4-9557-37A3545C8559
@@ -5694,7 +5694,7 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer4_gatehouse_squad_schematic/96A37CC0-03FF-4A24-942F-D3545565D722
                             Target 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -1596357528
                             TargetType EventConnectionTargetType_Server
@@ -5704,13 +5704,13 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             SourceEvent::EventSpec
                                 Id 1496727163
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer4_gatehouse_squad_schematic/BF8516F7-83F8-494D-87C5-D9E89290ED96
                             Target levels/sp_villa/gatehouse/layer4_gatehouse_squad_schematic/0BC677EE-1223-40A4-9557-37A3545C8559
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -1218397818
                             TargetType EventConnectionTargetType_Server
@@ -5718,33 +5718,33 @@ SubWorldData FC07CB93-3E44-48FD-B6DE-159002B3546A #primary instance
                             Source levels/sp_villa/gatehouse/layer4_gatehouse_squad_schematic/BF8516F7-83F8-494D-87C5-D9E89290ED96
                             Target levels/sp_villa/gatehouse/layer4_gatehouse_squad_schematic/1664528B-DD01-4237-AE50-29E21CC370F4
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer5_gatehouse_vo/4FF45BFB-7DC8-4344-B532-F5F8AC29FE34
                             Target levels/sp_villa/gatehouse/layer5_gatehouse_vo/AD3A3389-5F83-467E-9F9F-8B2AFAB21DF2
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer5_gatehouse_vo/034523ED-9CAD-46C7-8862-CA577014C9B2
                             Target levels/sp_villa/gatehouse/layer5_gatehouse_vo/CF65A592-990C-42C5-8B91-72EF91A3654E
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_villa/gatehouse/layer5_gatehouse_vo/034523ED-9CAD-46C7-8862-CA577014C9B2
                             Target levels/sp_villa/gatehouse/layer5_gatehouse_vo/4FF45BFB-7DC8-4344-B532-F5F8AC29FE34
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                     Descriptor 8BB6183E-FBBC-4107-4C2B-9E87A7B4C286
                     NeedNetworkId True

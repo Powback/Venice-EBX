@@ -10,11 +10,11 @@ InterfaceDescriptorData D6D6F52F-06F2-6D38-7E6C-7210AF768448
         member::DynamicEvent
             Id -789400341
         member::DynamicEvent
-            Id 230891742
+            Id EventID.Spawn
         member::DynamicEvent
             Id 1803545989
         member::DynamicEvent
-            Id 230748069
+            Id EventID.Start
     OutputEvents::array
         member::DynamicEvent
             Id -295405098
@@ -55,7 +55,7 @@ InterfaceDescriptorData D6D6F52F-06F2-6D38-7E6C-7210AF768448
         member::DynamicEvent
             Id 657644183
         member::DynamicEvent
-            Id 650265526
+            Id EventID.OnFinished
         member::DynamicEvent
             Id -1358995331
     InputLinks *nullArray*
@@ -151,12 +151,12 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             member::LinkConnection
                                 Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/8830BAE8-2BCE-4FA9-A553-6D5E2823B9C0
                                 Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
-                                SourceFieldId 230891742
+                                SourceFieldId EventID.Spawn
                                 TargetFieldId -996687812
                             member::LinkConnection
                                 Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/6A5507E6-866A-4E55-9160-1BDC33ADCAEF
                                 Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
-                                SourceFieldId 230891742
+                                SourceFieldId EventID.Spawn
                                 TargetFieldId 130647789
                             member::LinkConnection
                                 Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/6DA3EF0C-5131-4D8E-8690-F42F66869FAB
@@ -238,31 +238,31 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/CB922EDF-67D8-44FE-B2B5-063C6564D0DB
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/6C7844CA-466F-43A4-BBDF-B8D8C8537523
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/84BB658C-C5EB-4EE0-890E-B525D8D28241
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/801F5687-2FBC-458A-B585-0F3A6E2B40E5
                             SourceEvent::EventSpec
-                                Id -213362971
+                                Id EventID.OnSaveDone
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/84BB658C-C5EB-4EE0-890E-B525D8D28241
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/801F5687-2FBC-458A-B585-0F3A6E2B40E5
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/7E14860E-60EB-4029-A6E3-F775107E24B6
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id -702100586
+                                Id EventID.TriggerActor
                             TargetEvent::EventSpec
                                 Id -295405098
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -270,9 +270,9 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C655094E-6E62-4BC0-AC0E-482476C713A0
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/315AA9A2-915B-4A17-B6E6-E2EA0DA7DAC1
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source D6D6F52F-06F2-6D38-7E6C-7210AF768448
@@ -302,9 +302,9 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/29FE7649-4522-4F58-A0CF-6C5B2D0229A3
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/84BB658C-C5EB-4EE0-890E-B525D8D28241
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 2089420676
+                                Id EventID.Save
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source D6D6F52F-06F2-6D38-7E6C-7210AF768448
@@ -326,9 +326,9 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/CB922EDF-67D8-44FE-B2B5-063C6564D0DB
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/0E84FB09-C2ED-4060-B525-F232D6E607A8
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source D6D6F52F-06F2-6D38-7E6C-7210AF768448
@@ -374,15 +374,15 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/0E84FB09-C2ED-4060-B525-F232D6E607A8
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C384B528-65C1-4B3B-B298-C4109317427B
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/7B49CE79-373E-4D70-808E-8B83BBE3E503
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id -91412116
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -390,17 +390,17 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/65DB1B1C-2117-4C0F-AA6A-8325E4F001A6
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/7B49CE79-373E-4D70-808E-8B83BBE3E503
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/7B49CE79-373E-4D70-808E-8B83BBE3E503
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/E4DE1286-7654-47DD-ACB2-4E909C244A8C
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source D6D6F52F-06F2-6D38-7E6C-7210AF768448
@@ -414,7 +414,7 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/E4DE1286-7654-47DD-ACB2-4E909C244A8C
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id -990021867
                             TargetType EventConnectionTargetType_Server
@@ -422,95 +422,95 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/8830BAE8-2BCE-4FA9-A553-6D5E2823B9C0
                             Target levels/sp_tank_b/drivetobankplaza_01/layer5_drivetobankplaza_01_vo/C790E15A-5922-4651-9DCD-BAB4748952F9
                             SourceEvent::EventSpec
-                                Id -2023825640
+                                Id EventID.OnMovingTowards
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/5926455E-6089-4CB6-B268-9F474A46363E
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/CB922EDF-67D8-44FE-B2B5-063C6564D0DB
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C384B528-65C1-4B3B-B298-C4109317427B
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/65DB1B1C-2117-4C0F-AA6A-8325E4F001A6
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C384B528-65C1-4B3B-B298-C4109317427B
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C384B528-65C1-4B3B-B298-C4109317427B
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C99388C2-8750-4930-8942-9498959A2574
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/F476082F-2D34-4E52-8516-3416BAE79706
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -782826483
+                                Id EventID.MoveCharacter
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C99388C2-8750-4930-8942-9498959A2574
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/8FACF776-956F-4B02-B964-D7C247E69B44
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -496109072
+                                Id EventID.TeleportToEnd
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C99388C2-8750-4930-8942-9498959A2574
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/6DA3EF0C-5131-4D8E-8690-F42F66869FAB
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -496109072
+                                Id EventID.TeleportToEnd
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/D496216C-2F9D-4142-94F2-A45AAECC6481
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C99388C2-8750-4930-8942-9498959A2574
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C99388C2-8750-4930-8942-9498959A2574
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/092A20E1-8289-4586-96B3-18CE21743126
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1778993948
+                                Id EventID.FadeIn
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C99388C2-8750-4930-8942-9498959A2574
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/65DB1B1C-2117-4C0F-AA6A-8325E4F001A6
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/03AD95E6-CEC6-4A22-BD86-329606819EC7
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/74F31E6D-BF55-462E-88A5-F1920BB0BC44
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1037321618
+                                Id EventID.SendMessage
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/623559EF-3AEF-4247-9980-55241584CAF7
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -764723706
                             TargetType EventConnectionTargetType_Server
@@ -518,39 +518,39 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/F3BCE0AC-27D5-4E8E-8429-68AEED092403
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/F3BCE0AC-27D5-4E8E-8429-68AEED092403
                             SourceEvent::EventSpec
-                                Id 1975570652
+                                Id EventID.OnTrigger
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/7BB5E615-7FFF-4017-8598-8423466A3970
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/D6DCCC97-C17D-40A9-8E7D-74790EA39DC3
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/F3BCE0AC-27D5-4E8E-8429-68AEED092403
                             Target levels/sp_tank_b/drivetobankplaza_01/layer3_drivetobankplaza_01_friendlyai/792EEB5B-E429-4C3A-AA8B-6D18EAD96FA9
                             SourceEvent::EventSpec
-                                Id 1975570652
+                                Id EventID.OnTrigger
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/7B49CE79-373E-4D70-808E-8B83BBE3E503
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/7BB5E615-7FFF-4017-8598-8423466A3970
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C95E9CFE-0B88-4601-B180-04269A85333F
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/5926455E-6089-4CB6-B268-9F474A46363E
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -558,33 +558,33 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/7BB5E615-7FFF-4017-8598-8423466A3970
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/623559EF-3AEF-4247-9980-55241584CAF7
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/623559EF-3AEF-4247-9980-55241584CAF7
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/53417CA1-6C00-48BC-A212-8DE9FA892701
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/53417CA1-6C00-48BC-A212-8DE9FA892701
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/523B05D7-7448-4DF6-B75C-400DCE6C7E6D
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1037321618
+                                Id EventID.SendMessage
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/53417CA1-6C00-48BC-A212-8DE9FA892701
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/BA1957D2-CF20-4861-B6CE-129DD74FEEF7
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1037321618
+                                Id EventID.SendMessage
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source D6D6F52F-06F2-6D38-7E6C-7210AF768448
@@ -598,7 +598,7 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/8830BAE8-2BCE-4FA9-A553-6D5E2823B9C0
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id 914475960
+                                Id EventID.OnReached
                             TargetEvent::EventSpec
                                 Id 513604901
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -606,31 +606,31 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/6A5507E6-866A-4E55-9160-1BDC33ADCAEF
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/00DDEFEA-0AC8-47D7-95E0-62C0426D84CC
                             SourceEvent::EventSpec
-                                Id -2023825640
+                                Id EventID.OnMovingTowards
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C99388C2-8750-4930-8942-9498959A2574
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/00DDEFEA-0AC8-47D7-95E0-62C0426D84CC
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/00DDEFEA-0AC8-47D7-95E0-62C0426D84CC
                             Target levels/sp_tank_b/drivetobankplaza_01/layer5_drivetobankplaza_01_vo/F5EE0AF1-ECE7-4EA2-9571-D03CCE540F6E
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/00DDEFEA-0AC8-47D7-95E0-62C0426D84CC
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 1321857915
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -638,15 +638,15 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/8830BAE8-2BCE-4FA9-A553-6D5E2823B9C0
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C95E9CFE-0B88-4601-B180-04269A85333F
                             SourceEvent::EventSpec
-                                Id -2023825640
+                                Id EventID.OnMovingTowards
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
                                 Id -2070824034
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -654,7 +654,7 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
                                 Id -1611681013
                             TargetType EventConnectionTargetType_Server
@@ -662,7 +662,7 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
                                 Id 390569709
                             TargetType EventConnectionTargetType_Server
@@ -670,7 +670,7 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/29FE7649-4522-4F58-A0CF-6C5B2D0229A3
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
                                 Id 193450865
                             TargetType EventConnectionTargetType_Server
@@ -678,15 +678,15 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C655094E-6E62-4BC0-AC0E-482476C713A0
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/E5D96914-9841-455E-9C5E-715AA9585431
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1778993948
+                                Id EventID.FadeIn
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C48B2E0A-6F2A-4504-B73C-B93B5CD6953B
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 1146797646
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -694,15 +694,15 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C48B2E0A-6F2A-4504-B73C-B93B5CD6953B
                             Target levels/sp_tank_b/drivetobankplaza_01/layer5_drivetobankplaza_01_vo/BF121F83-AD1A-48B9-AFFF-34034F982BB9
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C48B2E0A-6F2A-4504-B73C-B93B5CD6953B
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 573168293
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -710,15 +710,15 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/E5D96914-9841-455E-9C5E-715AA9585431
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C48B2E0A-6F2A-4504-B73C-B93B5CD6953B
                             SourceEvent::EventSpec
-                                Id -1434059356
+                                Id EventID.OnDone
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C48B2E0A-6F2A-4504-B73C-B93B5CD6953B
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 1400386784
                             TargetType EventConnectionTargetType_Server
@@ -726,17 +726,17 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C48B2E0A-6F2A-4504-B73C-B93B5CD6953B
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/03AD95E6-CEC6-4A22-BD86-329606819EC7
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C655094E-6E62-4BC0-AC0E-482476C713A0
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/65205145-287E-4D24-A4FF-E10BD3B070FE
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source D6D6F52F-06F2-6D38-7E6C-7210AF768448
@@ -744,29 +744,29 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             SourceEvent::EventSpec
                                 Id 1009785817
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C655094E-6E62-4BC0-AC0E-482476C713A0
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/9BD795F9-5913-43E2-A9C0-6A304C9933A6
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/29FE7649-4522-4F58-A0CF-6C5B2D0229A3
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/3F796F80-E04D-477E-8977-54A8629A9A87
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -782826483
+                                Id EventID.MoveCharacter
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetEvent::EventSpec
                                 Id 771278265
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -774,7 +774,7 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetEvent::EventSpec
                                 Id 390569709
                             TargetType EventConnectionTargetType_Server
@@ -784,7 +784,7 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             SourceEvent::EventSpec
                                 Id 1803545989
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source D6D6F52F-06F2-6D38-7E6C-7210AF768448
@@ -800,21 +800,21 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             SourceEvent::EventSpec
                                 Id -343463361
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/8830BAE8-2BCE-4FA9-A553-6D5E2823B9C0
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/A4CF2E41-3D03-4532-81E2-75634A14CFAA
                             SourceEvent::EventSpec
-                                Id 914475960
+                                Id EventID.OnReached
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/5926455E-6089-4CB6-B268-9F474A46363E
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 657644183
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -822,9 +822,9 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/7B49CE79-373E-4D70-808E-8B83BBE3E503
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/B3DAC62B-9A32-49AE-8CA4-9B324E1AA69A
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/B3DAC62B-9A32-49AE-8CA4-9B324E1AA69A
@@ -832,29 +832,29 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             SourceEvent::EventSpec
                                 Id 1980565423
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/B0636286-7482-41B2-A053-AFC4BC1A8C35
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/F00B3604-BD0E-4F42-A774-275F34BAA0FC
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -782826483
+                                Id EventID.MoveCharacter
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/7B49CE79-373E-4D70-808E-8B83BBE3E503
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/7E14860E-60EB-4029-A6E3-F775107E24B6
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -560359853
+                                Id EventID.TriggerScenario
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/7B49CE79-373E-4D70-808E-8B83BBE3E503
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 1755954792
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -870,15 +870,15 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/801F5687-2FBC-458A-B585-0F3A6E2B40E5
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/C655094E-6E62-4BC0-AC0E-482476C713A0
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/801F5687-2FBC-458A-B585-0F3A6E2B40E5
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 249868236
                             TargetType EventConnectionTargetType_Server
@@ -886,31 +886,31 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/7E14860E-60EB-4029-A6E3-F775107E24B6
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/7D5B1849-64DA-40D3-B3FC-27E8E85A9A82
                             SourceEvent::EventSpec
-                                Id -702100586
+                                Id EventID.TriggerActor
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/7D5B1849-64DA-40D3-B3FC-27E8E85A9A82
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/D56CF1CD-2B6E-4580-B034-9FBFF93026C0
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/D56CF1CD-2B6E-4580-B034-9FBFF93026C0
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 650265526
+                                Id EventID.OnFinished
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/801F5687-2FBC-458A-B585-0F3A6E2B40E5
                             Target D6D6F52F-06F2-6D38-7E6C-7210AF768448
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id -1358995331
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -918,7 +918,7 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             Source levels/sp_tank_b/drivetobankplaza_01/layer5_drivetobankplaza_01_vo/9ECF9CC4-C37E-4A95-A7D4-98CD81FCC93D
                             Target levels/sp_tank_b/drivetobankplaza_01/layer4_drivetobankplaza_01_friendlyai_schematic/5926455E-6089-4CB6-B268-9F474A46363E
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -928,31 +928,31 @@ SubWorldData C7496F6E-8F5E-4E93-9B51-2A74BF87F7C9 #primary instance
                             SourceEvent::EventSpec
                                 Id 1146797646
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer5_drivetobankplaza_01_vo/BF121F83-AD1A-48B9-AFFF-34034F982BB9
                             Target levels/sp_tank_b/drivetobankplaza_01/layer5_drivetobankplaza_01_vo/6A78100E-3C8E-4AAB-A0FB-815ECE5501EE
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer5_drivetobankplaza_01_vo/C790E15A-5922-4651-9DCD-BAB4748952F9
                             Target levels/sp_tank_b/drivetobankplaza_01/layer5_drivetobankplaza_01_vo/9ECF9CC4-C37E-4A95-A7D4-98CD81FCC93D
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_tank_b/drivetobankplaza_01/layer5_drivetobankplaza_01_vo/6A78100E-3C8E-4AAB-A0FB-815ECE5501EE
                             Target levels/sp_tank_b/drivetobankplaza_01/layer5_drivetobankplaza_01_vo/39A1FB71-C53B-4593-BBD2-B7B12658A697
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                     Descriptor D6D6F52F-06F2-6D38-7E6C-7210AF768448
                     NeedNetworkId True

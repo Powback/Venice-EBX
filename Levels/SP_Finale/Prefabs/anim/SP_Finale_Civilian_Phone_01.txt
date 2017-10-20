@@ -196,9 +196,9 @@ InterfaceDescriptorData 147DCFC7-4B59-425E-AD5F-3230019532FD
         Fields *nullArray*
     InputEvents::array
         member::DynamicEvent
-            Id 230748069
+            Id EventID.Start
         member::DynamicEvent
-            Id -834116283
+            Id EventID.Unspawn
     OutputEvents *nullArray*
     InputLinks *nullArray*
     OutputLinks *nullArray*
@@ -227,41 +227,41 @@ SpatialPrefabBlueprint A3855F26-AC1A-4663-AFAB-F8A78C3585D1 #primary instance
                         Source 147DCFC7-4B59-425E-AD5F-3230019532FD
                         Target 70BDB7D8-73AD-4282-AD84-FCB783402A40
                         SourceEvent::EventSpec
-                            Id -834116283
+                            Id EventID.Unspawn
                         TargetEvent::EventSpec
-                            Id -834116283
+                            Id EventID.Unspawn
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 147DCFC7-4B59-425E-AD5F-3230019532FD
                         Target 70BDB7D8-73AD-4282-AD84-FCB783402A40
                         SourceEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id EventID.Spawn
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 70BDB7D8-73AD-4282-AD84-FCB783402A40
                         Target 9794D533-AA37-4011-BCA9-0789AC705163
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id EventID.OnSpawned
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source EF7CFA9C-EDA4-48D4-A384-0AA6AC5679AF
                         Target 9794D533-AA37-4011-BCA9-0789AC705163
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member::EventConnection
                         Source 9794D533-AA37-4011-BCA9-0789AC705163
                         Target EF7CFA9C-EDA4-48D4-A384-0AA6AC5679AF
                         SourceEvent::EventSpec
-                            Id 1601842967
+                            Id EventID.OnFinish
                         TargetEvent::EventSpec
-                            Id -1573253508
+                            Id EventID.Client
                         TargetType EventConnectionTargetType_Client
                 Descriptor 147DCFC7-4B59-425E-AD5F-3230019532FD
                 NeedNetworkId True

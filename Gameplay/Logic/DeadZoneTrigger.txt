@@ -151,9 +151,9 @@ InterfaceDescriptorData 5B0EA5AD-AC34-400F-8349-CD2C93003FFE
     InputEvents *nullArray*
     OutputEvents::array
         member::DynamicEvent
-            Id -80368276
+            Id EventID.OnEnter
         member::DynamicEvent
-            Id -70038721
+            Id EventID.OnLeave
     InputLinks *nullArray*
     OutputLinks::array
         member::DynamicLink
@@ -200,33 +200,33 @@ LogicPrefabBlueprint E3811F66-2DAB-7465-BA04-E9D2EE3E61A8 #primary instance
                         Source 54C879AE-9B43-4D64-8699-155B320D1F34
                         Target 5B575AE1-5BAF-4211-A63E-BD6FA04F1E73
                         SourceEvent::EventSpec
-                            Id -80368276
+                            Id EventID.OnEnter
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id EventID.SetTrue
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 5DE2F7AE-6444-46CE-BB4C-768DE60053A5
                         Target 5B0EA5AD-AC34-400F-8349-CD2C93003FFE
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id EventID.OnTrue
                         TargetEvent::EventSpec
-                            Id -80368276
+                            Id EventID.OnEnter
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 5DE2F7AE-6444-46CE-BB4C-768DE60053A5
                         Target 5B0EA5AD-AC34-400F-8349-CD2C93003FFE
                         SourceEvent::EventSpec
-                            Id -81881639
+                            Id EventID.OnFalse
                         TargetEvent::EventSpec
-                            Id -70038721
+                            Id EventID.OnLeave
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 7B257AA1-E800-4DF2-AE42-D52D2BCE1862
                         Target 5B575AE1-5BAF-4211-A63E-BD6FA04F1E73
                         SourceEvent::EventSpec
-                            Id -70038721
+                            Id EventID.OnLeave
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id EventID.SetFalse
                         TargetType EventConnectionTargetType_Server
                 Descriptor 5B0EA5AD-AC34-400F-8349-CD2C93003FFE
                 NeedNetworkId False

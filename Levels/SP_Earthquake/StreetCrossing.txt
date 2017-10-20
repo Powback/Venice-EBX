@@ -892,7 +892,7 @@ InterfaceDescriptorData B7AF4465-02A2-5DC8-8364-340B5150B195
                 AccessType FieldAccessType_Source
     InputEvents::array
         member::DynamicEvent
-            Id 230748069
+            Id EventID.Start
         member::DynamicEvent
             Id -1212997369
         member::DynamicEvent
@@ -3186,7 +3186,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             member::LinkConnection
                                 Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/8C533E0E-6192-4C5E-B473-10E3D58EFF58
                                 Target B7AF4465-02A2-5DC8-8364-340B5150B195
-                                SourceFieldId 230891742
+                                SourceFieldId EventID.Spawn
                                 TargetFieldId -1554267187
                             member::LinkConnection
                                 Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/26AAED0F-527C-49BC-86FB-5552C55EEE12
@@ -3211,7 +3211,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             member::LinkConnection
                                 Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/2D38D729-CA79-4A74-8516-D6573C16BD14
                                 Target B7AF4465-02A2-5DC8-8364-340B5150B195
-                                SourceFieldId 230891742
+                                SourceFieldId EventID.Spawn
                                 TargetFieldId -1538056934
                             member::LinkConnection
                                 Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/2D38D729-CA79-4A74-8516-D6573C16BD14
@@ -3223,47 +3223,47 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/56B5FCCA-0691-4D4F-9A8C-0B49BE738B1B
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/A9D2C5E7-B6E7-43AB-93F8-345ADEA40076
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/7BD54537-D4CC-4D7B-9F46-60448A22B824
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/56B5FCCA-0691-4D4F-9A8C-0B49BE738B1B
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/3B26A757-655E-4FC2-8465-11EA53CA25FF
                             Target levels/sp_earthquake/streetcrossing/layer2_streetcrossinglogic/85D84269-AAE4-48AF-9E44-3FA86FBB4AFF
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/5B5E4769-DF6D-4655-88FC-363F4FAB542D
                             Target levels/sp_earthquake/streetcrossing/layer2_streetcrossinglogic/85D84269-AAE4-48AF-9E44-3FA86FBB4AFF
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -834116283
+                                Id EventID.Unspawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer2_streetcrossinglogic/1214F185-EB6C-418D-8B71-C2E565CB64D9
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/5B5E4769-DF6D-4655-88FC-363F4FAB542D
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer2_streetcrossinglogic/1214F185-EB6C-418D-8B71-C2E565CB64D9
                             Target levels/sp_earthquake/streetcrossing/layer2_streetcrossinglogic/85D84269-AAE4-48AF-9E44-3FA86FBB4AFF
                             SourceEvent::EventSpec
-                                Id -1694482841
+                                Id EventID.TriggerActor1
                             TargetEvent::EventSpec
                                 Id 1883421003
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -3271,9 +3271,9 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             Source levels/sp_earthquake/streetcrossing/layer2_streetcrossinglogic/85D84269-AAE4-48AF-9E44-3FA86FBB4AFF
                             Target levels/sp_earthquake/streetcrossing/layer2_streetcrossinglogic/1214F185-EB6C-418D-8B71-C2E565CB64D9
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id 1037701496
+                                Id EventID.ForceStart
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/BFEF513D-C2D0-4EF7-BB35-61D2251F7DFF
@@ -3281,7 +3281,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             SourceEvent::EventSpec
                                 Id 1913642812
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/BFEF513D-C2D0-4EF7-BB35-61D2251F7DFF
@@ -3289,7 +3289,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             SourceEvent::EventSpec
                                 Id 213504917
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/BFEF513D-C2D0-4EF7-BB35-61D2251F7DFF
@@ -3297,7 +3297,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             SourceEvent::EventSpec
                                 Id -1615602869
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/BFEF513D-C2D0-4EF7-BB35-61D2251F7DFF
@@ -3305,7 +3305,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             SourceEvent::EventSpec
                                 Id 193439691
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/BFEF513D-C2D0-4EF7-BB35-61D2251F7DFF
@@ -3313,7 +3313,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             SourceEvent::EventSpec
                                 Id 1913642812
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/BFEF513D-C2D0-4EF7-BB35-61D2251F7DFF
@@ -3321,21 +3321,21 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             SourceEvent::EventSpec
                                 Id 1486593166
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/D0E21E8A-C42A-4360-8888-D03A833B9082
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/F7C64B37-3469-4E96-B3BE-473B36DD4C9B
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 550586970
+                                Id EventID.Execute
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/D0E21E8A-C42A-4360-8888-D03A833B9082
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/6DC434E9-7A9D-427D-8C7D-3248C5596350
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -3343,7 +3343,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/FFB75623-9ADD-45B9-A40E-1FFDE32F5CA4
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/6DC434E9-7A9D-427D-8C7D-3248C5596350
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -3351,7 +3351,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/B2732D8C-D4DA-46E2-A44C-FC5B34F44ADD
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/D65B6F55-6E11-4426-9DB5-2935BF17ADFC
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -3359,7 +3359,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/46AF463A-43E4-455A-8619-1267A1A7FA41
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/D65B6F55-6E11-4426-9DB5-2935BF17ADFC
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -3367,7 +3367,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/0DFAFC1D-2DEA-4937-9315-FAD8C88F9029
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/D65B6F55-6E11-4426-9DB5-2935BF17ADFC
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
                                 Id 193450865
                             TargetType EventConnectionTargetType_Server
@@ -3375,39 +3375,39 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/D65B6F55-6E11-4426-9DB5-2935BF17ADFC
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/5F2F5EBE-45B4-4299-80B9-7294E746B0F6
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/D65B6F55-6E11-4426-9DB5-2935BF17ADFC
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/8FB419F0-70DF-4695-892D-DC3BE1FFCEA7
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/D65B6F55-6E11-4426-9DB5-2935BF17ADFC
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/7127D95A-4AFA-42C6-ADE5-5A5ECD8F320A
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/6DC434E9-7A9D-427D-8C7D-3248C5596350
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/344EAC66-6DC9-43E9-838B-CFD828FAB88E
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 550586970
+                                Id EventID.Execute
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/6DC434E9-7A9D-427D-8C7D-3248C5596350
                             Target B7AF4465-02A2-5DC8-8364-340B5150B195
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -1361999008
                             TargetType EventConnectionTargetType_Server
@@ -3417,7 +3417,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             SourceEvent::EventSpec
                                 Id -1212997369
                             TargetEvent::EventSpec
-                                Id -496109072
+                                Id EventID.TeleportToEnd
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source B7AF4465-02A2-5DC8-8364-340B5150B195
@@ -3425,37 +3425,37 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             SourceEvent::EventSpec
                                 Id -1212997369
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/6E2E98F9-ACC0-4B3C-A822-E970E60637E0
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/8FB419F0-70DF-4695-892D-DC3BE1FFCEA7
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -496109072
+                                Id EventID.TeleportToEnd
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/6E2E98F9-ACC0-4B3C-A822-E970E60637E0
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/7127D95A-4AFA-42C6-ADE5-5A5ECD8F320A
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -496109072
+                                Id EventID.TeleportToEnd
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/6E2E98F9-ACC0-4B3C-A822-E970E60637E0
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/5F2F5EBE-45B4-4299-80B9-7294E746B0F6
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -496109072
+                                Id EventID.TeleportToEnd
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/6E2E98F9-ACC0-4B3C-A822-E970E60637E0
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/6DC434E9-7A9D-427D-8C7D-3248C5596350
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -3463,15 +3463,15 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/3B26A757-655E-4FC2-8465-11EA53CA25FF
                             Target levels/sp_earthquake/streetcrossing/layer5_streetcrossingsound/9EEE72D3-2603-4ECF-A9C5-C90ABBAAB6FE
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/3B26A757-655E-4FC2-8465-11EA53CA25FF
                             Target B7AF4465-02A2-5DC8-8364-340B5150B195
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id -302262227
                             TargetType EventConnectionTargetType_Server
@@ -3487,17 +3487,17 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/27E9EEDD-B3CB-4B35-B81C-37351402E073
                             Target levels/sp_earthquake/streetcrossing/layer2_streetcrossinglogic/C30DACB7-FC54-47E0-A708-6523D0D2F661
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 1999497757
+                                Id EventID.FireShot
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/7BD54537-D4CC-4D7B-9F46-60448A22B824
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/27E9EEDD-B3CB-4B35-B81C-37351402E073
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source B7AF4465-02A2-5DC8-8364-340B5150B195
@@ -3511,7 +3511,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/65888021-8119-4E1F-8DFC-E320127F62E7
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/D65B6F55-6E11-4426-9DB5-2935BF17ADFC
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id 193450870
                             TargetType EventConnectionTargetType_Server
@@ -3519,15 +3519,15 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/0DFAFC1D-2DEA-4937-9315-FAD8C88F9029
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/3B13BE66-08E2-4796-B440-65F5DA6FACC8
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/9A541C5F-1A28-40A8-8416-6B5AE7F7FFDF
                             Target levels/sp_earthquake/streetcrossing/layer2_streetcrossinglogic/190A1EA4-82DD-46EA-93F1-E613F4935BA2
                             SourceEvent::EventSpec
-                                Id 650265526
+                                Id EventID.OnFinished
                             TargetEvent::EventSpec
                                 Id 1029786234
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -3535,7 +3535,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/9A541C5F-1A28-40A8-8416-6B5AE7F7FFDF
                             Target levels/sp_earthquake/streetcrossing/layer2_streetcrossinglogic/190A1EA4-82DD-46EA-93F1-E613F4935BA2
                             SourceEvent::EventSpec
-                                Id -1193365339
+                                Id EventID.OnStarted
                             TargetEvent::EventSpec
                                 Id -1590170963
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -3559,65 +3559,65 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/32274084-035A-45B6-9E46-7800CA74375D
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/3A839D60-2CD7-454C-9A3E-8A8BD98CF3DA
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/0DFAFC1D-2DEA-4937-9315-FAD8C88F9029
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/32274084-035A-45B6-9E46-7800CA74375D
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source B7AF4465-02A2-5DC8-8364-340B5150B195
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/3B26A757-655E-4FC2-8465-11EA53CA25FF
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source B7AF4465-02A2-5DC8-8364-340B5150B195
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/27E9EEDD-B3CB-4B35-B81C-37351402E073
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/56B5FCCA-0691-4D4F-9A8C-0B49BE738B1B
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/969ED254-613E-4EE9-857F-BACB38440A4D
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/969ED254-613E-4EE9-857F-BACB38440A4D
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/647B43E9-64E2-46B3-A15B-65F6BE3EC8AB
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/647B43E9-64E2-46B3-A15B-65F6BE3EC8AB
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/F9F67D75-E5F2-40A5-8110-AE863B1C7641
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/32274084-035A-45B6-9E46-7800CA74375D
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/F2BA29CD-971F-47A1-B7EA-848626B5498C
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/BFEF513D-C2D0-4EF7-BB35-61D2251F7DFF
@@ -3625,13 +3625,13 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             SourceEvent::EventSpec
                                 Id 1913642812
                             TargetEvent::EventSpec
-                                Id 231941894
+                                Id EventID.Prime
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/6E2E98F9-ACC0-4B3C-A822-E970E60637E0
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/6DC434E9-7A9D-427D-8C7D-3248C5596350
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 193450865
                             TargetType EventConnectionTargetType_Server
@@ -3639,15 +3639,15 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/8C533E0E-6192-4C5E-B473-10E3D58EFF58
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/97A37EDE-5185-4DA8-84D3-3B6A8B768F27
                             SourceEvent::EventSpec
-                                Id 914475960
+                                Id EventID.OnReached
                             TargetEvent::EventSpec
-                                Id 550586970
+                                Id EventID.Execute
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/8C533E0E-6192-4C5E-B473-10E3D58EFF58
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/6DC434E9-7A9D-427D-8C7D-3248C5596350
                             SourceEvent::EventSpec
-                                Id 914475960
+                                Id EventID.OnReached
                             TargetEvent::EventSpec
                                 Id 193450865
                             TargetType EventConnectionTargetType_Server
@@ -3657,7 +3657,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             SourceEvent::EventSpec
                                 Id 1778425062
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source B7AF4465-02A2-5DC8-8364-340B5150B195
@@ -3665,7 +3665,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             SourceEvent::EventSpec
                                 Id 1778425062
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source B7AF4465-02A2-5DC8-8364-340B5150B195
@@ -3673,7 +3673,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             SourceEvent::EventSpec
                                 Id 1778425062
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source B7AF4465-02A2-5DC8-8364-340B5150B195
@@ -3681,13 +3681,13 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             SourceEvent::EventSpec
                                 Id 1778425062
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/7127D95A-4AFA-42C6-ADE5-5A5ECD8F320A
                             Target B7AF4465-02A2-5DC8-8364-340B5150B195
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
                                 Id -507114208
                             TargetType EventConnectionTargetType_Server
@@ -3695,57 +3695,57 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/56B5FCCA-0691-4D4F-9A8C-0B49BE738B1B
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/18AE8426-A9BC-4728-A7A8-569AD56C3EAD
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/FFB75623-9ADD-45B9-A40E-1FFDE32F5CA4
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/B96EA06B-0E56-42DB-A8BA-4AE1BBF422CC
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id 550586970
+                                Id EventID.Execute
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/6DC434E9-7A9D-427D-8C7D-3248C5596350
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/9D5C756B-D785-4F15-8557-44926A700160
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 212633683
+                                Id EventID.Close
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/9D5C756B-D785-4F15-8557-44926A700160
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/3158D27C-F819-4EF2-ADD7-8E0D519A02A6
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/2D38D729-CA79-4A74-8516-D6573C16BD14
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/9D5C756B-D785-4F15-8557-44926A700160
                             SourceEvent::EventSpec
-                                Id 914475960
+                                Id EventID.OnReached
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/8C533E0E-6192-4C5E-B473-10E3D58EFF58
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/D0E21E8A-C42A-4360-8888-D03A833B9082
                             SourceEvent::EventSpec
-                                Id 914475960
+                                Id EventID.OnReached
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/9D5C756B-D785-4F15-8557-44926A700160
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/67AA1DE2-5D64-412B-85CF-C98EC82B87BE
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source B7AF4465-02A2-5DC8-8364-340B5150B195
@@ -3753,29 +3753,29 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             SourceEvent::EventSpec
                                 Id 744469642
                             TargetEvent::EventSpec
-                                Id -496109072
+                                Id EventID.TeleportToEnd
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/6E2E98F9-ACC0-4B3C-A822-E970E60637E0
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/D0E21E8A-C42A-4360-8888-D03A833B9082
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/889B79AA-9F33-4E76-8BC0-39708DE770CC
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/BFEF513D-C2D0-4EF7-BB35-61D2251F7DFF
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/889B79AA-9F33-4E76-8BC0-39708DE770CC
                             Target B7AF4465-02A2-5DC8-8364-340B5150B195
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -612424115
                             TargetType EventConnectionTargetType_Server
@@ -3783,7 +3783,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/889B79AA-9F33-4E76-8BC0-39708DE770CC
                             Target B7AF4465-02A2-5DC8-8364-340B5150B195
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 154440028
                             TargetType EventConnectionTargetType_Server
@@ -3791,7 +3791,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             Source levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/18AE8426-A9BC-4728-A7A8-569AD56C3EAD
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/889B79AA-9F33-4E76-8BC0-39708DE770CC
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -3799,7 +3799,7 @@ SubWorldData 50D8D412-49E4-4A62-A6E0-EA7923D8AECF #primary instance
                             Source B7AF4465-02A2-5DC8-8364-340B5150B195
                             Target levels/sp_earthquake/streetcrossing/layer4_streetcrossingsquadmovement/889B79AA-9F33-4E76-8BC0-39708DE770CC
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server

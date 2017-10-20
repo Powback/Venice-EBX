@@ -3380,7 +3380,7 @@ InterfaceDescriptorData 099E4303-6629-FA37-67C9-2379D3C5506F
         member::DynamicEvent
             Id -1205507839
         member::DynamicEvent
-            Id 650265526
+            Id EventID.OnFinished
         member::DynamicEvent
             Id -1932849878
         member::DynamicEvent
@@ -10154,7 +10154,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             member::PropertyConnection
                                 Source levels/sp_paris/chase/layer4_chase_logic_schematics/F732B478-35AD-4604-9F1A-E8C1F67D6C61
                                 Target levels/sp_paris/chase/layer0_chase_buildings/46FCA001-DAA6-4D8E-8134-0AE95B1BCB78
-                                SourceFieldId 193453899
+                                SourceFieldId EventID.Out
                                 TargetFieldId -409930682
                             member::PropertyConnection
                                 Source levels/sp_paris/chase/layer4_chase_logic_schematics/FC5E8C4F-0609-4F64-AE9E-764AFA4D48D4
@@ -10545,7 +10545,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             member::LinkConnection
                                 Source levels/sp_paris/chase/layer4_chase_logic_schematics/3928DC77-0DB0-4C69-8957-94B5840FACC2
                                 Target 099E4303-6629-FA37-67C9-2379D3C5506F
-                                SourceFieldId 230891742
+                                SourceFieldId EventID.Spawn
                                 TargetFieldId 1141453369
                             member::LinkConnection
                                 Source levels/sp_paris/chase/layer4_chase_logic_schematics/3A679633-7422-4023-898A-C9F54484EF33
@@ -10652,23 +10652,23 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer9_chase_sound_schematic/27F861DA-40E2-4E59-A50B-372DE392EDB3
                             Target levels/sp_paris/chase/layer9_chase_sound_schematic/92B6285A-D4B3-4739-BBE3-50FA3EC86254
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/chase/layer9_chase_sound_schematic/E131DC96-DC0B-4DBF-9DE9-915E90AFFB94
                             Target levels/sp_paris/chase/layer9_chase_sound_schematic/D9DA46E3-5A48-4B53-9BB3-EEC000B5134C
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/chase/layer9_chase_sound_schematic/27F861DA-40E2-4E59-A50B-372DE392EDB3
                             Target 099E4303-6629-FA37-67C9-2379D3C5506F
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id 781338704
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -10676,17 +10676,17 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer9_chase_sound_schematic/92B6285A-D4B3-4739-BBE3-50FA3EC86254
                             Target levels/sp_paris/chase/layer9_chase_sound_schematic/D9DA46E3-5A48-4B53-9BB3-EEC000B5134C
                             SourceEvent::EventSpec
-                                Id 1194874936
+                                Id EventID.OnDeactivated
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer9_chase_sound_schematic/7C12732E-13D2-4BEF-AE37-9CFB5B65D5FB
                             Target levels/sp_paris/chase/layer9_chase_sound_schematic/92B6285A-D4B3-4739-BBE3-50FA3EC86254
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source 099E4303-6629-FA37-67C9-2379D3C5506F
@@ -10694,13 +10694,13 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 764353353
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer9_chase_sound_schematic/92B6285A-D4B3-4739-BBE3-50FA3EC86254
                             Target 099E4303-6629-FA37-67C9-2379D3C5506F
                             SourceEvent::EventSpec
-                                Id 1194874936
+                                Id EventID.OnDeactivated
                             TargetEvent::EventSpec
                                 Id 819349071
                             TargetType EventConnectionTargetType_Client
@@ -10708,39 +10708,39 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer9_chase_sound_schematic/92B6285A-D4B3-4739-BBE3-50FA3EC86254
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/6BF468C8-8974-4B68-B7EA-CDBA080EFD98
                             SourceEvent::EventSpec
-                                Id 1194874936
+                                Id EventID.OnDeactivated
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer1_chase_logic/E64070FF-34CA-4E7F-8955-96871FBC8AF4
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/3A679633-7422-4023-898A-C9F54484EF33
                             SourceEvent::EventSpec
-                                Id -721579565
+                                Id EventID.TriggerProps
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer1_chase_logic/E64070FF-34CA-4E7F-8955-96871FBC8AF4
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/3A679633-7422-4023-898A-C9F54484EF33
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/C3A52B43-3400-4946-B495-C3CC443EB0B0
                             Target levels/sp_paris/chase/layer1_chase_logic/E64070FF-34CA-4E7F-8955-96871FBC8AF4
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 1037701496
+                                Id EventID.ForceStart
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/chase/layer1_chase_logic/E64070FF-34CA-4E7F-8955-96871FBC8AF4
                             Target 099E4303-6629-FA37-67C9-2379D3C5506F
                             SourceEvent::EventSpec
-                                Id -1694482841
+                                Id EventID.TriggerActor1
                             TargetEvent::EventSpec
                                 Id 287338331
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -10748,15 +10748,15 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer1_chase_logic/E64070FF-34CA-4E7F-8955-96871FBC8AF4
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/336CF22A-19E0-4461-8C7F-40724EBD88D0
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/3A679633-7422-4023-898A-C9F54484EF33
                             Target 099E4303-6629-FA37-67C9-2379D3C5506F
                             SourceEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetEvent::EventSpec
                                 Id 12103405
                             TargetType EventConnectionTargetType_Client
@@ -10812,7 +10812,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/3A679633-7422-4023-898A-C9F54484EF33
                             Target 099E4303-6629-FA37-67C9-2379D3C5506F
                             SourceEvent::EventSpec
-                                Id 1928776733
+                                Id EventID.Deactivate
                             TargetEvent::EventSpec
                                 Id -542094468
                             TargetType EventConnectionTargetType_Client
@@ -10876,7 +10876,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/3A679633-7422-4023-898A-C9F54484EF33
                             Target 099E4303-6629-FA37-67C9-2379D3C5506F
                             SourceEvent::EventSpec
-                                Id 2134798598
+                                Id EventID.Success
                             TargetEvent::EventSpec
                                 Id -1861572509
                             TargetType EventConnectionTargetType_Client
@@ -10884,39 +10884,39 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/5562CDD9-428F-4CB9-AE7B-E6A99F72CFFC
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/735F82B1-4DE8-48FA-9AA4-A11260B7038E
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/5562CDD9-428F-4CB9-AE7B-E6A99F72CFFC
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/112CF7E8-4751-4792-89F2-CA78E7A8B1F6
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/735F82B1-4DE8-48FA-9AA4-A11260B7038E
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/AF33B966-B8B7-4279-AB9C-DF982839B8EC
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id 1999102757
+                                Id EventID.FireFromOut
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/112CF7E8-4751-4792-89F2-CA78E7A8B1F6
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/1D71971A-AC4E-4957-9CBE-0A30BBBD342D
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id 1999102757
+                                Id EventID.FireFromOut
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer1_chase_logic/C67F616C-9CDC-474F-BADA-E158D91768D0
                             Target levels/sp_paris/chase/layer1_chase_logic/C67F616C-9CDC-474F-BADA-E158D91768D0
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
                                 Id 851843788
                             TargetType EventConnectionTargetType_Server
@@ -10924,7 +10924,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer1_chase_logic/DBF2C984-E1E8-4A46-A588-CE8459120D2C
                             Target levels/sp_paris/chase/layer1_chase_logic/DBF2C984-E1E8-4A46-A588-CE8459120D2C
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
                                 Id 851843788
                             TargetType EventConnectionTargetType_Server
@@ -10932,199 +10932,199 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/D91476F8-5276-456F-AB77-012504194109
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/D614A3F7-0D38-4D67-AF73-29822184A052
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/99ED9F14-353C-4705-A90E-AD788D255B83
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/7B8B3EE3-52AF-4156-A5CA-C99953204BDC
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/99ED9F14-353C-4705-A90E-AD788D255B83
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/83FCEDCF-9D0C-4F1A-9EDB-E5DBD236A10E
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/7B8B3EE3-52AF-4156-A5CA-C99953204BDC
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/DBE714B1-EE2A-4B49-BBDB-840BFE2DD73A
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id 1999102757
+                                Id EventID.FireFromOut
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/83FCEDCF-9D0C-4F1A-9EDB-E5DBD236A10E
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/F572C6A0-ECE5-48CA-8AC7-146D5189190D
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id 1545880965
+                                Id EventID.FireFromOver
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/8B743AAB-8055-44B4-8D47-70DAD9CEC2B6
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/BF0BBC90-B428-4140-B760-CA550D14C2CD
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/8B743AAB-8055-44B4-8D47-70DAD9CEC2B6
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/91806911-0C3C-437D-B1F5-7B89AD9BFBA6
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/BF0BBC90-B428-4140-B760-CA550D14C2CD
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/EFEDBC81-EFB1-4E26-8EBE-31E425863ADA
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id 1999102757
+                                Id EventID.FireFromOut
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/91806911-0C3C-437D-B1F5-7B89AD9BFBA6
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/BFC721AD-705B-4EB4-BDB8-82F731795BAD
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id 1545880965
+                                Id EventID.FireFromOver
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/99D48D19-1B4E-4DB2-8371-3BE4239AB0EA
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/5562CDD9-428F-4CB9-AE7B-E6A99F72CFFC
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/99D48D19-1B4E-4DB2-8371-3BE4239AB0EA
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/99ED9F14-353C-4705-A90E-AD788D255B83
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/99D48D19-1B4E-4DB2-8371-3BE4239AB0EA
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/8B743AAB-8055-44B4-8D47-70DAD9CEC2B6
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/77124BA2-F60A-4A42-97DB-664FBC8F2734
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/BF8564EF-30C3-49C7-AAD2-EED32A7E733B
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1999102757
+                                Id EventID.FireFromOut
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/77124BA2-F60A-4A42-97DB-664FBC8F2734
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/D04D4098-6EC6-488A-B598-6072FE90DF50
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1999102757
+                                Id EventID.FireFromOut
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/77124BA2-F60A-4A42-97DB-664FBC8F2734
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/266F7817-034D-4E9A-B89D-F941E8C3DA29
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1999102757
+                                Id EventID.FireFromOut
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/77124BA2-F60A-4A42-97DB-664FBC8F2734
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/5C351412-B1EF-4B68-81C2-FD029025DF59
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1999102757
+                                Id EventID.FireFromOut
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/7A6E0CE6-2C4D-4CD9-A2B7-1BCC9CD97D0F
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/77124BA2-F60A-4A42-97DB-664FBC8F2734
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/100A078B-4014-4AE1-8D81-D9D9EB56A991
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/77124BA2-F60A-4A42-97DB-664FBC8F2734
                             SourceEvent::EventSpec
-                                Id -70038721
+                                Id EventID.OnLeave
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/7563EE78-855C-45AA-9296-54AB5EA20F6B
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/968D7A98-0C4E-4C99-B202-B2372D662A19
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1999102757
+                                Id EventID.FireFromOut
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/7563EE78-855C-45AA-9296-54AB5EA20F6B
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/4A0CFA1E-69A1-4670-B57E-7ABDD7A09A28
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1999102757
+                                Id EventID.FireFromOut
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/7563EE78-855C-45AA-9296-54AB5EA20F6B
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/F7A76E01-EF94-4080-AEEE-509BA31D31A5
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1999102757
+                                Id EventID.FireFromOut
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/7563EE78-855C-45AA-9296-54AB5EA20F6B
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/BC21CA7D-FBBB-40EF-828C-611A3957E20C
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1999102757
+                                Id EventID.FireFromOut
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/100A078B-4014-4AE1-8D81-D9D9EB56A991
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/7563EE78-855C-45AA-9296-54AB5EA20F6B
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/E7B51365-059B-42D8-8387-2F6226A7978D
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/AC71CA0D-A68C-4EB2-ABB7-04E45CFE5792
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/23B66630-E607-4600-81B9-DC6ACB9023DA
                             Target levels/sp_paris/chase/layer1_chase_logic/30277AB0-9AC5-4CC4-83C5-2C94BD4E7BD5
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 1576390559
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -11132,7 +11132,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/73FB81E1-74F7-4649-8DB3-2CEB32A0746F
                             Target levels/sp_paris/chase/layer1_chase_logic/ED58BCD3-8E33-423D-9507-918CD84160C8
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 1576390559
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -11140,79 +11140,79 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/E7B51365-059B-42D8-8387-2F6226A7978D
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/23B66630-E607-4600-81B9-DC6ACB9023DA
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/AC71CA0D-A68C-4EB2-ABB7-04E45CFE5792
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/73FB81E1-74F7-4649-8DB3-2CEB32A0746F
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/8274EA40-4027-473E-9FFB-FD8EC331157F
                             Target levels/sp_paris/chase/layer1_chase_logic/C67F616C-9CDC-474F-BADA-E158D91768D0
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 2089125447
+                                Id EventID.Kill
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/23B66630-E607-4600-81B9-DC6ACB9023DA
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/8274EA40-4027-473E-9FFB-FD8EC331157F
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/73FB81E1-74F7-4649-8DB3-2CEB32A0746F
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/F4D61CD5-2957-4F34-A430-5047DDEA04B5
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/F4D61CD5-2957-4F34-A430-5047DDEA04B5
                             Target levels/sp_paris/chase/layer1_chase_logic/DBF2C984-E1E8-4A46-A588-CE8459120D2C
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 2089125447
+                                Id EventID.Kill
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer1_chase_logic/DBF2C984-E1E8-4A46-A588-CE8459120D2C
                             Target levels/sp_paris/chase/layer1_chase_logic/30277AB0-9AC5-4CC4-83C5-2C94BD4E7BD5
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
-                                Id 1999519237
+                                Id EventID.FireStop
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_paris/chase/layer1_chase_logic/C67F616C-9CDC-474F-BADA-E158D91768D0
                             Target levels/sp_paris/chase/layer1_chase_logic/ED58BCD3-8E33-423D-9507-918CD84160C8
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
-                                Id 1999519237
+                                Id EventID.FireStop
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/B5748323-D59E-4A5D-B606-C792444C16DB
                             Target 099E4303-6629-FA37-67C9-2379D3C5506F
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 650265526
+                                Id EventID.OnFinished
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/BBE19BC3-520C-4508-B300-9F705BFFDCB4
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/2A6FB69A-5AAE-4F5C-866D-0127A9C186CF
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -2015378324
                             TargetType EventConnectionTargetType_Server
@@ -11222,7 +11222,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2088727237
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/144CC7DC-31C6-469A-B6EE-8966006D276B
@@ -11230,15 +11230,15 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 328473795
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/C3A52B43-3400-4946-B495-C3CC443EB0B0
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/FBDC5D0E-D748-46E5-8A0C-6FD50785621F
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/FFA9BE77-E8CC-4BE6-BB88-C6AF31102D66
@@ -11246,7 +11246,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 527522170
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/FC5E8C4F-0609-4F64-AE9E-764AFA4D48D4
@@ -11254,7 +11254,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 325525503
                             TargetEvent::EventSpec
-                                Id 1422740397
+                                Id EventID.FadeOut
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/651B8E48-4C44-4C55-AD0F-1BE9D096DBB9
@@ -11262,15 +11262,15 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 325525503
                             TargetEvent::EventSpec
-                                Id 1422740397
+                                Id EventID.FadeOut
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/651B8E48-4C44-4C55-AD0F-1BE9D096DBB9
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/FC5E8C4F-0609-4F64-AE9E-764AFA4D48D4
                             SourceEvent::EventSpec
-                                Id -1193365339
+                                Id EventID.OnStarted
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/F749D8DD-F827-43D5-81E6-AE765B08F2CA
@@ -11278,135 +11278,135 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 325525503
                             TargetEvent::EventSpec
-                                Id 1422740397
+                                Id EventID.FadeOut
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/8D6318C1-9341-4AA3-AE49-283329C28BDB
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/E21C34D9-3A5C-4930-8A15-29E643EBB3B9
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1843338448
+                                Id EventID.CountDownOne
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/8D6318C1-9341-4AA3-AE49-283329C28BDB
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/35337679-5B9B-433C-9EA1-54DEF83D96FF
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1843338448
+                                Id EventID.CountDownOne
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/8D6318C1-9341-4AA3-AE49-283329C28BDB
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/CD2CDD23-76F0-462B-AA02-CCB453109383
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1843338448
+                                Id EventID.CountDownOne
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/E21C34D9-3A5C-4930-8A15-29E643EBB3B9
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/1462521B-4012-45BB-818C-588B0B23728C
                             SourceEvent::EventSpec
-                                Id -175598950
+                                Id EventID.OnReachedZero
                             TargetEvent::EventSpec
-                                Id 2089008817
+                                Id EventID.Open
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/35337679-5B9B-433C-9EA1-54DEF83D96FF
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/4C752576-61FF-4324-B301-ED2904642398
                             SourceEvent::EventSpec
-                                Id -175598950
+                                Id EventID.OnReachedZero
                             TargetEvent::EventSpec
-                                Id 2089008817
+                                Id EventID.Open
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/E24D424B-3863-4826-921A-96975F83671A
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/1462521B-4012-45BB-818C-588B0B23728C
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/E24D424B-3863-4826-921A-96975F83671A
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/4A324127-20EF-4DB4-A250-BB4D065DA475
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/E21C34D9-3A5C-4930-8A15-29E643EBB3B9
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/4A324127-20EF-4DB4-A250-BB4D065DA475
                             SourceEvent::EventSpec
-                                Id -175598950
+                                Id EventID.OnReachedZero
                             TargetEvent::EventSpec
-                                Id 212633683
+                                Id EventID.Close
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/E21C34D9-3A5C-4930-8A15-29E643EBB3B9
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/4C752576-61FF-4324-B301-ED2904642398
                             SourceEvent::EventSpec
-                                Id -175598950
+                                Id EventID.OnReachedZero
                             TargetEvent::EventSpec
-                                Id 212633683
+                                Id EventID.Close
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/35337679-5B9B-433C-9EA1-54DEF83D96FF
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/4A324127-20EF-4DB4-A250-BB4D065DA475
                             SourceEvent::EventSpec
-                                Id -175598950
+                                Id EventID.OnReachedZero
                             TargetEvent::EventSpec
-                                Id 212633683
+                                Id EventID.Close
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/35337679-5B9B-433C-9EA1-54DEF83D96FF
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/1462521B-4012-45BB-818C-588B0B23728C
                             SourceEvent::EventSpec
-                                Id -175598950
+                                Id EventID.OnReachedZero
                             TargetEvent::EventSpec
-                                Id 212633683
+                                Id EventID.Close
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/E24D424B-3863-4826-921A-96975F83671A
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/4C752576-61FF-4324-B301-ED2904642398
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/CD2CDD23-76F0-462B-AA02-CCB453109383
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/6E57FE91-978A-496C-9080-38B6ADBB5462
                             SourceEvent::EventSpec
-                                Id -175598950
+                                Id EventID.OnReachedZero
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/4A324127-20EF-4DB4-A250-BB4D065DA475
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/F749D8DD-F827-43D5-81E6-AE765B08F2CA
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/1462521B-4012-45BB-818C-588B0B23728C
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/FC5E8C4F-0609-4F64-AE9E-764AFA4D48D4
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/4C752576-61FF-4324-B301-ED2904642398
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/651B8E48-4C44-4C55-AD0F-1BE9D096DBB9
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/3A679633-7422-4023-898A-C9F54484EF33
@@ -11414,23 +11414,23 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id -1778890842
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/3A679633-7422-4023-898A-C9F54484EF33
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/8D6318C1-9341-4AA3-AE49-283329C28BDB
                             SourceEvent::EventSpec
-                                Id 2134798598
+                                Id EventID.Success
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/E21C34D9-3A5C-4930-8A15-29E643EBB3B9
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/FFA9BE77-E8CC-4BE6-BB88-C6AF31102D66
                             SourceEvent::EventSpec
-                                Id -175598950
+                                Id EventID.OnReachedZero
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/3A679633-7422-4023-898A-C9F54484EF33
@@ -11444,33 +11444,33 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/666CB705-E75B-42CB-9D31-FDB74D64E33E
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/366EAC5C-B20E-455F-B553-BA903CC900D1
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 2089420676
+                                Id EventID.Save
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/366EAC5C-B20E-455F-B553-BA903CC900D1
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/6299483F-9DF8-41C5-8674-58BB5E264CC2
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id -1778993948
+                                Id EventID.FadeIn
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/B5748323-D59E-4A5D-B606-C792444C16DB
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/1C48D2FA-10C1-40AD-B70D-D73AE93BE30A
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1928776733
+                                Id EventID.Deactivate
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/BBE19BC3-520C-4508-B300-9F705BFFDCB4
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/1C48D2FA-10C1-40AD-B70D-D73AE93BE30A
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/258CEF3D-9712-49F9-B369-17A3FBC6993B
@@ -11478,39 +11478,39 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2088727237
                             TargetEvent::EventSpec
-                                Id 1736970756
+                                Id EventID.Increment
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/C3A52B43-3400-4946-B495-C3CC443EB0B0
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/7A99B0DB-2A6C-4660-ACD2-84120BE90216
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/chase/layer1_chase_logic/E64070FF-34CA-4E7F-8955-96871FBC8AF4
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/7A99B0DB-2A6C-4660-ACD2-84120BE90216
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id 1928776733
+                                Id EventID.Deactivate
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/C3A52B43-3400-4946-B495-C3CC443EB0B0
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/9277B962-C67F-4B54-8B76-2416F2D3D099
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/7A6E0CE6-2C4D-4CD9-A2B7-1BCC9CD97D0F
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/9277B962-C67F-4B54-8B76-2416F2D3D099
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/7A99B0DB-2A6C-4660-ACD2-84120BE90216
@@ -11540,17 +11540,17 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/366EAC5C-B20E-455F-B553-BA903CC900D1
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/9277B962-C67F-4B54-8B76-2416F2D3D099
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/EF90873F-AB3E-47C5-BBFA-70507BFA8F1E
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/6039DAB5-5B5D-4F4C-B589-88978C0CCBED
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 212633683
+                                Id EventID.Close
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 099E4303-6629-FA37-67C9-2379D3C5506F
@@ -11558,13 +11558,13 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 1269857291
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer1_chase_logic/E64070FF-34CA-4E7F-8955-96871FBC8AF4
                             Target 099E4303-6629-FA37-67C9-2379D3C5506F
                             SourceEvent::EventSpec
-                                Id -1694482844
+                                Id EventID.TriggerActor2
                             TargetEvent::EventSpec
                                 Id 1551014703
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -11572,7 +11572,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/09C03901-478B-47A1-85A9-646F9986D3B7
                             Target 099E4303-6629-FA37-67C9-2379D3C5506F
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
                                 Id 1687386471
                             TargetType EventConnectionTargetType_Server
@@ -11582,21 +11582,21 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id -1179289391
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/6039DAB5-5B5D-4F4C-B589-88978C0CCBED
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/9F875F1E-38EB-412D-8B9D-7909977133D9
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1037321618
+                                Id EventID.SendMessage
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/6039DAB5-5B5D-4F4C-B589-88978C0CCBED
                             Target 099E4303-6629-FA37-67C9-2379D3C5506F
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -1311627623
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -11604,9 +11604,9 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/09C03901-478B-47A1-85A9-646F9986D3B7
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/DA5C02BE-64C8-4029-A503-6BC64E038CB1
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id 206074481
+                                Id EventID.Apply
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer1_chase_logic/588BA024-50CF-4543-B0BC-AF4B8A0BD148
@@ -11628,25 +11628,25 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/C3A52B43-3400-4946-B495-C3CC443EB0B0
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/34DE1862-1BE4-45F4-9936-9D6C70B24FD4
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/15D89BAD-92C0-474C-8F64-036EB86C81AD
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/34DE1862-1BE4-45F4-9936-9D6C70B24FD4
                             SourceEvent::EventSpec
-                                Id 1194874936
+                                Id EventID.OnDeactivated
                             TargetEvent::EventSpec
-                                Id 1928776733
+                                Id EventID.Deactivate
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/C3A52B43-3400-4946-B495-C3CC443EB0B0
                             Target levels/sp_paris/chase/layer9_chase_sound_schematic/92B6285A-D4B3-4739-BBE3-50FA3EC86254
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/144CC7DC-31C6-469A-B6EE-8966006D276B
@@ -11654,45 +11654,45 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id -293693134
                             TargetEvent::EventSpec
-                                Id 1422740397
+                                Id EventID.FadeOut
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/3928DC77-0DB0-4C69-8957-94B5840FACC2
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/1E6FDEE7-880E-49B5-90D0-1321C959D7FB
                             SourceEvent::EventSpec
-                                Id 914475960
+                                Id EventID.OnReached
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/1E6FDEE7-880E-49B5-90D0-1321C959D7FB
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/6039DAB5-5B5D-4F4C-B589-88978C0CCBED
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/366EAC5C-B20E-455F-B553-BA903CC900D1
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/6039DAB5-5B5D-4F4C-B589-88978C0CCBED
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id 212633683
+                                Id EventID.Close
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/76D09670-85AB-4A35-A7DC-495E5FF3B90A
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/DF871BBF-EF56-48FA-839D-EA7CDB3295AA
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1037321618
+                                Id EventID.SendMessage
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/76D09670-85AB-4A35-A7DC-495E5FF3B90A
                             Target 099E4303-6629-FA37-67C9-2379D3C5506F
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -1311627623
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -11700,25 +11700,25 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/801D3151-C094-4211-90D8-FC53495EB056
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/76D09670-85AB-4A35-A7DC-495E5FF3B90A
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/366EAC5C-B20E-455F-B553-BA903CC900D1
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/801D3151-C094-4211-90D8-FC53495EB056
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/C3A52B43-3400-4946-B495-C3CC443EB0B0
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/76D09670-85AB-4A35-A7DC-495E5FF3B90A
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 212633683
+                                Id EventID.Close
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer1_chase_logic/588BA024-50CF-4543-B0BC-AF4B8A0BD148
@@ -11732,7 +11732,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/366EAC5C-B20E-455F-B553-BA903CC900D1
                             Target 099E4303-6629-FA37-67C9-2379D3C5506F
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
                                 Id -376102810
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -11740,47 +11740,47 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/366EAC5C-B20E-455F-B553-BA903CC900D1
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/B2E685C6-4928-4C1D-AB6B-5AB91A31DE7C
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/366EAC5C-B20E-455F-B553-BA903CC900D1
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/9DF4E0C8-F991-45AC-BF71-F2FB6A734EDE
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/9DF4E0C8-F991-45AC-BF71-F2FB6A734EDE
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/58E4CEB6-C682-4F77-9D31-477011C86BAD
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/B2E685C6-4928-4C1D-AB6B-5AB91A31DE7C
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/C5722296-9F7B-47A8-8020-78206ECD580E
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/801D3151-C094-4211-90D8-FC53495EB056
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/3905C8FD-3A18-4D0F-91D1-EB9E123DD522
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/366EAC5C-B20E-455F-B553-BA903CC900D1
                             Target 099E4303-6629-FA37-67C9-2379D3C5506F
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
                                 Id 1270867468
                             TargetType EventConnectionTargetType_Server
@@ -11790,23 +11790,23 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 193445336
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/9277B962-C67F-4B54-8B76-2416F2D3D099
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/3876B4AF-1466-4350-90A3-1CAECD845481
                             SourceEvent::EventSpec
-                                Id 1194874936
+                                Id EventID.OnDeactivated
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/9277B962-C67F-4B54-8B76-2416F2D3D099
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/3876B4AF-1466-4350-90A3-1CAECD845481
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/7A99B0DB-2A6C-4660-ACD2-84120BE90216
@@ -11814,7 +11814,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258553
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/7A99B0DB-2A6C-4660-ACD2-84120BE90216
@@ -11822,7 +11822,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258554
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/7A99B0DB-2A6C-4660-ACD2-84120BE90216
@@ -11830,7 +11830,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258555
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/9277B962-C67F-4B54-8B76-2416F2D3D099
@@ -11838,45 +11838,45 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 1067040100
                             TargetEvent::EventSpec
-                                Id -1541066415
+                                Id EventID.SetTrue
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/336CF22A-19E0-4461-8C7F-40724EBD88D0
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/15D89BAD-92C0-474C-8F64-036EB86C81AD
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/336CF22A-19E0-4461-8C7F-40724EBD88D0
                             Target levels/sp_paris/chase/layer11_chase_fx_schematic/0DD41620-BDB6-4385-B789-AB31B074ED0D
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/336CF22A-19E0-4461-8C7F-40724EBD88D0
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/144CC7DC-31C6-469A-B6EE-8966006D276B
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/336CF22A-19E0-4461-8C7F-40724EBD88D0
                             Target levels/sp_paris/chase/layer1_chase_logic/588BA024-50CF-4543-B0BC-AF4B8A0BD148
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1037701496
+                                Id EventID.ForceStart
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/336CF22A-19E0-4461-8C7F-40724EBD88D0
                             Target 099E4303-6629-FA37-67C9-2379D3C5506F
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -1932849878
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -11884,9 +11884,9 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/C3A52B43-3400-4946-B495-C3CC443EB0B0
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/29EBADBA-D7C8-4B3E-A18D-8E755E5F828A
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source 3948897E-F33C-4B3E-877E-B4DAF2058229
@@ -11894,29 +11894,29 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 819349071
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/29EBADBA-D7C8-4B3E-A18D-8E755E5F828A
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/6BF468C8-8974-4B68-B7EA-CDBA080EFD98
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/6BF468C8-8974-4B68-B7EA-CDBA080EFD98
                             Target levels/sp_paris/chase/layer4_chase_logic_schematics/15D89BAD-92C0-474C-8F64-036EB86C81AD
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer4_chase_logic_schematics/366EAC5C-B20E-455F-B553-BA903CC900D1
                             Target 099E4303-6629-FA37-67C9-2379D3C5506F
                             SourceEvent::EventSpec
-                                Id -213362971
+                                Id EventID.OnSaveDone
                             TargetEvent::EventSpec
                                 Id 1270867468
                             TargetType EventConnectionTargetType_Server
@@ -11924,7 +11924,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer1_chase_logic/C67F616C-9CDC-474F-BADA-E158D91768D0
                             Target levels/sp_paris/chase/layer3_chase_squad_logic/B8D12D5A-FFD6-498C-B0E1-92C9A45B7D96
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -11932,7 +11932,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer1_chase_logic/DBF2C984-E1E8-4A46-A588-CE8459120D2C
                             Target levels/sp_paris/chase/layer3_chase_squad_logic/B8D12D5A-FFD6-498C-B0E1-92C9A45B7D96
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -11940,17 +11940,17 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             Source levels/sp_paris/chase/layer3_chase_squad_logic/B8D12D5A-FFD6-498C-B0E1-92C9A45B7D96
                             Target levels/sp_paris/chase/layer3_chase_squad_logic/66B28D15-8625-4A7D-82E0-06475D427A4D
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer3_chase_squad_logic/66B28D15-8625-4A7D-82E0-06475D427A4D
                             Target levels/sp_paris/chase/layer3_chase_squad_logic/F9697329-E489-4E2A-83D5-79C55E2F249E
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id 1999102757
+                                Id EventID.FireFromOut
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 099E4303-6629-FA37-67C9-2379D3C5506F
@@ -11958,47 +11958,47 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id -1086432787
                             TargetEvent::EventSpec
-                                Id 1999102757
+                                Id EventID.FireFromOut
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/1127E4C7-25B9-4077-B47D-B96AC37D5F27
                             Target levels/sp_paris/chase/layer10_chase_fx/C9CBC723-6BF8-40F0-9373-14A6C4B82C7D
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/1127E4C7-25B9-4077-B47D-B96AC37D5F27
                             Target levels/sp_paris/chase/layer10_chase_fx/A95BE1B3-298D-4423-840F-860616A1B47A
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/F80B0881-F491-47C5-B745-9F508FFCE877
                             Target levels/sp_paris/chase/layer11_chase_fx_schematic/47E24F0B-3BE9-489D-B15D-1DFD5D44E76A
                             SourceEvent::EventSpec
-                                Id -1193365339
+                                Id EventID.OnStarted
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/1127E4C7-25B9-4077-B47D-B96AC37D5F27
                             Target levels/sp_paris/chase/layer11_chase_fx_schematic/F80B0881-F491-47C5-B745-9F508FFCE877
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/F80B0881-F491-47C5-B745-9F508FFCE877
                             Target levels/sp_paris/chase/layer11_chase_fx_schematic/5B417916-27B8-4E92-85C7-0228D4F57A17
                             SourceEvent::EventSpec
-                                Id 650265526
+                                Id EventID.OnFinished
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12006,7 +12006,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011355
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12014,7 +12014,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011355
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12022,7 +12022,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011354
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12030,7 +12030,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011354
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12038,7 +12038,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011353
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12046,7 +12046,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011353
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12054,7 +12054,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011352
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12062,7 +12062,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011352
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12070,7 +12070,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011352
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12078,7 +12078,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011359
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12086,7 +12086,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011359
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12094,7 +12094,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011358
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12102,7 +12102,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011357
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12110,7 +12110,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011356
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12118,7 +12118,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011356
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12126,7 +12126,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011347
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12134,7 +12134,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011347
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12142,7 +12142,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011346
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12150,7 +12150,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011346
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12158,7 +12158,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 2089011346
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12166,7 +12166,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897962
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12174,7 +12174,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897962
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12182,7 +12182,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897963
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12190,7 +12190,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897963
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12198,7 +12198,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897960
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12206,7 +12206,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897960
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12214,7 +12214,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897960
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12222,7 +12222,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897960
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12230,7 +12230,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897961
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12238,7 +12238,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897961
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12246,7 +12246,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897961
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12254,7 +12254,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897961
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12262,7 +12262,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897966
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12270,7 +12270,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897966
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12278,7 +12278,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897967
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12286,7 +12286,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897967
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12294,7 +12294,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897964
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12302,7 +12302,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897964
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12310,7 +12310,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897964
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12318,7 +12318,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897965
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12326,7 +12326,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897965
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12334,7 +12334,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897965
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12342,7 +12342,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897965
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12350,7 +12350,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897954
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12358,7 +12358,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897954
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12366,7 +12366,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897954
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12374,7 +12374,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897954
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12382,7 +12382,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897955
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12390,7 +12390,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897955
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12398,7 +12398,7 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897865
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/2163688E-A32E-424D-A92E-17C9D931C7C4
@@ -12406,119 +12406,119 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 217897865
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/1127E4C7-25B9-4077-B47D-B96AC37D5F27
                             Target levels/sp_paris/chase/layer11_chase_fx_schematic/54E4C43A-284D-41BE-9A15-67CCCB8DE8E1
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/54E4C43A-284D-41BE-9A15-67CCCB8DE8E1
                             Target levels/sp_paris/chase/layer10_chase_fx/B8CFB56F-F93A-4388-A323-DAE888DB3485
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/725A898B-BAC7-49D6-A5CD-780B370E1D82
                             Target levels/sp_paris/chase/layer10_chase_fx/9C007A27-D92C-4D21-934D-752A10172A86
                             SourceEvent::EventSpec
-                                Id -1193365339
+                                Id EventID.OnStarted
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/725A898B-BAC7-49D6-A5CD-780B370E1D82
                             Target levels/sp_paris/chase/layer10_chase_fx/9C007A27-D92C-4D21-934D-752A10172A86
                             SourceEvent::EventSpec
-                                Id 650265526
+                                Id EventID.OnFinished
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/0DD41620-BDB6-4385-B789-AB31B074ED0D
                             Target levels/sp_paris/chase/layer11_chase_fx_schematic/C2FB9FC4-8CE8-4D1D-98C7-151616FC4D7C
                             SourceEvent::EventSpec
-                                Id -1193365339
+                                Id EventID.OnStarted
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/0DD41620-BDB6-4385-B789-AB31B074ED0D
                             Target levels/sp_paris/chase/layer11_chase_fx_schematic/C2FB9FC4-8CE8-4D1D-98C7-151616FC4D7C
                             SourceEvent::EventSpec
-                                Id 650265526
+                                Id EventID.OnFinished
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/9A61D615-2EDC-4423-9455-69B53DF8FCFB
                             Target levels/sp_paris/chase/layer10_chase_fx/C5CE726A-15E4-47BB-911F-22D60B9ACE3C
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/9A61D615-2EDC-4423-9455-69B53DF8FCFB
                             Target levels/sp_paris/chase/layer11_chase_fx_schematic/5B417916-27B8-4E92-85C7-0228D4F57A17
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/9A61D615-2EDC-4423-9455-69B53DF8FCFB
                             Target levels/sp_paris/chase/layer11_chase_fx_schematic/1127E4C7-25B9-4077-B47D-B96AC37D5F27
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/0DD41620-BDB6-4385-B789-AB31B074ED0D
                             Target levels/sp_paris/chase/layer11_chase_fx_schematic/9A61D615-2EDC-4423-9455-69B53DF8FCFB
                             SourceEvent::EventSpec
-                                Id 650265526
+                                Id EventID.OnFinished
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/99E59620-A512-46C6-B505-46FEAD84D1B0
                             Target levels/sp_paris/chase/layer10_chase_fx/02427E60-2803-45D1-8CC5-1FE098374D1D
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/99E59620-A512-46C6-B505-46FEAD84D1B0
                             Target levels/sp_paris/chase/layer10_chase_fx/8A3E99AA-04A9-4999-A9A2-82F17899334C
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/99E59620-A512-46C6-B505-46FEAD84D1B0
                             Target levels/sp_paris/chase/layer11_chase_fx_schematic/725A898B-BAC7-49D6-A5CD-780B370E1D82
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/9A61D615-2EDC-4423-9455-69B53DF8FCFB
                             Target levels/sp_paris/chase/layer11_chase_fx_schematic/99E59620-A512-46C6-B505-46FEAD84D1B0
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/FAD14006-EB97-4178-8E91-1FD9E8160A7A
@@ -12526,39 +12526,39 @@ SubWorldData 11A81F13-DB54-4FFD-93B6-F05E8BFACF7A #primary instance
                             SourceEvent::EventSpec
                                 Id 613578040
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/FAD14006-EB97-4178-8E91-1FD9E8160A7A
                             Target levels/sp_paris/chase/layer11_chase_fx_schematic/1D915DB8-47D1-4205-AD99-AC928FE3D016
                             SourceEvent::EventSpec
-                                Id -1193365339
+                                Id EventID.OnStarted
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/FAD14006-EB97-4178-8E91-1FD9E8160A7A
                             Target levels/sp_paris/chase/layer11_chase_fx_schematic/1D915DB8-47D1-4205-AD99-AC928FE3D016
                             SourceEvent::EventSpec
-                                Id 650265526
+                                Id EventID.OnFinished
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/FA3E3441-BF02-491A-812C-3378BCEEC89D
                             Target levels/sp_paris/chase/layer11_chase_fx_schematic/FAD14006-EB97-4178-8E91-1FD9E8160A7A
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_paris/chase/layer11_chase_fx_schematic/99E59620-A512-46C6-B505-46FEAD84D1B0
                             Target levels/sp_paris/chase/layer11_chase_fx_schematic/FA3E3441-BF02-491A-812C-3378BCEEC89D
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                     Descriptor 099E4303-6629-FA37-67C9-2379D3C5506F
                     NeedNetworkId True

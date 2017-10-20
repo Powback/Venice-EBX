@@ -92,9 +92,9 @@ InterfaceDescriptorData F8F7366B-4C6F-4D42-A62C-941394A3B044
                 AccessType FieldAccessType_Source
     InputEvents::array
         member::DynamicEvent
-            Id -62145612
+            Id EventID.OnDisabled
         member::DynamicEvent
-            Id 1594562913
+            Id EventID.OnHealthy
     OutputEvents::array
         member::DynamicEvent
             Id 2117264948
@@ -126,12 +126,12 @@ LogicPrefabBlueprint DB0DACAC-B694-4E7B-9045-6B1A801095F8 #primary instance
                         member::PropertyConnection
                             Source AE931D4D-85BD-4854-9F80-ED7DD5B88F27
                             Target 688CA04D-724B-4633-966A-71AFDE1A3A3E
-                            SourceFieldId 193453899
+                            SourceFieldId EventID.Out
                             TargetFieldId 2662400
                         member::PropertyConnection
                             Source AE931D4D-85BD-4854-9F80-ED7DD5B88F27
                             Target 8CDE4B44-7B96-45E1-B746-AA3B6B4CD5E2
-                            SourceFieldId 193453899
+                            SourceFieldId EventID.Out
                             TargetFieldId 2662400
                         member::PropertyConnection
                             Source F8F7366B-4C6F-4D42-A62C-941394A3B044
@@ -141,7 +141,7 @@ LogicPrefabBlueprint DB0DACAC-B694-4E7B-9045-6B1A801095F8 #primary instance
                         member::PropertyConnection
                             Source AE931D4D-85BD-4854-9F80-ED7DD5B88F27
                             Target 0B300B33-6590-46BD-8A03-1ED629EBE281
-                            SourceFieldId 193453899
+                            SourceFieldId EventID.Out
                             TargetFieldId 2662400
                         member::PropertyConnection
                             Source F8F7366B-4C6F-4D42-A62C-941394A3B044
@@ -151,7 +151,7 @@ LogicPrefabBlueprint DB0DACAC-B694-4E7B-9045-6B1A801095F8 #primary instance
                         member::PropertyConnection
                             Source AE931D4D-85BD-4854-9F80-ED7DD5B88F27
                             Target F8F7366B-4C6F-4D42-A62C-941394A3B044
-                            SourceFieldId 193453899
+                            SourceFieldId EventID.Out
                             TargetFieldId 1925892777
                     LinkConnections::array
                         member::LinkConnection
@@ -184,7 +184,7 @@ LogicPrefabBlueprint DB0DACAC-B694-4E7B-9045-6B1A801095F8 #primary instance
                         Source AE931D4D-85BD-4854-9F80-ED7DD5B88F27
                         Target F8F7366B-4C6F-4D42-A62C-941394A3B044
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id EventID.OnTrue
                         TargetEvent::EventSpec
                             Id 2117264948
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -192,7 +192,7 @@ LogicPrefabBlueprint DB0DACAC-B694-4E7B-9045-6B1A801095F8 #primary instance
                         Source AE931D4D-85BD-4854-9F80-ED7DD5B88F27
                         Target F8F7366B-4C6F-4D42-A62C-941394A3B044
                         SourceEvent::EventSpec
-                            Id -81881639
+                            Id EventID.OnFalse
                         TargetEvent::EventSpec
                             Id 1150266842
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -200,17 +200,17 @@ LogicPrefabBlueprint DB0DACAC-B694-4E7B-9045-6B1A801095F8 #primary instance
                         Source F8F7366B-4C6F-4D42-A62C-941394A3B044
                         Target AE931D4D-85BD-4854-9F80-ED7DD5B88F27
                         SourceEvent::EventSpec
-                            Id -62145612
+                            Id EventID.OnDisabled
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id EventID.SetTrue
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source F8F7366B-4C6F-4D42-A62C-941394A3B044
                         Target AE931D4D-85BD-4854-9F80-ED7DD5B88F27
                         SourceEvent::EventSpec
-                            Id 1594562913
+                            Id EventID.OnHealthy
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id EventID.SetFalse
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source EE15FFF5-CE40-472C-92EA-1E9192CD7975

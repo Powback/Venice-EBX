@@ -159,20 +159,20 @@ InterfaceDescriptorData 8581C4EE-C110-4BC2-9B7F-EFD245F2A3C3
         member::DynamicEvent
             Id -1977477233
         member::DynamicEvent
-            Id 1149984791
+            Id EventID.CancelAutoSpawn
         member::DynamicEvent
             Id 851843788
         member::DynamicEvent
             Id 425551065
     OutputEvents::array
         member::DynamicEvent
-            Id 1762125924
+            Id EventID.OnDestinationReached
         member::DynamicEvent
-            Id 1870460902
+            Id EventID.OnAllKilled
         member::DynamicEvent
-            Id -1036968738
+            Id EventID.OnSpawned
         member::DynamicEvent
-            Id 2008897511
+            Id EventID.OnKilled
     InputLinks::array
         member::DynamicLink
             Id -1450328209
@@ -236,41 +236,41 @@ SpatialPrefabBlueprint 4AD82AA7-FB35-46BA-96C5-17B81134A7ED #primary instance
                         Source 6C82801A-7F8A-440B-91AC-C58D4F4CBBC8
                         Target 8581C4EE-C110-4BC2-9B7F-EFD245F2A3C3
                         SourceEvent::EventSpec
-                            Id 1762125924
+                            Id EventID.OnDestinationReached
                         TargetEvent::EventSpec
-                            Id 1762125924
+                            Id EventID.OnDestinationReached
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 8581C4EE-C110-4BC2-9B7F-EFD245F2A3C3
                         Target E60E53CB-E6C5-46CB-8093-29F321418566
                         SourceEvent::EventSpec
-                            Id 1149984791
+                            Id EventID.CancelAutoSpawn
                         TargetEvent::EventSpec
-                            Id 1149984791
+                            Id EventID.CancelAutoSpawn
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source E60E53CB-E6C5-46CB-8093-29F321418566
                         Target 8581C4EE-C110-4BC2-9B7F-EFD245F2A3C3
                         SourceEvent::EventSpec
-                            Id 1870460902
+                            Id EventID.OnAllKilled
                         TargetEvent::EventSpec
-                            Id 1870460902
+                            Id EventID.OnAllKilled
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member::EventConnection
                         Source E60E53CB-E6C5-46CB-8093-29F321418566
                         Target 8581C4EE-C110-4BC2-9B7F-EFD245F2A3C3
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id EventID.OnSpawned
                         TargetEvent::EventSpec
-                            Id -1036968738
+                            Id EventID.OnSpawned
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source E60E53CB-E6C5-46CB-8093-29F321418566
                         Target 6C82801A-7F8A-440B-91AC-C58D4F4CBBC8
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id EventID.OnSpawned
                         TargetEvent::EventSpec
-                            Id -770075886
+                            Id EventID.IssueOrder
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 8581C4EE-C110-4BC2-9B7F-EFD245F2A3C3
@@ -278,15 +278,15 @@ SpatialPrefabBlueprint 4AD82AA7-FB35-46BA-96C5-17B81134A7ED #primary instance
                         SourceEvent::EventSpec
                             Id -1977477233
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id EventID.Spawn
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source E60E53CB-E6C5-46CB-8093-29F321418566
                         Target 8581C4EE-C110-4BC2-9B7F-EFD245F2A3C3
                         SourceEvent::EventSpec
-                            Id 2008897511
+                            Id EventID.OnKilled
                         TargetEvent::EventSpec
-                            Id 2008897511
+                            Id EventID.OnKilled
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source 8581C4EE-C110-4BC2-9B7F-EFD245F2A3C3

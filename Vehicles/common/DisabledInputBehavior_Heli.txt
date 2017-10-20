@@ -52,9 +52,9 @@ InterfaceDescriptorData F94A22C4-A3D6-4A52-9C02-3A22A7857DE3
         Fields *nullArray*
     InputEvents::array
         member::DynamicEvent
-            Id -62145612
+            Id EventID.OnDisabled
         member::DynamicEvent
-            Id 707417003
+            Id EventID.OnFullHealth
     OutputEvents::array
         member::DynamicEvent
             Id 2117264948
@@ -82,22 +82,22 @@ LogicPrefabBlueprint 81F6C1EB-B59F-4ACE-9F94-5AF706293527 #primary instance
                         member::PropertyConnection
                             Source 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
                             Target 4CC3D26C-3618-4B10-BDF2-96E6683D70B2
-                            SourceFieldId 193453899
+                            SourceFieldId EventID.Out
                             TargetFieldId 2662400
                         member::PropertyConnection
                             Source 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
                             Target EE63321A-204A-4714-AF3E-68200005AE5A
-                            SourceFieldId 193453899
+                            SourceFieldId EventID.Out
                             TargetFieldId 2662400
                         member::PropertyConnection
                             Source 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
                             Target FF3C8F28-7F68-4920-B32B-03ED227D4E2E
-                            SourceFieldId 193453899
+                            SourceFieldId EventID.Out
                             TargetFieldId 2662400
                         member::PropertyConnection
                             Source 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
                             Target 933689E2-5A48-4304-8DBA-E53244ACD51E
-                            SourceFieldId 193453899
+                            SourceFieldId EventID.Out
                             TargetFieldId 2662400
                     LinkConnections::array
                         member::LinkConnection
@@ -125,7 +125,7 @@ LogicPrefabBlueprint 81F6C1EB-B59F-4ACE-9F94-5AF706293527 #primary instance
                         Source 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
                         Target F94A22C4-A3D6-4A52-9C02-3A22A7857DE3
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id EventID.OnTrue
                         TargetEvent::EventSpec
                             Id 2117264948
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -133,7 +133,7 @@ LogicPrefabBlueprint 81F6C1EB-B59F-4ACE-9F94-5AF706293527 #primary instance
                         Source 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
                         Target F94A22C4-A3D6-4A52-9C02-3A22A7857DE3
                         SourceEvent::EventSpec
-                            Id -81881639
+                            Id EventID.OnFalse
                         TargetEvent::EventSpec
                             Id 1150266842
                         TargetType EventConnectionTargetType_Client
@@ -141,17 +141,17 @@ LogicPrefabBlueprint 81F6C1EB-B59F-4ACE-9F94-5AF706293527 #primary instance
                         Source F94A22C4-A3D6-4A52-9C02-3A22A7857DE3
                         Target 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
                         SourceEvent::EventSpec
-                            Id -62145612
+                            Id EventID.OnDisabled
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id EventID.SetTrue
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source F94A22C4-A3D6-4A52-9C02-3A22A7857DE3
                         Target 336AB0D9-94AC-46CA-8FF5-74EBD36E84EE
                         SourceEvent::EventSpec
-                            Id 707417003
+                            Id EventID.OnFullHealth
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id EventID.SetFalse
                         TargetType EventConnectionTargetType_Server
                 Descriptor F94A22C4-A3D6-4A52-9C02-3A22A7857DE3
                 NeedNetworkId True

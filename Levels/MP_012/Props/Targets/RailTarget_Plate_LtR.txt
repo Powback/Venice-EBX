@@ -4,12 +4,12 @@ InterfaceDescriptorData 51E0FB35-C4F6-46D3-9084-029AF1230401
         Fields *nullArray*
     InputEvents::array
         member::DynamicEvent
-            Id -559281700
+            Id EventID.Activate
         member::DynamicEvent
-            Id 1928776733
+            Id EventID.Deactivate
     OutputEvents::array
         member::DynamicEvent
-            Id 1223765815
+            Id EventID.Finished
     InputLinks *nullArray*
     OutputLinks *nullArray*
 ReferenceObjectData BEB0517E-6A16-4DB4-80AE-E5DA141F332D
@@ -146,41 +146,41 @@ SpatialPrefabBlueprint 6E53F144-914F-47E6-B600-6749B1FBB3FA #primary instance
                         Source 51E0FB35-C4F6-46D3-9084-029AF1230401
                         Target 3D8A5DD4-F7D3-41DF-AC3C-1A0DA99298EE
                         SourceEvent::EventSpec
-                            Id -559281700
+                            Id EventID.Activate
                         TargetEvent::EventSpec
-                            Id -559281700
+                            Id EventID.Activate
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source 51E0FB35-C4F6-46D3-9084-029AF1230401
                         Target E3F2FDDE-74A1-45F2-B28E-7318894E37EC
                         SourceEvent::EventSpec
-                            Id -559281700
+                            Id EventID.Activate
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source 51E0FB35-C4F6-46D3-9084-029AF1230401
                         Target E3F2FDDE-74A1-45F2-B28E-7318894E37EC
                         SourceEvent::EventSpec
-                            Id 1928776733
+                            Id EventID.Deactivate
                         TargetEvent::EventSpec
-                            Id 232316407
+                            Id EventID.Pause
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source 3D8A5DD4-F7D3-41DF-AC3C-1A0DA99298EE
                         Target 51E0FB35-C4F6-46D3-9084-029AF1230401
                         SourceEvent::EventSpec
-                            Id 1223765815
+                            Id EventID.Finished
                         TargetEvent::EventSpec
-                            Id 1223765815
+                            Id EventID.Finished
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source 3D8A5DD4-F7D3-41DF-AC3C-1A0DA99298EE
                         Target E3F2FDDE-74A1-45F2-B28E-7318894E37EC
                         SourceEvent::EventSpec
-                            Id 1223765815
+                            Id EventID.Finished
                         TargetEvent::EventSpec
-                            Id 232316407
+                            Id EventID.Pause
                         TargetType EventConnectionTargetType_ClientAndServer
                 Descriptor 51E0FB35-C4F6-46D3-9084-029AF1230401
                 NeedNetworkId True

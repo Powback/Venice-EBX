@@ -51,7 +51,7 @@ InterfaceDescriptorData E0D77ADA-9109-B647-E726-71D4C56A9594
         member::DynamicEvent
             Id 1622612910
         member::DynamicEvent
-            Id 230748069
+            Id EventID.Start
     OutputEvents::array
         member::DynamicEvent
             Id 1803532277
@@ -88,7 +88,7 @@ InterfaceDescriptorData E0D77ADA-9109-B647-E726-71D4C56A9594
         member::DynamicEvent
             Id -1324119599
         member::DynamicEvent
-            Id 1223765815
+            Id EventID.Finished
         member::DynamicEvent
             Id -149974031
         member::DynamicEvent
@@ -536,7 +536,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             member::LinkConnection
                                 Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/797B4725-8D67-4A9C-B40E-832BD7768E51
                                 Target E0D77ADA-9109-B647-E726-71D4C56A9594
-                                SourceFieldId 230891742
+                                SourceFieldId EventID.Spawn
                                 TargetFieldId -1084737641
                             member::LinkConnection
                                 Source levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/2764540C-1FCD-4DCF-8B2F-AD53CD9F6633
@@ -580,7 +580,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/E8DAF71C-B88E-4763-9B01-B9F2176F8BD7
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id -1403378799
                             TargetType EventConnectionTargetType_Server
@@ -588,7 +588,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/E8DAF71C-B88E-4763-9B01-B9F2176F8BD7
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id -224385190
                             TargetType EventConnectionTargetType_Server
@@ -596,7 +596,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/E8DAF71C-B88E-4763-9B01-B9F2176F8BD7
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 922717536
                             TargetType EventConnectionTargetType_Server
@@ -604,7 +604,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/E8DAF71C-B88E-4763-9B01-B9F2176F8BD7
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id -2016115165
                             TargetType EventConnectionTargetType_Server
@@ -614,13 +614,13 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             SourceEvent::EventSpec
                                 Id -1789180541
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/D89533E6-AF1E-4489-8765-3DDB00DE36A7
                             Target levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/1885540F-1A15-415D-B06A-783EFBB5986F
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
                                 Id 1955930331
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -628,7 +628,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/268EE0D2-051E-4230-A3BF-47528FDD6862
                             Target levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/1885540F-1A15-415D-B06A-783EFBB5986F
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
                                 Id -983150264
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -636,7 +636,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/6995D6CA-60AF-49DC-92CA-B047CE0C8C85
                             Target levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/1885540F-1A15-415D-B06A-783EFBB5986F
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
                                 Id -507701659
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -772,57 +772,57 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/27345570-71C3-4E28-970E-F175A3140F15
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/88627FB2-228A-4B90-99F3-D19B3BAF3B11
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -496109072
+                                Id EventID.TeleportToEnd
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/27345570-71C3-4E28-970E-F175A3140F15
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/ABDBD546-A481-418B-BDA7-10D7CB61E6A9
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -496109072
+                                Id EventID.TeleportToEnd
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/27345570-71C3-4E28-970E-F175A3140F15
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/5E1BA24A-FE17-4813-9105-A27B5F96A5BD
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -496109072
+                                Id EventID.TeleportToEnd
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/27345570-71C3-4E28-970E-F175A3140F15
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/8106A787-8521-46AE-94E5-026A5AD9A271
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/8106A787-8521-46AE-94E5-026A5AD9A271
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/D89533E6-AF1E-4489-8765-3DDB00DE36A7
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -496109072
+                                Id EventID.TeleportToEnd
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/8106A787-8521-46AE-94E5-026A5AD9A271
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/268EE0D2-051E-4230-A3BF-47528FDD6862
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -496109072
+                                Id EventID.TeleportToEnd
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/8106A787-8521-46AE-94E5-026A5AD9A271
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/6995D6CA-60AF-49DC-92CA-B047CE0C8C85
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -496109072
+                                Id EventID.TeleportToEnd
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source E0D77ADA-9109-B647-E726-71D4C56A9594
@@ -860,31 +860,31 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/5198E962-E484-482F-AF0D-43173E75AD9B
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/F6C89870-9B68-44D0-A9CD-29D231A74ADE
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -496109072
+                                Id EventID.TeleportToEnd
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/5198E962-E484-482F-AF0D-43173E75AD9B
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/1C51DD75-64E6-4412-BA50-A17678445D43
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -496109072
+                                Id EventID.TeleportToEnd
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/8106A787-8521-46AE-94E5-026A5AD9A271
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/9438BF66-17D7-48C4-87DC-716C64644886
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/9438BF66-17D7-48C4-87DC-716C64644886
                             Target levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/1885540F-1A15-415D-B06A-783EFBB5986F
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 1955930331
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -892,7 +892,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/9438BF66-17D7-48C4-87DC-716C64644886
                             Target levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/1885540F-1A15-415D-B06A-783EFBB5986F
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -56979282
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -900,7 +900,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/9438BF66-17D7-48C4-87DC-716C64644886
                             Target levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/1885540F-1A15-415D-B06A-783EFBB5986F
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -983150264
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -908,7 +908,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/9438BF66-17D7-48C4-87DC-716C64644886
                             Target levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/1885540F-1A15-415D-B06A-783EFBB5986F
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -507701659
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -916,31 +916,31 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/F2C653A3-F440-4A98-83F5-5BB3701E51D7
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/27345570-71C3-4E28-970E-F175A3140F15
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/F2C653A3-F440-4A98-83F5-5BB3701E51D7
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/5198E962-E484-482F-AF0D-43173E75AD9B
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/20150472-1B57-4E3A-A9F1-53F1DE86C1C0
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/BC36BCEA-0581-4DE8-A125-4767288B51BA
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -149974031
                             TargetType EventConnectionTargetType_Server
@@ -948,31 +948,31 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/E8DAF71C-B88E-4763-9B01-B9F2176F8BD7
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/88627FB2-228A-4B90-99F3-D19B3BAF3B11
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/E8DAF71C-B88E-4763-9B01-B9F2176F8BD7
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/ABDBD546-A481-418B-BDA7-10D7CB61E6A9
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/E8DAF71C-B88E-4763-9B01-B9F2176F8BD7
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/5E1BA24A-FE17-4813-9105-A27B5F96A5BD
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/0588CFC5-C8D6-4E37-9C8B-7ABA93EEBC4E
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 1686584170
                             TargetType EventConnectionTargetType_Server
@@ -980,7 +980,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/C7A8B043-6D70-45FA-AB0D-ACE6FC3B0170
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/206509FA-4AC8-45BF-AC9B-AECA15BACAC7
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -988,7 +988,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/206509FA-4AC8-45BF-AC9B-AECA15BACAC7
                             Target levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/1885540F-1A15-415D-B06A-783EFBB5986F
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 1493606455
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -998,13 +998,13 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             SourceEvent::EventSpec
                                 Id 1067040100
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/C985B6D4-BD8C-4739-8FD1-5E61658FB794
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/206509FA-4AC8-45BF-AC9B-AECA15BACAC7
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -1012,25 +1012,25 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/206509FA-4AC8-45BF-AC9B-AECA15BACAC7
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/582828E8-AE9E-4102-807C-3BF563F3500C
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/E8DAF71C-B88E-4763-9B01-B9F2176F8BD7
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/582828E8-AE9E-4102-807C-3BF563F3500C
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/F2C653A3-F440-4A98-83F5-5BB3701E51D7
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/582828E8-AE9E-4102-807C-3BF563F3500C
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/1885540F-1A15-415D-B06A-783EFBB5986F
@@ -1038,29 +1038,29 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             SourceEvent::EventSpec
                                 Id -1536805121
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/582828E8-AE9E-4102-807C-3BF563F3500C
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/40D516AE-E81D-4F1E-A390-580B2A5CE4F5
                             SourceEvent::EventSpec
-                                Id 1194874936
+                                Id EventID.OnDeactivated
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/582828E8-AE9E-4102-807C-3BF563F3500C
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/40D516AE-E81D-4F1E-A390-580B2A5CE4F5
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/206509FA-4AC8-45BF-AC9B-AECA15BACAC7
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -1324119599
                             TargetType EventConnectionTargetType_Server
@@ -1076,7 +1076,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/C7A8B043-6D70-45FA-AB0D-ACE6FC3B0170
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id 1129120982
                             TargetType EventConnectionTargetType_Server
@@ -1084,47 +1084,47 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/0588CFC5-C8D6-4E37-9C8B-7ABA93EEBC4E
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/AC73EB40-0FD6-4B31-9563-9EC80C628983
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/AC73EB40-0FD6-4B31-9563-9EC80C628983
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/50E52572-D296-4316-B2B0-66F1FDE7346A
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 2089420676
+                                Id EventID.Save
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/50E52572-D296-4316-B2B0-66F1FDE7346A
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/20150472-1B57-4E3A-A9F1-53F1DE86C1C0
                             SourceEvent::EventSpec
-                                Id -213362971
+                                Id EventID.OnSaveDone
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/50E52572-D296-4316-B2B0-66F1FDE7346A
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/20150472-1B57-4E3A-A9F1-53F1DE86C1C0
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/50E52572-D296-4316-B2B0-66F1FDE7346A
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/BC03D1FA-FB4E-4904-A9A6-EAB7BC71A161
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id -1778993948
+                                Id EventID.FadeIn
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/778F7876-5A27-429D-A864-D10A5505B4B7
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/206509FA-4AC8-45BF-AC9B-AECA15BACAC7
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 193450870
                             TargetType EventConnectionTargetType_Server
@@ -1134,13 +1134,13 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             SourceEvent::EventSpec
                                 Id 1622612910
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/206509FA-4AC8-45BF-AC9B-AECA15BACAC7
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -370312738
                             TargetType EventConnectionTargetType_Server
@@ -1148,15 +1148,15 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/0588CFC5-C8D6-4E37-9C8B-7ABA93EEBC4E
                             Target levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/F82B53B7-7A6F-4E16-9CE2-99729ADC26F7
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/206509FA-4AC8-45BF-AC9B-AECA15BACAC7
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 1537797574
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -1164,7 +1164,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/E8DAF71C-B88E-4763-9B01-B9F2176F8BD7
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 128421913
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -1172,7 +1172,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/2764540C-1FCD-4DCF-8B2F-AD53CD9F6633
                             Target levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/7F0E9609-658A-4BEF-A461-F79C99034A47
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
                                 Id -1363233376
                             TargetType EventConnectionTargetType_Client
@@ -1204,25 +1204,25 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/86571D5B-8FCB-48EF-9032-C9AE441E92AF
                             Target levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/3A9ABA78-BBA8-4FA2-9036-F7DCDEBA126F
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/9E3C3CF6-E219-4DE1-B016-90FC43870528
                             Target levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/861158FF-2842-4C5E-A6BF-692311693C34
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/5632540A-4627-44E0-A56E-6BE7D5D2CAA3
                             Target levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/CF33E011-9733-401A-923F-90744BB3A128
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/7F0E9609-658A-4BEF-A461-F79C99034A47
@@ -1236,65 +1236,65 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/7F7B89EF-C2B8-4F31-9574-55ADF6C73681
                             Target levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/58228E85-D39F-4190-8D63-4A6EFB8DE871
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/7F7B89EF-C2B8-4F31-9574-55ADF6C73681
                             Target levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/6FA8EAD8-8A69-4AC4-86FE-B17E521A7D76
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/7F7B89EF-C2B8-4F31-9574-55ADF6C73681
                             Target levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/832D30D3-FFA8-43A1-94AE-52F5662EF9C5
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/861158FF-2842-4C5E-A6BF-692311693C34
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/D89533E6-AF1E-4489-8765-3DDB00DE36A7
                             SourceEvent::EventSpec
-                                Id 632363373
+                                Id EventID.OnComplete
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/CF33E011-9733-401A-923F-90744BB3A128
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/268EE0D2-051E-4230-A3BF-47528FDD6862
                             SourceEvent::EventSpec
-                                Id 632363373
+                                Id EventID.OnComplete
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/3A9ABA78-BBA8-4FA2-9036-F7DCDEBA126F
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/6995D6CA-60AF-49DC-92CA-B047CE0C8C85
                             SourceEvent::EventSpec
-                                Id 632363373
+                                Id EventID.OnComplete
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/7F7B89EF-C2B8-4F31-9574-55ADF6C73681
                             Target levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/EFF0427A-A4FA-46A1-B646-5075D7C08F07
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 2002318980
+                                Id EventID.ShowMarker
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/D252BB10-258C-41ED-87DC-47E5E74F86B8
                             Target levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/EFF0427A-A4FA-46A1-B646-5075D7C08F07
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -1643756729
+                                Id EventID.HideMarker
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/3E876A16-7FB2-4668-A4D6-6C487994E874
@@ -1302,13 +1302,13 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             SourceEvent::EventSpec
                                 Id 1067040100
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/A8C20B8B-A195-4C33-8D42-0F0B255F398F
                             Target levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/F4E1BB68-141B-4922-855D-FE564A0964E7
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -1316,15 +1316,15 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/7F7B89EF-C2B8-4F31-9574-55ADF6C73681
                             Target levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/3E876A16-7FB2-4668-A4D6-6C487994E874
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/D252BB10-258C-41ED-87DC-47E5E74F86B8
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id -931023131
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -1332,7 +1332,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/D252BB10-258C-41ED-87DC-47E5E74F86B8
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id -635038762
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -1340,7 +1340,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/D252BB10-258C-41ED-87DC-47E5E74F86B8
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id -1786050669
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -1348,31 +1348,31 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/D252BB10-258C-41ED-87DC-47E5E74F86B8
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/E8DAF71C-B88E-4763-9B01-B9F2176F8BD7
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/D252BB10-258C-41ED-87DC-47E5E74F86B8
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/F6C89870-9B68-44D0-A9CD-29D231A74ADE
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/D252BB10-258C-41ED-87DC-47E5E74F86B8
                             Target levels/sp_valley/briefingonhill/layer1_briefingonhill_scene/1C51DD75-64E6-4412-BA50-A17678445D43
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/D8E2E144-5B29-4758-8221-8FC7B406B588
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 1523342746
                             TargetType EventConnectionTargetType_Server
@@ -1380,7 +1380,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/58228E85-D39F-4190-8D63-4A6EFB8DE871
                             Target levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/7F0E9609-658A-4BEF-A461-F79C99034A47
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
                                 Id -450108357
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -1388,7 +1388,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/6FA8EAD8-8A69-4AC4-86FE-B17E521A7D76
                             Target levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/7F0E9609-658A-4BEF-A461-F79C99034A47
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
                                 Id 2040890427
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -1396,7 +1396,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/832D30D3-FFA8-43A1-94AE-52F5662EF9C5
                             Target levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/7F0E9609-658A-4BEF-A461-F79C99034A47
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
                                 Id -834249514
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -1404,7 +1404,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/D252BB10-258C-41ED-87DC-47E5E74F86B8
                             Target levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/F4E1BB68-141B-4922-855D-FE564A0964E7
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -1412,15 +1412,15 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/F4E1BB68-141B-4922-855D-FE564A0964E7
                             Target levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/3E876A16-7FB2-4668-A4D6-6C487994E874
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/F4E1BB68-141B-4922-855D-FE564A0964E7
                             Target levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/7F0E9609-658A-4BEF-A461-F79C99034A47
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 1916915538
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -1430,7 +1430,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             SourceEvent::EventSpec
                                 Id -452012906
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/7F0E9609-658A-4BEF-A461-F79C99034A47
@@ -1438,7 +1438,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             SourceEvent::EventSpec
                                 Id 1159768609
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/7F0E9609-658A-4BEF-A461-F79C99034A47
@@ -1446,7 +1446,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             SourceEvent::EventSpec
                                 Id -1536805121
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/7F0E9609-658A-4BEF-A461-F79C99034A47
@@ -1454,7 +1454,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             SourceEvent::EventSpec
                                 Id -1536805121
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer0_briefingonhill_logic/7F0E9609-658A-4BEF-A461-F79C99034A47
@@ -1462,37 +1462,37 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             SourceEvent::EventSpec
                                 Id -1536805121
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/3E876A16-7FB2-4668-A4D6-6C487994E874
                             Target levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/FA091C62-7EF1-47B6-99B0-7B64EF099A3B
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/3E876A16-7FB2-4668-A4D6-6C487994E874
                             Target levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/FA091C62-7EF1-47B6-99B0-7B64EF099A3B
                             SourceEvent::EventSpec
-                                Id 1194874936
+                                Id EventID.OnDeactivated
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source E0D77ADA-9109-B647-E726-71D4C56A9594
                             Target levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/7F7B89EF-C2B8-4F31-9574-55ADF6C73681
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/7F7B89EF-C2B8-4F31-9574-55ADF6C73681
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -635038762
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -1500,7 +1500,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/7F7B89EF-C2B8-4F31-9574-55ADF6C73681
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -1786050669
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -1508,7 +1508,7 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/7F7B89EF-C2B8-4F31-9574-55ADF6C73681
                             Target E0D77ADA-9109-B647-E726-71D4C56A9594
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -931023131
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -1532,9 +1532,9 @@ SubWorldData AF1E7960-1941-4F14-BD31-29E2AC2A1D17 #primary instance
                             Source levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/797B4725-8D67-4A9C-B40E-832BD7768E51
                             Target levels/sp_valley/briefingonhill/layer2_briefingonhill_identifyrussian/11385B7B-1DFB-46F2-9F1A-4063452EB35A
                             SourceEvent::EventSpec
-                                Id 914475960
+                                Id EventID.OnReached
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_Server
                     Descriptor E0D77ADA-9109-B647-E726-71D4C56A9594
                     NeedNetworkId True

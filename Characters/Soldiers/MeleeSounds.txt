@@ -194,7 +194,7 @@ InterfaceDescriptorData 04DA5390-0AEF-40FC-9C25-A05B561DD557
         member::DynamicEvent
             Id 1925843400
         member::DynamicEvent
-            Id 1928776733
+            Id EventID.Deactivate
     OutputEvents *nullArray*
     InputLinks *nullArray*
     OutputLinks::array
@@ -214,7 +214,7 @@ LogicPrefabBlueprint 223E9486-5DB7-C021-DDA2-2A68AAA486C1 #primary instance
                         member::PropertyConnection
                             Source 760DCA3F-F5C7-461C-9622-1ADCD42C8C54
                             Target 01FBE92B-8CA6-4F38-A8EC-7E3A9D087E04
-                            SourceFieldId 193453899
+                            SourceFieldId EventID.Out
                             TargetFieldId -2024647575
                         member::PropertyConnection
                             Source 04DA5390-0AEF-40FC-9C25-A05B561DD557
@@ -240,11 +240,11 @@ LogicPrefabBlueprint 223E9486-5DB7-C021-DDA2-2A68AAA486C1 #primary instance
                             Source 20A7AC7E-D293-4AC5-A18A-D78A54B22C93
                             Target 1CE54E4C-BFC1-4166-974B-8ED0E235C117
                             SourceFieldId 225375086
-                            TargetFieldId 5862146
+                            TargetFieldId EventID.In
                         member::PropertyConnection
                             Source 1CE54E4C-BFC1-4166-974B-8ED0E235C117
                             Target 2ACB84E6-5553-41CF-A961-D05EF98F8634
-                            SourceFieldId 193453899
+                            SourceFieldId EventID.Out
                             TargetFieldId 176040160
                         member::PropertyConnection
                             Source 20A7AC7E-D293-4AC5-A18A-D78A54B22C93
@@ -267,9 +267,9 @@ LogicPrefabBlueprint 223E9486-5DB7-C021-DDA2-2A68AAA486C1 #primary instance
                         Source 04DA5390-0AEF-40FC-9C25-A05B561DD557
                         Target AE7D93E8-9167-447E-995B-6187D6580BA5
                         SourceEvent::EventSpec
-                            Id 1928776733
+                            Id EventID.Deactivate
                         TargetEvent::EventSpec
-                            Id 1928776733
+                            Id EventID.Deactivate
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 04DA5390-0AEF-40FC-9C25-A05B561DD557
@@ -277,7 +277,7 @@ LogicPrefabBlueprint 223E9486-5DB7-C021-DDA2-2A68AAA486C1 #primary instance
                         SourceEvent::EventSpec
                             Id 1454090506
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id EventID.SetFalse
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 04DA5390-0AEF-40FC-9C25-A05B561DD557
@@ -285,7 +285,7 @@ LogicPrefabBlueprint 223E9486-5DB7-C021-DDA2-2A68AAA486C1 #primary instance
                         SourceEvent::EventSpec
                             Id 1925843400
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id EventID.SetTrue
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 04DA5390-0AEF-40FC-9C25-A05B561DD557
@@ -293,7 +293,7 @@ LogicPrefabBlueprint 223E9486-5DB7-C021-DDA2-2A68AAA486C1 #primary instance
                         SourceEvent::EventSpec
                             Id 1925843400
                         TargetEvent::EventSpec
-                            Id -559281700
+                            Id EventID.Activate
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 04DA5390-0AEF-40FC-9C25-A05B561DD557
@@ -301,15 +301,15 @@ LogicPrefabBlueprint 223E9486-5DB7-C021-DDA2-2A68AAA486C1 #primary instance
                         SourceEvent::EventSpec
                             Id 1454090506
                         TargetEvent::EventSpec
-                            Id -559281700
+                            Id EventID.Activate
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 04DA5390-0AEF-40FC-9C25-A05B561DD557
                         Target 40220BB3-2F33-41E5-B346-79827FED2EB5
                         SourceEvent::EventSpec
-                            Id 1928776733
+                            Id EventID.Deactivate
                         TargetEvent::EventSpec
-                            Id 1928776733
+                            Id EventID.Deactivate
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source AE7D93E8-9167-447E-995B-6187D6580BA5

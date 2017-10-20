@@ -27,7 +27,7 @@ InterfaceDescriptorData 9CD3CD45-9968-4334-B89A-71E9DCC6C2FE
         member::DynamicLink
             Id 2089155077
         member::DynamicLink
-            Id -1573253508
+            Id EventID.Client
 LogicPrefabBlueprint 2025B0EA-70B4-4479-8074-D0F24FFAAC1D #primary instance
     $::PrefabBlueprint
         $::Blueprint
@@ -52,33 +52,33 @@ LogicPrefabBlueprint 2025B0EA-70B4-4479-8074-D0F24FFAAC1D #primary instance
                             Source 38FA6A50-4C6A-455B-AEA5-FE7572C676C4
                             Target 9CD3CD45-9968-4334-B89A-71E9DCC6C2FE
                             SourceFieldId -1450328209
-                            TargetFieldId -1573253508
+                            TargetFieldId EventID.Client
                         member::LinkConnection
                             Source DBE7118E-8459-4BB6-B5DD-2E1829201399
                             Target 9CD3CD45-9968-4334-B89A-71E9DCC6C2FE
                             SourceFieldId -1450328209
-                            TargetFieldId -1573253508
+                            TargetFieldId EventID.Client
                         member::LinkConnection
                             Source 05EEBFDF-5A1D-4667-AC83-0FBC6B09F9A7
                             Target 9CD3CD45-9968-4334-B89A-71E9DCC6C2FE
                             SourceFieldId -1450328209
-                            TargetFieldId -1573253508
+                            TargetFieldId EventID.Client
                 EventConnections::array
                     member::EventConnection
                         Source 0C7CB67A-6BD2-47B9-A6D2-0AA96E1CA23C
                         Target 2A2A247A-69AE-48B3-985A-9B6E26A85F43
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member::EventConnection
                         Source 2A2A247A-69AE-48B3-985A-9B6E26A85F43
                         Target 2A2A247A-69AE-48B3-985A-9B6E26A85F43
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id EventID.OnFinished
                         TargetEvent::EventSpec
-                            Id 2089401213
+                            Id EventID.Stop
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source 2A2A247A-69AE-48B3-985A-9B6E26A85F43
@@ -86,7 +86,7 @@ LogicPrefabBlueprint 2025B0EA-70B4-4479-8074-D0F24FFAAC1D #primary instance
                         SourceEvent::EventSpec
                             Id 1955832802
                         TargetEvent::EventSpec
-                            Id -1688613187
+                            Id EventID.Trigger
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 2A2A247A-69AE-48B3-985A-9B6E26A85F43
@@ -94,15 +94,15 @@ LogicPrefabBlueprint 2025B0EA-70B4-4479-8074-D0F24FFAAC1D #primary instance
                         SourceEvent::EventSpec
                             Id 1955832803
                         TargetEvent::EventSpec
-                            Id -1688613187
+                            Id EventID.Trigger
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 38FA6A50-4C6A-455B-AEA5-FE7572C676C4
                         Target 0C7CB67A-6BD2-47B9-A6D2-0AA96E1CA23C
                         SourceEvent::EventSpec
-                            Id 1223765815
+                            Id EventID.Finished
                         TargetEvent::EventSpec
-                            Id -1573253508
+                            Id EventID.Client
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 9CD3CD45-9968-4334-B89A-71E9DCC6C2FE
@@ -110,7 +110,7 @@ LogicPrefabBlueprint 2025B0EA-70B4-4479-8074-D0F24FFAAC1D #primary instance
                         SourceEvent::EventSpec
                             Id -477445059
                         TargetEvent::EventSpec
-                            Id 2089401213
+                            Id EventID.Stop
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member::EventConnection
                         Source 9CD3CD45-9968-4334-B89A-71E9DCC6C2FE
@@ -118,7 +118,7 @@ LogicPrefabBlueprint 2025B0EA-70B4-4479-8074-D0F24FFAAC1D #primary instance
                         SourceEvent::EventSpec
                             Id 555503312
                         TargetEvent::EventSpec
-                            Id 229946160
+                            Id EventID.Reset
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member::EventConnection
                         Source 9CD3CD45-9968-4334-B89A-71E9DCC6C2FE
@@ -126,7 +126,7 @@ LogicPrefabBlueprint 2025B0EA-70B4-4479-8074-D0F24FFAAC1D #primary instance
                         SourceEvent::EventSpec
                             Id -69460238
                         TargetEvent::EventSpec
-                            Id -1688613187
+                            Id EventID.Trigger
                         TargetType EventConnectionTargetType_NetworkedClient
                     member::EventConnection
                         Source 9CD3CD45-9968-4334-B89A-71E9DCC6C2FE
@@ -134,7 +134,7 @@ LogicPrefabBlueprint 2025B0EA-70B4-4479-8074-D0F24FFAAC1D #primary instance
                         SourceEvent::EventSpec
                             Id 627123137
                         TargetEvent::EventSpec
-                            Id -1688613187
+                            Id EventID.Trigger
                         TargetType EventConnectionTargetType_NetworkedClient
                     member::EventConnection
                         Source 9CD3CD45-9968-4334-B89A-71E9DCC6C2FE
@@ -142,7 +142,7 @@ LogicPrefabBlueprint 2025B0EA-70B4-4479-8074-D0F24FFAAC1D #primary instance
                         SourceEvent::EventSpec
                             Id 284618576
                         TargetEvent::EventSpec
-                            Id -1688613187
+                            Id EventID.Trigger
                         TargetType EventConnectionTargetType_NetworkedClient
                 Descriptor 9CD3CD45-9968-4334-B89A-71E9DCC6C2FE
                 NeedNetworkId True

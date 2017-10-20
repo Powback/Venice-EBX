@@ -14,14 +14,14 @@ InterfaceDescriptorData 1EA00854-0AF7-4761-A751-717EF9AF6CEE
                 AccessType FieldAccessType_Source
     InputEvents::array
         member::DynamicEvent
-            Id 1037701496
+            Id EventID.ForceStart
     OutputEvents::array
         member::DynamicEvent
             Id 2077189664
         member::DynamicEvent
-            Id 1499404377
+            Id EventID.ScenarioFinished
         member::DynamicEvent
-            Id -721579565
+            Id EventID.TriggerProps
     InputLinks *nullArray*
     OutputLinks *nullArray*
 MultipleActorScenarioEntityData 304DAD1A-B7C3-4C97-9E66-FE56907E5BC2
@@ -133,15 +133,15 @@ SpatialPrefabBlueprint 5A313237-E733-24DC-CA12-1B2C114F44CD #primary instance
                         Source 1EA00854-0AF7-4761-A751-717EF9AF6CEE
                         Target 304DAD1A-B7C3-4C97-9E66-FE56907E5BC2
                         SourceEvent::EventSpec
-                            Id 1037701496
+                            Id EventID.ForceStart
                         TargetEvent::EventSpec
-                            Id 1037701496
+                            Id EventID.ForceStart
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 304DAD1A-B7C3-4C97-9E66-FE56907E5BC2
                         Target 1EA00854-0AF7-4761-A751-717EF9AF6CEE
                         SourceEvent::EventSpec
-                            Id -1694482841
+                            Id EventID.TriggerActor1
                         TargetEvent::EventSpec
                             Id 2077189664
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -149,17 +149,17 @@ SpatialPrefabBlueprint 5A313237-E733-24DC-CA12-1B2C114F44CD #primary instance
                         Source 304DAD1A-B7C3-4C97-9E66-FE56907E5BC2
                         Target 1EA00854-0AF7-4761-A751-717EF9AF6CEE
                         SourceEvent::EventSpec
-                            Id 1499404377
+                            Id EventID.ScenarioFinished
                         TargetEvent::EventSpec
-                            Id 1499404377
+                            Id EventID.ScenarioFinished
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 304DAD1A-B7C3-4C97-9E66-FE56907E5BC2
                         Target 1EA00854-0AF7-4761-A751-717EF9AF6CEE
                         SourceEvent::EventSpec
-                            Id -721579565
+                            Id EventID.TriggerProps
                         TargetEvent::EventSpec
-                            Id -721579565
+                            Id EventID.TriggerProps
                         TargetType EventConnectionTargetType_Client
                 Descriptor 1EA00854-0AF7-4761-A751-717EF9AF6CEE
                 NeedNetworkId False

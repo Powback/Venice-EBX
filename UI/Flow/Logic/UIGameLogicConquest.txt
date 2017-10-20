@@ -67,7 +67,7 @@ InterfaceDescriptorData 398F86D6-41AD-4C82-950C-6F391A3337FE
                 AccessType FieldAccessType_Target
     InputEvents::array
         member::DynamicEvent
-            Id 230891742
+            Id EventID.Spawn
         member::DynamicEvent
             Id 28110977
         member::DynamicEvent
@@ -77,15 +77,15 @@ InterfaceDescriptorData 398F86D6-41AD-4C82-950C-6F391A3337FE
         member::DynamicEvent
             Id -1988148895
         member::DynamicEvent
-            Id -1338735519
+            Id EventID.OnWaitForMorePlayers
         member::DynamicEvent
-            Id 989192448
+            Id EventID.OnRestartRoundCountdown
         member::DynamicEvent
-            Id -72940873
+            Id EventID.OnStartRoundCountdown
         member::DynamicEvent
-            Id -1598714430
+            Id EventID.OnRoundRestarts
         member::DynamicEvent
-            Id 30875157
+            Id EventID.OnRoundStarts
     OutputEvents::array
         member::DynamicEvent
             Id -2009666040
@@ -124,7 +124,7 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         Source 0EA89C53-7440-4436-8FDA-2969C01EC070
                         Target 9A05CCDA-213C-4DE0-AF0A-75B82367A3E6
                         SourceEvent::EventSpec
-                            Id 209526997
+                            Id EventID.UIGraph
                         TargetEvent::EventSpec
                             Id 1486593166
                         TargetType EventConnectionTargetType_Client
@@ -158,7 +158,7 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         SourceEvent::EventSpec
                             Id 2088739017
                         TargetEvent::EventSpec
-                            Id 2089008817
+                            Id EventID.Open
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 398F86D6-41AD-4C82-950C-6F391A3337FE
@@ -166,7 +166,7 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         SourceEvent::EventSpec
                             Id 2088739017
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id EventID.Disable
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 398F86D6-41AD-4C82-950C-6F391A3337FE
@@ -182,13 +182,13 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         SourceEvent::EventSpec
                             Id -195489601
                         TargetEvent::EventSpec
-                            Id -1952177180
+                            Id EventID.Enable
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source B064F861-5565-4977-BD09-56EA83E40B4A
                         Target 398F86D6-41AD-4C82-950C-6F391A3337FE
                         SourceEvent::EventSpec
-                            Id 2088518501
+                            Id EventID.Exit
                         TargetEvent::EventSpec
                             Id 244564204
                         TargetType EventConnectionTargetType_Client
@@ -198,7 +198,7 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         SourceEvent::EventSpec
                             Id 1038992734
                         TargetEvent::EventSpec
-                            Id -1684556875
+                            Id EventID.ExitUIGraph
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 88A2D3C5-1F2F-4729-88C2-12A81AC46A04
@@ -206,31 +206,31 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         SourceEvent::EventSpec
                             Id 506311542
                         TargetEvent::EventSpec
-                            Id -569252259
+                            Id EventID.EnterUIGraph
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 43C48245-E38B-476C-B9B9-46FF0FC3E9BF
                         Target 9C266B02-5AC1-4905-B13B-958577DEBCA5
                         SourceEvent::EventSpec
-                            Id 230891742
+                            Id EventID.Spawn
                         TargetEvent::EventSpec
-                            Id 1723395486
+                            Id EventID.Impulse
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 9C266B02-5AC1-4905-B13B-958577DEBCA5
                         Target C1B7EFE2-A8B7-497E-AB9D-8D4DA1E677FD
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id EventID.OnImpulse
                         TargetEvent::EventSpec
-                            Id -569252259
+                            Id EventID.EnterUIGraph
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 9C266B02-5AC1-4905-B13B-958577DEBCA5
                         Target 88A2D3C5-1F2F-4729-88C2-12A81AC46A04
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id EventID.OnImpulse
                         TargetEvent::EventSpec
-                            Id -1952177180
+                            Id EventID.Enable
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 88A2D3C5-1F2F-4729-88C2-12A81AC46A04
@@ -252,47 +252,47 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         Source 398F86D6-41AD-4C82-950C-6F391A3337FE
                         Target 3F5ADE76-29D3-4E5D-80AD-4138DCC2A954
                         SourceEvent::EventSpec
-                            Id 989192448
+                            Id EventID.OnRestartRoundCountdown
                         TargetEvent::EventSpec
-                            Id 989192448
+                            Id EventID.OnRestartRoundCountdown
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 398F86D6-41AD-4C82-950C-6F391A3337FE
                         Target 3F5ADE76-29D3-4E5D-80AD-4138DCC2A954
                         SourceEvent::EventSpec
-                            Id -1338735519
+                            Id EventID.OnWaitForMorePlayers
                         TargetEvent::EventSpec
-                            Id -1338735519
+                            Id EventID.OnWaitForMorePlayers
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 398F86D6-41AD-4C82-950C-6F391A3337FE
                         Target 3F5ADE76-29D3-4E5D-80AD-4138DCC2A954
                         SourceEvent::EventSpec
-                            Id -72940873
+                            Id EventID.OnStartRoundCountdown
                         TargetEvent::EventSpec
-                            Id -72940873
+                            Id EventID.OnStartRoundCountdown
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 398F86D6-41AD-4C82-950C-6F391A3337FE
                         Target 3F5ADE76-29D3-4E5D-80AD-4138DCC2A954
                         SourceEvent::EventSpec
-                            Id -1598714430
+                            Id EventID.OnRoundRestarts
                         TargetEvent::EventSpec
-                            Id -1598714430
+                            Id EventID.OnRoundRestarts
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 398F86D6-41AD-4C82-950C-6F391A3337FE
                         Target 3F5ADE76-29D3-4E5D-80AD-4138DCC2A954
                         SourceEvent::EventSpec
-                            Id 30875157
+                            Id EventID.OnRoundStarts
                         TargetEvent::EventSpec
-                            Id 30875157
+                            Id EventID.OnRoundStarts
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source B064F861-5565-4977-BD09-56EA83E40B4A
                         Target 133D3825-5F17-4210-A4DB-3694FDBAD26D
                         SourceEvent::EventSpec
-                            Id 2088518501
+                            Id EventID.Exit
                         TargetEvent::EventSpec
                             Id 28110977
                         TargetType EventConnectionTargetType_Client
@@ -302,45 +302,45 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         SourceEvent::EventSpec
                             Id -195489601
                         TargetEvent::EventSpec
-                            Id 201149837
+                            Id EventID.Enter
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source B064F861-5565-4977-BD09-56EA83E40B4A
                         Target AC7A757C-D9FA-4693-97E7-7A5C50EF29C7
                         SourceEvent::EventSpec
-                            Id 2088518501
+                            Id EventID.Exit
                         TargetEvent::EventSpec
-                            Id 2088518501
+                            Id EventID.Exit
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 88A2D3C5-1F2F-4729-88C2-12A81AC46A04
                         Target C1B7EFE2-A8B7-497E-AB9D-8D4DA1E677FD
                         SourceEvent::EventSpec
-                            Id 2088518501
+                            Id EventID.Exit
                         TargetEvent::EventSpec
-                            Id -1684556875
+                            Id EventID.ExitUIGraph
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 88A2D3C5-1F2F-4729-88C2-12A81AC46A04
                         Target 6B0CA403-50DD-45F2-B610-DF8FA4B069C7
                         SourceEvent::EventSpec
-                            Id 2088518501
+                            Id EventID.Exit
                         TargetEvent::EventSpec
-                            Id 2088518501
+                            Id EventID.Exit
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 9C266B02-5AC1-4905-B13B-958577DEBCA5
                         Target 6B0CA403-50DD-45F2-B610-DF8FA4B069C7
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id EventID.OnImpulse
                         TargetEvent::EventSpec
-                            Id 201149837
+                            Id EventID.Enter
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source B064F861-5565-4977-BD09-56EA83E40B4A
                         Target 3F5ADE76-29D3-4E5D-80AD-4138DCC2A954
                         SourceEvent::EventSpec
-                            Id 2088518501
+                            Id EventID.Exit
                         TargetEvent::EventSpec
                             Id 1877861694
                         TargetType EventConnectionTargetType_Client
@@ -350,7 +350,7 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         SourceEvent::EventSpec
                             Id -195489601
                         TargetEvent::EventSpec
-                            Id -1684556875
+                            Id EventID.ExitUIGraph
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 398F86D6-41AD-4C82-950C-6F391A3337FE
@@ -382,13 +382,13 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         SourceEvent::EventSpec
                             Id 2088739017
                         TargetEvent::EventSpec
-                            Id 2088518501
+                            Id EventID.Exit
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source B064F861-5565-4977-BD09-56EA83E40B4A
                         Target BD1ED7AE-31AE-495C-9133-DC25ACA30CE4
                         SourceEvent::EventSpec
-                            Id 2088518501
+                            Id EventID.Exit
                         TargetEvent::EventSpec
                             Id -1019342676
                         TargetType EventConnectionTargetType_Client
@@ -396,23 +396,23 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         Source 9EFD66D6-EFC2-428D-B9ED-D8F38967A523
                         Target EA537926-1489-48ED-A6D2-B8237061B570
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
-                            Id -569252259
+                            Id EventID.EnterUIGraph
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 9EFD66D6-EFC2-428D-B9ED-D8F38967A523
                         Target 9C266B02-5AC1-4905-B13B-958577DEBCA5
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
-                            Id 1723395486
+                            Id EventID.Impulse
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 9EFD66D6-EFC2-428D-B9ED-D8F38967A523
                         Target 7DE28082-B1A7-4C7A-8C6D-8FFB9049F91E
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
                             Id -2118424000
                         TargetType EventConnectionTargetType_Client
@@ -420,23 +420,23 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         Source 9EFD66D6-EFC2-428D-B9ED-D8F38967A523
                         Target 6B0CA403-50DD-45F2-B610-DF8FA4B069C7
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
-                            Id 201149837
+                            Id EventID.Enter
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 398F86D6-41AD-4C82-950C-6F391A3337FE
                         Target 9EFD66D6-EFC2-428D-B9ED-D8F38967A523
                         SourceEvent::EventSpec
-                            Id 230891742
+                            Id EventID.Spawn
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id EventID.In
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source C5B07CCA-761C-4125-916F-36C0A63DD231
                         Target 37CF5B27-09C0-4925-B458-CF01CB24AD86
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
                             Id -1988148895
                         TargetType EventConnectionTargetType_Client
@@ -444,7 +444,7 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         Source C5B07CCA-761C-4125-916F-36C0A63DD231
                         Target 133D3825-5F17-4210-A4DB-3694FDBAD26D
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
                             Id 28110977
                         TargetType EventConnectionTargetType_Client
@@ -452,7 +452,7 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         Source C5B07CCA-761C-4125-916F-36C0A63DD231
                         Target BD1ED7AE-31AE-495C-9133-DC25ACA30CE4
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
                             Id -37693173
                         TargetType EventConnectionTargetType_Client
@@ -470,53 +470,53 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         SourceEvent::EventSpec
                             Id -1988148895
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id EventID.In
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source A1B37D68-4446-4111-864C-E0600140FC90
                         Target 4B805C9C-5C42-451D-AF39-917C5EA29C49
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
-                            Id -1541508057
+                            Id EventID.StartRound
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source A1B37D68-4446-4111-864C-E0600140FC90
                         Target 88A2D3C5-1F2F-4729-88C2-12A81AC46A04
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id EventID.Disable
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source A1B37D68-4446-4111-864C-E0600140FC90
                         Target B064F861-5565-4977-BD09-56EA83E40B4A
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id EventID.Disable
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source A1B37D68-4446-4111-864C-E0600140FC90
                         Target 43C48245-E38B-476C-B9B9-46FF0FC3E9BF
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id EventID.Disable
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source A1B37D68-4446-4111-864C-E0600140FC90
                         Target 50888E91-8A74-4279-A46B-FA3D13340E28
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
-                            Id -1684556875
+                            Id EventID.ExitUIGraph
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source A1B37D68-4446-4111-864C-E0600140FC90
                         Target 3F5ADE76-29D3-4E5D-80AD-4138DCC2A954
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
                             Id -906268064
                         TargetType EventConnectionTargetType_Client
@@ -524,7 +524,7 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         Source A1B37D68-4446-4111-864C-E0600140FC90
                         Target 133D3825-5F17-4210-A4DB-3694FDBAD26D
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
                             Id 28110977
                         TargetType EventConnectionTargetType_Client
@@ -532,7 +532,7 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         Source A1B37D68-4446-4111-864C-E0600140FC90
                         Target BD1ED7AE-31AE-495C-9133-DC25ACA30CE4
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
                             Id -37693173
                         TargetType EventConnectionTargetType_Client
@@ -542,7 +542,7 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         SourceEvent::EventSpec
                             Id 28110977
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id EventID.In
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 398F86D6-41AD-4C82-950C-6F391A3337FE
@@ -550,7 +550,7 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         SourceEvent::EventSpec
                             Id 28110977
                         TargetEvent::EventSpec
-                            Id 212633683
+                            Id EventID.Close
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 43C48245-E38B-476C-B9B9-46FF0FC3E9BF
@@ -558,7 +558,7 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         SourceEvent::EventSpec
                             Id 1270129929
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id EventID.Disable
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 43C48245-E38B-476C-B9B9-46FF0FC3E9BF
@@ -566,15 +566,15 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         SourceEvent::EventSpec
                             Id 1270129929
                         TargetEvent::EventSpec
-                            Id 2088518501
+                            Id EventID.Exit
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 3BCF2BB8-2ABE-4D0D-85C1-49A6F8330264
                         Target 6B0CA403-50DD-45F2-B610-DF8FA4B069C7
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
-                            Id 201149837
+                            Id EventID.Enter
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 398F86D6-41AD-4C82-950C-6F391A3337FE
@@ -588,39 +588,39 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         Source 378CDF4D-9330-474E-A752-CF3EE20778E7
                         Target 9EFD66D6-EFC2-428D-B9ED-D8F38967A523
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id EventID.OnTrue
                         TargetEvent::EventSpec
-                            Id 212633683
+                            Id EventID.Close
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 378CDF4D-9330-474E-A752-CF3EE20778E7
                         Target 88A2D3C5-1F2F-4729-88C2-12A81AC46A04
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id EventID.OnTrue
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id EventID.Disable
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 378CDF4D-9330-474E-A752-CF3EE20778E7
                         Target B064F861-5565-4977-BD09-56EA83E40B4A
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id EventID.OnTrue
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id EventID.Disable
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 378CDF4D-9330-474E-A752-CF3EE20778E7
                         Target 43C48245-E38B-476C-B9B9-46FF0FC3E9BF
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id EventID.OnTrue
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id EventID.Disable
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 378CDF4D-9330-474E-A752-CF3EE20778E7
                         Target E5A76399-247D-411F-9FD1-4E257CF83863
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id EventID.OnTrue
                         TargetEvent::EventSpec
                             Id -1852665503
                         TargetType EventConnectionTargetType_Server
@@ -628,17 +628,17 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         Source 378CDF4D-9330-474E-A752-CF3EE20778E7
                         Target AC7A757C-D9FA-4693-97E7-7A5C50EF29C7
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id EventID.OnTrue
                         TargetEvent::EventSpec
-                            Id 2088518501
+                            Id EventID.Exit
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 378CDF4D-9330-474E-A752-CF3EE20778E7
                         Target C5B07CCA-761C-4125-916F-36C0A63DD231
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id EventID.OnTrue
                         TargetEvent::EventSpec
-                            Id 212633683
+                            Id EventID.Close
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 398F86D6-41AD-4C82-950C-6F391A3337FE
@@ -646,13 +646,13 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         SourceEvent::EventSpec
                             Id -1852665503
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id EventID.SetTrue
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source C5B07CCA-761C-4125-916F-36C0A63DD231
                         Target 02395EB3-5C41-4396-AC7E-A14FAA85757C
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
                             Id -1711446775
                         TargetType EventConnectionTargetType_Client
@@ -660,7 +660,7 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         Source A1B37D68-4446-4111-864C-E0600140FC90
                         Target 02395EB3-5C41-4396-AC7E-A14FAA85757C
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
                             Id -1711446775
                         TargetType EventConnectionTargetType_Client
@@ -678,13 +678,13 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         SourceEvent::EventSpec
                             Id -1473403049
                         TargetEvent::EventSpec
-                            Id -1684556875
+                            Id EventID.ExitUIGraph
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 9C266B02-5AC1-4905-B13B-958577DEBCA5
                         Target BD1ED7AE-31AE-495C-9133-DC25ACA30CE4
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id EventID.OnImpulse
                         TargetEvent::EventSpec
                             Id -1019342676
                         TargetType EventConnectionTargetType_Client
@@ -692,7 +692,7 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         Source C5B07CCA-761C-4125-916F-36C0A63DD231
                         Target 3F5ADE76-29D3-4E5D-80AD-4138DCC2A954
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
                             Id -906268064
                         TargetType EventConnectionTargetType_Client
@@ -700,7 +700,7 @@ LogicPrefabBlueprint 567918F9-2EBA-4120-9128-E5B3AE377725 #primary instance
                         Source C5B07CCA-761C-4125-916F-36C0A63DD231
                         Target E5A76399-247D-411F-9FD1-4E257CF83863
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
                             Id -1988148895
                         TargetType EventConnectionTargetType_Client

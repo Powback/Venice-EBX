@@ -61,14 +61,14 @@ InterfaceDescriptorData 564A51EB-A4BA-48ED-AD63-EBDC347725F9
                 AccessType FieldAccessType_Target
     InputEvents::array
         member::DynamicEvent
-            Id 5862146
+            Id EventID.In
         member::DynamicEvent
-            Id 212633683
+            Id EventID.Close
         member::DynamicEvent
-            Id 2089008817
+            Id EventID.Open
     OutputEvents::array
         member::DynamicEvent
-            Id 193453899
+            Id EventID.Out
     InputLinks *nullArray*
     OutputLinks *nullArray*
 LogicPrefabBlueprint 49DF1CEB-BAFF-5B09-782C-DD915908B300 #primary instance
@@ -103,7 +103,7 @@ LogicPrefabBlueprint 49DF1CEB-BAFF-5B09-782C-DD915908B300 #primary instance
                         SourceEvent::EventSpec
                             Id 193445336
                         TargetEvent::EventSpec
-                            Id 1736970756
+                            Id EventID.Increment
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source BAB8A74E-EAD0-41B0-8DBF-5696236D6EEA
@@ -111,7 +111,7 @@ LogicPrefabBlueprint 49DF1CEB-BAFF-5B09-782C-DD915908B300 #primary instance
                         SourceEvent::EventSpec
                             Id 193445336
                         TargetEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source BAB8A74E-EAD0-41B0-8DBF-5696236D6EEA
@@ -119,47 +119,47 @@ LogicPrefabBlueprint 49DF1CEB-BAFF-5B09-782C-DD915908B300 #primary instance
                         SourceEvent::EventSpec
                             Id 193445336
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id EventID.In
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 564A51EB-A4BA-48ED-AD63-EBDC347725F9
                         Target BBA9E094-8113-4EF1-B061-19AB2AC74F08
                         SourceEvent::EventSpec
-                            Id 5862146
+                            Id EventID.In
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id EventID.In
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 84E9D1FE-82F0-4FE7-A44B-55B15BC19339
                         Target BBA9E094-8113-4EF1-B061-19AB2AC74F08
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id EventID.In
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source BBA9E094-8113-4EF1-B061-19AB2AC74F08
                         Target BAB8A74E-EAD0-41B0-8DBF-5696236D6EEA
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id EventID.In
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 564A51EB-A4BA-48ED-AD63-EBDC347725F9
                         Target BBA9E094-8113-4EF1-B061-19AB2AC74F08
                         SourceEvent::EventSpec
-                            Id 212633683
+                            Id EventID.Close
                         TargetEvent::EventSpec
-                            Id 212633683
+                            Id EventID.Close
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 564A51EB-A4BA-48ED-AD63-EBDC347725F9
                         Target BBA9E094-8113-4EF1-B061-19AB2AC74F08
                         SourceEvent::EventSpec
-                            Id 2089008817
+                            Id EventID.Open
                         TargetEvent::EventSpec
-                            Id 2089008817
+                            Id EventID.Open
                         TargetType EventConnectionTargetType_Server
                 Descriptor 564A51EB-A4BA-48ED-AD63-EBDC347725F9
                 NeedNetworkId False

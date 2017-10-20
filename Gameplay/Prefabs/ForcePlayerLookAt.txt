@@ -4,10 +4,10 @@ InterfaceDescriptorData 5A7EAC3A-B53D-4CDD-8ED7-15E5CC7602AB
         Fields *nullArray*
     InputEvents::array
         member::DynamicEvent
-            Id -1688613187
+            Id EventID.Trigger
     OutputEvents::array
         member::DynamicEvent
-            Id -1434059356
+            Id EventID.OnDone
     InputLinks *nullArray*
     OutputLinks *nullArray*
 LocatorEntityData F9C5E491-6AD8-4B7A-BE64-C427975D57AD
@@ -123,33 +123,33 @@ SpatialPrefabBlueprint 30D41E3F-E9E2-5C4E-B1D2-D74B92487640 #primary instance
                         Source 5A7EAC3A-B53D-4CDD-8ED7-15E5CC7602AB
                         Target 57352029-464A-46DB-B48B-0C465D340DEC
                         SourceEvent::EventSpec
-                            Id -1688613187
+                            Id EventID.Trigger
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 5A7EAC3A-B53D-4CDD-8ED7-15E5CC7602AB
                         Target 71CC5FCA-F859-40B3-9AF9-BA95FA07A75F
                         SourceEvent::EventSpec
-                            Id -1688613187
+                            Id EventID.Trigger
                         TargetEvent::EventSpec
-                            Id -1952177180
+                            Id EventID.Enable
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 71CC5FCA-F859-40B3-9AF9-BA95FA07A75F
                         Target 57352029-464A-46DB-B48B-0C465D340DEC
                         SourceEvent::EventSpec
-                            Id 1975570652
+                            Id EventID.OnTrigger
                         TargetEvent::EventSpec
-                            Id 2089401213
+                            Id EventID.Stop
                         TargetType EventConnectionTargetType_NetworkedClient
                     member::EventConnection
                         Source 71CC5FCA-F859-40B3-9AF9-BA95FA07A75F
                         Target 5A7EAC3A-B53D-4CDD-8ED7-15E5CC7602AB
                         SourceEvent::EventSpec
-                            Id 1975570652
+                            Id EventID.OnTrigger
                         TargetEvent::EventSpec
-                            Id -1434059356
+                            Id EventID.OnDone
                         TargetType EventConnectionTargetType_Server
                 Descriptor 5A7EAC3A-B53D-4CDD-8ED7-15E5CC7602AB
                 NeedNetworkId True

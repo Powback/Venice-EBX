@@ -3997,7 +3997,7 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             member::LinkConnection
                                 Source levels/sp_sniper/missile/layer7_aaencounter_enemies/E2017771-DDE7-4796-9B4C-B393B18D9047
                                 Target 081CC390-958D-E670-14EF-AAC4E57EAE9B
-                                SourceFieldId -910201930
+                                SourceFieldId EventID.Player
                                 TargetFieldId 210964196
                             member::LinkConnection
                                 Source levels/sp_sniper/missile/layer7_aaencounter_enemies/4118A56A-CA8B-49A2-93F6-86D48632C982
@@ -4174,7 +4174,7 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer3_rocket_squad/E2CBA535-246C-44BD-8FAF-27D9A75ADA2D
                             Target 081CC390-958D-E670-14EF-AAC4E57EAE9B
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
                                 Id 653868229
                             TargetType EventConnectionTargetType_Server
@@ -4182,7 +4182,7 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer3_rocket_squad/7B54CA32-536A-4D87-80C5-97438171AD32
                             Target levels/sp_sniper/missile/layer3_rocket_squad/D914105B-6FEE-4042-9371-BF92746B4737
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -4198,9 +4198,9 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer3_rocket_squad/D914105B-6FEE-4042-9371-BF92746B4737
                             Target levels/sp_sniper/missile/layer3_rocket_squad/E2CBA535-246C-44BD-8FAF-27D9A75ADA2D
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 081CC390-958D-E670-14EF-AAC4E57EAE9B
@@ -4214,9 +4214,9 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer3_rocket_squad/E2D39389-0C56-4E9B-BDDD-51C9542127CA
                             Target levels/sp_sniper/missile/layer4_rocket_vo/E8774B91-8D07-4698-8921-5AE1339CEF21
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source 081CC390-958D-E670-14EF-AAC4E57EAE9B
@@ -4224,85 +4224,85 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             SourceEvent::EventSpec
                                 Id 798770795
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer4_rocket_vo/7FEFCEB7-4B3B-4E00-A9E1-DCE5E8400939
                             Target levels/sp_sniper/missile/layer4_rocket_vo/E8188635-A6C0-4D2D-84AF-48C84A576CA0
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer4_rocket_vo/A2E13056-9D84-454D-8279-59D6288C4701
                             Target levels/sp_sniper/missile/layer4_rocket_vo/7FEFCEB7-4B3B-4E00-A9E1-DCE5E8400939
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer4_rocket_vo/68B8250F-B42E-4DD1-B755-94084DA16EC2
                             Target levels/sp_sniper/missile/layer4_rocket_vo/B32A63B3-5605-4300-B3CD-D9AE5F95D365
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer4_rocket_vo/B32A63B3-5605-4300-B3CD-D9AE5F95D365
                             Target levels/sp_sniper/missile/layer4_rocket_vo/A2E13056-9D84-454D-8279-59D6288C4701
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer4_rocket_vo/E8188635-A6C0-4D2D-84AF-48C84A576CA0
                             Target levels/sp_sniper/missile/layer4_rocket_vo/3E72D529-3E95-40DA-A6EA-AA29565D5FFF
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer4_rocket_vo/3E72D529-3E95-40DA-A6EA-AA29565D5FFF
                             Target levels/sp_sniper/missile/layer4_rocket_vo/2C50BFA5-5D85-4137-9669-0F2EC16D577C
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer4_rocket_vo/2C50BFA5-5D85-4137-9669-0F2EC16D577C
                             Target levels/sp_sniper/missile/layer4_rocket_vo/7467C271-8A2B-4C07-B761-A109B1460ED0
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer4_rocket_vo/7467C271-8A2B-4C07-B761-A109B1460ED0
                             Target levels/sp_sniper/missile/layer4_rocket_vo/D4DE6F7A-4360-4D12-9198-3E2E3F7F73CA
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer4_rocket_vo/D4DE6F7A-4360-4D12-9198-3E2E3F7F73CA
                             Target levels/sp_sniper/missile/layer4_rocket_vo/B32A63B3-5605-4300-B3CD-D9AE5F95D365
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/B4F1CE25-884F-4CC7-827C-DF9F75698565
                             Target 081CC390-958D-E670-14EF-AAC4E57EAE9B
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id -37502429
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -4310,7 +4310,7 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer1_ab05_logic/3997942F-E254-4E65-BD74-C16B09B22072
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/3F5AA6F4-1C67-47B7-A47D-E0E9F7159A51
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -4318,7 +4318,7 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer1_ab05_logic/ABBD2B41-16EF-4776-8E7D-01AC3BBF4EE0
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/3F5AA6F4-1C67-47B7-A47D-E0E9F7159A51
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -4326,7 +4326,7 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/3F5AA6F4-1C67-47B7-A47D-E0E9F7159A51
                             Target 081CC390-958D-E670-14EF-AAC4E57EAE9B
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 161391011
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -4334,7 +4334,7 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/3F5AA6F4-1C67-47B7-A47D-E0E9F7159A51
                             Target 081CC390-958D-E670-14EF-AAC4E57EAE9B
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -488194119
                             TargetType EventConnectionTargetType_Server
@@ -4342,7 +4342,7 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/3F5AA6F4-1C67-47B7-A47D-E0E9F7159A51
                             Target levels/sp_sniper/missile/layer3_rocket_squad/D914105B-6FEE-4042-9371-BF92746B4737
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -4350,55 +4350,55 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/9CE9857A-8BE2-4E79-801A-4DBB09B809E2
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/C81145EB-0966-4FAB-B2C8-27581F351FDA
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/9CE9857A-8BE2-4E79-801A-4DBB09B809E2
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/E0D7E47D-B726-4990-BB99-223B90523A66
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/9CE9857A-8BE2-4E79-801A-4DBB09B809E2
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/5BC83FFE-6635-4E93-A5D9-7AC08CB442E3
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/6B4696EB-3BA8-4209-A2AF-30D2E1174A95
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/A90A9D8C-66A3-4F3D-B9FF-EB7A65F0AA14
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/9CE9857A-8BE2-4E79-801A-4DBB09B809E2
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/61793540-FEF5-4B7E-ADA9-5776B54C3CC5
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/45DD2009-DF13-432D-9E96-8A135A3A1CCB
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/55EDE803-630C-4159-B2C3-CA01E30E9830
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/87A89B05-7EF7-4706-9E7A-9451E142F1E5
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/E2017771-DDE7-4796-9B4C-B393B18D9047
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id -1328321720
                             TargetType EventConnectionTargetType_Server
@@ -4408,21 +4408,21 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             SourceEvent::EventSpec
                                 Id -1622059917
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/C0D1D64D-7F9F-4012-8344-C2A0ECAABE51
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/812E3E1D-A23F-483E-B167-0A89FDDA328C
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/812E3E1D-A23F-483E-B167-0A89FDDA328C
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/E2017771-DDE7-4796-9B4C-B393B18D9047
                             SourceEvent::EventSpec
-                                Id 632363373
+                                Id EventID.OnComplete
                             TargetEvent::EventSpec
                                 Id 931428496
                             TargetType EventConnectionTargetType_Server
@@ -4430,9 +4430,9 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/67C3E6A7-017D-426A-AA82-1770D53439B7
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/6B4696EB-3BA8-4209-A2AF-30D2E1174A95
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer1_ab05_logic/BD74F2DF-3B3E-4245-B642-9D6E007F058F
@@ -4446,15 +4446,15 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/4118A56A-CA8B-49A2-93F6-86D48632C982
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/358B5F10-4E50-459B-9512-3C467ECFF2B4
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/358B5F10-4E50-459B-9512-3C467ECFF2B4
                             Target levels/sp_sniper/missile/layer1_ab05_logic/BD74F2DF-3B3E-4245-B642-9D6E007F058F
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -1127447956
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -4462,71 +4462,71 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/B849B6FC-89A2-421E-B600-9F1FC83586AE
                             Target levels/sp_sniper/missile/layer1_ab05_logic/7CF45C7B-A342-4652-BC09-26823A8245C7
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/B849B6FC-89A2-421E-B600-9F1FC83586AE
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/31CFA749-7B0D-4E71-BCBE-84A661930559
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/31CFA749-7B0D-4E71-BCBE-84A661930559
                             Target levels/sp_sniper/missile/layer1_ab05_logic/D26D4AE4-45FB-4815-B011-4C7BBB7DCDC6
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/31CFA749-7B0D-4E71-BCBE-84A661930559
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/1ECB4817-1BE9-4C28-91B3-1D2F82D44C39
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/1ECB4817-1BE9-4C28-91B3-1D2F82D44C39
                             Target levels/sp_sniper/missile/layer1_ab05_logic/E3493166-6879-4AB8-A213-11A477F6023D
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/1ECB4817-1BE9-4C28-91B3-1D2F82D44C39
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/2B1937F6-B35F-4538-8A39-73EB366E83B7
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/2B1937F6-B35F-4538-8A39-73EB366E83B7
                             Target levels/sp_sniper/missile/layer1_ab05_logic/53BABCEA-CDB0-4BF1-9223-9E11B20385DA
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/B849B6FC-89A2-421E-B600-9F1FC83586AE
                             Target levels/sp_sniper/missile/layer1_ab05_logic/1B1265D1-9C85-4D82-B5E7-D02F992ECADE
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/CCE6D4D3-A652-4207-AC94-42501857F932
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/3F5AA6F4-1C67-47B7-A47D-E0E9F7159A51
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 193450865
                             TargetType EventConnectionTargetType_Server
@@ -4534,9 +4534,9 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/FFA79C7E-1F49-4B8D-A553-CB859271AE71
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/82DC4C56-C500-4B07-9F29-4DC00AFCB9C1
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/E2017771-DDE7-4796-9B4C-B393B18D9047
@@ -4544,39 +4544,39 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             SourceEvent::EventSpec
                                 Id -1622059917
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/D12C7172-B415-4B6E-AF38-F210C33DC9C3
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/FFA79C7E-1F49-4B8D-A553-CB859271AE71
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer1_ab05_logic/3997942F-E254-4E65-BD74-C16B09B22072
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/7C772532-9666-4C03-8A37-43FE173B23D6
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer1_ab05_logic/ABBD2B41-16EF-4776-8E7D-01AC3BBF4EE0
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/7C772532-9666-4C03-8A37-43FE173B23D6
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/7C772532-9666-4C03-8A37-43FE173B23D6
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/FFA79C7E-1F49-4B8D-A553-CB859271AE71
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 212633683
+                                Id EventID.Close
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/E2017771-DDE7-4796-9B4C-B393B18D9047
@@ -4584,13 +4584,13 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             SourceEvent::EventSpec
                                 Id -1622059917
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/2D4A64D1-E0B3-4B50-8952-BD90DCED48F6
                             Target levels/sp_sniper/missile/layer1_ab05_logic/3997942F-E254-4E65-BD74-C16B09B22072
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 425551065
                             TargetType EventConnectionTargetType_Server
@@ -4598,7 +4598,7 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/2D4A64D1-E0B3-4B50-8952-BD90DCED48F6
                             Target levels/sp_sniper/missile/layer1_ab05_logic/ABBD2B41-16EF-4776-8E7D-01AC3BBF4EE0
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 425551065
                             TargetType EventConnectionTargetType_Server
@@ -4606,247 +4606,247 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/D24DEC61-1AC0-4230-B13C-76066E2140D3
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/67C3E6A7-017D-426A-AA82-1770D53439B7
                             SourceEvent::EventSpec
-                                Id 95128145
+                                Id EventID.OnExplosion
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/D24DEC61-1AC0-4230-B13C-76066E2140D3
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/67C3E6A7-017D-426A-AA82-1770D53439B7
                             SourceEvent::EventSpec
-                                Id 1770123441
+                                Id EventID.OnProjectile
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/D24DEC61-1AC0-4230-B13C-76066E2140D3
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/67C3E6A7-017D-426A-AA82-1770D53439B7
                             SourceEvent::EventSpec
-                                Id 1206113748
+                                Id EventID.OnUnderFire
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer1_ab05_logic/BD74F2DF-3B3E-4245-B642-9D6E007F058F
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/CCE6D4D3-A652-4207-AC94-42501857F932
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/62E87F09-BBF0-4C15-ACC1-5215E20E83B4
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/59353BD5-4379-4C88-840C-C218F3460FF4
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1736970756
+                                Id EventID.Increment
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer0_ab05_buildings/F8ABEABB-A5C0-4A09-B84F-CC5C500F1B89
                             Target levels/sp_sniper/missile/layer2_ab05_lighting/C0200D6C-71A2-44F9-AA24-9E80383E461F
                             SourceEvent::EventSpec
-                                Id -1452333337
+                                Id EventID.OnDestroyed
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer0_ab05_buildings/F8ABEABB-A5C0-4A09-B84F-CC5C500F1B89
                             Target levels/sp_sniper/missile/layer2_ab05_lighting/2E9BA1F7-2C85-47B8-94C5-31879723810D
                             SourceEvent::EventSpec
-                                Id -1452333337
+                                Id EventID.OnDestroyed
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer0_ab05_buildings/0ECB7138-8114-4344-AECA-33EF441538D2
                             Target levels/sp_sniper/missile/layer2_ab05_lighting/2CE1310D-A2F3-42E5-A173-ABBDCCAFB693
                             SourceEvent::EventSpec
-                                Id -1452333337
+                                Id EventID.OnDestroyed
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer0_ab05_buildings/0ECB7138-8114-4344-AECA-33EF441538D2
                             Target levels/sp_sniper/missile/layer2_ab05_lighting/AA2A25BE-9F37-4ECA-85D0-AEDF2530B040
                             SourceEvent::EventSpec
-                                Id -1452333337
+                                Id EventID.OnDestroyed
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer1_ab05_logic/BD74F2DF-3B3E-4245-B642-9D6E007F058F
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/36EE48B0-0E75-452D-AD53-E8C145E4F343
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer1_ab05_logic/3997942F-E254-4E65-BD74-C16B09B22072
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/59A29874-7611-4FD8-86D6-D9EF4D5D0295
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/3DD478A8-DAA4-4948-98A0-12B7273A455C
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/0EC5E31C-0895-4B14-BCD2-299FA48947E9
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/BA1F9E6E-6991-4339-BD6B-81D085E668A9
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/D12C7172-B415-4B6E-AF38-F210C33DC9C3
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/7C772532-9666-4C03-8A37-43FE173B23D6
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/BA1F9E6E-6991-4339-BD6B-81D085E668A9
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/36152BDD-5255-48B7-9834-52D3CADBD47E
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/B98E9E82-6185-41E8-A0BA-EC7B5C9F1BD6
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/A3711DB7-E396-4CF2-B270-E19A2BD10971
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/67C3E6A7-017D-426A-AA82-1770D53439B7
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/55EDE803-630C-4159-B2C3-CA01E30E9830
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/825BF68A-6093-4ACD-B59C-86308495F13D
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/825BF68A-6093-4ACD-B59C-86308495F13D
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/3DD478A8-DAA4-4948-98A0-12B7273A455C
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer1_ab05_logic/3997942F-E254-4E65-BD74-C16B09B22072
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/2FFF66F6-44BB-46CD-9F89-4A9D51B4770A
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
-                                Id 212633683
+                                Id EventID.Close
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/2FFF66F6-44BB-46CD-9F89-4A9D51B4770A
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/B98E9E82-6185-41E8-A0BA-EC7B5C9F1BD6
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/59A29874-7611-4FD8-86D6-D9EF4D5D0295
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/4118A56A-CA8B-49A2-93F6-86D48632C982
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/CB516C0C-B744-451F-AABD-0A3DC991495C
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/C2EF365C-8D1E-4938-B70A-DD1E02605C1C
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/7C772532-9666-4C03-8A37-43FE173B23D6
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/CB516C0C-B744-451F-AABD-0A3DC991495C
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/338BB9A4-CD48-4982-98F2-8AE8BA486B2C
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/338BB9A4-CD48-4982-98F2-8AE8BA486B2C
                             SourceEvent::EventSpec
-                                Id 650265526
+                                Id EventID.OnFinished
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/82DC4C56-C500-4B07-9F29-4DC00AFCB9C1
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/67C3E6A7-017D-426A-AA82-1770D53439B7
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/A021A67A-0426-4C5D-A232-9054E907C9AC
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/89F57067-916E-40A1-A780-20540371A7EC
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/6B4696EB-3BA8-4209-A2AF-30D2E1174A95
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/B4AC80FA-0472-4EC1-87B0-8A323F7A26CA
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/6B4696EB-3BA8-4209-A2AF-30D2E1174A95
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/F2A40092-3541-4543-A09D-C140F0880279
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/6B4696EB-3BA8-4209-A2AF-30D2E1174A95
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/B9AC3368-E752-425E-84EC-A25B4893FF8E
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/56CA9201-67E3-418A-9101-1DC344F9A05E
                             Target levels/sp_sniper/missile/layer1_ab05_logic/9B02DAF9-78A2-4964-B2ED-2251A15852C5
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/56CA9201-67E3-418A-9101-1DC344F9A05E
                             Target levels/sp_sniper/missile/layer1_ab05_logic/217BD79F-7385-4CC8-AE54-FDE0FE10004B
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -1391712200
                             TargetType EventConnectionTargetType_Client
@@ -4854,159 +4854,159 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/56CA9201-67E3-418A-9101-1DC344F9A05E
                             Target levels/sp_sniper/missile/layer1_ab05_logic/5EAAF2C1-E12B-4239-912A-30C212025A75
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/90549F19-AC21-4BC9-9200-13CEC1F7EB2A
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/56CA9201-67E3-418A-9101-1DC344F9A05E
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/9CE9857A-8BE2-4E79-801A-4DBB09B809E2
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/B4F1CE25-884F-4CC7-827C-DF9F75698565
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/E4222E2C-CF5E-449B-AA17-760A215C54E5
                             Target levels/sp_sniper/missile/layer1_ab05_logic/6B44DC25-0DB6-49B4-8E84-1F83BFBE10FA
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/E4222E2C-CF5E-449B-AA17-760A215C54E5
                             Target levels/sp_sniper/missile/layer1_ab05_logic/EB0C0E29-9DED-4A05-B94E-FEAC7BA9FAD1
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/E4222E2C-CF5E-449B-AA17-760A215C54E5
                             Target levels/sp_sniper/missile/layer1_ab05_logic/AA390946-DA2A-41EC-A02D-181539743426
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/E4222E2C-CF5E-449B-AA17-760A215C54E5
                             Target levels/sp_sniper/missile/layer1_ab05_logic/EB123D7E-8270-49A4-A93C-6E30C37D1ABE
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/C0D2E714-9DA0-4B8D-9FBB-7382A30AF084
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/09C61659-9EB6-46D5-84FC-C36D3924007B
                             SourceEvent::EventSpec
-                                Id -358781735
+                                Id EventID.OnActivated
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/09C61659-9EB6-46D5-84FC-C36D3924007B
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/F87FD7F3-5AA9-4D9C-8A58-AF440C182721
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/09C61659-9EB6-46D5-84FC-C36D3924007B
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/B849B6FC-89A2-421E-B600-9F1FC83586AE
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/56CA9201-67E3-418A-9101-1DC344F9A05E
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/45DD2009-DF13-432D-9E96-8A135A3A1CCB
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/2B1937F6-B35F-4538-8A39-73EB366E83B7
                             Target levels/sp_sniper/missile/layer1_ab05_logic/B77FE07B-8754-4CD9-A265-6A3B2768554A
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/90549F19-AC21-4BC9-9200-13CEC1F7EB2A
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/C0D2E714-9DA0-4B8D-9FBB-7382A30AF084
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/B849B6FC-89A2-421E-B600-9F1FC83586AE
                             Target levels/sp_sniper/missile/layer1_ab05_logic/A97F5B3E-8F23-46CB-BDDA-B8B5AA4786BF
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/31CFA749-7B0D-4E71-BCBE-84A661930559
                             Target levels/sp_sniper/missile/layer1_ab05_logic/3E218902-BF6B-403B-B942-63A083CEBD10
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer1_ab05_logic/3997942F-E254-4E65-BD74-C16B09B22072
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/D31E47C8-B895-4761-BDFD-87514C73E50F
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer1_ab05_logic/ABBD2B41-16EF-4776-8E7D-01AC3BBF4EE0
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/D31E47C8-B895-4761-BDFD-87514C73E50F
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/D31E47C8-B895-4761-BDFD-87514C73E50F
                             Target levels/sp_sniper/missile/layer1_ab05_logic/ABBD2B41-16EF-4776-8E7D-01AC3BBF4EE0
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 2089125447
+                                Id EventID.Kill
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/D31E47C8-B895-4761-BDFD-87514C73E50F
                             Target levels/sp_sniper/missile/layer1_ab05_logic/3997942F-E254-4E65-BD74-C16B09B22072
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 2089125447
+                                Id EventID.Kill
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer1_ab05_logic/ABBD2B41-16EF-4776-8E7D-01AC3BBF4EE0
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/3E57B36A-4B79-49B5-9F35-A74E5BEFD087
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
                                 Id 2088671869
                             TargetType EventConnectionTargetType_Client
@@ -5014,7 +5014,7 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer1_ab05_logic/3997942F-E254-4E65-BD74-C16B09B22072
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/3E57B36A-4B79-49B5-9F35-A74E5BEFD087
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
                                 Id 2088671869
                             TargetType EventConnectionTargetType_Client
@@ -5022,31 +5022,31 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/A6B6505C-E341-4A2D-92AF-32D16290D16C
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/8DECC691-AB50-40AF-A6BF-68C61FB3778C
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/8DECC691-AB50-40AF-A6BF-68C61FB3778C
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/FFA79C7E-1F49-4B8D-A553-CB859271AE71
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/7B34897A-6A82-439D-A5F7-E528B7DD4DFA
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/31E8BC71-3680-47DF-9746-2D933C1D5F6A
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/31E8BC71-3680-47DF-9746-2D933C1D5F6A
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/4475A937-58A1-4DCB-A9EC-652EA130417B
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -5054,15 +5054,15 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/4475A937-58A1-4DCB-A9EC-652EA130417B
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/A021A67A-0426-4C5D-A232-9054E907C9AC
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/A78C5C60-44F2-473F-97DC-D01CBA935EE3
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/4475A937-58A1-4DCB-A9EC-652EA130417B
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -5070,105 +5070,105 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/6C17840B-17EB-4A67-B867-E171F5BD2275
                             Target levels/sp_sniper/missile/layer1_ab05_logic/0155B0D1-2617-4B05-8F6C-51899576656E
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/6C17840B-17EB-4A67-B867-E171F5BD2275
                             Target levels/sp_sniper/missile/layer1_ab05_logic/3A2EE8BF-0A56-45A1-8952-514F80805C8E
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/5ED92336-4641-4563-99D3-9C99F104941F
                             Target levels/sp_sniper/missile/layer1_ab05_logic/3997942F-E254-4E65-BD74-C16B09B22072
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/5ED92336-4641-4563-99D3-9C99F104941F
                             Target levels/sp_sniper/missile/layer1_ab05_logic/ABBD2B41-16EF-4776-8E7D-01AC3BBF4EE0
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/E4222E2C-CF5E-449B-AA17-760A215C54E5
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/5ED92336-4641-4563-99D3-9C99F104941F
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/F04DA94E-9A30-49F1-9CCF-5CC0ED229B71
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/8EFF4C83-0E34-4E95-903A-E1E0E4568E9C
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/8A67ED06-16F7-4FE1-AD17-0DB923FE6E28
                             Target levels/sp_sniper/missile/layer1_ab05_logic/F5E4E1D4-A316-4CC8-9E0C-315EFE5D4F0E
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/6C17840B-17EB-4A67-B867-E171F5BD2275
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/79E7F992-8C97-47B2-B43A-B6919F6F2DAE
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/79E7F992-8C97-47B2-B43A-B6919F6F2DAE
                             Target levels/sp_sniper/missile/layer1_ab05_logic/1CFCB2EF-4D3A-4D0C-B13B-CCD8D5FC851A
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/79E7F992-8C97-47B2-B43A-B6919F6F2DAE
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/8A67ED06-16F7-4FE1-AD17-0DB923FE6E28
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/69C5A668-F26F-4A53-BF8D-4DA8BEAD6BE0
                             Target levels/sp_sniper/missile/layer4_rocket_vo/4E935B70-7EB3-4413-8C14-5187642DCB99
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/8A67ED06-16F7-4FE1-AD17-0DB923FE6E28
                             Target levels/sp_sniper/missile/layer7_aaencounter_enemies/69C5A668-F26F-4A53-BF8D-4DA8BEAD6BE0
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer7_aaencounter_enemies/8EFF4C83-0E34-4E95-903A-E1E0E4568E9C
                             Target levels/sp_sniper/missile/layer4_rocket_vo/B30AF74F-AE20-4CC1-9B7A-C7473EED4269
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer5_missile_faillogic/BF55ECAA-2C01-400C-BCE7-8DDCBB1EA00F
@@ -5176,7 +5176,7 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             SourceEvent::EventSpec
                                 Id 1119729153
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/missile/layer5_missile_faillogic/BF55ECAA-2C01-400C-BCE7-8DDCBB1EA00F
@@ -5184,7 +5184,7 @@ SubWorldData CDBFB46F-9683-41CA-9A74-2BFCD8B20AC5 #primary instance
                             SourceEvent::EventSpec
                                 Id -1366552371
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                     Descriptor 081CC390-958D-E670-14EF-AAC4E57EAE9B
                     NeedNetworkId True

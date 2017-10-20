@@ -4424,12 +4424,12 @@ VehicleBlueprint 1152DF63-C737-4FAB-A28E-71940A0584D5 #primary instance
                         member::PropertyConnection
                             Source 3F7818EC-6E14-42D8-9F58-70111D923C0D
                             Target B70AD7F6-E3FF-4489-AC80-BCA056004FA8
-                            SourceFieldId 193453899
+                            SourceFieldId EventID.Out
                             TargetFieldId 2662400
                         member::PropertyConnection
                             Source 3F7818EC-6E14-42D8-9F58-70111D923C0D
                             Target D8AEC7EA-9125-4085-B643-296B3B1A6479
-                            SourceFieldId 193453899
+                            SourceFieldId EventID.Out
                             TargetFieldId 2662400
                         member::PropertyConnection
                             Source 2E3C5DC2-AC6B-4DAD-A61D-C7826653AF7F
@@ -4494,7 +4494,7 @@ VehicleBlueprint 1152DF63-C737-4FAB-A28E-71940A0584D5 #primary instance
                         member::PropertyConnection
                             Source 2C0EBCEC-9530-462C-952A-F1A812A6D27A
                             Target 88E8B112-4F83-47FC-9FD5-D4FAF616C9B0
-                            SourceFieldId 193453899
+                            SourceFieldId EventID.Out
                             TargetFieldId -1429643463
                         member::PropertyConnection
                             Source 0CAC89DF-C7EB-4166-B172-32D6066B468A
@@ -4542,49 +4542,49 @@ VehicleBlueprint 1152DF63-C737-4FAB-A28E-71940A0584D5 #primary instance
                         Source 282D15EE-680D-4FAD-B28B-29C84C930F92
                         Target 3F7818EC-6E14-42D8-9F58-70111D923C0D
                         SourceEvent::EventSpec
-                            Id 1594562913
+                            Id EventID.OnHealthy
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id EventID.SetFalse
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 282D15EE-680D-4FAD-B28B-29C84C930F92
                         Target 3F7818EC-6E14-42D8-9F58-70111D923C0D
                         SourceEvent::EventSpec
-                            Id 942943263
+                            Id EventID.OnDisabledDamage
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id EventID.SetTrue
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 3F7818EC-6E14-42D8-9F58-70111D923C0D
                         Target A0BC86FC-D7A9-47DC-8A67-9F23D5910FAB
                         SourceEvent::EventSpec
-                            Id -81881639
+                            Id EventID.OnFalse
                         TargetEvent::EventSpec
-                            Id -531213201
+                            Id EventID.EnablePhysics
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source 3F7818EC-6E14-42D8-9F58-70111D923C0D
                         Target A3347493-D2D0-447F-9E0A-373538D67289
                         SourceEvent::EventSpec
-                            Id -81881639
+                            Id EventID.OnFalse
                         TargetEvent::EventSpec
-                            Id -531213201
+                            Id EventID.EnablePhysics
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source 3F7818EC-6E14-42D8-9F58-70111D923C0D
                         Target A0BC86FC-D7A9-47DC-8A67-9F23D5910FAB
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id EventID.OnTrue
                         TargetEvent::EventSpec
-                            Id -846239142
+                            Id EventID.DisablePhysics
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source 3F7818EC-6E14-42D8-9F58-70111D923C0D
                         Target A3347493-D2D0-447F-9E0A-373538D67289
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id EventID.OnTrue
                         TargetEvent::EventSpec
-                            Id -846239142
+                            Id EventID.DisablePhysics
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source 00F3C44D-6B06-4759-94D3-C659A5218D9B
@@ -4592,7 +4592,7 @@ VehicleBlueprint 1152DF63-C737-4FAB-A28E-71940A0584D5 #primary instance
                         SourceEvent::EventSpec
                             Id -789784792
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 00F3C44D-6B06-4759-94D3-C659A5218D9B
@@ -4600,7 +4600,7 @@ VehicleBlueprint 1152DF63-C737-4FAB-A28E-71940A0584D5 #primary instance
                         SourceEvent::EventSpec
                             Id 2058474928
                         TargetEvent::EventSpec
-                            Id 2089401213
+                            Id EventID.Stop
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 00F3C44D-6B06-4759-94D3-C659A5218D9B
@@ -4608,7 +4608,7 @@ VehicleBlueprint 1152DF63-C737-4FAB-A28E-71940A0584D5 #primary instance
                         SourceEvent::EventSpec
                             Id 591113486
                         TargetEvent::EventSpec
-                            Id 2089401213
+                            Id EventID.Stop
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 00F3C44D-6B06-4759-94D3-C659A5218D9B
@@ -4616,7 +4616,7 @@ VehicleBlueprint 1152DF63-C737-4FAB-A28E-71940A0584D5 #primary instance
                         SourceEvent::EventSpec
                             Id -1968102314
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 00F3C44D-6B06-4759-94D3-C659A5218D9B
@@ -4624,7 +4624,7 @@ VehicleBlueprint 1152DF63-C737-4FAB-A28E-71940A0584D5 #primary instance
                         SourceEvent::EventSpec
                             Id 1768174069
                         TargetEvent::EventSpec
-                            Id 2089401213
+                            Id EventID.Stop
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 00F3C44D-6B06-4759-94D3-C659A5218D9B
@@ -4632,13 +4632,13 @@ VehicleBlueprint 1152DF63-C737-4FAB-A28E-71940A0584D5 #primary instance
                         SourceEvent::EventSpec
                             Id -1779795699
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 4D7E05CB-9C25-4886-B47C-46732102C6BA
                         Target 9AD19F75-C389-4A2E-9F6F-EE87111A8C0F
                         SourceEvent::EventSpec
-                            Id 47785047
+                            Id EventID.OnPlayerExit
                         TargetEvent::EventSpec
                             Id 1494647961
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -4648,7 +4648,7 @@ VehicleBlueprint 1152DF63-C737-4FAB-A28E-71940A0584D5 #primary instance
                         SourceEvent::EventSpec
                             Id -1895164910
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id EventID.SetTrue
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 9AD19F75-C389-4A2E-9F6F-EE87111A8C0F
@@ -4656,7 +4656,7 @@ VehicleBlueprint 1152DF63-C737-4FAB-A28E-71940A0584D5 #primary instance
                         SourceEvent::EventSpec
                             Id -761099671
                         TargetEvent::EventSpec
-                            Id -1541066415
+                            Id EventID.SetTrue
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 9AD19F75-C389-4A2E-9F6F-EE87111A8C0F
@@ -4664,7 +4664,7 @@ VehicleBlueprint 1152DF63-C737-4FAB-A28E-71940A0584D5 #primary instance
                         SourceEvent::EventSpec
                             Id 1127615752
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id EventID.SetFalse
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 9AD19F75-C389-4A2E-9F6F-EE87111A8C0F
@@ -4672,47 +4672,47 @@ VehicleBlueprint 1152DF63-C737-4FAB-A28E-71940A0584D5 #primary instance
                         SourceEvent::EventSpec
                             Id 1922696691
                         TargetEvent::EventSpec
-                            Id 668205626
+                            Id EventID.SetFalse
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 38834838-6100-4FEF-8B25-4441C98F58C2
                         Target 6E4810C9-6EF2-46CF-AD15-6EB3F37B882B
                         SourceEvent::EventSpec
-                            Id 1577401599
+                            Id EventID.OnPlayerEnter
                         TargetEvent::EventSpec
-                            Id -3142077
+                            Id EventID.MoveToNextHealthState
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 344178D2-82B9-4536-857C-D8508599BBA9
                         Target E2EB999C-1B03-4B57-83C5-510BB370E0F1
                         SourceEvent::EventSpec
-                            Id 1577401599
+                            Id EventID.OnPlayerEnter
                         TargetEvent::EventSpec
-                            Id 1577401599
+                            Id EventID.OnPlayerEnter
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 344178D2-82B9-4536-857C-D8508599BBA9
                         Target E2EB999C-1B03-4B57-83C5-510BB370E0F1
                         SourceEvent::EventSpec
-                            Id 47785047
+                            Id EventID.OnPlayerExit
                         TargetEvent::EventSpec
-                            Id 47785047
+                            Id EventID.OnPlayerExit
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 3F7818EC-6E14-42D8-9F58-70111D923C0D
                         Target 8B72C63C-D89C-4A7B-B973-8F68007C63CB
                         SourceEvent::EventSpec
-                            Id -81881639
+                            Id EventID.OnFalse
                         TargetEvent::EventSpec
-                            Id -531213201
+                            Id EventID.EnablePhysics
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source 3F7818EC-6E14-42D8-9F58-70111D923C0D
                         Target 8B72C63C-D89C-4A7B-B973-8F68007C63CB
                         SourceEvent::EventSpec
-                            Id -1433512622
+                            Id EventID.OnTrue
                         TargetEvent::EventSpec
-                            Id -846239142
+                            Id EventID.DisablePhysics
                         TargetType EventConnectionTargetType_ClientAndServer
                 Descriptor 9AD19F75-C389-4A2E-9F6F-EE87111A8C0F
                 NeedNetworkId True

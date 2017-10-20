@@ -70,11 +70,11 @@ InterfaceDescriptorData DB647CE5-AA52-41A7-A880-F0B463FAA2B5
                 AccessType FieldAccessType_Source
     InputEvents::array
         member::DynamicEvent
-            Id -274579609
+            Id EventID.Destroy
         member::DynamicEvent
             Id 1606680064
         member::DynamicEvent
-            Id 1999497757
+            Id EventID.FireShot
     OutputEvents::array
         member::DynamicEvent
             Id 2097882683
@@ -222,7 +222,7 @@ SpatialPrefabBlueprint F77036AC-32A2-9E61-105B-82043BBC3381 #primary instance
                         member::PropertyConnection
                             Source 82B0BFE6-C8B0-4DAC-822E-37FAB5E7AF53
                             Target D286325F-9E1C-46DC-B9EC-5F3A27C81C41
-                            SourceFieldId 193453899
+                            SourceFieldId EventID.Out
                             TargetFieldId -1487987655
                         member::PropertyConnection
                             Source 3B78F75C-F199-43FE-A3DE-141758272FBB
@@ -265,33 +265,33 @@ SpatialPrefabBlueprint F77036AC-32A2-9E61-105B-82043BBC3381 #primary instance
                         Source DB647CE5-AA52-41A7-A880-F0B463FAA2B5
                         Target D286325F-9E1C-46DC-B9EC-5F3A27C81C41
                         SourceEvent::EventSpec
-                            Id -274579609
+                            Id EventID.Destroy
                         TargetEvent::EventSpec
-                            Id -274579609
+                            Id EventID.Destroy
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 3B78F75C-F199-43FE-A3DE-141758272FBB
                         Target 47C8DF4D-4849-4D22-AF22-ADCBEB2DC212
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id EventID.OnFinished
                         TargetEvent::EventSpec
-                            Id 1723395486
+                            Id EventID.Impulse
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 47C8DF4D-4849-4D22-AF22-ADCBEB2DC212
                         Target 3B78F75C-F199-43FE-A3DE-141758272FBB
                         SourceEvent::EventSpec
-                            Id 1096887398
+                            Id EventID.OnImpulseIfTrue
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member::EventConnection
                         Source 47C8DF4D-4849-4D22-AF22-ADCBEB2DC212
                         Target 8CD4DE2D-948D-477E-9690-B4A509B6AA22
                         SourceEvent::EventSpec
-                            Id 1862973229
+                            Id EventID.OnImpulseIfFalse
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetType EventConnectionTargetType_NetworkedClientAndServer
                     member::EventConnection
                         Source DB647CE5-AA52-41A7-A880-F0B463FAA2B5
@@ -299,7 +299,7 @@ SpatialPrefabBlueprint F77036AC-32A2-9E61-105B-82043BBC3381 #primary instance
                         SourceEvent::EventSpec
                             Id 1606680064
                         TargetEvent::EventSpec
-                            Id -982974313
+                            Id EventID.Switch
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 8CD4DE2D-948D-477E-9690-B4A509B6AA22
@@ -313,9 +313,9 @@ SpatialPrefabBlueprint F77036AC-32A2-9E61-105B-82043BBC3381 #primary instance
                         Source DB647CE5-AA52-41A7-A880-F0B463FAA2B5
                         Target E14AC0B0-6989-428D-B4C0-82CC77D0FAC2
                         SourceEvent::EventSpec
-                            Id 1999497757
+                            Id EventID.FireShot
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source E14AC0B0-6989-428D-B4C0-82CC77D0FAC2
@@ -323,7 +323,7 @@ SpatialPrefabBlueprint F77036AC-32A2-9E61-105B-82043BBC3381 #primary instance
                         SourceEvent::EventSpec
                             Id 2089305374
                         TargetEvent::EventSpec
-                            Id 777187609
+                            Id EventID.TakeControl
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source E14AC0B0-6989-428D-B4C0-82CC77D0FAC2
@@ -331,7 +331,7 @@ SpatialPrefabBlueprint F77036AC-32A2-9E61-105B-82043BBC3381 #primary instance
                         SourceEvent::EventSpec
                             Id 177635
                         TargetEvent::EventSpec
-                            Id 1999497757
+                            Id EventID.FireShot
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 8CD4DE2D-948D-477E-9690-B4A509B6AA22
@@ -345,7 +345,7 @@ SpatialPrefabBlueprint F77036AC-32A2-9E61-105B-82043BBC3381 #primary instance
                         Source DB647CE5-AA52-41A7-A880-F0B463FAA2B5
                         Target D286325F-9E1C-46DC-B9EC-5F3A27C81C41
                         SourceEvent::EventSpec
-                            Id -274579609
+                            Id EventID.Destroy
                         TargetEvent::EventSpec
                             Id -1875397260
                         TargetType EventConnectionTargetType_NetworkedClientAndServer

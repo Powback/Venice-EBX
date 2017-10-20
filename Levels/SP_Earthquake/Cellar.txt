@@ -953,7 +953,7 @@ InterfaceDescriptorData 6F5D77A6-EAA3-ECD3-5FBB-A6485BCE6164
         member::DynamicEvent
             Id -1565139151
         member::DynamicEvent
-            Id 230748069
+            Id EventID.Start
         member::DynamicEvent
             Id -315848429
     OutputEvents::array
@@ -3905,7 +3905,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             member::PropertyConnection
                                 Source levels/sp_earthquake/cellar/layer7_cellarsound/23F7C4EA-E618-4B33-AF2B-564DF808231F
                                 Target levels/sp_earthquake/cellar/layer7_cellarsound/21BA0C58-5349-467E-834F-9C71CD49FC2A
-                                SourceFieldId 193453899
+                                SourceFieldId EventID.Out
                                 TargetFieldId 2089448296
                             member::PropertyConnection
                                 Source levels/sp_earthquake/cellar/layer7_cellarsound/D55E2B1E-E8C6-45C6-B7D3-86F41520C539
@@ -4080,15 +4080,15 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id -1565139151
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer2_cellarlightingschema/3AC11272-E561-4C72-A005-88AE13B71A79
                             Target levels/sp_earthquake/cellar/layer2_cellarlightingschema/B5238276-ACD2-4A35-8E3F-4262FBE5D457
                             SourceEvent::EventSpec
-                                Id 650265526
+                                Id EventID.OnFinished
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 6F5D77A6-EAA3-ECD3-5FBB-A6485BCE6164
@@ -4096,23 +4096,23 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id -1565139151
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer2_cellarlightingschema/3AC11272-E561-4C72-A005-88AE13B71A79
                             Target levels/sp_earthquake/cellar/layer1_cellarlighting/18A557C1-CDF3-4E8F-A3F5-E25D753F5021
                             SourceEvent::EventSpec
-                                Id -1193365339
+                                Id EventID.OnStarted
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer2_cellarlightingschema/B5238276-ACD2-4A35-8E3F-4262FBE5D457
                             Target levels/sp_earthquake/cellar/layer1_cellarlighting/18A557C1-CDF3-4E8F-A3F5-E25D753F5021
                             SourceEvent::EventSpec
-                                Id -1193365339
+                                Id EventID.OnStarted
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer2_cellarlightingschema/B5238276-ACD2-4A35-8E3F-4262FBE5D457
@@ -4120,7 +4120,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id 1827412755
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer2_cellarlightingschema/B5238276-ACD2-4A35-8E3F-4262FBE5D457
@@ -4128,37 +4128,37 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id 175078973
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer2_cellarlightingschema/D08B1D3B-033E-4E3B-A639-7DA097746D59
                             Target levels/sp_earthquake/cellar/layer1_cellarlighting/38A3A4C2-73C8-40EF-9FBE-5837605EB9EA
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer2_cellarlightingschema/3AC11272-E561-4C72-A005-88AE13B71A79
                             Target levels/sp_earthquake/cellar/layer2_cellarlightingschema/D08B1D3B-033E-4E3B-A639-7DA097746D59
                             SourceEvent::EventSpec
-                                Id -1193365339
+                                Id EventID.OnStarted
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/E65A32B9-0348-4919-BF4A-D157CE8CA0B3
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/35E16DD9-F52E-4A8A-9043-A49D4257B534
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/6D4A99FD-ACCA-4312-A221-386CDD70911A
                             Target 6F5D77A6-EAA3-ECD3-5FBB-A6485BCE6164
                             SourceEvent::EventSpec
-                                Id -1694482841
+                                Id EventID.TriggerActor1
                             TargetEvent::EventSpec
                                 Id 153590016
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -4166,183 +4166,183 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/F78CEDDE-4794-4D80-8FFB-1F8A87042E22
                             Target levels/sp_earthquake/cellar/layer9_cellareffects/59A82AF4-FF5D-414F-8476-BFC6ECCC4052
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/F78CEDDE-4794-4D80-8FFB-1F8A87042E22
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/A04C4A8B-B453-4011-9926-87EA5323E0B1
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/A04C4A8B-B453-4011-9926-87EA5323E0B1
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/BEA91A13-8052-416E-8FCB-0C48F30A8535
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/42169F1C-7584-4F7D-9AAF-92210514A627
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/1AB73251-8F97-444E-AB44-D6A5B54E4B96
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/42169F1C-7584-4F7D-9AAF-92210514A627
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/3496AC94-0A55-4974-A3D4-98D6AFBF17EF
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/3496AC94-0A55-4974-A3D4-98D6AFBF17EF
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/1AB73251-8F97-444E-AB44-D6A5B54E4B96
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/3496AC94-0A55-4974-A3D4-98D6AFBF17EF
                             Target levels/sp_earthquake/cellar/layer0_cellarprops/80C1D379-669A-4AAD-A717-D0CA08D11281
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/A04C4A8B-B453-4011-9926-87EA5323E0B1
                             Target levels/sp_earthquake/cellar/layer0_cellarprops/2C0D42DE-46E9-4BC1-BD62-7DDDDAAD433C
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/0BE3EFFA-F2E5-41B8-A238-5E8AA6F5B2D5
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/BEA91A13-8052-416E-8FCB-0C48F30A8535
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/F78CEDDE-4794-4D80-8FFB-1F8A87042E22
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/0BE3EFFA-F2E5-41B8-A238-5E8AA6F5B2D5
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/61DCAA62-19EA-4455-9189-A47D981AA9F3
                             Target levels/sp_earthquake/cellar/layer9_cellareffects/3D96B229-0C4B-47D3-ACB4-5806C7F54DEE
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/F78CEDDE-4794-4D80-8FFB-1F8A87042E22
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/48F72208-50AB-43A0-BC93-2F31154FEF5E
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/63A12416-CA26-4C03-8BF8-E75A3CDC73FF
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/169FD062-43BB-4136-A8B6-0C9177DA5A6D
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/F78CEDDE-4794-4D80-8FFB-1F8A87042E22
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/63A12416-CA26-4C03-8BF8-E75A3CDC73FF
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/6E6B1897-2D88-4FC7-B434-F960E773D8EE
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/DA8F441E-98D8-494E-B675-C170C83E9478
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/6E6B1897-2D88-4FC7-B434-F960E773D8EE
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/91699A45-F0F0-414A-B079-53D727F9EEB5
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/91699A45-F0F0-414A-B079-53D727F9EEB5
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/F78CEDDE-4794-4D80-8FFB-1F8A87042E22
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/91699A45-F0F0-414A-B079-53D727F9EEB5
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/26ADD7FF-78D6-43F0-A794-07E838731CA8
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/26ADD7FF-78D6-43F0-A794-07E838731CA8
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/A36CC0D8-B7E2-468D-843E-C8C12EE08F55
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/A36CC0D8-B7E2-468D-843E-C8C12EE08F55
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/42169F1C-7584-4F7D-9AAF-92210514A627
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/894D814C-47AF-448A-BD96-C7F9F7DEA6F8
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/1FD23522-2280-4033-9292-05C2A44C42BB
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/A36CC0D8-B7E2-468D-843E-C8C12EE08F55
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/894D814C-47AF-448A-BD96-C7F9F7DEA6F8
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/DA8F441E-98D8-494E-B675-C170C83E9478
                             Target 6F5D77A6-EAA3-ECD3-5FBB-A6485BCE6164
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id 211036638
                             TargetType EventConnectionTargetType_Server
@@ -4350,7 +4350,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/9C17EF05-CA2C-4588-954E-3E5136D141E1
                             Target 6F5D77A6-EAA3-ECD3-5FBB-A6485BCE6164
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id 669919434
                             TargetType EventConnectionTargetType_Server
@@ -4358,191 +4358,191 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/FFF03688-0061-418D-96A6-07D6CD81EDE3
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/BEDA68C7-4137-45A0-8AAB-CD7E46FDE1E4
                             SourceEvent::EventSpec
-                                Id -213362971
+                                Id EventID.OnSaveDone
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/BEDA68C7-4137-45A0-8AAB-CD7E46FDE1E4
                             Target levels/sp_earthquake/cellar/layer5_cellarlogic/6D4A99FD-ACCA-4312-A221-386CDD70911A
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1037701496
+                                Id EventID.ForceStart
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/BEDA68C7-4137-45A0-8AAB-CD7E46FDE1E4
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/61DCAA62-19EA-4455-9189-A47D981AA9F3
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/BEDA68C7-4137-45A0-8AAB-CD7E46FDE1E4
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/B23FC5F8-0208-47B7-AAAE-0D4B168EA411
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/BEDA68C7-4137-45A0-8AAB-CD7E46FDE1E4
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/F1D49193-D16B-4901-974A-80E907E2F1A3
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/BEDA68C7-4137-45A0-8AAB-CD7E46FDE1E4
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/74A4AF6E-E6F3-4C85-B8D7-F47C8351461F
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/1FD23522-2280-4033-9292-05C2A44C42BB
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/FFF03688-0061-418D-96A6-07D6CD81EDE3
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 2089420676
+                                Id EventID.Save
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/BEDA68C7-4137-45A0-8AAB-CD7E46FDE1E4
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/77D1A6CE-ADB1-4B06-9086-8049A8AF8C8E
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/77D1A6CE-ADB1-4B06-9086-8049A8AF8C8E
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/55A5E90F-36CF-4547-A4F4-BB548D425028
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1540900914
+                                Id EventID.SetPose
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/FBF5FFE5-F1C1-41E4-92FC-47CAA4A24822
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/98133966-0569-48DF-8FAB-F9CAF4028383
                             SourceEvent::EventSpec
-                                Id -1978208716
+                                Id EventID.Platform_Win32
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/FBF5FFE5-F1C1-41E4-92FC-47CAA4A24822
                             Target levels/sp_earthquake/cellar/layer5_cellarlogic/53FB985A-79D5-42F5-8FF4-82CB210571ED
                             SourceEvent::EventSpec
-                                Id -1978208716
+                                Id EventID.Platform_Win32
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/98133966-0569-48DF-8FAB-F9CAF4028383
                             Target levels/sp_earthquake/cellar/layer5_cellarlogic/53FB985A-79D5-42F5-8FF4-82CB210571ED
                             SourceEvent::EventSpec
-                                Id 1975570652
+                                Id EventID.OnTrigger
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/FBF5FFE5-F1C1-41E4-92FC-47CAA4A24822
                             Target levels/sp_earthquake/cellar/layer5_cellarlogic/BEEE954C-2198-4D48-AE38-C22516279141
                             SourceEvent::EventSpec
-                                Id -1963501257
+                                Id EventID.Platform_Xenon
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/FBF5FFE5-F1C1-41E4-92FC-47CAA4A24822
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/487CCE41-FCB8-4A22-B2A9-14BCA07B83B4
                             SourceEvent::EventSpec
-                                Id -1963501257
+                                Id EventID.Platform_Xenon
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/FBF5FFE5-F1C1-41E4-92FC-47CAA4A24822
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/487CCE41-FCB8-4A22-B2A9-14BCA07B83B4
                             SourceEvent::EventSpec
-                                Id 976288917
+                                Id EventID.Platform_Ps3
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/FBF5FFE5-F1C1-41E4-92FC-47CAA4A24822
                             Target levels/sp_earthquake/cellar/layer5_cellarlogic/BEEE954C-2198-4D48-AE38-C22516279141
                             SourceEvent::EventSpec
-                                Id 976288917
+                                Id EventID.Platform_Ps3
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/487CCE41-FCB8-4A22-B2A9-14BCA07B83B4
                             Target levels/sp_earthquake/cellar/layer5_cellarlogic/BEEE954C-2198-4D48-AE38-C22516279141
                             SourceEvent::EventSpec
-                                Id 1975570652
+                                Id EventID.OnTrigger
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/9BD28076-047C-44A4-98AB-DD37991FB7E8
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/FBF5FFE5-F1C1-41E4-92FC-47CAA4A24822
                             SourceEvent::EventSpec
-                                Id -538684217
+                                Id EventID.OnPlayerHasWrongPose
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/9163237F-B0B9-4895-BC2D-B6E8AE221F70
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/9BD28076-047C-44A4-98AB-DD37991FB7E8
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 391518154
+                                Id EventID.CheckPose
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/9BD28076-047C-44A4-98AB-DD37991FB7E8
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/539C6442-9AA0-41D4-A669-69138A1D46F1
                             SourceEvent::EventSpec
-                                Id -538684217
+                                Id EventID.OnPlayerHasWrongPose
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/539C6442-9AA0-41D4-A669-69138A1D46F1
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/BE93BB55-51C4-447F-8C87-45715BFD2364
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 391518154
+                                Id EventID.CheckPose
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/BE93BB55-51C4-447F-8C87-45715BFD2364
                             Target levels/sp_earthquake/cellar/layer5_cellarlogic/53FB985A-79D5-42F5-8FF4-82CB210571ED
                             SourceEvent::EventSpec
-                                Id -1749411622
+                                Id EventID.OnPlayerHasCorrectPose
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/BE93BB55-51C4-447F-8C87-45715BFD2364
                             Target levels/sp_earthquake/cellar/layer5_cellarlogic/BEEE954C-2198-4D48-AE38-C22516279141
                             SourceEvent::EventSpec
-                                Id -1749411622
+                                Id EventID.OnPlayerHasCorrectPose
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/FFF03688-0061-418D-96A6-07D6CD81EDE3
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/9A0AB4FA-70F7-4704-AD39-C97CA95A3AAA
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -4550,57 +4550,57 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/9A0AB4FA-70F7-4704-AD39-C97CA95A3AAA
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/9C1BC306-A224-477A-96FB-5375065D2DB5
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1778993948
+                                Id EventID.FadeIn
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/9A0AB4FA-70F7-4704-AD39-C97CA95A3AAA
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/7479B5DE-95CA-4B7B-8C5D-12E32790D3FB
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/7479B5DE-95CA-4B7B-8C5D-12E32790D3FB
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/BEDA68C7-4137-45A0-8AAB-CD7E46FDE1E4
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer4_cellarcrawl/FFF03688-0061-418D-96A6-07D6CD81EDE3
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/B23FC5F8-0208-47B7-AAAE-0D4B168EA411
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source 6F5D77A6-EAA3-ECD3-5FBB-A6485BCE6164
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/E65A32B9-0348-4919-BF4A-D157CE8CA0B3
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 6F5D77A6-EAA3-ECD3-5FBB-A6485BCE6164
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/6E6B1897-2D88-4FC7-B434-F960E773D8EE
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 6F5D77A6-EAA3-ECD3-5FBB-A6485BCE6164
                             Target levels/sp_earthquake/cellar/layer4_cellarcrawl/9C17EF05-CA2C-4588-954E-3E5136D141E1
                             SourceEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 6F5D77A6-EAA3-ECD3-5FBB-A6485BCE6164
@@ -4608,13 +4608,13 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id -315848429
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/011D74E3-1CE3-4CD4-A710-85721E589E76
                             Target levels/sp_earthquake/cellar/layer5_cellarlogic/D05FAE67-3AEE-492A-BBDD-6C2173510064
                             SourceEvent::EventSpec
-                                Id -1694482844
+                                Id EventID.TriggerActor2
                             TargetEvent::EventSpec
                                 Id 1883421003
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -4622,7 +4622,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/011D74E3-1CE3-4CD4-A710-85721E589E76
                             Target 6F5D77A6-EAA3-ECD3-5FBB-A6485BCE6164
                             SourceEvent::EventSpec
-                                Id -1694482841
+                                Id EventID.TriggerActor1
                             TargetEvent::EventSpec
                                 Id 153590016
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -4630,167 +4630,167 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/74A4AF6E-E6F3-4C85-B8D7-F47C8351461F
                             Target levels/sp_earthquake/cellar/layer5_cellarlogic/271A39DB-8399-4B54-8CF3-6DBBFB29AAEE
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/011D74E3-1CE3-4CD4-A710-85721E589E76
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/A9542ED4-90CC-49A0-80A3-BE85C2B3EFD9
                             SourceEvent::EventSpec
-                                Id -721579565
+                                Id EventID.TriggerProps
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/011D74E3-1CE3-4CD4-A710-85721E589E76
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/2F7B1AC3-D6C1-4F9B-B3A6-22C4C5ACF808
                             SourceEvent::EventSpec
-                                Id -721579565
+                                Id EventID.TriggerProps
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/B95721ED-6656-4D1F-BEE9-394323365D9E
                             Target levels/sp_earthquake/cellar/layer9_cellareffects/8599D9C2-A334-4424-B173-BE38C99E5BFB
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/B95721ED-6656-4D1F-BEE9-394323365D9E
                             Target levels/sp_earthquake/cellar/layer9_cellareffects/6EE4FCD9-8FBA-497A-B8EF-61B545D77F4D
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/74A4AF6E-E6F3-4C85-B8D7-F47C8351461F
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/21BA0C58-5349-467E-834F-9C71CD49FC2A
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/CBBA0D2C-6BCA-46EB-99DE-1D0932D5D7B8
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/4BCE80D0-5211-4044-9969-FE594D9560F8
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/BB38F1B1-B192-47AB-8FC1-29E289FF1FAD
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/939C6CD0-1FB5-4537-8135-051B2A1E77EE
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/D05FAE67-3AEE-492A-BBDD-6C2173510064
                             Target levels/sp_earthquake/cellar/layer5_cellarlogic/011D74E3-1CE3-4CD4-A710-85721E589E76
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id 1037701496
+                                Id EventID.ForceStart
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/D05FAE67-3AEE-492A-BBDD-6C2173510064
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/21BA0C58-5349-467E-834F-9C71CD49FC2A
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/D05FAE67-3AEE-492A-BBDD-6C2173510064
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/DDF920C7-3206-434C-89C2-25AC86940604
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/D05FAE67-3AEE-492A-BBDD-6C2173510064
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/388BD06A-D355-47F7-AA58-6D01D32606DD
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/D05FAE67-3AEE-492A-BBDD-6C2173510064
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/E69ABA59-DBB4-410F-A7EE-6711F672A38F
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/D05FAE67-3AEE-492A-BBDD-6C2173510064
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/D5F8658A-5577-4637-AEC4-40D98C1F287A
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/271A39DB-8399-4B54-8CF3-6DBBFB29AAEE
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/B95721ED-6656-4D1F-BEE9-394323365D9E
                             SourceEvent::EventSpec
-                                Id -1447021378
+                                Id EventID.OnInteraction
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/271A39DB-8399-4B54-8CF3-6DBBFB29AAEE
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/CBBA0D2C-6BCA-46EB-99DE-1D0932D5D7B8
                             SourceEvent::EventSpec
-                                Id -1447021378
+                                Id EventID.OnInteraction
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/271A39DB-8399-4B54-8CF3-6DBBFB29AAEE
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/BB38F1B1-B192-47AB-8FC1-29E289FF1FAD
                             SourceEvent::EventSpec
-                                Id -1447021378
+                                Id EventID.OnInteraction
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/271A39DB-8399-4B54-8CF3-6DBBFB29AAEE
                             Target levels/sp_earthquake/cellar/layer5_cellarlogic/D05FAE67-3AEE-492A-BBDD-6C2173510064
                             SourceEvent::EventSpec
-                                Id -1447021378
+                                Id EventID.OnInteraction
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/011D74E3-1CE3-4CD4-A710-85721E589E76
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/AB1D13E1-7DE4-4265-BDC3-EB1B74A20029
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/4EA7A5BA-04DC-480B-A2D2-71BA3C2AEEE7
                             Target levels/sp_earthquake/cellar/layer0_cellarprops/DCF3F224-DDB2-4DE1-8C03-42A67FA959DF
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/4EA7A5BA-04DC-480B-A2D2-71BA3C2AEEE7
                             Target 6F5D77A6-EAA3-ECD3-5FBB-A6485BCE6164
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 1144306064
                             TargetType EventConnectionTargetType_Server
@@ -4798,103 +4798,103 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/4EA7A5BA-04DC-480B-A2D2-71BA3C2AEEE7
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/34A7FCB0-79BF-40E2-AC38-AD893E4EAFA6
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/6021EF9D-CD36-4BD4-A2CB-77D989C3A778
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/4EA7A5BA-04DC-480B-A2D2-71BA3C2AEEE7
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/D05FAE67-3AEE-492A-BBDD-6C2173510064
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/8674DCE8-973C-446A-BBC0-079B0537344D
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/B0AD3679-7021-4F19-ADE6-EC3A9B1103F6
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/138C3211-5907-476E-B315-CD4FF655AC8A
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/4EA7A5BA-04DC-480B-A2D2-71BA3C2AEEE7
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/138C3211-5907-476E-B315-CD4FF655AC8A
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/935A3B92-D286-435E-B507-9C4B172FD60A
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/939C6CD0-1FB5-4537-8135-051B2A1E77EE
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1928776733
+                                Id EventID.Deactivate
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/935A3B92-D286-435E-B507-9C4B172FD60A
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/6021EF9D-CD36-4BD4-A2CB-77D989C3A778
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/935A3B92-D286-435E-B507-9C4B172FD60A
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/B0AD3679-7021-4F19-ADE6-EC3A9B1103F6
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/AB1D13E1-7DE4-4265-BDC3-EB1B74A20029
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/34AB226C-6C18-40A8-872A-8705801B8909
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 2089420676
+                                Id EventID.Save
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/34AB226C-6C18-40A8-872A-8705801B8909
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/935A3B92-D286-435E-B507-9C4B172FD60A
                             SourceEvent::EventSpec
-                                Id -213362971
+                                Id EventID.OnSaveDone
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/34AB226C-6C18-40A8-872A-8705801B8909
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/935A3B92-D286-435E-B507-9C4B172FD60A
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/34AB226C-6C18-40A8-872A-8705801B8909
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/0625400A-91B0-44A9-BDDC-8B07A88BEC68
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id -1778993948
+                                Id EventID.FadeIn
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/935A3B92-D286-435E-B507-9C4B172FD60A
                             Target 6F5D77A6-EAA3-ECD3-5FBB-A6485BCE6164
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id -1680648339
                             TargetType EventConnectionTargetType_Server
@@ -4902,7 +4902,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/8674DCE8-973C-446A-BBC0-079B0537344D
                             Target 6F5D77A6-EAA3-ECD3-5FBB-A6485BCE6164
                             SourceEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetEvent::EventSpec
                                 Id -779584736
                             TargetType EventConnectionTargetType_Client
@@ -4958,7 +4958,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/8674DCE8-973C-446A-BBC0-079B0537344D
                             Target 6F5D77A6-EAA3-ECD3-5FBB-A6485BCE6164
                             SourceEvent::EventSpec
-                                Id 1928776733
+                                Id EventID.Deactivate
                             TargetEvent::EventSpec
                                 Id 1532780497
                             TargetType EventConnectionTargetType_Client
@@ -5022,7 +5022,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/8674DCE8-973C-446A-BBC0-079B0537344D
                             Target 6F5D77A6-EAA3-ECD3-5FBB-A6485BCE6164
                             SourceEvent::EventSpec
-                                Id 2134798598
+                                Id EventID.Success
                             TargetEvent::EventSpec
                                 Id 785755950
                             TargetType EventConnectionTargetType_Client
@@ -5030,9 +5030,9 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/011D74E3-1CE3-4CD4-A710-85721E589E76
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/8674DCE8-973C-446A-BBC0-079B0537344D
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/8674DCE8-973C-446A-BBC0-079B0537344D
@@ -5046,9 +5046,9 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             Source levels/sp_earthquake/cellar/layer5_cellarlogic/D05FAE67-3AEE-492A-BBDD-6C2173510064
                             Target levels/sp_earthquake/cellar/layer8_cellarfight/84BDCE6C-7B06-4E30-9176-B57E7DBAA5BB
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/84BDCE6C-7B06-4E30-9176-B57E7DBAA5BB
@@ -5056,45 +5056,45 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id 493446864
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/34AB226C-6C18-40A8-872A-8705801B8909
                             Target levels/sp_earthquake/cellar/layer5_cellarlogic/D05FAE67-3AEE-492A-BBDD-6C2173510064
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id -834116283
+                                Id EventID.Unspawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/4EA7A5BA-04DC-480B-A2D2-71BA3C2AEEE7
                             Target levels/sp_earthquake/cellar/layer0_cellarprops/7C2507C6-35A4-4AC4-8F13-F5303D2F71E9
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/73ABF312-CE69-47AC-A419-A35209312AF3
                             Target levels/sp_earthquake/cellar/layer0_cellarprops/7C2507C6-35A4-4AC4-8F13-F5303D2F71E9
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer8_cellarfight/B0AD3679-7021-4F19-ADE6-EC3A9B1103F6
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/34A7FCB0-79BF-40E2-AC38-AD893E4EAFA6
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/DDF920C7-3206-434C-89C2-25AC86940604
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/F1D49193-D16B-4901-974A-80E907E2F1A3
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 268917188
                             TargetType EventConnectionTargetType_Client
@@ -5102,49 +5102,49 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/388BD06A-D355-47F7-AA58-6D01D32606DD
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/F1D49193-D16B-4901-974A-80E907E2F1A3
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/388BD06A-D355-47F7-AA58-6D01D32606DD
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/E69ABA59-DBB4-410F-A7EE-6711F672A38F
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1928776733
+                                Id EventID.Deactivate
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/388BD06A-D355-47F7-AA58-6D01D32606DD
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/B1378ACE-1B02-4583-92F0-3D48CB13BC28
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/8E1121F4-A151-4EE0-B109-394D40386D20
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/48F72208-50AB-43A0-BC93-2F31154FEF5E
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/8E1121F4-A151-4EE0-B109-394D40386D20
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/B23FC5F8-0208-47B7-AAAE-0D4B168EA411
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/21BA0C58-5349-467E-834F-9C71CD49FC2A
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/D5F8658A-5577-4637-AEC4-40D98C1F287A
                             SourceEvent::EventSpec
-                                Id 1194874936
+                                Id EventID.OnDeactivated
                             TargetEvent::EventSpec
-                                Id 1928776733
+                                Id EventID.Deactivate
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/D5F8658A-5577-4637-AEC4-40D98C1F287A
@@ -5152,7 +5152,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258553
                             TargetEvent::EventSpec
-                                Id 1736970756
+                                Id EventID.Increment
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/D5F8658A-5577-4637-AEC4-40D98C1F287A
@@ -5160,7 +5160,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id 1480170086
                             TargetEvent::EventSpec
-                                Id 1736970756
+                                Id EventID.Increment
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/D5F8658A-5577-4637-AEC4-40D98C1F287A
@@ -5168,7 +5168,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258554
                             TargetEvent::EventSpec
-                                Id 1736970756
+                                Id EventID.Increment
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/D5F8658A-5577-4637-AEC4-40D98C1F287A
@@ -5176,23 +5176,23 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id 1480170085
                             TargetEvent::EventSpec
-                                Id 1736970756
+                                Id EventID.Increment
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/ABE9E137-7CC7-48C5-ACA4-D54A93CBB2C8
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/7C290AEF-78DE-4D31-BFCE-C906523D37D8
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/7C290AEF-78DE-4D31-BFCE-C906523D37D8
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/3955462E-0D89-4914-B3B1-498A66F8E37C
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1736970756
+                                Id EventID.Increment
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/D5F8658A-5577-4637-AEC4-40D98C1F287A
@@ -5206,17 +5206,17 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/A6C89DB5-684D-4B0F-8AD4-C08008F78CBB
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/DF34D538-F039-4823-9EA3-93CEC83AEB91
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/DF34D538-F039-4823-9EA3-93CEC83AEB91
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/A432DBBD-A052-47DD-B8E4-826D7C09F995
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1736970756
+                                Id EventID.Increment
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/D5F8658A-5577-4637-AEC4-40D98C1F287A
@@ -5230,7 +5230,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/A6C89DB5-684D-4B0F-8AD4-C08008F78CBB
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/ABE9E137-7CC7-48C5-ACA4-D54A93CBB2C8
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Client
@@ -5248,7 +5248,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258553
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/D5F8658A-5577-4637-AEC4-40D98C1F287A
@@ -5256,7 +5256,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258554
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/D5F8658A-5577-4637-AEC4-40D98C1F287A
@@ -5264,7 +5264,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258555
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/D5F8658A-5577-4637-AEC4-40D98C1F287A
@@ -5272,7 +5272,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id 1028258556
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/D5F8658A-5577-4637-AEC4-40D98C1F287A
@@ -5280,7 +5280,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id 1480170086
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/D5F8658A-5577-4637-AEC4-40D98C1F287A
@@ -5288,7 +5288,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id 1480170085
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/D5F8658A-5577-4637-AEC4-40D98C1F287A
@@ -5296,7 +5296,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id 1480170084
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/D5F8658A-5577-4637-AEC4-40D98C1F287A
@@ -5304,7 +5304,7 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id 1480170083
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/21BA0C58-5349-467E-834F-9C71CD49FC2A
@@ -5312,55 +5312,55 @@ SubWorldData E424B5F0-A9EF-4E42-A4DC-8A309591FAA3 #primary instance
                             SourceEvent::EventSpec
                                 Id 1067040100
                             TargetEvent::EventSpec
-                                Id -1541066415
+                                Id EventID.SetTrue
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/21BA0C58-5349-467E-834F-9C71CD49FC2A
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/BE83402C-4152-4BEE-B4B9-E1FC4F39E6F1
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/21BA0C58-5349-467E-834F-9C71CD49FC2A
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/BE83402C-4152-4BEE-B4B9-E1FC4F39E6F1
                             SourceEvent::EventSpec
-                                Id 1194874936
+                                Id EventID.OnDeactivated
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/21BA0C58-5349-467E-834F-9C71CD49FC2A
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/21BA0C58-5349-467E-834F-9C71CD49FC2A
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/48F72208-50AB-43A0-BC93-2F31154FEF5E
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/21BA0C58-5349-467E-834F-9C71CD49FC2A
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/34A7FCB0-79BF-40E2-AC38-AD893E4EAFA6
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/8A60B959-DED3-4999-900C-91F2865E500B
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/B1378ACE-1B02-4583-92F0-3D48CB13BC28
                             Target levels/sp_earthquake/cellar/layer7_cellarsound/34A7FCB0-79BF-40E2-AC38-AD893E4EAFA6
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_earthquake/cellar/layer7_cellarsound/B23FC5F8-0208-47B7-AAAE-0D4B168EA411

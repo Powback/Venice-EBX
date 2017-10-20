@@ -4,9 +4,9 @@ InterfaceDescriptorData 50526CF1-B4B1-40EF-B313-840B420503FE
         Fields *nullArray*
     InputEvents::array
         member::DynamicEvent
-            Id 2099208964
+            Id EventID.OnCaptured
         member::DynamicEvent
-            Id -1433788352
+            Id EventID.OnLost
         member::DynamicEvent
             Id -912021666
         member::DynamicEvent
@@ -29,17 +29,17 @@ LogicPrefabBlueprint 32F19E3B-8CD7-41AA-BD66-855EA71601E9 #primary instance
                         Source 50526CF1-B4B1-40EF-B313-840B420503FE
                         Target 5FE4D623-9619-4557-91D3-59335E5887F7
                         SourceEvent::EventSpec
-                            Id 2099208964
+                            Id EventID.OnCaptured
                         TargetEvent::EventSpec
-                            Id -1688613187
+                            Id EventID.Trigger
                         TargetType EventConnectionTargetType_NetworkedClient
                     member::EventConnection
                         Source 50526CF1-B4B1-40EF-B313-840B420503FE
                         Target BAD135B7-C27C-47BD-B8BB-2A9388246A7E
                         SourceEvent::EventSpec
-                            Id -1433788352
+                            Id EventID.OnLost
                         TargetEvent::EventSpec
-                            Id -1688613187
+                            Id EventID.Trigger
                         TargetType EventConnectionTargetType_NetworkedClient
                     member::EventConnection
                         Source 50526CF1-B4B1-40EF-B313-840B420503FE
@@ -47,7 +47,7 @@ LogicPrefabBlueprint 32F19E3B-8CD7-41AA-BD66-855EA71601E9 #primary instance
                         SourceEvent::EventSpec
                             Id -912021666
                         TargetEvent::EventSpec
-                            Id -1688613187
+                            Id EventID.Trigger
                         TargetType EventConnectionTargetType_NetworkedClient
                     member::EventConnection
                         Source 50526CF1-B4B1-40EF-B313-840B420503FE
@@ -55,7 +55,7 @@ LogicPrefabBlueprint 32F19E3B-8CD7-41AA-BD66-855EA71601E9 #primary instance
                         SourceEvent::EventSpec
                             Id -912021667
                         TargetEvent::EventSpec
-                            Id -1688613187
+                            Id EventID.Trigger
                         TargetType EventConnectionTargetType_NetworkedClient
                 Descriptor 50526CF1-B4B1-40EF-B313-840B420503FE
                 NeedNetworkId True

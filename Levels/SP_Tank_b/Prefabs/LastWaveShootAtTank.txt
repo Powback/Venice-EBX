@@ -155,22 +155,22 @@ InterfaceDescriptorData 3F06931C-6352-4B8F-9563-A57EF9ABBE77
                 AccessType FieldAccessType_Target
     InputEvents::array
         member::DynamicEvent
-            Id 230891742
+            Id EventID.Spawn
         member::DynamicEvent
             Id -1152240339
         member::DynamicEvent
-            Id -496109072
+            Id EventID.TeleportToEnd
         member::DynamicEvent
             Id -1058492696
         member::DynamicEvent
             Id -1130893423
     OutputEvents::array
         member::DynamicEvent
-            Id 2008897511
+            Id EventID.OnKilled
         member::DynamicEvent
-            Id -1036968738
+            Id EventID.OnSpawned
         member::DynamicEvent
-            Id 1762125924
+            Id EventID.OnDestinationReached
     InputLinks::array
         member::DynamicLink
             Id -1450328209
@@ -310,47 +310,47 @@ SpatialPrefabBlueprint 0777B39A-7081-43EA-B34E-82F7BAB0D07C #primary instance
                         SourceEvent::EventSpec
                             Id -1152240339
                         TargetEvent::EventSpec
-                            Id -770075886
+                            Id EventID.IssueOrder
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 3F06931C-6352-4B8F-9563-A57EF9ABBE77
                         Target 173B83F5-E21E-4712-B8EA-9F7B14CDBBFC
                         SourceEvent::EventSpec
-                            Id 230891742
+                            Id EventID.Spawn
                         TargetEvent::EventSpec
-                            Id -770075886
+                            Id EventID.IssueOrder
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 173B83F5-E21E-4712-B8EA-9F7B14CDBBFC
                         Target 1FCC4647-83FF-45AD-9068-6CAE98AF7932
                         SourceEvent::EventSpec
-                            Id 1762125924
+                            Id EventID.OnDestinationReached
                         TargetEvent::EventSpec
-                            Id -770075886
+                            Id EventID.IssueOrder
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 3F06931C-6352-4B8F-9563-A57EF9ABBE77
                         Target 173B83F5-E21E-4712-B8EA-9F7B14CDBBFC
                         SourceEvent::EventSpec
-                            Id -496109072
+                            Id EventID.TeleportToEnd
                         TargetEvent::EventSpec
-                            Id -496109072
+                            Id EventID.TeleportToEnd
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 88356307-4777-48C4-BA2B-1B35608F3B9C
                         Target 3F06931C-6352-4B8F-9563-A57EF9ABBE77
                         SourceEvent::EventSpec
-                            Id 2008897511
+                            Id EventID.OnKilled
                         TargetEvent::EventSpec
-                            Id 2008897511
+                            Id EventID.OnKilled
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source 88356307-4777-48C4-BA2B-1B35608F3B9C
                         Target 3F06931C-6352-4B8F-9563-A57EF9ABBE77
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id EventID.OnSpawned
                         TargetEvent::EventSpec
-                            Id -1036968738
+                            Id EventID.OnSpawned
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source 3F06931C-6352-4B8F-9563-A57EF9ABBE77
@@ -358,15 +358,15 @@ SpatialPrefabBlueprint 0777B39A-7081-43EA-B34E-82F7BAB0D07C #primary instance
                         SourceEvent::EventSpec
                             Id -1058492696
                         TargetEvent::EventSpec
-                            Id -770075886
+                            Id EventID.IssueOrder
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 173B83F5-E21E-4712-B8EA-9F7B14CDBBFC
                         Target 3F06931C-6352-4B8F-9563-A57EF9ABBE77
                         SourceEvent::EventSpec
-                            Id 1762125924
+                            Id EventID.OnDestinationReached
                         TargetEvent::EventSpec
-                            Id 1762125924
+                            Id EventID.OnDestinationReached
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 3F06931C-6352-4B8F-9563-A57EF9ABBE77
@@ -374,7 +374,7 @@ SpatialPrefabBlueprint 0777B39A-7081-43EA-B34E-82F7BAB0D07C #primary instance
                         SourceEvent::EventSpec
                             Id -1130893423
                         TargetEvent::EventSpec
-                            Id 1149984791
+                            Id EventID.CancelAutoSpawn
                         TargetType EventConnectionTargetType_Server
                 Descriptor 3F06931C-6352-4B8F-9563-A57EF9ABBE77
                 NeedNetworkId True

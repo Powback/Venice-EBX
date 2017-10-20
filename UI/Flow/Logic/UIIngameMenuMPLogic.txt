@@ -4,12 +4,12 @@ InterfaceDescriptorData F6416569-0BDD-4EA2-BA73-DB34AE70C850
         Fields *nullArray*
     InputEvents::array
         member::DynamicEvent
-            Id -1952177180
+            Id EventID.Enable
         member::DynamicEvent
-            Id -117303631
+            Id EventID.Disable
     OutputEvents::array
         member::DynamicEvent
-            Id 2088518501
+            Id EventID.Exit
     InputLinks *nullArray*
     OutputLinks *nullArray*
 LogicPrefabBlueprint CC5D46E8-958C-807E-E34D-12BD26A7DD24 #primary instance
@@ -37,7 +37,7 @@ LogicPrefabBlueprint CC5D46E8-958C-807E-E34D-12BD26A7DD24 #primary instance
                         SourceEvent::EventSpec
                             Id -1072000798
                         TargetEvent::EventSpec
-                            Id 2088518501
+                            Id EventID.Exit
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source B9437F95-2EBC-4F22-A5F6-F4D0F1331A5E
@@ -45,7 +45,7 @@ LogicPrefabBlueprint CC5D46E8-958C-807E-E34D-12BD26A7DD24 #primary instance
                         SourceEvent::EventSpec
                             Id 1905656325
                         TargetEvent::EventSpec
-                            Id 2088518501
+                            Id EventID.Exit
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source B9437F95-2EBC-4F22-A5F6-F4D0F1331A5E
@@ -53,7 +53,7 @@ LogicPrefabBlueprint CC5D46E8-958C-807E-E34D-12BD26A7DD24 #primary instance
                         SourceEvent::EventSpec
                             Id -1072000798
                         TargetEvent::EventSpec
-                            Id 1422740397
+                            Id EventID.FadeOut
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source B9437F95-2EBC-4F22-A5F6-F4D0F1331A5E
@@ -61,31 +61,31 @@ LogicPrefabBlueprint CC5D46E8-958C-807E-E34D-12BD26A7DD24 #primary instance
                         SourceEvent::EventSpec
                             Id 1905656325
                         TargetEvent::EventSpec
-                            Id 1422740397
+                            Id EventID.FadeOut
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source F6416569-0BDD-4EA2-BA73-DB34AE70C850
                         Target 4EFAFFC5-F2BA-4DD2-A5AB-EBAE267E5AD8
                         SourceEvent::EventSpec
-                            Id -117303631
+                            Id EventID.Disable
                         TargetEvent::EventSpec
-                            Id -1684556875
+                            Id EventID.ExitUIGraph
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source F6416569-0BDD-4EA2-BA73-DB34AE70C850
                         Target B9437F95-2EBC-4F22-A5F6-F4D0F1331A5E
                         SourceEvent::EventSpec
-                            Id -117303631
+                            Id EventID.Disable
                         TargetEvent::EventSpec
-                            Id -1684556875
+                            Id EventID.ExitUIGraph
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source F6416569-0BDD-4EA2-BA73-DB34AE70C850
                         Target EE9833B1-5AA3-462E-BC12-B63A3B54265E
                         SourceEvent::EventSpec
-                            Id -117303631
+                            Id EventID.Disable
                         TargetEvent::EventSpec
-                            Id 1422740397
+                            Id EventID.FadeOut
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source B9437F95-2EBC-4F22-A5F6-F4D0F1331A5E
@@ -99,15 +99,15 @@ LogicPrefabBlueprint CC5D46E8-958C-807E-E34D-12BD26A7DD24 #primary instance
                         Source F6416569-0BDD-4EA2-BA73-DB34AE70C850
                         Target EDF20470-4AD7-44BC-96E1-9DF61989BE58
                         SourceEvent::EventSpec
-                            Id -117303631
+                            Id EventID.Disable
                         TargetEvent::EventSpec
-                            Id -1684556875
+                            Id EventID.ExitUIGraph
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source F6416569-0BDD-4EA2-BA73-DB34AE70C850
                         Target B9437F95-2EBC-4F22-A5F6-F4D0F1331A5E
                         SourceEvent::EventSpec
-                            Id -1952177180
+                            Id EventID.Enable
                         TargetEvent::EventSpec
                             Id -978812299
                         TargetType EventConnectionTargetType_Client
@@ -115,9 +115,9 @@ LogicPrefabBlueprint CC5D46E8-958C-807E-E34D-12BD26A7DD24 #primary instance
                         Source F6416569-0BDD-4EA2-BA73-DB34AE70C850
                         Target EE9833B1-5AA3-462E-BC12-B63A3B54265E
                         SourceEvent::EventSpec
-                            Id -1952177180
+                            Id EventID.Enable
                         TargetEvent::EventSpec
-                            Id -1778993948
+                            Id EventID.FadeIn
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source EDF20470-4AD7-44BC-96E1-9DF61989BE58

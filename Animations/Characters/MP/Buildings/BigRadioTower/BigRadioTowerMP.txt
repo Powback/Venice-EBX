@@ -9,12 +9,12 @@ InterfaceDescriptorData CDB4BC19-5E5B-4AC3-A81F-408FA691974B
                 AccessType FieldAccessType_Target
     InputEvents::array
         member::DynamicEvent
-            Id 230748069
+            Id EventID.Start
         member::DynamicEvent
             Id -117245068
     OutputEvents::array
         member::DynamicEvent
-            Id -1176973715
+            Id EventID.OnStopped
     InputLinks *nullArray*
     OutputLinks *nullArray*
 ModelAnimationEntityData 413F222B-F14F-4D25-B1DB-FCF85D1F7BD5
@@ -206,33 +206,33 @@ SpatialPrefabBlueprint 018161E2-B669-485B-9D94-6788EB7D73D7 #primary instance
                         Source CDB4BC19-5E5B-4AC3-A81F-408FA691974B
                         Target 413F222B-F14F-4D25-B1DB-FCF85D1F7BD5
                         SourceEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 413F222B-F14F-4D25-B1DB-FCF85D1F7BD5
                         Target CDB4BC19-5E5B-4AC3-A81F-408FA691974B
                         SourceEvent::EventSpec
-                            Id -1176973715
+                            Id EventID.OnStopped
                         TargetEvent::EventSpec
-                            Id -1176973715
+                            Id EventID.OnStopped
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source CDB4BC19-5E5B-4AC3-A81F-408FA691974B
                         Target 99C23351-8112-46BB-9DB3-AC04AC7F6B3F
                         SourceEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 99C23351-8112-46BB-9DB3-AC04AC7F6B3F
                         Target CDB4BC19-5E5B-4AC3-A81F-408FA691974B
                         SourceEvent::EventSpec
-                            Id -1176973715
+                            Id EventID.OnStopped
                         TargetEvent::EventSpec
-                            Id -1176973715
+                            Id EventID.OnStopped
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source CDB4BC19-5E5B-4AC3-A81F-408FA691974B
@@ -240,7 +240,7 @@ SpatialPrefabBlueprint 018161E2-B669-485B-9D94-6788EB7D73D7 #primary instance
                         SourceEvent::EventSpec
                             Id -117245068
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id EventID.Disable
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source CDB4BC19-5E5B-4AC3-A81F-408FA691974B
@@ -248,7 +248,7 @@ SpatialPrefabBlueprint 018161E2-B669-485B-9D94-6788EB7D73D7 #primary instance
                         SourceEvent::EventSpec
                             Id -117245068
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id EventID.Disable
                         TargetType EventConnectionTargetType_ClientAndServer
                 Descriptor CDB4BC19-5E5B-4AC3-A81F-408FA691974B
                 NeedNetworkId False

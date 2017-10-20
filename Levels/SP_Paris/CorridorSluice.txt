@@ -5066,7 +5066,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             member::PropertyConnection
                                 Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/CA5F87D3-BCE7-4942-9E81-7497FA709FE4
                                 Target levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/69E9DB96-1766-46AB-826C-F15575925DC4
-                                SourceFieldId 193453899
+                                SourceFieldId EventID.Out
                                 TargetFieldId 901540267
                             member::PropertyConnection
                                 Source levels/sp_paris/corridorsluice/layer6_corridorsluice_snd/484B16E1-B81A-4724-BECA-4B45979AC77C
@@ -5257,7 +5257,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             member::LinkConnection
                                 Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/9CB918D9-B7B0-4563-A8F6-0F759E555B57
                                 Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
-                                SourceFieldId 230891742
+                                SourceFieldId EventID.Spawn
                                 TargetFieldId -418594258
                             member::LinkConnection
                                 Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/9CB918D9-B7B0-4563-A8F6-0F759E555B57
@@ -5297,7 +5297,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             member::LinkConnection
                                 Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/F5266A1B-C88D-4C9D-A8DE-5D6B27C57D37
                                 Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
-                                SourceFieldId 230891742
+                                SourceFieldId EventID.Spawn
                                 TargetFieldId -824747387
                             member::LinkConnection
                                 Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/F5266A1B-C88D-4C9D-A8DE-5D6B27C57D37
@@ -5334,7 +5334,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer1_corridorsluice_squad/A6817FBA-8261-4DCC-828E-3A140694AD0F
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/6BB30B08-AA62-4A5E-988F-B0F5C70427B3
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -5342,7 +5342,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/1C679A25-2950-4E99-85ED-B5A5B82EE5FD
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/6BB30B08-AA62-4A5E-988F-B0F5C70427B3
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -5350,17 +5350,17 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/1C679A25-2950-4E99-85ED-B5A5B82EE5FD
                             Target levels/sp_paris/corridorsluice/layer1_corridorsluice_squad/A6817FBA-8261-4DCC-828E-3A140694AD0F
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/1C679A25-2950-4E99-85ED-B5A5B82EE5FD
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/9675A7E1-3F39-4D3C-BF27-CF7C2CF2F69A
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 42455AA9-7204-3DEF-63AD-50E701D63FA2
@@ -5368,7 +5368,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             SourceEvent::EventSpec
                                 Id -582875509
                             TargetEvent::EventSpec
-                                Id -496109072
+                                Id EventID.TeleportToEnd
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 42455AA9-7204-3DEF-63AD-50E701D63FA2
@@ -5376,111 +5376,111 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             SourceEvent::EventSpec
                                 Id -582875509
                             TargetEvent::EventSpec
-                                Id -496109072
+                                Id EventID.TeleportToEnd
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/1C679A25-2950-4E99-85ED-B5A5B82EE5FD
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/50A0D7FD-0548-48BD-9648-A30AF760C7D5
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/B30ECABD-8C8D-480A-B002-FD07B24ED8E1
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/1C7A9AE9-609F-4D48-92A4-B08FA43D8C32
                             SourceEvent::EventSpec
-                                Id -213362971
+                                Id EventID.OnSaveDone
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/B30ECABD-8C8D-480A-B002-FD07B24ED8E1
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/1C7A9AE9-609F-4D48-92A4-B08FA43D8C32
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/6BB30B08-AA62-4A5E-988F-B0F5C70427B3
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/DD209124-02A8-4492-BA2F-FCA69F5A521E
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/DD209124-02A8-4492-BA2F-FCA69F5A521E
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/BE5A2BAB-D512-4392-911D-54F1D61D7A10
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/BD37CCD7-E34C-48F9-A652-765E6BACAF68
                             Target levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/18ADB8EC-4CFC-4553-9CD7-CBBBA3FE7E7A
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/BD37CCD7-E34C-48F9-A652-765E6BACAF68
                             Target levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/6FEA2D64-833B-4371-B9B9-E67ACA8156CA
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/18ADB8EC-4CFC-4553-9CD7-CBBBA3FE7E7A
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/B20445A7-E865-4DEF-BE65-481FBF0C3367
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/B20445A7-E865-4DEF-BE65-481FBF0C3367
                             Target levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/18ADB8EC-4CFC-4553-9CD7-CBBBA3FE7E7A
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id -834116283
+                                Id EventID.Unspawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/6FEA2D64-833B-4371-B9B9-E67ACA8156CA
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/04D49999-FF72-4BF7-A3A2-91B9AC219399
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/04D49999-FF72-4BF7-A3A2-91B9AC219399
                             Target levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/6FEA2D64-833B-4371-B9B9-E67ACA8156CA
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id -834116283
+                                Id EventID.Unspawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/6FEA2D64-833B-4371-B9B9-E67ACA8156CA
                             Target levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/6FEA2D64-833B-4371-B9B9-E67ACA8156CA
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id 777187609
+                                Id EventID.TakeControl
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/6FEA2D64-833B-4371-B9B9-E67ACA8156CA
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/96FF9F65-3C00-48FD-BA9A-5DB9FA740D0A
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/96FF9F65-3C00-48FD-BA9A-5DB9FA740D0A
@@ -5488,21 +5488,21 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             SourceEvent::EventSpec
                                 Id 2088671869
                             TargetEvent::EventSpec
-                                Id 1559635997
+                                Id EventID.FireStart
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/96FF9F65-3C00-48FD-BA9A-5DB9FA740D0A
                             Target levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/6FEA2D64-833B-4371-B9B9-E67ACA8156CA
                             SourceEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetEvent::EventSpec
-                                Id 1999519237
+                                Id EventID.FireStop
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/309C3F2D-09FB-44F6-B80C-93FE93E611FC
                             Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
                             SourceEvent::EventSpec
-                                Id -1694482841
+                                Id EventID.TriggerActor1
                             TargetEvent::EventSpec
                                 Id 287338331
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -5510,71 +5510,71 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/309C3F2D-09FB-44F6-B80C-93FE93E611FC
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/18C25EE5-CFDF-4EC9-A790-B407331E345F
                             SourceEvent::EventSpec
-                                Id -721579565
+                                Id EventID.TriggerProps
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/309C3F2D-09FB-44F6-B80C-93FE93E611FC
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/18C25EE5-CFDF-4EC9-A790-B407331E345F
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/309C3F2D-09FB-44F6-B80C-93FE93E611FC
                             Target levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/358456C0-7527-4B4B-B393-9ABD71506A44
                             SourceEvent::EventSpec
-                                Id -721579565
+                                Id EventID.TriggerProps
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/309C3F2D-09FB-44F6-B80C-93FE93E611FC
                             Target levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/358456C0-7527-4B4B-B393-9ABD71506A44
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/8B709CB2-E43E-4032-A054-6938B5B3E1AC
                             Target levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/358456C0-7527-4B4B-B393-9ABD71506A44
                             SourceEvent::EventSpec
-                                Id -81881639
+                                Id EventID.OnFalse
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/1C679A25-2950-4E99-85ED-B5A5B82EE5FD
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/A052447D-1022-4D3F-8FB5-0309EBF157D8
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/1C679A25-2950-4E99-85ED-B5A5B82EE5FD
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/8A30FE13-74BA-4135-B9DD-97DED6BE6C34
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/6BB30B08-AA62-4A5E-988F-B0F5C70427B3
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/ACD9D990-EB49-410A-AED8-90E2409BC101
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/6BB30B08-AA62-4A5E-988F-B0F5C70427B3
                             Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -398020797
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -5584,7 +5584,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             SourceEvent::EventSpec
                                 Id 315541472
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/740332CC-A797-4632-928E-01F3AE653354
@@ -5592,15 +5592,15 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             SourceEvent::EventSpec
                                 Id 315541472
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/6BB30B08-AA62-4A5E-988F-B0F5C70427B3
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/740332CC-A797-4632-928E-01F3AE653354
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source 42455AA9-7204-3DEF-63AD-50E701D63FA2
@@ -5608,7 +5608,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             SourceEvent::EventSpec
                                 Id -582875509
                             TargetEvent::EventSpec
-                                Id 206074481
+                                Id EventID.Apply
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 42455AA9-7204-3DEF-63AD-50E701D63FA2
@@ -5616,21 +5616,21 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             SourceEvent::EventSpec
                                 Id -582875509
                             TargetEvent::EventSpec
-                                Id 206074481
+                                Id EventID.Apply
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/B30ECABD-8C8D-480A-B002-FD07B24ED8E1
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/4E2DA237-8880-4FE9-8B71-C5CD36A989D0
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id -1778993948
+                                Id EventID.FadeIn
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer1_corridorsluice_squad/9FEFE6ED-1513-4FC8-88A3-5BB1E11AF1D8
                             Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
                             SourceEvent::EventSpec
-                                Id -1694482843
+                                Id EventID.TriggerActor3
                             TargetEvent::EventSpec
                                 Id 287338331
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -5638,7 +5638,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer1_corridorsluice_squad/9FEFE6ED-1513-4FC8-88A3-5BB1E11AF1D8
                             Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
                             SourceEvent::EventSpec
-                                Id -1694482844
+                                Id EventID.TriggerActor2
                             TargetEvent::EventSpec
                                 Id -1070306664
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -5646,7 +5646,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer1_corridorsluice_squad/9FEFE6ED-1513-4FC8-88A3-5BB1E11AF1D8
                             Target levels/sp_paris/corridorsluice/layer1_corridorsluice_squad/A6817FBA-8261-4DCC-828E-3A140694AD0F
                             SourceEvent::EventSpec
-                                Id -1694482841
+                                Id EventID.TriggerActor1
                             TargetEvent::EventSpec
                                 Id 1883421003
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -5654,71 +5654,71 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer1_corridorsluice_squad/9FEFE6ED-1513-4FC8-88A3-5BB1E11AF1D8
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/B7509882-081A-4584-A200-C7323D29F486
                             SourceEvent::EventSpec
-                                Id -721579565
+                                Id EventID.TriggerProps
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer1_corridorsluice_squad/9FEFE6ED-1513-4FC8-88A3-5BB1E11AF1D8
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/B7509882-081A-4584-A200-C7323D29F486
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer1_corridorsluice_squad/9FEFE6ED-1513-4FC8-88A3-5BB1E11AF1D8
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/2A0F11D3-158E-42A2-BE2E-F059ADBA7E6E
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer1_corridorsluice_squad/9FEFE6ED-1513-4FC8-88A3-5BB1E11AF1D8
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/BB472C3E-D1B1-4980-B58E-E6ADE8AAD265
                             SourceEvent::EventSpec
-                                Id -721579565
+                                Id EventID.TriggerProps
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer1_corridorsluice_squad/9FEFE6ED-1513-4FC8-88A3-5BB1E11AF1D8
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/9051D1B9-8BF4-4480-975F-EB2DD3D8C48D
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/56F93431-567F-4027-A15C-B982E4FD37C8
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/585B37B9-F647-4B54-87B8-A765F2174BB6
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer1_corridorsluice_squad/9FEFE6ED-1513-4FC8-88A3-5BB1E11AF1D8
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/56F93431-567F-4027-A15C-B982E4FD37C8
                             SourceEvent::EventSpec
-                                Id -1694482844
+                                Id EventID.TriggerActor2
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/9051D1B9-8BF4-4480-975F-EB2DD3D8C48D
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/9675A7E1-3F39-4D3C-BF27-CF7C2CF2F69A
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1928776733
+                                Id EventID.Deactivate
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/1C7A9AE9-609F-4D48-92A4-B08FA43D8C32
                             Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 148915563
                             TargetType EventConnectionTargetType_Server
@@ -5726,23 +5726,23 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/9051D1B9-8BF4-4480-975F-EB2DD3D8C48D
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/B30ECABD-8C8D-480A-B002-FD07B24ED8E1
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 2089420676
+                                Id EventID.Save
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/B30ECABD-8C8D-480A-B002-FD07B24ED8E1
                             Target levels/sp_paris/corridorsluice/layer1_corridorsluice_squad/A6817FBA-8261-4DCC-828E-3A140694AD0F
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id -834116283
+                                Id EventID.Unspawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/B30ECABD-8C8D-480A-B002-FD07B24ED8E1
                             Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
                                 Id -1433788926
                             TargetType EventConnectionTargetType_Server
@@ -5750,15 +5750,15 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/1C7A9AE9-609F-4D48-92A4-B08FA43D8C32
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/D979D560-E79D-4774-9F25-3416A6AD975D
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/BB472C3E-D1B1-4980-B58E-E6ADE8AAD265
                             Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
                             SourceEvent::EventSpec
-                                Id -559281700
+                                Id EventID.Activate
                             TargetEvent::EventSpec
                                 Id 12103405
                             TargetType EventConnectionTargetType_Client
@@ -5814,7 +5814,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/BB472C3E-D1B1-4980-B58E-E6ADE8AAD265
                             Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
                             SourceEvent::EventSpec
-                                Id 1928776733
+                                Id EventID.Deactivate
                             TargetEvent::EventSpec
                                 Id -542094468
                             TargetType EventConnectionTargetType_Client
@@ -5878,7 +5878,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/BB472C3E-D1B1-4980-B58E-E6ADE8AAD265
                             Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
                             SourceEvent::EventSpec
-                                Id 2134798598
+                                Id EventID.Success
                             TargetEvent::EventSpec
                                 Id -1861572509
                             TargetType EventConnectionTargetType_Client
@@ -5886,7 +5886,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/BD37CCD7-E34C-48F9-A652-765E6BACAF68
                             Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id 780680855
                             TargetType EventConnectionTargetType_Server
@@ -5894,15 +5894,15 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer1_corridorsluice_squad/9FEFE6ED-1513-4FC8-88A3-5BB1E11AF1D8
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/10DE0C9F-A574-490F-98FF-0F5FBDE90AFE
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/309C3F2D-09FB-44F6-B80C-93FE93E611FC
                             Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
                             SourceEvent::EventSpec
-                                Id -1694482841
+                                Id EventID.TriggerActor1
                             TargetEvent::EventSpec
                                 Id -366818668
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -5910,7 +5910,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/10DE0C9F-A574-490F-98FF-0F5FBDE90AFE
                             Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -588301563
                             TargetType EventConnectionTargetType_Server
@@ -5918,7 +5918,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/BD37CCD7-E34C-48F9-A652-765E6BACAF68
                             Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id -1941326837
                             TargetType EventConnectionTargetType_Server
@@ -5934,41 +5934,41 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/4311E5DD-06C1-4262-89FC-92D34D75B2E5
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/D7F5D2AE-2326-4A36-B53F-D438077DB838
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/D7F5D2AE-2326-4A36-B53F-D438077DB838
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/10A142AA-67F0-4CCD-BE36-4EBA991860E6
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/6BB30B08-AA62-4A5E-988F-B0F5C70427B3
                             Target levels/sp_paris/corridorsluice/layer1_corridorsluice_squad/9FEFE6ED-1513-4FC8-88A3-5BB1E11AF1D8
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1037701496
+                                Id EventID.ForceStart
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/BE5AC12A-595F-4B18-BCA6-4D49C949B0EE
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/F264F492-D980-437B-BD5C-81AD06FF132F
                             SourceEvent::EventSpec
-                                Id 632363373
+                                Id EventID.OnComplete
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/9CB918D9-B7B0-4563-A8F6-0F759E555B57
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/9A93450D-C252-43CD-A254-02CDCB3DE1AA
                             SourceEvent::EventSpec
-                                Id 914475960
+                                Id EventID.OnReached
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 42455AA9-7204-3DEF-63AD-50E701D63FA2
@@ -5976,7 +5976,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             SourceEvent::EventSpec
                                 Id 2054256971
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 42455AA9-7204-3DEF-63AD-50E701D63FA2
@@ -5984,7 +5984,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             SourceEvent::EventSpec
                                 Id 2054256971
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 42455AA9-7204-3DEF-63AD-50E701D63FA2
@@ -5992,13 +5992,13 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             SourceEvent::EventSpec
                                 Id 2054256971
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/9A93450D-C252-43CD-A254-02CDCB3DE1AA
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/B03858A0-3068-4B1B-8034-ED1761E549CD
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -6006,25 +6006,25 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/B03858A0-3068-4B1B-8034-ED1761E549CD
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/C2EB9F2B-F8FF-4D71-A7A5-10331CD014A8
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/9A93450D-C252-43CD-A254-02CDCB3DE1AA
                             Target levels/sp_paris/corridorsluice/layer7_corridorsluice_snd2/F4982554-758C-4D4F-B8EC-D9FE9362AE20
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/ED8E863F-D586-4348-8B94-F66C1A8BFFF9
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/CA5F87D3-BCE7-4942-9E81-7497FA709FE4
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/740332CC-A797-4632-928E-01F3AE653354
@@ -6032,21 +6032,21 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             SourceEvent::EventSpec
                                 Id 315541472
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/E2F4B618-04D2-4F67-9C15-28EDCD35706B
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/C217540E-1130-4BDD-A5F6-D807D549B596
                             SourceEvent::EventSpec
-                                Id 632363373
+                                Id EventID.OnComplete
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/F5266A1B-C88D-4C9D-A8DE-5D6B27C57D37
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/B03858A0-3068-4B1B-8034-ED1761E549CD
                             SourceEvent::EventSpec
-                                Id -1433778113
+                                Id EventID.OnLeft
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -6054,111 +6054,111 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/309C3F2D-09FB-44F6-B80C-93FE93E611FC
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/17F4BD68-B1A5-4623-80EC-A5FE0F231CB8
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/17F4BD68-B1A5-4623-80EC-A5FE0F231CB8
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/BA9BBE0B-1CBA-48BB-A4C6-F2512AB5DD9F
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/17F4BD68-B1A5-4623-80EC-A5FE0F231CB8
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/F0EB421F-E934-42C1-9362-B57A9998B56D
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/17F4BD68-B1A5-4623-80EC-A5FE0F231CB8
                             Target levels/sp_paris/corridorsluice/layer1_corridorsluice_squad/A6817FBA-8261-4DCC-828E-3A140694AD0F
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/17F4BD68-B1A5-4623-80EC-A5FE0F231CB8
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/AC7C4CD1-9818-4FA6-9AF5-8AAD8472F105
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/17F4BD68-B1A5-4623-80EC-A5FE0F231CB8
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/ACD9D990-EB49-410A-AED8-90E2409BC101
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/17F4BD68-B1A5-4623-80EC-A5FE0F231CB8
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/8A30FE13-74BA-4135-B9DD-97DED6BE6C34
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/F8A3AB90-11F0-4D37-A748-12304D0079FC
                             Target levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/309C3F2D-09FB-44F6-B80C-93FE93E611FC
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1037701496
+                                Id EventID.ForceStart
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/BDA57147-59E3-4FBF-8F01-5DC61BE53E5A
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/F8A3AB90-11F0-4D37-A748-12304D0079FC
                             SourceEvent::EventSpec
-                                Id -213362971
+                                Id EventID.OnSaveDone
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/2DE8EFBD-0608-48A8-9BDB-E743A2EAA9A1
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/BDA57147-59E3-4FBF-8F01-5DC61BE53E5A
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 2089420676
+                                Id EventID.Save
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/BDA57147-59E3-4FBF-8F01-5DC61BE53E5A
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/AF5F43E9-7DA4-428B-A75F-F1B6692871C6
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/AF5F43E9-7DA4-428B-A75F-F1B6692871C6
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/0FBB5F51-0461-4A0B-8506-C3C440B7EE37
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1778993948
+                                Id EventID.FadeIn
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/AF5F43E9-7DA4-428B-A75F-F1B6692871C6
                             Target levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/F8A3AB90-11F0-4D37-A748-12304D0079FC
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/BDA57147-59E3-4FBF-8F01-5DC61BE53E5A
                             Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
                             SourceEvent::EventSpec
-                                Id -213362971
+                                Id EventID.OnSaveDone
                             TargetEvent::EventSpec
                                 Id -457615205
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -6166,15 +6166,15 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/BDA57147-59E3-4FBF-8F01-5DC61BE53E5A
                             Target levels/sp_paris/corridorsluice/layer7_corridorsluice_snd2/F4982554-758C-4D4F-B8EC-D9FE9362AE20
                             SourceEvent::EventSpec
-                                Id -213362971
+                                Id EventID.OnSaveDone
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/309C3F2D-09FB-44F6-B80C-93FE93E611FC
                             Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
                             SourceEvent::EventSpec
-                                Id -1694482841
+                                Id EventID.TriggerActor1
                             TargetEvent::EventSpec
                                 Id 1900450063
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -6182,7 +6182,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer4_corridorsluice_logic/309C3F2D-09FB-44F6-B80C-93FE93E611FC
                             Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
                                 Id 476822622
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -6190,7 +6190,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/9A93450D-C252-43CD-A254-02CDCB3DE1AA
                             Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 323962556
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -6198,7 +6198,7 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer2_corridorsluice_squad_logic/2DE8EFBD-0608-48A8-9BDB-E743A2EAA9A1
                             Target 42455AA9-7204-3DEF-63AD-50E701D63FA2
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id -765249740
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -6206,17 +6206,17 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             Source levels/sp_paris/corridorsluice/layer7_corridorsluice_snd2/E77015E5-B67F-4627-99D6-384A9291122C
                             Target levels/sp_paris/corridorsluice/layer7_corridorsluice_snd2/13C87DDA-428A-46EE-9F13-618FF337382B
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer7_corridorsluice_snd2/E77015E5-B67F-4627-99D6-384A9291122C
                             Target levels/sp_paris/corridorsluice/layer7_corridorsluice_snd2/F922625E-B3BE-4A97-9614-FD0867B0FF1C
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source 917E226E-555F-4088-ACDB-95E67AE156B3
@@ -6224,15 +6224,15 @@ SubWorldData 8E26C653-97C7-4BFE-8990-59E48DB17E88 #primary instance
                             SourceEvent::EventSpec
                                 Id -457615205
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_paris/corridorsluice/layer8_corridorsluice_lighting_schematic/68EA4B53-0F89-4D0F-8432-F01EBA629735
                             Target levels/sp_paris/corridorsluice/layer8_corridorsluice_lighting_schematic/94A6C4AA-807E-45CF-B8AA-855AA3763923
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_NetworkedClient
                     Descriptor 42455AA9-7204-3DEF-63AD-50E701D63FA2
                     NeedNetworkId True

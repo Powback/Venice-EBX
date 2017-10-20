@@ -639,9 +639,9 @@ InterfaceDescriptorData 880DFE96-D583-4A9C-BADB-B04078D6F29C
                 AccessType FieldAccessType_Source
     InputEvents::array
         member::DynamicEvent
-            Id 230748069
+            Id EventID.Start
         member::DynamicEvent
-            Id 2089125447
+            Id EventID.Kill
         member::DynamicEvent
             Id 1883421003
         member::DynamicEvent
@@ -654,11 +654,11 @@ InterfaceDescriptorData 880DFE96-D583-4A9C-BADB-B04078D6F29C
             Id -1768280508
     OutputEvents::array
         member::DynamicEvent
-            Id 2008897511
+            Id EventID.OnKilled
         member::DynamicEvent
-            Id -1036968738
+            Id EventID.OnSpawned
         member::DynamicEvent
-            Id -408190258
+            Id EventID.OnFullyBlended
     InputLinks::array
         member::DynamicLink
             Id -1086273423
@@ -978,7 +978,7 @@ SoldierBlueprint C719B567-16EE-4D4F-A5C4-8448C65316C4 #primary instance
                             member::PropertyConnection
                                 Source E84B5BCF-8176-4B4A-A4F8-949E82D784A8
                                 Target 880DFE96-D583-4A9C-BADB-B04078D6F29C
-                                SourceFieldId 193453899
+                                SourceFieldId EventID.Out
                                 TargetFieldId -369312607
                             member::PropertyConnection
                                 Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
@@ -1036,63 +1036,63 @@ SoldierBlueprint C719B567-16EE-4D4F-A5C4-8448C65316C4 #primary instance
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target C6D232E9-0F67-4CF0-AD49-54E01886D8C9
                             SourceEvent::EventSpec
-                                Id -427752080
+                                Id EventID.OnAnimatableCreated
                             TargetEvent::EventSpec
-                                Id 1799877463
+                                Id EventID.RegisterAnimatableComponent
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target 26862A8C-BFC4-4ED7-B5EB-D54F74E2DF62
                             SourceEvent::EventSpec
-                                Id -427752080
+                                Id EventID.OnAnimatableCreated
                             TargetEvent::EventSpec
-                                Id 163350161
+                                Id EventID.AnimatableCreated
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target 3D5766C1-C429-40AC-8021-F6A3201B3B77
                             SourceEvent::EventSpec
-                                Id -427752080
+                                Id EventID.OnAnimatableCreated
                             TargetEvent::EventSpec
-                                Id 1799877463
+                                Id EventID.RegisterAnimatableComponent
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target DFE79390-D2DB-4CA3-A850-5FC5D9CBBC8D
                             SourceEvent::EventSpec
-                                Id 1286229666
+                                Id EventID.OnPoseWriterAdded
                             TargetEvent::EventSpec
-                                Id 1286229666
+                                Id EventID.OnPoseWriterAdded
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target 4AEAABE7-7F9C-4772-A15D-A42839B768A3
                             SourceEvent::EventSpec
-                                Id 1286229666
+                                Id EventID.OnPoseWriterAdded
                             TargetEvent::EventSpec
-                                Id 1286229666
+                                Id EventID.OnPoseWriterAdded
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target DFE79390-D2DB-4CA3-A850-5FC5D9CBBC8D
                             SourceEvent::EventSpec
-                                Id -647055200
+                                Id EventID.OnPoseWriterRemoved
                             TargetEvent::EventSpec
-                                Id -647055200
+                                Id EventID.OnPoseWriterRemoved
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target 4AEAABE7-7F9C-4772-A15D-A42839B768A3
                             SourceEvent::EventSpec
-                                Id -647055200
+                                Id EventID.OnPoseWriterRemoved
                             TargetEvent::EventSpec
-                                Id -647055200
+                                Id EventID.OnPoseWriterRemoved
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 20B1706F-DE25-4BE9-A109-FA7F6C4AB71B
                             Target A740BBD2-A807-4B29-BD4D-27BB50A4A675
                             SourceEvent::EventSpec
-                                Id -78816071
+                                Id EventID.OnDying
                             TargetEvent::EventSpec
                                 Id -1780615401
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -1100,89 +1100,89 @@ SoldierBlueprint C719B567-16EE-4D4F-A5C4-8448C65316C4 #primary instance
                             Source 759C4E35-56AA-4A00-83CA-C5EF5B274EEB
                             Target 880DFE96-D583-4A9C-BADB-B04078D6F29C
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 880DFE96-D583-4A9C-BADB-B04078D6F29C
                             Target 759C4E35-56AA-4A00-83CA-C5EF5B274EEB
                             SourceEvent::EventSpec
-                                Id 2089125447
+                                Id EventID.Kill
                             TargetEvent::EventSpec
-                                Id 2089125447
+                                Id EventID.Kill
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 759C4E35-56AA-4A00-83CA-C5EF5B274EEB
                             Target 880DFE96-D583-4A9C-BADB-B04078D6F29C
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 759C4E35-56AA-4A00-83CA-C5EF5B274EEB
                             Target C02E88B9-7D06-4912-B91B-BA7D45BAF4EA
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 759C4E35-56AA-4A00-83CA-C5EF5B274EEB
                             Target C02E88B9-7D06-4912-B91B-BA7D45BAF4EA
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 759C4E35-56AA-4A00-83CA-C5EF5B274EEB
                             Target C02E88B9-7D06-4912-B91B-BA7D45BAF4EA
                             SourceEvent::EventSpec
-                                Id -1635202463
+                                Id EventID.OnEnabled
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 759C4E35-56AA-4A00-83CA-C5EF5B274EEB
                             Target C02E88B9-7D06-4912-B91B-BA7D45BAF4EA
                             SourceEvent::EventSpec
-                                Id -62145612
+                                Id EventID.OnDisabled
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target E4AA6236-66FF-4D3D-8A64-CF5701460EC2
                             SourceEvent::EventSpec
-                                Id -427752080
+                                Id EventID.OnAnimatableCreated
                             TargetEvent::EventSpec
-                                Id 1561468660
+                                Id EventID.RegisterAnimatableComponent3p
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target A740BBD2-A807-4B29-BD4D-27BB50A4A675
                             SourceEvent::EventSpec
-                                Id -427752080
+                                Id EventID.OnAnimatableCreated
                             TargetEvent::EventSpec
-                                Id 1561468660
+                                Id EventID.RegisterAnimatableComponent3p
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target 4AEAABE7-7F9C-4772-A15D-A42839B768A3
                             SourceEvent::EventSpec
-                                Id -427752080
+                                Id EventID.OnAnimatableCreated
                             TargetEvent::EventSpec
-                                Id 1799877463
+                                Id EventID.RegisterAnimatableComponent
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target 759C4E35-56AA-4A00-83CA-C5EF5B274EEB
                             SourceEvent::EventSpec
-                                Id -427752080
+                                Id EventID.OnAnimatableCreated
                             TargetEvent::EventSpec
-                                Id 1561468660
+                                Id EventID.RegisterAnimatableComponent3p
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 880DFE96-D583-4A9C-BADB-B04078D6F29C
@@ -1190,7 +1190,7 @@ SoldierBlueprint C719B567-16EE-4D4F-A5C4-8448C65316C4 #primary instance
                             SourceEvent::EventSpec
                                 Id 1494771781
                             TargetEvent::EventSpec
-                                Id -1541066415
+                                Id EventID.SetTrue
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 880DFE96-D583-4A9C-BADB-B04078D6F29C
@@ -1198,21 +1198,21 @@ SoldierBlueprint C719B567-16EE-4D4F-A5C4-8448C65316C4 #primary instance
                             SourceEvent::EventSpec
                                 Id -25185904
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target E9C7F965-997E-47B7-A842-BF8F7661F782
                             SourceEvent::EventSpec
-                                Id -427752080
+                                Id EventID.OnAnimatableCreated
                             TargetEvent::EventSpec
-                                Id 1561468660
+                                Id EventID.RegisterAnimatableComponent3p
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source E9C7F965-997E-47B7-A842-BF8F7661F782
                             Target 7FEE3BA1-41AF-4C07-B77B-11F0AE06DED0
                             SourceEvent::EventSpec
-                                Id -1937792914
+                                Id EventID.Trigger3pSounds
                             TargetEvent::EventSpec
                                 Id 1925843400
                             TargetType EventConnectionTargetType_Client
@@ -1220,49 +1220,49 @@ SoldierBlueprint C719B567-16EE-4D4F-A5C4-8448C65316C4 #primary instance
                             Source E9C7F965-997E-47B7-A842-BF8F7661F782
                             Target 7FEE3BA1-41AF-4C07-B77B-11F0AE06DED0
                             SourceEvent::EventSpec
-                                Id 508665427
+                                Id EventID.MeleeFinished
                             TargetEvent::EventSpec
-                                Id 1928776733
+                                Id EventID.Deactivate
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target AE0C0C55-AF6E-4136-9375-3054559437EA
                             SourceEvent::EventSpec
-                                Id -427752080
+                                Id EventID.OnAnimatableCreated
                             TargetEvent::EventSpec
-                                Id 1561468660
+                                Id EventID.RegisterAnimatableComponent3p
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target 66467C80-EC28-480D-A8F0-9649FEDBEF2A
                             SourceEvent::EventSpec
-                                Id -427752080
+                                Id EventID.OnAnimatableCreated
                             TargetEvent::EventSpec
-                                Id 163350161
+                                Id EventID.AnimatableCreated
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target E8D3FC2E-1B75-43BA-9685-CEE883A7A31E
                             SourceEvent::EventSpec
-                                Id -427752080
+                                Id EventID.OnAnimatableCreated
                             TargetEvent::EventSpec
-                                Id 1799877463
+                                Id EventID.RegisterAnimatableComponent
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target 84AC5118-22BA-462A-88AC-BE07B6EDBB6A
                             SourceEvent::EventSpec
-                                Id -427752080
+                                Id EventID.OnAnimatableCreated
                             TargetEvent::EventSpec
-                                Id 1799877463
+                                Id EventID.RegisterAnimatableComponent
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 96D7DBBC-7027-4A9D-B323-D68DC10D7BFD
                             Target 84AC5118-22BA-462A-88AC-BE07B6EDBB6A
                             SourceEvent::EventSpec
-                                Id 903502264
+                                Id EventID.SetAnimationLocalSpace
                             TargetEvent::EventSpec
-                                Id 1969808398
+                                Id EventID.SetWantedConnectJointTransform
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 880DFE96-D583-4A9C-BADB-B04078D6F29C
@@ -1270,55 +1270,55 @@ SoldierBlueprint C719B567-16EE-4D4F-A5C4-8448C65316C4 #primary instance
                             SourceEvent::EventSpec
                                 Id 1883421003
                             TargetEvent::EventSpec
-                                Id -374418032
+                                Id EventID.StartCannedAnimation
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source E8D3FC2E-1B75-43BA-9685-CEE883A7A31E
                             Target 96D7DBBC-7027-4A9D-B323-D68DC10D7BFD
                             SourceEvent::EventSpec
-                                Id 1915685713
+                                Id EventID.OnStartCannedAnimation
                             TargetEvent::EventSpec
-                                Id 1915685713
+                                Id EventID.OnStartCannedAnimation
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source E8D3FC2E-1B75-43BA-9685-CEE883A7A31E
                             Target 880DFE96-D583-4A9C-BADB-B04078D6F29C
                             SourceEvent::EventSpec
-                                Id -408190258
+                                Id EventID.OnFullyBlended
                             TargetEvent::EventSpec
-                                Id -408190258
+                                Id EventID.OnFullyBlended
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 96D7DBBC-7027-4A9D-B323-D68DC10D7BFD
                             Target E8D3FC2E-1B75-43BA-9685-CEE883A7A31E
                             SourceEvent::EventSpec
-                                Id 903502264
+                                Id EventID.SetAnimationLocalSpace
                             TargetEvent::EventSpec
-                                Id -374418032
+                                Id EventID.StartCannedAnimation
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target 96D7DBBC-7027-4A9D-B323-D68DC10D7BFD
                             SourceEvent::EventSpec
-                                Id -427752080
+                                Id EventID.OnAnimatableCreated
                             TargetEvent::EventSpec
-                                Id 1799877463
+                                Id EventID.RegisterAnimatableComponent
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 96D7DBBC-7027-4A9D-B323-D68DC10D7BFD
                             Target 169080D5-3CBD-408D-9420-C865DADF0029
                             SourceEvent::EventSpec
-                                Id 1921814437
+                                Id EventID.OnTeleport
                             TargetEvent::EventSpec
-                                Id 229946160
+                                Id EventID.Reset
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source E9C7F965-997E-47B7-A842-BF8F7661F782
                             Target 84AC5118-22BA-462A-88AC-BE07B6EDBB6A
                             SourceEvent::EventSpec
-                                Id 903502264
+                                Id EventID.SetAnimationLocalSpace
                             TargetEvent::EventSpec
-                                Id 1969808398
+                                Id EventID.SetWantedConnectJointTransform
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 880DFE96-D583-4A9C-BADB-B04078D6F29C
@@ -1326,7 +1326,7 @@ SoldierBlueprint C719B567-16EE-4D4F-A5C4-8448C65316C4 #primary instance
                             SourceEvent::EventSpec
                                 Id -1604382351
                             TargetEvent::EventSpec
-                                Id -1541066415
+                                Id EventID.SetTrue
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 880DFE96-D583-4A9C-BADB-B04078D6F29C
@@ -1334,21 +1334,21 @@ SoldierBlueprint C719B567-16EE-4D4F-A5C4-8448C65316C4 #primary instance
                             SourceEvent::EventSpec
                                 Id -1768280508
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target 94A7A948-73CE-42E6-B456-D1A98DA632B9
                             SourceEvent::EventSpec
-                                Id -427752080
+                                Id EventID.OnAnimatableCreated
                             TargetEvent::EventSpec
-                                Id 163350161
+                                Id EventID.AnimatableCreated
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 94A7A948-73CE-42E6-B456-D1A98DA632B9
                             Target C02E88B9-7D06-4912-B91B-BA7D45BAF4EA
                             SourceEvent::EventSpec
-                                Id -774061206
+                                Id EventID.OnFootPlantLeft
                             TargetEvent::EventSpec
                                 Id -637618101
                             TargetType EventConnectionTargetType_Client
@@ -1356,7 +1356,7 @@ SoldierBlueprint C719B567-16EE-4D4F-A5C4-8448C65316C4 #primary instance
                             Source 94A7A948-73CE-42E6-B456-D1A98DA632B9
                             Target C02E88B9-7D06-4912-B91B-BA7D45BAF4EA
                             SourceEvent::EventSpec
-                                Id 199972049
+                                Id EventID.OnFootPlantRight
                             TargetEvent::EventSpec
                                 Id 407629264
                             TargetType EventConnectionTargetType_Client
@@ -1366,7 +1366,7 @@ SoldierBlueprint C719B567-16EE-4D4F-A5C4-8448C65316C4 #primary instance
                             SourceEvent::EventSpec
                                 Id 193445336
                             TargetEvent::EventSpec
-                                Id -60255164
+                                Id EventID.OnStart
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source C89971E4-4478-465B-92B5-3D2CE0DAAD2A
@@ -1374,39 +1374,39 @@ SoldierBlueprint C719B567-16EE-4D4F-A5C4-8448C65316C4 #primary instance
                             SourceEvent::EventSpec
                                 Id 2088725063
                             TargetEvent::EventSpec
-                                Id -1433481220
+                                Id EventID.OnStop
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 152F75DB-17E7-4E08-89F0-64A0EE5E9E68
                             Target 364AFE29-F51F-4106-9C32-26F14B15E4DD
                             SourceEvent::EventSpec
-                                Id -427752080
+                                Id EventID.OnAnimatableCreated
                             TargetEvent::EventSpec
-                                Id 1799877463
+                                Id EventID.RegisterAnimatableComponent
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source E9C7F965-997E-47B7-A842-BF8F7661F782
                             Target 96D7DBBC-7027-4A9D-B323-D68DC10D7BFD
                             SourceEvent::EventSpec
-                                Id 903502264
+                                Id EventID.SetAnimationLocalSpace
                             TargetEvent::EventSpec
-                                Id -819592490
+                                Id EventID.OnStartMeleeAnimation
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source E9C7F965-997E-47B7-A842-BF8F7661F782
                             Target 96D7DBBC-7027-4A9D-B323-D68DC10D7BFD
                             SourceEvent::EventSpec
-                                Id 508665427
+                                Id EventID.MeleeFinished
                             TargetEvent::EventSpec
-                                Id 943404398
+                                Id EventID.OnStopMeleeAnimation
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source E8D3FC2E-1B75-43BA-9685-CEE883A7A31E
                             Target 96D7DBBC-7027-4A9D-B323-D68DC10D7BFD
                             SourceEvent::EventSpec
-                                Id -456093911
+                                Id EventID.OnStopCannedAnimation
                             TargetEvent::EventSpec
-                                Id -456093911
+                                Id EventID.OnStopCannedAnimation
                             TargetType EventConnectionTargetType_ClientAndServer
                     Descriptor 880DFE96-D583-4A9C-BADB-B04078D6F29C
                     NeedNetworkId True

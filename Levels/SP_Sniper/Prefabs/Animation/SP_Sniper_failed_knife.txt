@@ -74,20 +74,20 @@ InterfaceDescriptorData D6ABD0CA-7B40-4C7B-BCAF-B788DBF7D77A
                 AccessType FieldAccessType_Target
     InputEvents::array
         member::DynamicEvent
-            Id -117303631
+            Id EventID.Disable
         member::DynamicEvent
-            Id -1952177180
+            Id EventID.Enable
         member::DynamicEvent
-            Id 1037701496
+            Id EventID.ForceStart
     OutputEvents::array
         member::DynamicEvent
             Id 933055792
         member::DynamicEvent
             Id -1484875391
         member::DynamicEvent
-            Id -1694482841
+            Id EventID.TriggerActor1
         member::DynamicEvent
-            Id 1499404377
+            Id EventID.ScenarioFinished
     InputLinks *nullArray*
     OutputLinks::array
         member::DynamicLink
@@ -206,31 +206,31 @@ SpatialPrefabBlueprint F78B5ACC-DFE4-BDCB-F8CE-9969A3B27A84 #primary instance
                         Source D6ABD0CA-7B40-4C7B-BCAF-B788DBF7D77A
                         Target A071D079-031F-4F83-87B1-44F76E191CD1
                         SourceEvent::EventSpec
-                            Id -117303631
+                            Id EventID.Disable
                         TargetEvent::EventSpec
-                            Id -117303631
+                            Id EventID.Disable
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source D6ABD0CA-7B40-4C7B-BCAF-B788DBF7D77A
                         Target A071D079-031F-4F83-87B1-44F76E191CD1
                         SourceEvent::EventSpec
-                            Id -1952177180
+                            Id EventID.Enable
                         TargetEvent::EventSpec
-                            Id -1952177180
+                            Id EventID.Enable
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source A071D079-031F-4F83-87B1-44F76E191CD1
                         Target 54B31428-B333-4752-ACA5-7A90F716AC7F
                         SourceEvent::EventSpec
-                            Id -80368276
+                            Id EventID.OnEnter
                         TargetEvent::EventSpec
-                            Id 1037701496
+                            Id EventID.ForceStart
                         TargetType EventConnectionTargetType_NetworkedClient
                     member::EventConnection
                         Source 54B31428-B333-4752-ACA5-7A90F716AC7F
                         Target D6ABD0CA-7B40-4C7B-BCAF-B788DBF7D77A
                         SourceEvent::EventSpec
-                            Id -1694482841
+                            Id EventID.TriggerActor1
                         TargetEvent::EventSpec
                             Id 933055792
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -238,7 +238,7 @@ SpatialPrefabBlueprint F78B5ACC-DFE4-BDCB-F8CE-9969A3B27A84 #primary instance
                         Source 54B31428-B333-4752-ACA5-7A90F716AC7F
                         Target D6ABD0CA-7B40-4C7B-BCAF-B788DBF7D77A
                         SourceEvent::EventSpec
-                            Id -1694482844
+                            Id EventID.TriggerActor2
                         TargetEvent::EventSpec
                             Id -1484875391
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -246,25 +246,25 @@ SpatialPrefabBlueprint F78B5ACC-DFE4-BDCB-F8CE-9969A3B27A84 #primary instance
                         Source 54B31428-B333-4752-ACA5-7A90F716AC7F
                         Target D6ABD0CA-7B40-4C7B-BCAF-B788DBF7D77A
                         SourceEvent::EventSpec
-                            Id -1694482841
+                            Id EventID.TriggerActor1
                         TargetEvent::EventSpec
-                            Id -1694482841
+                            Id EventID.TriggerActor1
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source 54B31428-B333-4752-ACA5-7A90F716AC7F
                         Target D6ABD0CA-7B40-4C7B-BCAF-B788DBF7D77A
                         SourceEvent::EventSpec
-                            Id 1499404377
+                            Id EventID.ScenarioFinished
                         TargetEvent::EventSpec
-                            Id 1499404377
+                            Id EventID.ScenarioFinished
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source D6ABD0CA-7B40-4C7B-BCAF-B788DBF7D77A
                         Target 54B31428-B333-4752-ACA5-7A90F716AC7F
                         SourceEvent::EventSpec
-                            Id 1037701496
+                            Id EventID.ForceStart
                         TargetEvent::EventSpec
-                            Id 1037701496
+                            Id EventID.ForceStart
                         TargetType EventConnectionTargetType_Client
                 Descriptor D6ABD0CA-7B40-4C7B-BCAF-B788DBF7D77A
                 NeedNetworkId True

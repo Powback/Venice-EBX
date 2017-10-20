@@ -19,10 +19,10 @@ InterfaceDescriptorData 4BBDB2E1-7176-4809-ABFC-15443666A1C4
                 AccessType FieldAccessType_Source
     InputEvents::array
         member::DynamicEvent
-            Id 230748069
+            Id EventID.Start
     OutputEvents::array
         member::DynamicEvent
-            Id 650265526
+            Id EventID.OnFinished
         member::DynamicEvent
             Id 658034674
     InputLinks *nullArray*
@@ -212,12 +212,12 @@ SpatialPrefabBlueprint 5034C470-C81E-3A31-83FB-5269BCACA17E #primary instance
                         member::PropertyConnection
                             Source ED9C6D11-4184-45FD-82DA-03DB225BF91D
                             Target 4BBDB2E1-7176-4809-ABFC-15443666A1C4
-                            SourceFieldId 193453899
+                            SourceFieldId EventID.Out
                             TargetFieldId 1812200598
                         member::PropertyConnection
                             Source ED9C6D11-4184-45FD-82DA-03DB225BF91D
                             Target 869305EC-6045-4B2E-BAC1-F7C70EB515F8
-                            SourceFieldId 193453899
+                            SourceFieldId EventID.Out
                             TargetFieldId -2024647575
                     LinkConnections *nullArray*
                 EventConnections::array
@@ -225,31 +225,31 @@ SpatialPrefabBlueprint 5034C470-C81E-3A31-83FB-5269BCACA17E #primary instance
                         Source 3D63D2CD-F197-47A8-80BB-B5E25BC86D9C
                         Target 4BBDB2E1-7176-4809-ABFC-15443666A1C4
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id EventID.OnFinished
                         TargetEvent::EventSpec
-                            Id 650265526
+                            Id EventID.OnFinished
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 4BBDB2E1-7176-4809-ABFC-15443666A1C4
                         Target 8D63CD50-BCBE-4C6E-89F5-4F6BDDE8F0DE
                         SourceEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetEvent::EventSpec
-                            Id 1723395486
+                            Id EventID.Impulse
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 4BBDB2E1-7176-4809-ABFC-15443666A1C4
                         Target 3D63D2CD-F197-47A8-80BB-B5E25BC86D9C
                         SourceEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetType EventConnectionTargetType_ClientAndServer
                     member::EventConnection
                         Source 8D63CD50-BCBE-4C6E-89F5-4F6BDDE8F0DE
                         Target 4BBDB2E1-7176-4809-ABFC-15443666A1C4
                         SourceEvent::EventSpec
-                            Id -137490305
+                            Id EventID.OnImpulse
                         TargetEvent::EventSpec
                             Id 658034674
                         TargetType EventConnectionTargetType_Server
@@ -257,17 +257,17 @@ SpatialPrefabBlueprint 5034C470-C81E-3A31-83FB-5269BCACA17E #primary instance
                         Source 4BBDB2E1-7176-4809-ABFC-15443666A1C4
                         Target 869305EC-6045-4B2E-BAC1-F7C70EB515F8
                         SourceEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 3D63D2CD-F197-47A8-80BB-B5E25BC86D9C
                         Target 869305EC-6045-4B2E-BAC1-F7C70EB515F8
                         SourceEvent::EventSpec
-                            Id 650265526
+                            Id EventID.OnFinished
                         TargetEvent::EventSpec
-                            Id 2089401213
+                            Id EventID.Stop
                         TargetType EventConnectionTargetType_Client
                 Descriptor 4BBDB2E1-7176-4809-ABFC-15443666A1C4
                 NeedNetworkId False

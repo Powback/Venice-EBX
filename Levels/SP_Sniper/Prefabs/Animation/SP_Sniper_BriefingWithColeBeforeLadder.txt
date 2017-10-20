@@ -24,14 +24,14 @@ InterfaceDescriptorData FEDADC86-4F2F-49E6-A64D-5991EBC72967
                 AccessType FieldAccessType_Source
     InputEvents::array
         member::DynamicEvent
-            Id 230748069
+            Id EventID.Start
         member::DynamicEvent
             Id -1560069697
     OutputEvents::array
         member::DynamicEvent
-            Id 1499404377
+            Id EventID.ScenarioFinished
         member::DynamicEvent
-            Id -721579565
+            Id EventID.TriggerProps
         member::DynamicEvent
             Id 1798702320
         member::DynamicEvent
@@ -244,23 +244,23 @@ SpatialPrefabBlueprint 9E38CDA3-E484-4E35-8CC1-467DFE47F094 #primary instance
                         Source 2F183961-51CE-454D-B53A-7F469DA58CCC
                         Target FEDADC86-4F2F-49E6-A64D-5991EBC72967
                         SourceEvent::EventSpec
-                            Id 1499404377
+                            Id EventID.ScenarioFinished
                         TargetEvent::EventSpec
-                            Id 1499404377
+                            Id EventID.ScenarioFinished
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 2F183961-51CE-454D-B53A-7F469DA58CCC
                         Target FEDADC86-4F2F-49E6-A64D-5991EBC72967
                         SourceEvent::EventSpec
-                            Id -721579565
+                            Id EventID.TriggerProps
                         TargetEvent::EventSpec
-                            Id -721579565
+                            Id EventID.TriggerProps
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 2F183961-51CE-454D-B53A-7F469DA58CCC
                         Target FEDADC86-4F2F-49E6-A64D-5991EBC72967
                         SourceEvent::EventSpec
-                            Id -1694482844
+                            Id EventID.TriggerActor2
                         TargetEvent::EventSpec
                             Id -1507294267
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -268,9 +268,9 @@ SpatialPrefabBlueprint 9E38CDA3-E484-4E35-8CC1-467DFE47F094 #primary instance
                         Source FEDADC86-4F2F-49E6-A64D-5991EBC72967
                         Target 2F183961-51CE-454D-B53A-7F469DA58CCC
                         SourceEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetEvent::EventSpec
-                            Id 1037701496
+                            Id EventID.ForceStart
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source FEDADC86-4F2F-49E6-A64D-5991EBC72967
@@ -278,15 +278,15 @@ SpatialPrefabBlueprint 9E38CDA3-E484-4E35-8CC1-467DFE47F094 #primary instance
                         SourceEvent::EventSpec
                             Id -1560069697
                         TargetEvent::EventSpec
-                            Id 343579199
+                            Id EventID.Advance
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 2F183961-51CE-454D-B53A-7F469DA58CCC
                         Target AE931536-F20F-474A-AE68-238144709BB1
                         SourceEvent::EventSpec
-                            Id 1499404377
+                            Id EventID.ScenarioFinished
                         TargetEvent::EventSpec
-                            Id 2089401213
+                            Id EventID.Stop
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source FEDADC86-4F2F-49E6-A64D-5991EBC72967
@@ -294,13 +294,13 @@ SpatialPrefabBlueprint 9E38CDA3-E484-4E35-8CC1-467DFE47F094 #primary instance
                         SourceEvent::EventSpec
                             Id -1560069697
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 2F183961-51CE-454D-B53A-7F469DA58CCC
                         Target FEDADC86-4F2F-49E6-A64D-5991EBC72967
                         SourceEvent::EventSpec
-                            Id -1694482841
+                            Id EventID.TriggerActor1
                         TargetEvent::EventSpec
                             Id 1798702320
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -308,7 +308,7 @@ SpatialPrefabBlueprint 9E38CDA3-E484-4E35-8CC1-467DFE47F094 #primary instance
                         Source 2F183961-51CE-454D-B53A-7F469DA58CCC
                         Target FEDADC86-4F2F-49E6-A64D-5991EBC72967
                         SourceEvent::EventSpec
-                            Id -1694482843
+                            Id EventID.TriggerActor3
                         TargetEvent::EventSpec
                             Id -395496915
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -316,7 +316,7 @@ SpatialPrefabBlueprint 9E38CDA3-E484-4E35-8CC1-467DFE47F094 #primary instance
                         Source 2F183961-51CE-454D-B53A-7F469DA58CCC
                         Target FEDADC86-4F2F-49E6-A64D-5991EBC72967
                         SourceEvent::EventSpec
-                            Id -1694482846
+                            Id EventID.TriggerActor4
                         TargetEvent::EventSpec
                             Id -395496914
                         TargetType EventConnectionTargetType_ClientAndServer

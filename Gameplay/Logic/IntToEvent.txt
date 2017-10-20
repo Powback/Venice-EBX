@@ -55,12 +55,12 @@ InterfaceDescriptorData 351D96CE-8B8E-411E-926D-D932B7E1C527
             member::DataField
                 Value *nullString*
                 ValueRef *nullGuid*
-                Id 5862146
+                Id EventID.In
                 AccessType FieldAccessType_Target
     InputEvents *nullArray*
     OutputEvents::array
         member::DynamicEvent
-            Id 193453899
+            Id EventID.Out
     InputLinks *nullArray*
     OutputLinks *nullArray*
 LogicPrefabBlueprint FE3E88DD-0002-2B30-EF96-F64D2FB4E89F #primary instance
@@ -80,12 +80,12 @@ LogicPrefabBlueprint FE3E88DD-0002-2B30-EF96-F64D2FB4E89F #primary instance
                         member::PropertyConnection
                             Source 351D96CE-8B8E-411E-926D-D932B7E1C527
                             Target 5D6B1098-990A-44A7-AF26-DB08CFC5F576
-                            SourceFieldId 5862146
+                            SourceFieldId EventID.In
                             TargetFieldId 177636
                         member::PropertyConnection
                             Source 351D96CE-8B8E-411E-926D-D932B7E1C527
                             Target 384A5BAA-1598-43CF-98AB-0960534469F8
-                            SourceFieldId 5862146
+                            SourceFieldId EventID.In
                             TargetFieldId 177636
                         member::PropertyConnection
                             Source 69F229D4-583C-4DA7-A2E0-63B8D8E6F332
@@ -100,7 +100,7 @@ LogicPrefabBlueprint FE3E88DD-0002-2B30-EF96-F64D2FB4E89F #primary instance
                         SourceEvent::EventSpec
                             Id 193445336
                         TargetEvent::EventSpec
-                            Id 1736970756
+                            Id EventID.Increment
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 5D6B1098-990A-44A7-AF26-DB08CFC5F576
@@ -108,7 +108,7 @@ LogicPrefabBlueprint FE3E88DD-0002-2B30-EF96-F64D2FB4E89F #primary instance
                         SourceEvent::EventSpec
                             Id 193445336
                         TargetEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 384A5BAA-1598-43CF-98AB-0960534469F8
@@ -116,7 +116,7 @@ LogicPrefabBlueprint FE3E88DD-0002-2B30-EF96-F64D2FB4E89F #primary instance
                         SourceEvent::EventSpec
                             Id 193445336
                         TargetEvent::EventSpec
-                            Id 1736970756
+                            Id EventID.Increment
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 384A5BAA-1598-43CF-98AB-0960534469F8
@@ -124,7 +124,7 @@ LogicPrefabBlueprint FE3E88DD-0002-2B30-EF96-F64D2FB4E89F #primary instance
                         SourceEvent::EventSpec
                             Id 193445336
                         TargetEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 5D6B1098-990A-44A7-AF26-DB08CFC5F576
@@ -132,15 +132,15 @@ LogicPrefabBlueprint FE3E88DD-0002-2B30-EF96-F64D2FB4E89F #primary instance
                         SourceEvent::EventSpec
                             Id 193445336
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id EventID.In
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source FDA80423-DF36-4EA2-8A9E-AD0BD4798404
                         Target 384A5BAA-1598-43CF-98AB-0960534469F8
                         SourceEvent::EventSpec
-                            Id 193453899
+                            Id EventID.Out
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id EventID.In
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 384A5BAA-1598-43CF-98AB-0960534469F8
@@ -148,7 +148,7 @@ LogicPrefabBlueprint FE3E88DD-0002-2B30-EF96-F64D2FB4E89F #primary instance
                         SourceEvent::EventSpec
                             Id 193445336
                         TargetEvent::EventSpec
-                            Id 5862146
+                            Id EventID.In
                         TargetType EventConnectionTargetType_Server
                 Descriptor 351D96CE-8B8E-411E-926D-D932B7E1C527
                 NeedNetworkId False

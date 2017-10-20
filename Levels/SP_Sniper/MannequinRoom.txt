@@ -1108,7 +1108,7 @@ InterfaceDescriptorData B2321DC8-28C2-F0AD-4B04-EAB87D6470DF
         member::DynamicEvent
             Id -2137689625
         member::DynamicEvent
-            Id 1499404377
+            Id EventID.ScenarioFinished
     InputLinks *nullArray*
     OutputLinks::array
         member::DynamicLink
@@ -4587,7 +4587,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             member::LinkConnection
                                 Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/BBFB4A26-4B8A-4CCC-AEAE-3A190F302E03
                                 Target B2321DC8-28C2-F0AD-4B04-EAB87D6470DF
-                                SourceFieldId 230891742
+                                SourceFieldId EventID.Spawn
                                 TargetFieldId 373894916
                             member::LinkConnection
                                 Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/32E4882C-4372-4358-A7E5-708F2AD13540
@@ -4642,7 +4642,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             member::LinkConnection
                                 Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/6058703B-39F2-4B00-B078-72ED4A4A0197
                                 Target B2321DC8-28C2-F0AD-4B04-EAB87D6470DF
-                                SourceFieldId 230891742
+                                SourceFieldId EventID.Spawn
                                 TargetFieldId 373894916
                             member::LinkConnection
                                 Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/6058703B-39F2-4B00-B078-72ED4A4A0197
@@ -4732,7 +4732,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             member::LinkConnection
                                 Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/991DA32D-18C5-45C1-B4B1-C67F25226FEA
                                 Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/BD2DC4FA-F22B-443A-A8B5-A6EA747418AB
-                                SourceFieldId 230891742
+                                SourceFieldId EventID.Spawn
                                 TargetFieldId 0
                             member::LinkConnection
                                 Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/F257CFFA-B2EC-42BB-AB3C-3A728C30729E
@@ -4822,7 +4822,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             member::LinkConnection
                                 Source levels/sp_sniper/mannequinroom/layer4_mannequinroom_knifefail/6098E495-331C-4374-9490-302F2CADA5EA
                                 Target B2321DC8-28C2-F0AD-4B04-EAB87D6470DF
-                                SourceFieldId -910201930
+                                SourceFieldId EventID.Player
                                 TargetFieldId 210964196
                             member::LinkConnection
                                 Source levels/sp_sniper/mannequinroom/layer11_mannequinroom_art/1BB7E4C2-A00B-44E4-994C-BFD356CEF4AE
@@ -4864,9 +4864,9 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/EB0E7763-6C8D-485B-AD5E-3E65640C0C3D
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/A58C0D60-99C9-4748-B37A-13532B8989D4
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source B2321DC8-28C2-F0AD-4B04-EAB87D6470DF
@@ -4874,13 +4874,13 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id 1990781835
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/B1549517-1159-4838-B039-A73DA447EC74
                             Target B2321DC8-28C2-F0AD-4B04-EAB87D6470DF
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 1904784312
                             TargetType EventConnectionTargetType_Server
@@ -4888,9 +4888,9 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/3C11AC63-6DAF-47B6-ADC1-8DCA97383876
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/B1549517-1159-4838-B039-A73DA447EC74
                             SourceEvent::EventSpec
-                                Id -65989091
+                                Id EventID.OnIssue
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/D39BB248-CC58-41C3-9C17-6765C655CEAA
@@ -4898,7 +4898,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id -732177836
                             TargetEvent::EventSpec
-                                Id 1736970756
+                                Id EventID.Increment
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/D39BB248-CC58-41C3-9C17-6765C655CEAA
@@ -4906,23 +4906,23 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id 1607935418
                             TargetEvent::EventSpec
-                                Id -395651742
+                                Id EventID.Decrement
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/0DC9446B-C40E-41C4-9869-8BB1DFC626F2
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E8EB3380-B7A2-4055-8CF2-D1F473561118
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E8EB3380-B7A2-4055-8CF2-D1F473561118
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/3C11AC63-6DAF-47B6-ADC1-8DCA97383876
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/1332EFC9-3860-439B-BA8F-35D364964A04
@@ -4936,31 +4936,31 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/EB0E7763-6C8D-485B-AD5E-3E65640C0C3D
                             Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/1332EFC9-3860-439B-BA8F-35D364964A04
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/6FE22911-9070-476F-BBF9-7F679D02BE10
                             Target B2321DC8-28C2-F0AD-4B04-EAB87D6470DF
                             SourceEvent::EventSpec
-                                Id -1176973715
+                                Id EventID.OnStopped
                             TargetEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/29F5CF36-92AD-466C-8CAE-29CF1598926D
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/FAD14696-8C2A-4E9B-A9AB-920B3C93E115
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/29F5CF36-92AD-466C-8CAE-29CF1598926D
                             Target B2321DC8-28C2-F0AD-4B04-EAB87D6470DF
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id -2014078214
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -4968,23 +4968,23 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/BBFB4A26-4B8A-4CCC-AEAE-3A190F302E03
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/78FD0DCC-676A-4DFB-8A8A-9C3F0FFBD8D4
                             SourceEvent::EventSpec
-                                Id -2023825640
+                                Id EventID.OnMovingTowards
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/18D65DB5-2901-4EFB-B944-7983D4300C66
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/9B7B0C89-2B06-45EB-ADFC-D47BEFFE5A35
                             SourceEvent::EventSpec
-                                Id -65989091
+                                Id EventID.OnIssue
                             TargetEvent::EventSpec
-                                Id 212633683
+                                Id EventID.Close
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/8A8EE72D-89FA-4571-818A-2E603B9B4BD4
                             Target B2321DC8-28C2-F0AD-4B04-EAB87D6470DF
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id 1372692773
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -4992,7 +4992,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/B1549517-1159-4838-B039-A73DA447EC74
                             Target B2321DC8-28C2-F0AD-4B04-EAB87D6470DF
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id -454296661
                             TargetType EventConnectionTargetType_Server
@@ -5000,25 +5000,25 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/EB0E7763-6C8D-485B-AD5E-3E65640C0C3D
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/3749B70C-8B39-45AC-BE1E-6B5B0320505C
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/8A8EE72D-89FA-4571-818A-2E603B9B4BD4
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/3749B70C-8B39-45AC-BE1E-6B5B0320505C
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E3CB57A0-A0C1-43B0-8ED2-0E309DD2B1E1
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E62DD7C3-AA87-4869-95D7-B5CA43182A83
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E62DD7C3-AA87-4869-95D7-B5CA43182A83
@@ -5026,37 +5026,37 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id 1067040100
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/C49143D2-C2F4-4AB7-9E93-2D5FAF941FFD
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/A5F352BE-0550-4D82-A6AF-C8B1F10F9981
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/B9ACABAD-A537-4B55-906B-FC5C708DCEC2
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/A5F352BE-0550-4D82-A6AF-C8B1F10F9981
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/EB0E7763-6C8D-485B-AD5E-3E65640C0C3D
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/47326401-0BED-4A71-9B8D-223A18266BED
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/58DA430A-446B-49DF-88F8-B7B6C6E07AC4
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/D6395CF7-BD36-4D10-A562-82BBD2B0DFAB
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -5064,15 +5064,15 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/D6395CF7-BD36-4D10-A562-82BBD2B0DFAB
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/DC7297AE-EC53-4372-A3D6-DEC66F1BD26E
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/6188A1A5-F892-479B-B438-BA56B8D0B566
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E1250CDC-49D4-49C6-8A91-FBEB2D0BBBF2
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -5080,15 +5080,15 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E1250CDC-49D4-49C6-8A91-FBEB2D0BBBF2
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/6D5307FA-7BE4-4238-BDF6-3155586F00CA
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/8A8EE72D-89FA-4571-818A-2E603B9B4BD4
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/5FBF9F5B-6A4C-4900-A70C-B214F7BAC437
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -5096,9 +5096,9 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/5FBF9F5B-6A4C-4900-A70C-B214F7BAC437
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/C59D27B3-DEB5-4793-8E1E-A3880CA30090
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source B2321DC8-28C2-F0AD-4B04-EAB87D6470DF
@@ -5112,7 +5112,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/A58C0D60-99C9-4748-B37A-13532B8989D4
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/7FCD84D1-037B-44C2-BCB6-67FD31763794
                             SourceEvent::EventSpec
-                                Id 632363373
+                                Id EventID.OnComplete
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -5120,39 +5120,39 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/7FCD84D1-037B-44C2-BCB6-67FD31763794
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/CFD43EA7-0F2A-4F1B-B925-D9E966B212B2
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/6EA88F01-57D0-4698-BB04-C765512F1308
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/D39BB248-CC58-41C3-9C17-6765C655CEAA
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/6EA88F01-57D0-4698-BB04-C765512F1308
                             Target levels/sp_sniper/mannequinroom/layer6_mannequinroom_vo/BC67BEB8-0C39-476C-A60E-4452B4ED315E
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/6EA88F01-57D0-4698-BB04-C765512F1308
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/47326401-0BED-4A71-9B8D-223A18266BED
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/6EA88F01-57D0-4698-BB04-C765512F1308
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/7FCD84D1-037B-44C2-BCB6-67FD31763794
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -5168,23 +5168,23 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer5_mannequinroom_squad_logic/03CB8077-7633-441B-A260-4746E1FBA0FF
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/6FE22911-9070-476F-BBF9-7F679D02BE10
                             SourceEvent::EventSpec
-                                Id -721579565
+                                Id EventID.TriggerProps
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer5_mannequinroom_squad_logic/03CB8077-7633-441B-A260-4746E1FBA0FF
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/6FE22911-9070-476F-BBF9-7F679D02BE10
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E3CB57A0-A0C1-43B0-8ED2-0E309DD2B1E1
                             Target levels/sp_sniper/mannequinroom/layer5_mannequinroom_squad_logic/03CB8077-7633-441B-A260-4746E1FBA0FF
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 837436100
                             TargetType EventConnectionTargetType_NetworkedClient
@@ -5192,17 +5192,17 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/CFD43EA7-0F2A-4F1B-B925-D9E966B212B2
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/29F5CF36-92AD-466C-8CAE-29CF1598926D
                             SourceEvent::EventSpec
-                                Id 632363373
+                                Id EventID.OnComplete
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/FAD14696-8C2A-4E9B-A9AB-920B3C93E115
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/53319DFB-F257-4730-A6D2-6A3344974146
                             SourceEvent::EventSpec
-                                Id 632363373
+                                Id EventID.OnComplete
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/B1BFCFC5-DA39-48EB-93DF-7C798D48C4A7
@@ -5210,7 +5210,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id 964873169
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/B1BFCFC5-DA39-48EB-93DF-7C798D48C4A7
@@ -5218,7 +5218,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id 964873169
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/B1BFCFC5-DA39-48EB-93DF-7C798D48C4A7
@@ -5226,7 +5226,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id -2124001446
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/B1BFCFC5-DA39-48EB-93DF-7C798D48C4A7
@@ -5234,15 +5234,15 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id 456074045
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E3CB57A0-A0C1-43B0-8ED2-0E309DD2B1E1
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/B1BFCFC5-DA39-48EB-93DF-7C798D48C4A7
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/B1BFCFC5-DA39-48EB-93DF-7C798D48C4A7
@@ -5256,23 +5256,23 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/2EBB69CD-EE9F-4D81-855F-B9496ACD237E
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/6EA88F01-57D0-4698-BB04-C765512F1308
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/C49143D2-C2F4-4AB7-9E93-2D5FAF941FFD
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/D33F18E2-E032-4214-B432-114711FAAE45
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/0DC9446B-C40E-41C4-9869-8BB1DFC626F2
                             Target B2321DC8-28C2-F0AD-4B04-EAB87D6470DF
                             SourceEvent::EventSpec
-                                Id -1694482841
+                                Id EventID.TriggerActor1
                             TargetEvent::EventSpec
                                 Id -2096002190
                             TargetType EventConnectionTargetType_ClientAndServer
@@ -5280,49 +5280,49 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/9B7B0C89-2B06-45EB-ADFC-D47BEFFE5A35
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/8DFFC5A7-1A83-4DD9-AB4C-789FF29B104C
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/8DFFC5A7-1A83-4DD9-AB4C-789FF29B104C
                             Target levels/sp_sniper/mannequinroom/layer6_mannequinroom_vo/13847439-6CC3-4D69-B1C7-8112B3730E78
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/8DFFC5A7-1A83-4DD9-AB4C-789FF29B104C
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/18D65DB5-2901-4EFB-B944-7983D4300C66
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/6058703B-39F2-4B00-B078-72ED4A4A0197
                             Target levels/sp_sniper/mannequinroom/layer6_mannequinroom_vo/513C3F3D-CBB9-4173-8178-C8CDCB47272C
                             SourceEvent::EventSpec
-                                Id 914475960
+                                Id EventID.OnReached
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/BBFB4A26-4B8A-4CCC-AEAE-3A190F302E03
                             Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/BE1F87A8-98E0-46F3-8A57-C78A1F377D93
                             SourceEvent::EventSpec
-                                Id -2023825640
+                                Id EventID.OnMovingTowards
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/BBFB4A26-4B8A-4CCC-AEAE-3A190F302E03
                             Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/BE1F87A8-98E0-46F3-8A57-C78A1F377D93
                             SourceEvent::EventSpec
-                                Id 914475960
+                                Id EventID.OnReached
                             TargetEvent::EventSpec
-                                Id 2089401213
+                                Id EventID.Stop
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/7C6EA39D-0ADE-4AB0-BE2D-7F46D7F3D23B
@@ -5330,7 +5330,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id -1590439175
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/7C6EA39D-0ADE-4AB0-BE2D-7F46D7F3D23B
@@ -5338,7 +5338,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id -1384865006
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/7C6EA39D-0ADE-4AB0-BE2D-7F46D7F3D23B
@@ -5354,13 +5354,13 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id -925752125
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/DC7297AE-EC53-4372-A3D6-DEC66F1BD26E
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E1250CDC-49D4-49C6-8A91-FBEB2D0BBBF2
                             SourceEvent::EventSpec
-                                Id 632363373
+                                Id EventID.OnComplete
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -5368,7 +5368,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/6D5307FA-7BE4-4238-BDF6-3155586F00CA
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/5FBF9F5B-6A4C-4900-A70C-B214F7BAC437
                             SourceEvent::EventSpec
-                                Id 632363373
+                                Id EventID.OnComplete
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -5376,7 +5376,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/F5627C77-9F4D-4695-B29B-B2967A3CF170
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/BED0F00E-04EB-4E62-86F2-D56C038256F6
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -5384,55 +5384,55 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/BED0F00E-04EB-4E62-86F2-D56C038256F6
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E2D51857-CB37-4854-A6C1-8E30686216BA
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer5_mannequinroom_squad_logic/03CB8077-7633-441B-A260-4746E1FBA0FF
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E9B0FAC1-1A0D-4C21-9B0F-D96AEA7ACD70
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/8A8BCB74-D66F-4249-938F-DD86E4440F2F
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/5997239B-D75C-4C94-B4B4-09D8D124823C
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id -1778993948
+                                Id EventID.FadeIn
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/8A8BCB74-D66F-4249-938F-DD86E4440F2F
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/23D8CD00-B6D2-4AC1-B697-E4F611892529
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/8A8BCB74-D66F-4249-938F-DD86E4440F2F
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/23D8CD00-B6D2-4AC1-B697-E4F611892529
                             SourceEvent::EventSpec
-                                Id -213362971
+                                Id EventID.OnSaveDone
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E9B0FAC1-1A0D-4C21-9B0F-D96AEA7ACD70
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/8A8BCB74-D66F-4249-938F-DD86E4440F2F
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 2089420676
+                                Id EventID.Save
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/23D8CD00-B6D2-4AC1-B697-E4F611892529
                             Target B2321DC8-28C2-F0AD-4B04-EAB87D6470DF
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
                                 Id 1933889257
                             TargetType EventConnectionTargetType_Server
@@ -5440,65 +5440,65 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/23D8CD00-B6D2-4AC1-B697-E4F611892529
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/B9BEDE95-805F-4BAD-9DBD-DB6E9FAF5039
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/23D8CD00-B6D2-4AC1-B697-E4F611892529
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/825B2CDB-18A5-40A5-9E61-5FD27468E8BA
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/23D8CD00-B6D2-4AC1-B697-E4F611892529
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/E2EC212F-6F0B-40CC-8AB8-E49978D19329
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/23D8CD00-B6D2-4AC1-B697-E4F611892529
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/072B30A4-4F8A-4F28-898E-6EB034ED4564
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/23D8CD00-B6D2-4AC1-B697-E4F611892529
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/DECA791B-506C-4D38-9677-EA22527B9088
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/23D8CD00-B6D2-4AC1-B697-E4F611892529
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/BB8D8E6D-F50A-4312-9348-8052D357E6C4
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/8A8BCB74-D66F-4249-938F-DD86E4440F2F
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/9CE0F95D-32DB-4D15-8ED2-8F5F335D6F75
                             SourceEvent::EventSpec
-                                Id -26482462
+                                Id EventID.OnLoadDone
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/B470A57E-FB7F-44F6-8E8E-B5E1D51FD1E7
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/2B87B040-483F-4F0C-BC11-B3D223EFC631
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/844D7E6E-676D-4281-B3C7-3DD729BB2A80
@@ -5506,37 +5506,37 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id 193445336
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/23D8CD00-B6D2-4AC1-B697-E4F611892529
                             Target levels/sp_sniper/mannequinroom/layer6_mannequinroom_vo/266D9682-FB46-4C62-B623-892E8BE3B0F7
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E2D51857-CB37-4854-A6C1-8E30686216BA
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/EB0E7763-6C8D-485B-AD5E-3E65640C0C3D
                             SourceEvent::EventSpec
-                                Id 632363373
+                                Id EventID.OnComplete
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/18D65DB5-2901-4EFB-B944-7983D4300C66
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/C49143D2-C2F4-4AB7-9E93-2D5FAF941FFD
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/C59D27B3-DEB5-4793-8E1E-A3880CA30090
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/BED0F00E-04EB-4E62-86F2-D56C038256F6
                             SourceEvent::EventSpec
-                                Id 632363373
+                                Id EventID.OnComplete
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -5544,7 +5544,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/D6407C51-BF73-4B4A-81F5-FAA260B8BF92
                             Target B2321DC8-28C2-F0AD-4B04-EAB87D6470DF
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 1167372301
                             TargetType EventConnectionTargetType_Server
@@ -5552,23 +5552,23 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/D6407C51-BF73-4B4A-81F5-FAA260B8BF92
                             Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/0DC9446B-C40E-41C4-9869-8BB1DFC626F2
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1037701496
+                                Id EventID.ForceStart
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/D6407C51-BF73-4B4A-81F5-FAA260B8BF92
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/7C6EA39D-0ADE-4AB0-BE2D-7F46D7F3D23B
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/D33F18E2-E032-4214-B432-114711FAAE45
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/D6407C51-BF73-4B4A-81F5-FAA260B8BF92
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -5584,15 +5584,15 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer5_mannequinroom_squad_logic/03CB8077-7633-441B-A260-4746E1FBA0FF
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/820091BB-C2D2-469D-954F-A5FA45AD94EB
                             SourceEvent::EventSpec
-                                Id 1499404377
+                                Id EventID.ScenarioFinished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/820091BB-C2D2-469D-954F-A5FA45AD94EB
                             Target B2321DC8-28C2-F0AD-4B04-EAB87D6470DF
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 796146373
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
@@ -5600,7 +5600,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/435DBF38-E1DB-483B-9D43-2D0ACE05157D
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E3CB57A0-A0C1-43B0-8ED2-0E309DD2B1E1
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -5608,7 +5608,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/53319DFB-F257-4730-A6D2-6A3344974146
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E3CB57A0-A0C1-43B0-8ED2-0E309DD2B1E1
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -5616,7 +5616,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/D1C45AB8-D55B-4A62-9874-17CEA93223F6
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E3CB57A0-A0C1-43B0-8ED2-0E309DD2B1E1
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
                                 Id 193450865
                             TargetType EventConnectionTargetType_Server
@@ -5624,9 +5624,9 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/29F5CF36-92AD-466C-8CAE-29CF1598926D
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E62DD7C3-AA87-4869-95D7-B5CA43182A83
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/E62DD7C3-AA87-4869-95D7-B5CA43182A83
@@ -5634,47 +5634,47 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id 1067040100
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/D1C45AB8-D55B-4A62-9874-17CEA93223F6
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/89F7517A-257A-4E46-AE5D-42CAE0D3A59B
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/53319DFB-F257-4730-A6D2-6A3344974146
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/9ACA9093-DC3B-499A-965D-6940D9304989
                             SourceEvent::EventSpec
-                                Id 1762125924
+                                Id EventID.OnDestinationReached
                             TargetEvent::EventSpec
-                                Id 231942004
+                                Id EventID.Print
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/76BB8EB6-20C6-4366-BFE9-87A15879C9CB
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/591B4117-F948-40E6-83FD-DFFF4657593F
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/072B30A4-4F8A-4F28-898E-6EB034ED4564
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/76BB8EB6-20C6-4366-BFE9-87A15879C9CB
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/508AB045-1057-46FB-AA3A-DABF7D92B39E
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/D6F580FE-24A3-4367-85BD-E552F7E8488F
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/D6F580FE-24A3-4367-85BD-E552F7E8488F
@@ -5682,7 +5682,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id -994564613
                             TargetEvent::EventSpec
-                                Id 1999497757
+                                Id EventID.FireShot
                             TargetType EventConnectionTargetType_ClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/D6F580FE-24A3-4367-85BD-E552F7E8488F
@@ -5690,7 +5690,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id -994564613
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/1A330DE0-ADEF-4955-B14E-01AF857BF37C
@@ -5698,15 +5698,15 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id 1160542806
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/BB8D8E6D-F50A-4312-9348-8052D357E6C4
                             Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/1A330DE0-ADEF-4955-B14E-01AF857BF37C
                             SourceEvent::EventSpec
-                                Id 1206113748
+                                Id EventID.OnUnderFire
                             TargetEvent::EventSpec
-                                Id -274579609
+                                Id EventID.Destroy
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source 016B4E3C-BD59-4435-AD36-D2DF784B7031
@@ -5714,7 +5714,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id 1933889257
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 016B4E3C-BD59-4435-AD36-D2DF784B7031
@@ -5722,7 +5722,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id 1933889257
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 016B4E3C-BD59-4435-AD36-D2DF784B7031
@@ -5730,7 +5730,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id 1933889257
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 016B4E3C-BD59-4435-AD36-D2DF784B7031
@@ -5738,7 +5738,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id 1933889257
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 016B4E3C-BD59-4435-AD36-D2DF784B7031
@@ -5746,7 +5746,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id 1933889257
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source 016B4E3C-BD59-4435-AD36-D2DF784B7031
@@ -5754,39 +5754,39 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id 1933889257
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/E2EC212F-6F0B-40CC-8AB8-E49978D19329
                             Target levels/sp_sniper/mannequinroom/layer6_mannequinroom_vo/26D3F572-604B-4EEB-9D80-3750D69BDD14
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/76BB8EB6-20C6-4366-BFE9-87A15879C9CB
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/18F350F7-A9F7-400B-A0F8-2763717F81E2
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/508AB045-1057-46FB-AA3A-DABF7D92B39E
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/18F350F7-A9F7-400B-A0F8-2763717F81E2
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/991DA32D-18C5-45C1-B4B1-C67F25226FEA
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/508AB045-1057-46FB-AA3A-DABF7D92B39E
                             SourceEvent::EventSpec
-                                Id 914475960
+                                Id EventID.OnReached
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/D6F580FE-24A3-4367-85BD-E552F7E8488F
@@ -5794,13 +5794,13 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id -994564613
                             TargetEvent::EventSpec
-                                Id 668205626
+                                Id EventID.SetFalse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/BD2DC4FA-F22B-443A-A8B5-A6EA747418AB
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/DAAB44E8-5067-4776-B83F-C1D17E3D7000
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
                                 Id 193450864
                             TargetType EventConnectionTargetType_Server
@@ -5808,15 +5808,15 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/DAAB44E8-5067-4776-B83F-C1D17E3D7000
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/9B7B0C89-2B06-45EB-ADFC-D47BEFFE5A35
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/03CCF5B8-8A5D-490B-98F6-3E731DCF9E75
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/FC6A51A0-7F7D-43D8-98A8-EF278073445F
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
                                 Id 67402812
                             TargetType EventConnectionTargetType_Server
@@ -5824,7 +5824,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/65194EB9-9F86-453B-8F0E-468FC5441346
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/FC6A51A0-7F7D-43D8-98A8-EF278073445F
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
                                 Id 67402812
                             TargetType EventConnectionTargetType_Server
@@ -5832,7 +5832,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/A52D080D-BC03-4B45-9B0F-9795340ECDAB
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/FC6A51A0-7F7D-43D8-98A8-EF278073445F
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
                                 Id 67402812
                             TargetType EventConnectionTargetType_Server
@@ -5840,7 +5840,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/79AFDF83-717D-490C-88D1-C1696817E581
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/FC6A51A0-7F7D-43D8-98A8-EF278073445F
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
                                 Id 67402812
                             TargetType EventConnectionTargetType_Server
@@ -5848,7 +5848,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/88879365-E00F-4380-974C-F9F56EEE6CC3
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/FC6A51A0-7F7D-43D8-98A8-EF278073445F
                             SourceEvent::EventSpec
-                                Id 2008897511
+                                Id EventID.OnKilled
                             TargetEvent::EventSpec
                                 Id 67402812
                             TargetType EventConnectionTargetType_Server
@@ -5856,7 +5856,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/03CCF5B8-8A5D-490B-98F6-3E731DCF9E75
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/FC6A51A0-7F7D-43D8-98A8-EF278073445F
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
                                 Id 853531813
                             TargetType EventConnectionTargetType_Server
@@ -5864,7 +5864,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/65194EB9-9F86-453B-8F0E-468FC5441346
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/FC6A51A0-7F7D-43D8-98A8-EF278073445F
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
                                 Id 853531813
                             TargetType EventConnectionTargetType_Server
@@ -5872,7 +5872,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/A52D080D-BC03-4B45-9B0F-9795340ECDAB
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/FC6A51A0-7F7D-43D8-98A8-EF278073445F
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
                                 Id 853531813
                             TargetType EventConnectionTargetType_Server
@@ -5880,7 +5880,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/79AFDF83-717D-490C-88D1-C1696817E581
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/FC6A51A0-7F7D-43D8-98A8-EF278073445F
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
                                 Id 853531813
                             TargetType EventConnectionTargetType_Server
@@ -5888,7 +5888,7 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/88879365-E00F-4380-974C-F9F56EEE6CC3
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/FC6A51A0-7F7D-43D8-98A8-EF278073445F
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
                                 Id 853531813
                             TargetType EventConnectionTargetType_Server
@@ -5898,13 +5898,13 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             SourceEvent::EventSpec
                                 Id -994564613
                             TargetEvent::EventSpec
-                                Id 2089008817
+                                Id EventID.Open
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/84A17D4B-FED2-473F-8166-7F65983A89E7
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/DAAB44E8-5067-4776-B83F-C1D17E3D7000
                             SourceEvent::EventSpec
-                                Id -1433512622
+                                Id EventID.OnTrue
                             TargetEvent::EventSpec
                                 Id 193450867
                             TargetType EventConnectionTargetType_Server
@@ -5912,345 +5912,345 @@ SubWorldData C2BC93B4-7E18-4860-9532-18B0BB273D7E #primary instance
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/03CCF5B8-8A5D-490B-98F6-3E731DCF9E75
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/14042D5C-E0CF-4078-A009-9696DC9C1EFC
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/65194EB9-9F86-453B-8F0E-468FC5441346
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/A23388CD-55A6-46C3-8F4B-BC337EBEEF26
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/A52D080D-BC03-4B45-9B0F-9795340ECDAB
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/D003B8D0-C8C4-47F8-A2B4-202AE7ABF972
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/79AFDF83-717D-490C-88D1-C1696817E581
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/2F1F602E-8697-4429-8793-4EFDCBA73DB9
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/88879365-E00F-4380-974C-F9F56EEE6CC3
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/386F02C4-94EC-405B-AE3D-75EE6CC98752
                             SourceEvent::EventSpec
-                                Id -1036968738
+                                Id EventID.OnSpawned
                             TargetEvent::EventSpec
-                                Id -770075886
+                                Id EventID.IssueOrder
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/825B2CDB-18A5-40A5-9E61-5FD27468E8BA
                             Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/03CCF5B8-8A5D-490B-98F6-3E731DCF9E75
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/DECA791B-506C-4D38-9677-EA22527B9088
                             Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/65194EB9-9F86-453B-8F0E-468FC5441346
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/B9BEDE95-805F-4BAD-9DBD-DB6E9FAF5039
                             Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/A52D080D-BC03-4B45-9B0F-9795340ECDAB
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/E2EC212F-6F0B-40CC-8AB8-E49978D19329
                             Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/79AFDF83-717D-490C-88D1-C1696817E581
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/072B30A4-4F8A-4F28-898E-6EB034ED4564
                             Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/88879365-E00F-4380-974C-F9F56EEE6CC3
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 230891742
+                                Id EventID.Spawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/735C6383-EDEA-4966-9552-C250D2A14E40
                             Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/03CCF5B8-8A5D-490B-98F6-3E731DCF9E75
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1149984791
+                                Id EventID.CancelAutoSpawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/735C6383-EDEA-4966-9552-C250D2A14E40
                             Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/65194EB9-9F86-453B-8F0E-468FC5441346
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1149984791
+                                Id EventID.CancelAutoSpawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/735C6383-EDEA-4966-9552-C250D2A14E40
                             Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/A52D080D-BC03-4B45-9B0F-9795340ECDAB
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1149984791
+                                Id EventID.CancelAutoSpawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/735C6383-EDEA-4966-9552-C250D2A14E40
                             Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/79AFDF83-717D-490C-88D1-C1696817E581
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1149984791
+                                Id EventID.CancelAutoSpawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/735C6383-EDEA-4966-9552-C250D2A14E40
                             Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/88879365-E00F-4380-974C-F9F56EEE6CC3
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 1149984791
+                                Id EventID.CancelAutoSpawn
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/E9096DBE-9EAE-40E0-9486-54B0F277E174
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/735C6383-EDEA-4966-9552-C250D2A14E40
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/DAAB44E8-5067-4776-B83F-C1D17E3D7000
                             Target levels/sp_sniper/mannequinroom/layer7_mannequinroom_patrol/735C6383-EDEA-4966-9552-C250D2A14E40
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer6_mannequinroom_vo/A1AC4577-C138-40E9-8746-88C8F11D35BD
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/D1C45AB8-D55B-4A62-9874-17CEA93223F6
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer6_mannequinroom_vo/D34D00EF-A57E-47B3-BE83-A74377547E7B
                             Target levels/sp_sniper/mannequinroom/layer3_mannequinroom_squad/F5627C77-9F4D-4695-B29B-B2967A3CF170
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1573253508
+                                Id EventID.Client
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer6_mannequinroom_vo/D34D00EF-A57E-47B3-BE83-A74377547E7B
                             Target levels/sp_sniper/mannequinroom/layer6_mannequinroom_vo/FB849461-83F5-44EA-87A3-34619CF1B3CC
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer6_mannequinroom_vo/513C3F3D-CBB9-4173-8178-C8CDCB47272C
                             Target levels/sp_sniper/mannequinroom/layer6_mannequinroom_vo/64255A97-E02D-4E09-BB4F-5527939D451B
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer6_mannequinroom_vo/FB849461-83F5-44EA-87A3-34619CF1B3CC
                             Target levels/sp_sniper/mannequinroom/layer6_mannequinroom_vo/BC67BEB8-0C39-476C-A60E-4452B4ED315E
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1608153915
+                                Id EventID.Buffer
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer6_mannequinroom_vo/BC67BEB8-0C39-476C-A60E-4452B4ED315E
                             Target levels/sp_sniper/mannequinroom/layer6_mannequinroom_vo/A1AC4577-C138-40E9-8746-88C8F11D35BD
                             SourceEvent::EventSpec
-                                Id 1223765815
+                                Id EventID.Finished
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer4_mannequinroom_knifefail/7DBDF8CB-6C7E-41D6-A5FB-35E2661ADCB3
                             Target levels/sp_sniper/mannequinroom/layer4_mannequinroom_knifefail/5C1D5349-82B6-4E5B-9505-D1A5AE2537B4
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer4_mannequinroom_knifefail/E0CED5DE-4065-4EBE-9E60-C6F75C1B5D27
                             Target levels/sp_sniper/mannequinroom/layer4_mannequinroom_knifefail/7DBDF8CB-6C7E-41D6-A5FB-35E2661ADCB3
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id 1723395486
+                                Id EventID.Impulse
                             TargetType EventConnectionTargetType_Server
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer4_mannequinroom_knifefail/5C1D5349-82B6-4E5B-9505-D1A5AE2537B4
                             Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/22529F96-83C5-4509-9E3D-2027331BF85B
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1952177180
+                                Id EventID.Enable
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer4_mannequinroom_knifefail/7DBDF8CB-6C7E-41D6-A5FB-35E2661ADCB3
                             Target levels/sp_sniper/mannequinroom/layer4_mannequinroom_knifefail/0F6C3551-32D9-461B-B872-DB59C0FB19C8
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 230748069
+                                Id EventID.Start
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer4_mannequinroom_knifefail/E9243C5A-617A-4B85-AC65-3FB542376B08
                             Target levels/sp_sniper/mannequinroom/layer6_mannequinroom_vo/D34D00EF-A57E-47B3-BE83-A74377547E7B
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -1688613187
+                                Id EventID.Trigger
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer4_mannequinroom_knifefail/7DBDF8CB-6C7E-41D6-A5FB-35E2661ADCB3
                             Target levels/sp_sniper/mannequinroom/layer4_mannequinroom_knifefail/E9243C5A-617A-4B85-AC65-3FB542376B08
                             SourceEvent::EventSpec
-                                Id -137490305
+                                Id EventID.OnImpulse
                             TargetEvent::EventSpec
-                                Id 5862146
+                                Id EventID.In
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer4_mannequinroom_knifefail/5C1D5349-82B6-4E5B-9505-D1A5AE2537B4
                             Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/22183E60-5188-431D-9CDF-C34A4C95B1AB
                             SourceEvent::EventSpec
-                                Id 193453899
+                                Id EventID.Out
                             TargetEvent::EventSpec
-                                Id -763641474
+                                Id EventID.StreamIn
                             TargetType EventConnectionTargetType_Client
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer11_mannequinroom_art/1BB7E4C2-A00B-44E4-994C-BFD356CEF4AE
                             Target levels/sp_sniper/mannequinroom/layer2_mannequinroom_objects/85AE0ABE-CD8E-4D54-98B0-C1BF6C031432
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClient
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer11_mannequinroom_art/1BB7E4C2-A00B-44E4-994C-BFD356CEF4AE
                             Target levels/sp_sniper/mannequinroom/layer2_mannequinroom_objects/9CA7368B-641E-4C4C-8B5F-F26EF7FF9C9E
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer11_mannequinroom_art/1BB7E4C2-A00B-44E4-994C-BFD356CEF4AE
                             Target levels/sp_sniper/mannequinroom/layer2_mannequinroom_objects/4AC200DF-D833-43DF-BBB7-491294A55380
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer11_mannequinroom_art/1BB7E4C2-A00B-44E4-994C-BFD356CEF4AE
                             Target levels/sp_sniper/mannequinroom/layer2_mannequinroom_objects/2DFCDEC3-B52B-4CFB-BA85-B87F0C478DAE
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer11_mannequinroom_art/1BB7E4C2-A00B-44E4-994C-BFD356CEF4AE
                             Target levels/sp_sniper/mannequinroom/layer2_mannequinroom_objects/B52BC1E5-D043-4503-8842-9E6A7C996696
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer11_mannequinroom_art/1BB7E4C2-A00B-44E4-994C-BFD356CEF4AE
                             Target levels/sp_sniper/mannequinroom/layer2_mannequinroom_objects/4DB9EA63-90B3-4E0A-9C1C-E1E3CABA3506
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer11_mannequinroom_art/1BB7E4C2-A00B-44E4-994C-BFD356CEF4AE
                             Target levels/sp_sniper/mannequinroom/layer2_mannequinroom_objects/BB83D1EB-B161-4965-88D4-C05DB2EB3F88
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer11_mannequinroom_art/1BB7E4C2-A00B-44E4-994C-BFD356CEF4AE
                             Target levels/sp_sniper/mannequinroom/layer2_mannequinroom_objects/34CFF828-5DD6-43BA-8ADC-22CAD95A79B4
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer11_mannequinroom_art/1BB7E4C2-A00B-44E4-994C-BFD356CEF4AE
                             Target levels/sp_sniper/mannequinroom/layer2_mannequinroom_objects/B49F01F4-AF50-43E9-809B-60CF61216690
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer11_mannequinroom_art/1BB7E4C2-A00B-44E4-994C-BFD356CEF4AE
                             Target levels/sp_sniper/mannequinroom/layer2_mannequinroom_objects/CDF65834-D15E-40A8-9DD8-A21DEC808A44
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer11_mannequinroom_art/1BB7E4C2-A00B-44E4-994C-BFD356CEF4AE
                             Target levels/sp_sniper/mannequinroom/layer2_mannequinroom_objects/5D90C066-FCCE-4CD6-9247-CC04682F6390
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer11_mannequinroom_art/1BB7E4C2-A00B-44E4-994C-BFD356CEF4AE
                             Target levels/sp_sniper/mannequinroom/layer2_mannequinroom_objects/349CAEF2-064E-444A-9844-9171B0064BA2
                             SourceEvent::EventSpec
-                                Id -80368276
+                                Id EventID.OnEnter
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_NetworkedClientAndServer
                         member::EventConnection
                             Source levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/AC1A8842-EABC-408B-A6A8-D9C8207C8B3A
                             Target levels/sp_sniper/mannequinroom/layer1_mannequinroom_logic/5AC59EE5-7AF0-4434-9A18-F2DC56EE85E3
                             SourceEvent::EventSpec
-                                Id -1452333337
+                                Id EventID.OnDestroyed
                             TargetEvent::EventSpec
-                                Id -117303631
+                                Id EventID.Disable
                             TargetType EventConnectionTargetType_Client
                     Descriptor B2321DC8-28C2-F0AD-4B04-EAB87D6470DF
                     NeedNetworkId True

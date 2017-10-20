@@ -168,9 +168,9 @@ InterfaceDescriptorData BCFAD51A-1AFA-4B63-AD87-8E971C63DF5A
         Fields *nullArray*
     InputEvents::array
         member::DynamicEvent
-            Id 230748069
+            Id EventID.Start
         member::DynamicEvent
-            Id -834116283
+            Id EventID.Unspawn
     OutputEvents *nullArray*
     InputLinks::array
         member::DynamicLink
@@ -213,33 +213,33 @@ SpatialPrefabBlueprint 9EF3E7D3-411D-4C0D-A9E2-E79209417548 #primary instance
                         Source BCFAD51A-1AFA-4B63-AD87-8E971C63DF5A
                         Target 99E841BE-1F16-4444-969E-1D539EA82655
                         SourceEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetEvent::EventSpec
-                            Id 230891742
+                            Id EventID.Spawn
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 99E841BE-1F16-4444-969E-1D539EA82655
                         Target 5D04910B-3FB3-4391-B700-614E98D596A0
                         SourceEvent::EventSpec
-                            Id -1036968738
+                            Id EventID.OnSpawned
                         TargetEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source 5D04910B-3FB3-4391-B700-614E98D596A0
                         Target 99E841BE-1F16-4444-969E-1D539EA82655
                         SourceEvent::EventSpec
-                            Id 632363373
+                            Id EventID.OnComplete
                         TargetEvent::EventSpec
-                            Id 2089125447
+                            Id EventID.Kill
                         TargetType EventConnectionTargetType_Server
                     member::EventConnection
                         Source BCFAD51A-1AFA-4B63-AD87-8E971C63DF5A
                         Target 99E841BE-1F16-4444-969E-1D539EA82655
                         SourceEvent::EventSpec
-                            Id -834116283
+                            Id EventID.Unspawn
                         TargetEvent::EventSpec
-                            Id -834116283
+                            Id EventID.Unspawn
                         TargetType EventConnectionTargetType_Server
                 Descriptor BCFAD51A-1AFA-4B63-AD87-8E971C63DF5A
                 NeedNetworkId True

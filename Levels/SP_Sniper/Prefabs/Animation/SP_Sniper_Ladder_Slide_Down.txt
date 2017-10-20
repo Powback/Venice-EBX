@@ -4,12 +4,12 @@ InterfaceDescriptorData DDF66EEA-8A83-4475-A96B-CA78F8680B5B
         Fields *nullArray*
     InputEvents::array
         member::DynamicEvent
-            Id 230748069
+            Id EventID.Start
     OutputEvents::array
         member::DynamicEvent
             Id 1791668043
         member::DynamicEvent
-            Id 1499404377
+            Id EventID.ScenarioFinished
     InputLinks *nullArray*
     OutputLinks *nullArray*
 MultipleActorScenarioEntityData 20431302-5983-46C2-9191-C2F7AF906E32
@@ -111,15 +111,15 @@ SpatialPrefabBlueprint D79B4F88-2CF5-4D14-90F4-F7E1D0D3C91E #primary instance
                         Source DDF66EEA-8A83-4475-A96B-CA78F8680B5B
                         Target 20431302-5983-46C2-9191-C2F7AF906E32
                         SourceEvent::EventSpec
-                            Id 230748069
+                            Id EventID.Start
                         TargetEvent::EventSpec
-                            Id 1037701496
+                            Id EventID.ForceStart
                         TargetType EventConnectionTargetType_Client
                     member::EventConnection
                         Source 20431302-5983-46C2-9191-C2F7AF906E32
                         Target DDF66EEA-8A83-4475-A96B-CA78F8680B5B
                         SourceEvent::EventSpec
-                            Id -1694482841
+                            Id EventID.TriggerActor1
                         TargetEvent::EventSpec
                             Id 1791668043
                         TargetType EventConnectionTargetType_ClientAndServer
@@ -127,9 +127,9 @@ SpatialPrefabBlueprint D79B4F88-2CF5-4D14-90F4-F7E1D0D3C91E #primary instance
                         Source 20431302-5983-46C2-9191-C2F7AF906E32
                         Target DDF66EEA-8A83-4475-A96B-CA78F8680B5B
                         SourceEvent::EventSpec
-                            Id 1499404377
+                            Id EventID.ScenarioFinished
                         TargetEvent::EventSpec
-                            Id 1499404377
+                            Id EventID.ScenarioFinished
                         TargetType EventConnectionTargetType_Client
                 Descriptor DDF66EEA-8A83-4475-A96B-CA78F8680B5B
                 NeedNetworkId False
